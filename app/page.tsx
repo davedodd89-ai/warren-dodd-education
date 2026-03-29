@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SiteHeader from "./SiteHeader";
 
 export default function Page() {
   const trustPoints = [
@@ -37,17 +38,15 @@ export default function Page() {
       ],
     },
     {
-      {
-  child: "Past pupil ‘D’",
-  quotes: [
-    "We are hugely grateful for your work with 'D'. You are his best teacher he’s ever had and have somehow instilled a love for his learning.",
-    "You must have superpowers! He genuinely looks forward to the sessions and wants to go.",
-    "You are unique and thank you for being who you are and what you do, helping 'D'.",
-    "He holds you in the highest regards, so passionately.",
-    "You have become so popular in our house we have made up a tongue twister about you, Mr Dodd!",
-    "You help 'D' thrive and you are a favourite in the house and in the family. You are fab.",
-  ],
-}
+      child: "Past pupil ‘D’",
+      quotes: [
+        "We are hugely grateful for your work with David. You are his best teacher he’s ever had and have somehow instilled a love for his learning.",
+        "You must have superpowers! He genuinely looks forward to the sessions and wants to go.",
+        "You are unique and thank you for being who you are and what you do, helping David.",
+        "He holds you in the highest regards, so passionately.",
+        "You have become so popular in our house we have made up a tongue twister about you, Mr Dodd!",
+        "You help David thrive and you are a favourite in the house and in the family. You are fab.",
+      ],
     },
     {
       child: "Current pupil ‘B’",
@@ -113,66 +112,8 @@ export default function Page() {
     <div className="relative min-h-screen overflow-x-hidden bg-[#F7F7F4] text-slate-900">
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[680px] bg-[radial-gradient(circle_at_top,rgba(18,40,76,0.06),transparent_42%),radial-gradient(circle_at_right,rgba(18,40,76,0.04),transparent_34%)]" />
 
-      {/* Header */}
-      <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-[#F7F7F4]/95 backdrop-blur">
-        <div className="mx-auto max-w-7xl px-6 py-3 md:px-10">
-          <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between">
-            <div className="flex min-w-0 items-center gap-4">
-              <Image
-                src="/logo.png"
-                alt="Warren Dodd Education"
-                width={260}
-                height={260}
-                className="h-[118px] w-[118px] flex-none object-contain md:h-[138px] md:w-[138px]"
-                priority
-              />
-              <div className="min-w-0">
-                <p className="truncate text-[1.7rem] font-semibold tracking-[-0.03em] text-[#12284C] md:text-[2rem]">
-                  Warren Dodd Education
-                </p>
-                <p className="mt-1 text-[11px] uppercase tracking-[0.18em] text-slate-500 md:text-[12px]">
-                  Bespoke daytime tutoring • Training & CPD • Home & hybrid education
-                </p>
-              </div>
-            </div>
+      <SiteHeader />
 
-            <div className="flex flex-col gap-4 xl:items-end">
-              <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium text-slate-700">
-                <a href="#problem" className="transition hover:text-[#12284C]">
-                  The Problem
-                </a>
-                <a href="#why" className="transition hover:text-[#12284C]">
-                  Why Us
-                </a>
-                <a href="#programme" className="transition hover:text-[#12284C]">
-                  Programme
-                </a>
-                <a href="/cpd" className="transition hover:text-[#12284C]">
-                  Training & CPD
-                </a>
-                <a href="/schools" className="transition hover:text-[#12284C]">
-                  School Support
-                </a>
-                <a href="#testimonials" className="transition hover:text-[#12284C]">
-                  Testimonials
-                </a>
-                <a href="/contact" className="transition hover:text-[#12284C]">
-                  Contact
-                </a>
-              </nav>
-
-              <a
-                href="/contact"
-                className="inline-flex items-center justify-center rounded-full bg-[#12284C] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-300/40 transition hover:-translate-y-0.5"
-              >
-                Make an Enquiry
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
-
-      {/* Hero */}
       <section className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-12 pt-2 md:px-10 lg:pb-16 lg:pt-3">
         <div className="pointer-events-none absolute inset-0 -z-10 flex items-start justify-end">
           <Image
@@ -228,7 +169,7 @@ export default function Page() {
                 href="/cpd"
                 className="rounded-full border border-slate-300 bg-white px-7 py-4 text-center font-medium text-slate-900 transition hover:bg-slate-100"
               >
-                Explore Training & CPD
+                Explore Training &amp; CPD
               </a>
             </div>
           </div>
@@ -264,7 +205,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Trust strip */}
       <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto grid max-w-7xl gap-5 px-6 py-9 text-center md:grid-cols-4 md:px-10">
           {trustPoints.map((item) => (
@@ -278,7 +218,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Problem */}
       <section id="problem" className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
@@ -318,30 +257,8 @@ export default function Page() {
             </div>
           </div>
         </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-semibold text-[#12284C]">Confidence</h3>
-            <p className="mt-2 text-slate-600">
-              Helping children rebuild belief in themselves as learners.
-            </p>
-          </div>
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-semibold text-[#12284C]">Engagement</h3>
-            <p className="mt-2 text-slate-600">
-              Reconnecting children with learning in a way that feels meaningful and motivating.
-            </p>
-          </div>
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-            <h3 className="text-lg font-semibold text-[#12284C]">Understanding</h3>
-            <p className="mt-2 text-slate-600">
-              Built around how your child actually learns — not a generic model.
-            </p>
-          </div>
-        </div>
       </section>
 
-      {/* Why Us */}
       <section id="why" className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="flex flex-col justify-between rounded-[2rem] bg-[#12284C] p-10 text-white">
@@ -414,7 +331,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Why I started */}
       <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-22">
           <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
@@ -460,7 +376,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Transformation */}
       <section className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
         <div className="max-w-3xl">
           <p className="text-sm uppercase tracking-[0.25em] text-slate-500">
@@ -490,7 +405,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Programme */}
       <section id="programme" className="border-y border-slate-200 bg-[#F4F7FB]">
         <div className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
@@ -547,7 +461,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Schools Preview */}
       <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
           <div className="max-w-3xl">
@@ -565,10 +478,10 @@ export default function Page() {
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
             <div className="rounded-[2rem] border border-slate-200 bg-[#F8F8F6] p-8 shadow-sm">
               <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
-                Training & CPD
+                Training &amp; CPD
               </p>
               <h3 className="mt-3 text-2xl font-semibold text-[#12284C]">
-                Understanding Behaviour & Masculinity
+                Understanding Behaviour &amp; Masculinity
               </h3>
               <p className="mt-4 leading-8 text-slate-700">
                 Whole-staff CPD for schools exploring behaviour, masculinity, emotional literacy, online culture, PSHE links and practical classroom strategies.
@@ -606,7 +519,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Testimonials */}
       <section id="testimonials" className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
         <div className="max-w-3xl">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
@@ -642,7 +554,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* FAQ */}
       <section className="border-y border-slate-200 bg-[#12284C] text-white">
         <div className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
@@ -673,7 +584,6 @@ export default function Page() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-18 text-center md:px-10 lg:py-24">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">

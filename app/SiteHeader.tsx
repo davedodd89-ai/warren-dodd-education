@@ -19,7 +19,7 @@ export default function SiteHeader() {
                 Warren Dodd Education
               </p>
               <p className="mt-1 text-[11px] uppercase tracking-[0.18em] text-slate-500 md:text-[12px]">
-                Bespoke daytime tutoring • Training & CPD • Home & hybrid education
+                Bespoke daytime tutoring • Training &amp; CPD • Home &amp; hybrid education
               </p>
             </div>
           </a>
@@ -36,7 +36,7 @@ export default function SiteHeader() {
                 Programme
               </a>
               <a href="/cpd" className="transition hover:text-[#12284C]">
-                Training & CPD
+                Training &amp; CPD
               </a>
               <a href="/schools" className="transition hover:text-[#12284C]">
                 School Support

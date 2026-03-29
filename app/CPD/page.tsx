@@ -1,5 +1,5 @@
 import Image from "next/image";
-import SiteHeader from "@/components/SiteHeader";
+import SiteHeader from "../SiteHeader";
 
 export default function CpdPage() {
   const trainingAreas = [
@@ -39,16 +39,13 @@ export default function CpdPage() {
 
         <div className="max-w-4xl">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-            Training & CPD for schools
+            Training &amp; CPD for schools
           </p>
           <h1 className="mt-4 text-[2.4rem] font-semibold leading-[0.98] tracking-[-0.05em] text-[#12284C] md:text-[3.5rem] xl:text-[4rem]">
-            Understanding Behaviour & Masculinity
+            Understanding Behaviour &amp; Masculinity
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-            Whole-staff CPD built around the realities schools are facing now —
-            particularly around boys’ behaviour, emotional literacy, online
-            influence, relationships, classroom culture and the practical
-            strategies schools can use to respond well.
+            Whole-staff CPD built around the realities schools are facing now — particularly around boys’ behaviour, emotional literacy, online influence, relationships, classroom culture and the practical strategies schools can use to respond well.
           </p>
         </div>
 
@@ -69,8 +66,7 @@ export default function CpdPage() {
                 Led by David Warren Dodd
               </p>
               <p className="mt-4 text-lg leading-8 text-slate-200">
-                Lead Teacher at Crab Lane Primary School and senior Teaching and
-                Learning Coach across the North Manchester Primary Federation.
+                Lead Teacher at Crab Lane Primary School and senior Teaching and Learning Coach across the North Manchester Primary Federation.
               </p>
             </div>
           </div>
@@ -79,25 +75,16 @@ export default function CpdPage() {
             <p className="text-lg leading-8 text-slate-700">
               I have developed and delivered a whole-staff CPD programme entitled{" "}
               <span className="font-semibold text-[#12284C]">
-                Understanding Behaviour & Masculinity
+                Understanding Behaviour &amp; Masculinity
               </span>.
             </p>
 
             <p className="mt-5 text-lg leading-8 text-slate-700">
-              The training addresses a number of issues that are increasingly
-              prevalent in primary and secondary schools: the growing influence
-              of online culture on boys’ attitudes and behaviour, the widening
-              emotional literacy gap, the rising attainment gap, increasing
-              suspension and exclusion rates, the rising frequency of
-              fight-or-flight responses in school settings, and misogynistic
-              viewpoints and behaviours.
+              The training addresses a number of issues that are increasingly prevalent in primary and secondary schools: the growing influence of online culture on boys’ attitudes and behaviour, the widening emotional literacy gap, the rising attainment gap, increasing suspension and exclusion rates, the rising frequency of fight-or-flight responses in school settings, and misogynistic viewpoints and behaviours.
             </p>
 
             <p className="mt-5 text-lg leading-8 text-slate-700">
-              Over the past two years, I have also developed a highly successful
-              Year 5 and Year 6 PSHE curriculum designed to address many of
-              these factors in a practical, age-appropriate and
-              evidence-informed way.
+              Over the past two years, I have also developed a highly successful Year 5 and Year 6 PSHE curriculum designed to address many of these factors in a practical, age-appropriate and evidence-informed way.
             </p>
 
             <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -119,10 +106,7 @@ export default function CpdPage() {
                 Designed for all staff
               </p>
               <p className="mt-3 text-lg leading-8 text-slate-700">
-                The training is designed for all staff — teachers, teaching
-                assistants, lunchtime supervisors, support teams and office
-                staff — because the approaches apply to every adult-child
-                interaction within a school.
+                The training is designed for all staff — teachers, teaching assistants, lunchtime supervisors, support teams and office staff — because the approaches apply to every adult-child interaction within a school.
               </p>
             </div>
 
@@ -148,17 +132,11 @@ export default function CpdPage() {
             </div>
 
             <p className="mt-8 text-lg leading-8 text-slate-700">
-              Parent workshops are also available, and all training can be
-              tailored to reflect your school’s priorities and context.
+              Parent workshops are also available, and all training can be tailored to reflect your school’s priorities and context.
             </p>
 
             <p className="mt-5 text-lg leading-8 text-slate-700">
-              Recent delivery across the North Manchester Primary Federation has
-              been received extremely well. I am also in contact with One
-              Education Psychology Services in Manchester, Thrive in Education,
-              Manchester Metropolitan University, and a growing number of
-              primary and secondary schools interested in similar work within
-              their own settings.
+              Recent delivery across the North Manchester Primary Federation has been received extremely well. I am also in contact with One Education Psychology Services in Manchester, Thrive in Education, Manchester Metropolitan University, and a growing number of primary and secondary schools interested in similar work within their own settings.
             </p>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">

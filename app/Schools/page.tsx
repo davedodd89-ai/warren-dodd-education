@@ -1,5 +1,4 @@
-import Image from "next/image";
-import SiteHeader from "@/components/SiteHeader";
+import SiteHeader from "../SiteHeader";
 
 export default function SchoolsPage() {
   const schoolSupport = [
@@ -25,18 +24,7 @@ export default function SchoolsPage() {
     <main className="min-h-screen bg-[#F7F7F4] text-slate-900">
       <SiteHeader />
 
-      <section className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-16 pt-10 md:px-10 lg:pb-20 lg:pt-12">
-        <div className="pointer-events-none absolute inset-0 -z-10 flex items-start justify-end">
-          <Image
-            src="/logo.png"
-            alt=""
-            width={1400}
-            height={1400}
-            className="mt-[-140px] mr-[-90px] h-auto w-[720px] object-contain opacity-[0.04] md:w-[860px] xl:w-[1040px]"
-            priority
-          />
-        </div>
-
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:py-20">
         <div className="max-w-4xl">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
             School support
@@ -45,10 +33,7 @@ export default function SchoolsPage() {
             Teaching and learning mentoring, behaviour support and outreach for schools.
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-            Warren Dodd Education provides tailored support to schools through
-            mentoring, in-class support, staff coaching, behaviour guidance,
-            bespoke interventions and outreach work focused on helping schools
-            build calm, inclusive and relational learning environments.
+            Warren Dodd Education provides tailored support to schools through mentoring, in-class support, staff coaching, behaviour guidance, bespoke interventions and outreach work focused on helping schools build calm, inclusive and relational learning environments.
           </p>
         </div>
 
@@ -86,20 +71,13 @@ export default function SchoolsPage() {
               Why this matters
             </p>
             <p className="mt-6 text-lg leading-8 text-slate-200">
-              After speaking with parents at schools where I currently tutor, it is
-              clear that understanding how boys think, feel and learn is more
-              important than ever.
+              After speaking with parents at schools where I currently tutor, it is clear that understanding how boys think, feel and learn is more important than ever.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-200">
-              Over many years, my theory, practice and processes have supported
-              both boys and girls to achieve more strongly in school through
-              better relationships, stronger self-belief and clearer systems of
-              support.
+              Over many years, my theory, practice and processes have supported both boys and girls to achieve more strongly in school through better relationships, stronger self-belief and clearer systems of support.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-200">
-              This work is designed to help schools move beyond reactive
-              behaviour management and towards approaches that are relational,
-              practical and sustainable.
+              This work is designed to help schools move beyond reactive behaviour management and towards approaches that are relational, practical and sustainable.
             </p>
           </div>
         </div>
@@ -109,10 +87,7 @@ export default function SchoolsPage() {
             Flexible support
           </p>
           <p className="mt-4 text-lg leading-8 text-slate-700">
-            Support can be tailored to school needs, whether that is a focused
-            short-term piece of work, a wider mentoring role, behaviour support
-            across a phase, or a broader piece of outreach and development work
-            with staff.
+            Support can be tailored to school needs, whether that is a focused short-term piece of work, a wider mentoring role, behaviour support across a phase, or a broader piece of outreach and development work with staff.
           </p>
         </div>
 
@@ -127,7 +102,7 @@ export default function SchoolsPage() {
             href="/cpd"
             className="rounded-full border border-slate-300 bg-white px-7 py-4 text-center font-semibold text-slate-900 transition hover:bg-slate-100"
           >
-            View Training & CPD
+            View Training &amp; CPD
           </a>
         </div>
       </section>

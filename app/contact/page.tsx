@@ -1,29 +1,18 @@
-import Image from "next/image";
+import SiteHeader from "../SiteHeader";
 
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[#F7F7F4] text-slate-900">
-      <section className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-16 pt-10 md:px-10 lg:pb-20 lg:pt-12">
-        <div className="pointer-events-none absolute inset-0 -z-10 flex items-start justify-end">
-          <Image
-            src="/logo.png"
-            alt=""
-            width={1400}
-            height={1400}
-            className="mt-[-140px] mr-[-100px] h-auto w-[700px] object-contain opacity-[0.045] md:w-[860px] xl:w-[1040px]"
-            priority
-          />
-        </div>
+      <SiteHeader />
 
+      <section className="mx-auto max-w-5xl px-6 py-16 md:px-10 lg:py-20">
         <div className="max-w-4xl">
-          <p className="text-sm font-medium uppercase tracking-[0.18em] text-slate-500">
+          <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
             Contact Warren Dodd Education
           </p>
-
           <h1 className="mt-4 text-[2.4rem] font-semibold leading-[0.98] tracking-[-0.05em] text-[#12284C] md:text-[3.5rem] xl:text-[4rem]">
             Start with a simple conversation.
           </h1>
-
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
             Whether you are a parent exploring bespoke daytime tutoring, or a school interested in training, CPD, mentoring or behaviour support, I would be pleased to hear from you.
           </p>
@@ -75,7 +64,7 @@ export default function ContactPage() {
                     Hybrid education
                   </span>
                   <span className="rounded-full border border-slate-200 bg-[#F7F7F4] px-4 py-2 text-slate-700">
-                    Training & CPD
+                    Training &amp; CPD
                   </span>
                   <span className="rounded-full border border-slate-200 bg-[#F7F7F4] px-4 py-2 text-slate-700">
                     Behaviour support
@@ -121,7 +110,7 @@ export default function ContactPage() {
                 Location
               </p>
               <p className="mt-2 text-lg leading-8 text-white">
-                Cheshire • In person • Home education and hybrid education • Training & CPD
+                Cheshire • In person • Home education and hybrid education • Training &amp; CPD
               </p>
             </div>
           </div>
