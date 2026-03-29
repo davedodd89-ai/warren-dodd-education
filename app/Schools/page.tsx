@@ -51,46 +51,6 @@ export default function SchoolsPage() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-8 lg:grid-cols-[1fr_1fr]">
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-            <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
-              What this can include
-            </p>
-            <div className="mt-6 space-y-4 text-slate-700">
-              <p>In-class modelling and support for teachers</p>
-              <p>Behaviour systems and relationship-based guidance</p>
-              <p>Targeted work around SEMH and high-need behaviour</p>
-              <p>Support for inclusive classroom culture and routines</p>
-              <p>Mentoring and coaching for staff teams</p>
-              <p>Practical outreach support tailored to school context</p>
-            </div>
-          </div>
-
-          <div className="rounded-[2rem] border border-slate-200 bg-[#12284C] p-8 text-white shadow-sm">
-            <p className="text-sm uppercase tracking-[0.18em] text-slate-300">
-              Why this matters
-            </p>
-            <p className="mt-6 text-lg leading-8 text-slate-200">
-              After speaking with parents at schools where I currently tutor, it is clear that understanding how boys think, feel and learn is more important than ever.
-            </p>
-            <p className="mt-4 text-lg leading-8 text-slate-200">
-              Over many years, my theory, practice and processes have supported both boys and girls to achieve more strongly in school through better relationships, stronger self-belief and clearer systems of support.
-            </p>
-            <p className="mt-4 text-lg leading-8 text-slate-200">
-              This work is designed to help schools move beyond reactive behaviour management and towards approaches that are relational, practical and sustainable.
-            </p>
-          </div>
-        </div>
-
-        <div className="mt-10 rounded-[2rem] border border-slate-200 bg-[#F8F3E7] p-8 shadow-sm">
-          <p className="text-sm uppercase tracking-[0.18em] text-[#8B6B1F]">
-            Flexible support
-          </p>
-          <p className="mt-4 text-lg leading-8 text-slate-700">
-            Support can be tailored to school needs, whether that is a focused short-term piece of work, a wider mentoring role, behaviour support across a phase, or a broader piece of outreach and development work with staff.
-          </p>
-        </div>
-
         <div className="mt-10 flex flex-col gap-4 sm:flex-row">
           <a
             href="/contact"

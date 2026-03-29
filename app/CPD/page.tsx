@@ -101,44 +101,6 @@ export default function CpdPage() {
               ))}
             </div>
 
-            <div className="mt-8 rounded-[1.75rem] border border-[#D8B35B] bg-[#F8F3E7] p-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8B6B1F]">
-                Designed for all staff
-              </p>
-              <p className="mt-3 text-lg leading-8 text-slate-700">
-                The training is designed for all staff — teachers, teaching assistants, lunchtime supervisors, support teams and office staff — because the approaches apply to every adult-child interaction within a school.
-              </p>
-            </div>
-
-            <div className="mt-8 grid gap-4 sm:grid-cols-3">
-              <div className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-                <p className="text-lg font-semibold text-[#12284C]">Twilight</p>
-                <p className="mt-2 text-sm leading-6 text-slate-600">
-                  Focused staff session
-                </p>
-              </div>
-              <div className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-                <p className="text-lg font-semibold text-[#12284C]">Half-day</p>
-                <p className="mt-2 text-sm leading-6 text-slate-600">
-                  Deeper training and discussion
-                </p>
-              </div>
-              <div className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-                <p className="text-lg font-semibold text-[#12284C]">Full day</p>
-                <p className="mt-2 text-sm leading-6 text-slate-600">
-                  Tailored whole-school delivery
-                </p>
-              </div>
-            </div>
-
-            <p className="mt-8 text-lg leading-8 text-slate-700">
-              Parent workshops are also available, and all training can be tailored to reflect your school’s priorities and context.
-            </p>
-
-            <p className="mt-5 text-lg leading-8 text-slate-700">
-              Recent delivery across the North Manchester Primary Federation has been received extremely well. I am also in contact with One Education Psychology Services in Manchester, Thrive in Education, Manchester Metropolitan University, and a growing number of primary and secondary schools interested in similar work within their own settings.
-            </p>
-
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
                 href="/contact"
