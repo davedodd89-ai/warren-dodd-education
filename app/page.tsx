@@ -8,17 +8,6 @@ export default function Page() {
     "Psychology-informed, relationship-led teaching",
   ];
 
-  const expertise = [
-    "15 years of teaching experience across Key Stage 2 in both mainstream and SEND environments",
-    "BSc (Hons) Psychology and Primary PGCE",
-    "Qualified Teacher (QTS) with deep KS2 English and Maths expertise",
-    "Current Teacher and senior Teaching and Learning Coach across the North Manchester Primary Federation",
-    "Lead Teacher at Crab Lane Primary School",
-    "Led federation-wide CPD on behaviour, masculinity and boys’ engagement",
-    "Specialist in relationship-based teaching, motivation, self-esteem and confidence-building",
-    "Experienced in Year 6 to Year 7 transition, SEND support, behaviour, oracy and wellbeing",
-  ];
-
   const outcomes = [
     "A child who feels more confident in themselves",
     "A child who feels understood rather than judged",
@@ -114,44 +103,6 @@ export default function Page() {
     },
   ];
 
-  const trainingAreas = [
-    {
-      title: "Macro trends",
-      text: "Societal data, wider cultural shifts, and the macro patterns shaping boys’ behaviour and attitudes in schools.",
-    },
-    {
-      title: "Biology & psychology",
-      text: "The biological and psychological science of male and female brain and hormone development.",
-    },
-    {
-      title: "PSHE connections",
-      text: "How these issues connect meaningfully with PSHE curriculum content, particularly in upper Key Stage 2.",
-    },
-    {
-      title: "Practical strategies",
-      text: "Classroom and school-based approaches with a proven track record of supporting both boys and girls successfully.",
-    },
-  ];
-
-  const schoolSupport = [
-    {
-      title: "Teaching & Learning Mentor",
-      text: "Coaching and support for teachers and staff looking to strengthen classroom relationships, learning culture and pupil engagement.",
-    },
-    {
-      title: "Behaviour Management Specialist",
-      text: "Bespoke behaviour support focused on practical systems, relational consistency and approaches that improve outcomes for children and staff.",
-    },
-    {
-      title: "Outreach & In-Class Support",
-      text: "In-class modelling, staff guidance and targeted intervention work to support complex, SEMH and high-need behaviour profiles.",
-    },
-    {
-      title: "Whole-School Development",
-      text: "Support with inclusive culture, environmental thinking, positive behaviour development and adult-child interactions across the school.",
-    },
-  ];
-
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#F7F7F4] text-slate-900">
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[680px] bg-[radial-gradient(circle_at_top,rgba(18,40,76,0.06),transparent_42%),radial-gradient(circle_at_right,rgba(18,40,76,0.04),transparent_34%)]" />
@@ -187,14 +138,14 @@ export default function Page() {
                 <a href="#why" className="transition hover:text-[#12284C]">
                   Why Us
                 </a>
-                <a href="#expertise" className="transition hover:text-[#12284C]">
-                  Expertise
-                </a>
                 <a href="#programme" className="transition hover:text-[#12284C]">
                   Programme
                 </a>
-                <a href="#training-cpd" className="transition hover:text-[#12284C]">
+                <a href="/cpd" className="transition hover:text-[#12284C]">
                   Training & CPD
+                </a>
+                <a href="/schools" className="transition hover:text-[#12284C]">
+                  School Support
                 </a>
                 <a href="#testimonials" className="transition hover:text-[#12284C]">
                   Testimonials
@@ -268,7 +219,7 @@ export default function Page() {
                 Book a Consultation
               </a>
               <a
-                href="#training-cpd"
+                href="/cpd"
                 className="rounded-full border border-slate-300 bg-white px-7 py-4 text-center font-medium text-slate-900 transition hover:bg-slate-100"
               >
                 Explore Training & CPD
@@ -429,16 +380,16 @@ export default function Page() {
               </div>
 
               <div>
-                <p className="font-semibold text-[#12284C]">Driving change in education</p>
+                <p className="font-semibold text-[#12284C]">Relationship-led by design</p>
                 <p className="mt-1">
-                  Delivering CPD on behaviour, masculinity, and boys’ engagement. Supporting schools to rethink how they connect with young learners.
+                  Children work best when they feel known, respected and supported. That sits at the centre of the offer.
                 </p>
               </div>
 
               <div>
                 <p className="font-semibold text-[#12284C]">High-trust, not high-pressure</p>
                 <p className="mt-1">
-                  Children take ownership of learning in an environment built on respect and trust — not pressure or fear.
+                  Children take ownership of learning in an environment built on trust, clarity and calm support — not pressure or fear.
                 </p>
               </div>
 
@@ -498,44 +449,6 @@ export default function Page() {
               <p className="mt-4 text-lg leading-8 text-slate-700">
                 This is why Warren Dodd Education is not just about tutoring. It is about creating the kind of environment where children feel respected, understood and capable again.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Expertise */}
-      <section id="expertise" className="border-y border-slate-200 bg-[#12284C] text-white">
-        <div className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
-          <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
-            <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-slate-400">
-                About David
-              </p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-                Led by an experienced teacher and behaviour specialist.
-              </h2>
-              <p className="mt-6 text-lg leading-8 text-slate-300">
-                This is not generic tutoring. It is premium, relationship-based teaching built on respect, fairness, empathy and a deep understanding of what motivates children. The goal is not simply to push content. It is to rebuild the child underneath the learning and deliver a level of bespoke support that families can genuinely feel.
-              </p>
-              <div className="mt-8 rounded-[1.75rem] border border-[#D8B35B]/20 bg-[#D8B35B]/10 p-6 text-slate-100">
-                <p className="text-sm uppercase tracking-[0.2em] text-[#E7C87A]">
-                  Why families and schools invest
-                </p>
-                <p className="mt-3 text-lg leading-8">
-                  Because this is expert-led, highly personalised support. Children are deeply known, carefully challenged, and taught in a way that builds confidence, engagement and real long-term progress. Schools benefit from the same depth through training, mentoring and behaviour support.
-                </p>
-              </div>
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-              {expertise.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl border border-white/10 bg-white/5 px-5 py-5 text-slate-100"
-                >
-                  {item}
-                </div>
-              ))}
             </div>
           </div>
         </div>
@@ -628,145 +541,61 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Training & CPD */}
-      <section id="training-cpd" className="border-y border-slate-200 bg-white">
+      {/* Schools Preview */}
+      <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-              Training & CPD for schools
+              Support for schools
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-              Understanding Behaviour & Masculinity
+              Training, CPD and behaviour support for schools.
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-700">
-              Warren Dodd Education also provides whole-staff CPD, behaviour support, and school outreach built around the realities schools are facing now — particularly around boys’ behaviour, emotional literacy, online influence, relationships, and classroom engagement.
+              Warren Dodd Education also provides whole-staff CPD, behaviour support, mentoring and outreach for schools looking to strengthen relationships, understanding, inclusion and classroom practice.
             </p>
           </div>
 
-          <div className="mt-12 grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-            <div className="rounded-[2rem] border border-slate-200 bg-[#F8F8F6] p-6 shadow-sm">
-              <div className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white">
-                <Image
-                  src="/training-behaviour.jpg"
-                  alt="Understanding Behaviour and Masculinity training visual"
-                  width={1200}
-                  height={900}
-                  className="h-auto w-full object-cover"
-                />
-              </div>
-
-              <div className="mt-6 rounded-[1.5rem] bg-[#12284C] p-6 text-white">
-                <p className="text-sm uppercase tracking-[0.18em] text-slate-300">
-                  Led by David Warren Dodd
-                </p>
-                <p className="mt-4 text-lg leading-8 text-slate-200">
-                  Lead Teacher at Crab Lane Primary School and senior Teaching and Learning Coach across the North Manchester Primary Federation.
-                </p>
+          <div className="mt-10 grid gap-6 lg:grid-cols-2">
+            <div className="rounded-[2rem] border border-slate-200 bg-[#F8F8F6] p-8 shadow-sm">
+              <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
+                Training & CPD
+              </p>
+              <h3 className="mt-3 text-2xl font-semibold text-[#12284C]">
+                Understanding Behaviour & Masculinity
+              </h3>
+              <p className="mt-4 leading-8 text-slate-700">
+                Whole-staff CPD for schools exploring behaviour, masculinity, emotional literacy, online culture, PSHE links and practical classroom strategies.
+              </p>
+              <div className="mt-6">
+                <a
+                  href="/cpd"
+                  className="inline-flex rounded-full bg-[#12284C] px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5"
+                >
+                  View CPD Page
+                </a>
               </div>
             </div>
 
-            <div>
-              <p className="text-lg leading-8 text-slate-700">
-                I have developed and delivered a whole-staff CPD programme entitled <span className="font-semibold text-[#12284C]">Understanding Behaviour & Masculinity</span>.
+            <div className="rounded-[2rem] border border-slate-200 bg-[#F8F8F6] p-8 shadow-sm">
+              <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
+                School support
               </p>
-
-              <p className="mt-5 text-lg leading-8 text-slate-700">
-                The training addresses a number of issues that are increasingly prevalent in primary and secondary schools: the growing influence of online culture on boys’ attitudes and behaviour, the widening emotional literacy gap, the rising attainment gap, the increasing suspension and exclusion rates in schools, the rising frequency of fight-or-flight responses in school settings, and misogynistic viewpoints and behaviours.
+              <h3 className="mt-3 text-2xl font-semibold text-[#12284C]">
+                Mentoring, outreach and behaviour support
+              </h3>
+              <p className="mt-4 leading-8 text-slate-700">
+                Tailored support for schools through mentoring, in-class guidance, behaviour support and wider outreach work focused on calm, inclusive and relational practice.
               </p>
-
-              <p className="mt-5 text-lg leading-8 text-slate-700">
-                Over the past two years, I have also developed a highly successful Year 5 and Year 6 PSHE curriculum designed to address many of these factors in a practical, age-appropriate and evidence-informed way.
-              </p>
-
-              <div className="mt-8 grid gap-4 md:grid-cols-2">
-                {trainingAreas.map((item) => (
-                  <div
-                    key={item.title}
-                    className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm"
-                  >
-                    <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
-                      {item.title}
-                    </p>
-                    <p className="mt-3 leading-7 text-slate-700">{item.text}</p>
-                  </div>
-                ))}
+              <div className="mt-6">
+                <a
+                  href="/schools"
+                  className="inline-flex rounded-full border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-900 transition hover:bg-slate-100"
+                >
+                  View School Support
+                </a>
               </div>
-
-              <div className="mt-8 rounded-[1.75rem] border border-[#D8B35B] bg-[#F8F3E7] p-6">
-                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8B6B1F]">
-                  Designed for all staff
-                </p>
-                <p className="mt-3 text-lg leading-8 text-slate-700">
-                  The training is designed for all staff — teachers, teaching assistants, lunchtime supervisors, support teams and office staff — because the approaches apply to every adult-child interaction within a school.
-                </p>
-              </div>
-
-              <div className="mt-8 grid gap-4 sm:grid-cols-3">
-                <div className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-                  <p className="text-lg font-semibold text-[#12284C]">Twilight</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-600">
-                    Focused staff session
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-                  <p className="text-lg font-semibold text-[#12284C]">Half-day</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-600">
-                    Deeper training and discussion
-                  </p>
-                </div>
-                <div className="rounded-2xl border border-slate-200 bg-white p-5 text-center shadow-sm">
-                  <p className="text-lg font-semibold text-[#12284C]">Full day</p>
-                  <p className="mt-2 text-sm leading-6 text-slate-600">
-                    Tailored whole-school delivery
-                  </p>
-                </div>
-              </div>
-
-              <p className="mt-8 text-lg leading-8 text-slate-700">
-                Parent workshops are also available, and all training can be tailored to reflect your school’s priorities.
-              </p>
-
-              <p className="mt-5 text-lg leading-8 text-slate-700">
-                Recent delivery across the North Manchester Primary Federation has been received extremely well. I am also in contact with One Education Psychology Services in Manchester, Thrive in Education, Manchester Metropolitan University, and a growing number of primary and secondary schools interested in similar work within their own settings.
-              </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* School Support & Outreach */}
-      <section className="bg-[#F4F7FB]">
-        <div className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
-          <div className="max-w-3xl">
-            <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-              School support, mentoring and outreach
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-              Teaching and learning mentoring, behaviour support and outreach services for schools.
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-slate-700">
-              Warren Dodd Education also provides tailored support to schools through behaviour mentoring, in-class support, staff coaching, bespoke interventions, and wider outreach work focused on helping schools build calm, inclusive and relational learning environments.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {schoolSupport.map((item) => (
-              <div
-                key={item.title}
-                className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm"
-              >
-                <h3 className="text-2xl font-semibold text-[#12284C]">
-                  {item.title}
-                </h3>
-                <p className="mt-4 leading-8 text-slate-700">{item.text}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-10 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-            <p className="text-lg leading-8 text-slate-700">
-              After speaking with parents at schools where I currently tutor, it is clear that understanding how boys think, feel and learn is more important than ever. Over many years, my theory, practice and processes have supported both boys and girls to achieve more strongly in school through better relationships, stronger self-belief and clearer systems of support.
-            </p>
           </div>
         </div>
       </section>
