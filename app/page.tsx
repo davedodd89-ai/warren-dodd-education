@@ -154,7 +154,7 @@ export default function Page() {
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#F7F7F4] text-slate-900">
-      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[720px] bg-[radial-gradient(circle_at_top,rgba(18,40,76,0.06),transparent_42%),radial-gradient(circle_at_right,rgba(18,40,76,0.04),transparent_34%)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[680px] bg-[radial-gradient(circle_at_top,rgba(18,40,76,0.06),transparent_42%),radial-gradient(circle_at_right,rgba(18,40,76,0.04),transparent_34%)]" />
 
       {/* Header */}
       <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-[#F7F7F4]/95 backdrop-blur">
@@ -166,11 +166,11 @@ export default function Page() {
                 alt="Warren Dodd Education"
                 width={260}
                 height={260}
-                className="h-[108px] w-[108px] flex-none object-contain md:h-[128px] md:w-[128px]"
+                className="h-[118px] w-[118px] flex-none object-contain md:h-[138px] md:w-[138px]"
                 priority
               />
               <div className="min-w-0">
-                <p className="truncate text-[1.8rem] font-semibold tracking-[-0.03em] text-[#12284C] md:text-[2.2rem]">
+                <p className="truncate text-[1.7rem] font-semibold tracking-[-0.03em] text-[#12284C] md:text-[2rem]">
                   Warren Dodd Education
                 </p>
                 <p className="mt-1 text-[11px] uppercase tracking-[0.18em] text-slate-500 md:text-[12px]">
@@ -199,13 +199,13 @@ export default function Page() {
                 <a href="#testimonials" className="transition hover:text-[#12284C]">
                   Testimonials
                 </a>
-                <a href="#contact" className="transition hover:text-[#12284C]">
+                <a href="/contact" className="transition hover:text-[#12284C]">
                   Contact
                 </a>
               </nav>
 
               <a
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-[#12284C] px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-300/40 transition hover:-translate-y-0.5"
               >
                 Make an Enquiry
@@ -237,7 +237,7 @@ export default function Page() {
             </div>
 
             <h1 className="mt-5 max-w-5xl text-[2.3rem] font-semibold leading-[0.98] tracking-[-0.05em] text-[#12284C] md:text-[3.3rem] lg:text-[4rem] xl:text-[4.35rem]">
-              Confidence, self-esteem and resilience woven into how children learn.
+              Bespoke daytime tutoring that builds confidence, self-belief and resilience.
             </h1>
 
             <p className="mt-4 max-w-3xl text-[1.15rem] font-medium leading-8 text-slate-700 md:text-[1.35rem]">
@@ -260,37 +260,18 @@ export default function Page() {
               </span>
             </div>
 
-            <div className="mt-6 grid gap-4 md:grid-cols-2">
-              <div className="rounded-[1.4rem] border border-slate-200 bg-white/95 p-5 shadow-sm">
-                <p className="text-base leading-7 text-slate-800">
-                  “David has built our son’s confidence enormously. It has been a joy to watch him approach learning with such positivity and belief in himself.”
-                </p>
-                <p className="mt-3 text-xs uppercase tracking-[0.18em] text-slate-500">
-                  Parent testimonial
-                </p>
-              </div>
-              <div className="rounded-[1.4rem] border border-slate-200 bg-white/95 p-5 shadow-sm">
-                <p className="text-base leading-7 text-slate-800">
-                  “From day one, our son felt that David was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.”
-                </p>
-                <p className="mt-3 text-xs uppercase tracking-[0.18em] text-slate-500">
-                  Parent testimonial
-                </p>
-              </div>
-            </div>
-
             <div className="mt-6 flex flex-col gap-4 sm:flex-row">
               <a
-                href="#contact"
+                href="/contact"
                 className="rounded-full bg-[#12284C] px-7 py-4 text-center font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
               >
                 Book a Consultation
               </a>
               <a
-                href="#programme"
+                href="#training-cpd"
                 className="rounded-full border border-slate-300 bg-white px-7 py-4 text-center font-medium text-slate-900 transition hover:bg-slate-100"
               >
-                Explore the Programme
+                Explore Training & CPD
               </a>
             </div>
           </div>
@@ -317,7 +298,7 @@ export default function Page() {
                     Calm, personal, premium support for children aged 8–11.
                   </p>
                   <p className="mt-2 text-sm leading-6 text-slate-600">
-                    Designed for families seeking depth, care and real progress in confidence, self-belief and learning.
+                    Designed for families seeking depth, care and real progress.
                   </p>
                 </div>
               </div>
@@ -636,7 +617,7 @@ export default function Page() {
               </div>
               <div className="px-8 pb-8">
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="inline-flex w-full items-center justify-center rounded-full bg-[#12284C] px-6 py-4 text-center font-semibold text-white transition hover:-translate-y-0.5"
                 >
                   Enquire About a Place
@@ -857,8 +838,8 @@ export default function Page() {
         </div>
       </section>
 
-      {/* Contact */}
-      <section id="contact" className="bg-white">
+      {/* CTA */}
+      <section className="bg-white">
         <div className="mx-auto max-w-5xl px-6 py-18 text-center md:px-10 lg:py-24">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
             Next step
@@ -869,23 +850,14 @@ export default function Page() {
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
             Whether you are a parent exploring bespoke daytime tutoring, or a school interested in CPD, behaviour support, mentoring or outreach, I would be pleased to discuss what Warren Dodd Education could offer.
           </p>
-          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
+          <div className="mt-10">
             <a
-              href="mailto:Warrendoddeducation@outlook.com"
-              className="rounded-full bg-[#12284C] px-8 py-4 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
+              href="/contact"
+              className="inline-flex rounded-full bg-[#12284C] px-8 py-4 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
             >
-              Email Now
-            </a>
-            <a
-              href="tel:07512341730"
-              className="rounded-full border border-slate-300 px-8 py-4 font-semibold text-slate-900 transition hover:bg-slate-50"
-            >
-              Call 07512 341730
+              Go to Contact Page
             </a>
           </div>
-          <p className="mt-6 text-sm text-slate-500">
-            Cheshire • In person • Home education and hybrid education • Training & CPD • Limited places available
-          </p>
         </div>
       </section>
 
