@@ -9,7 +9,8 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Warren Dodd Education",
-  description: "Bespoke daytime tutoring, training and CPD for schools, and home education support.",
+  description:
+    "Bespoke daytime tutoring, training and CPD, and school support through Warren Dodd Education.",
 };
 
 export default function RootLayout({
