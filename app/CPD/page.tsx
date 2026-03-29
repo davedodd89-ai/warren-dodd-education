@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SiteHeader from "@/components/SiteHeader";
 
 export default function CpdPage() {
   const trainingAreas = [
@@ -22,6 +23,8 @@ export default function CpdPage() {
 
   return (
     <main className="min-h-screen bg-[#F7F7F4] text-slate-900">
+      <SiteHeader />
+
       <section className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-16 pt-10 md:px-10 lg:pb-20 lg:pt-12">
         <div className="pointer-events-none absolute inset-0 -z-10 flex items-start justify-end">
           <Image
@@ -74,12 +77,10 @@ export default function CpdPage() {
 
           <div>
             <p className="text-lg leading-8 text-slate-700">
-              I have developed and delivered a whole-staff CPD programme
-              entitled{" "}
+              I have developed and delivered a whole-staff CPD programme entitled{" "}
               <span className="font-semibold text-[#12284C]">
                 Understanding Behaviour & Masculinity
-              </span>
-              .
+              </span>.
             </p>
 
             <p className="mt-5 text-lg leading-8 text-slate-700">
@@ -93,9 +94,9 @@ export default function CpdPage() {
             </p>
 
             <p className="mt-5 text-lg leading-8 text-slate-700">
-              Over the past two years, I have also developed a highly
-              successful Year 5 and Year 6 PSHE curriculum designed to address
-              many of these factors in a practical, age-appropriate and
+              Over the past two years, I have also developed a highly successful
+              Year 5 and Year 6 PSHE curriculum designed to address many of
+              these factors in a practical, age-appropriate and
               evidence-informed way.
             </p>
 
@@ -152,8 +153,8 @@ export default function CpdPage() {
             </p>
 
             <p className="mt-5 text-lg leading-8 text-slate-700">
-              Recent delivery across the North Manchester Primary Federation
-              has been received extremely well. I am also in contact with One
+              Recent delivery across the North Manchester Primary Federation has
+              been received extremely well. I am also in contact with One
               Education Psychology Services in Manchester, Thrive in Education,
               Manchester Metropolitan University, and a growing number of
               primary and secondary schools interested in similar work within

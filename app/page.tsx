@@ -37,11 +37,17 @@ export default function Page() {
       ],
     },
     {
-      child: "Past pupil ‘D’",
-      quotes: [
-        "We are hugely grateful for your work with ‘D’. You are his best teacher he has ever had and have somehow instilled a love for his learning.",
-        "He genuinely looks forward to the sessions and wants to go. You have become so popular in our house we have made up a tongue twister about you, Mr Dodd!",
-      ],
+      {
+  child: "Past pupil ‘D’",
+  quotes: [
+    "We are hugely grateful for your work with 'D'. You are his best teacher he’s ever had and have somehow instilled a love for his learning.",
+    "You must have superpowers! He genuinely looks forward to the sessions and wants to go.",
+    "You are unique and thank you for being who you are and what you do, helping 'D'.",
+    "He holds you in the highest regards, so passionately.",
+    "You have become so popular in our house we have made up a tongue twister about you, Mr Dodd!",
+    "You help 'D' thrive and you are a favourite in the house and in the family. You are fab.",
+  ],
+}
     },
     {
       child: "Current pupil ‘B’",

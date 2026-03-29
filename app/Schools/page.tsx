@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SiteHeader from "@/components/SiteHeader";
 
 export default function SchoolsPage() {
   const schoolSupport = [
@@ -22,6 +23,8 @@ export default function SchoolsPage() {
 
   return (
     <main className="min-h-screen bg-[#F7F7F4] text-slate-900">
+      <SiteHeader />
+
       <section className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-16 pt-10 md:px-10 lg:pb-20 lg:pt-12">
         <div className="pointer-events-none absolute inset-0 -z-10 flex items-start justify-end">
           <Image
@@ -83,9 +86,9 @@ export default function SchoolsPage() {
               Why this matters
             </p>
             <p className="mt-6 text-lg leading-8 text-slate-200">
-              After speaking with parents at schools where I currently tutor,
-              it is clear that understanding how boys think, feel and learn is
-              more important than ever.
+              After speaking with parents at schools where I currently tutor, it is
+              clear that understanding how boys think, feel and learn is more
+              important than ever.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-200">
               Over many years, my theory, practice and processes have supported
@@ -108,8 +111,8 @@ export default function SchoolsPage() {
           <p className="mt-4 text-lg leading-8 text-slate-700">
             Support can be tailored to school needs, whether that is a focused
             short-term piece of work, a wider mentoring role, behaviour support
-            across a phase, or a broader piece of outreach and development
-            work with staff.
+            across a phase, or a broader piece of outreach and development work
+            with staff.
           </p>
         </div>
 
