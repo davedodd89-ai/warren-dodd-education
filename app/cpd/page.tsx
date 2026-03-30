@@ -26,6 +26,22 @@ export default function CPDPage() {
     "Support approaches that strengthen inclusion",
   ];
 
+  const impactPoints = [
+    "Staff repeatedly said the training gave them a clearer lens for understanding boys’ behaviour, shame responses, emotional literacy and online influence.",
+    "The most frequently cited learning point was the understanding that humiliation is often a core fear behind challenging behaviour, and that many incidents are driven by shame and defence rather than simple defiance.",
+    "The statistical evidence was described as surprising, shocking and powerful, helping connect classroom experience with wider social and developmental patterns.",
+    "Staff committed to immediate changes in practice, including calmer behaviour responses, stronger relationship-building and more explicit emotional vocabulary teaching.",
+  ];
+
+  const testimonials = [
+    "This was one of the most insightful and up-to-date reflections of the world boys are growing up in.",
+    "This has opened my eyes and made me reflect deeply on my practice.",
+    "The non-humiliation response section was brilliant and actually quite moving.",
+    "Very high standard training. Engaging, passionate and highly relevant.",
+    "The statistics were powerful and the role play made the strategies easy to apply.",
+    "Very informative and extremely relevant to what is happening in society now.",
+  ];
+
   const outcomes = [
     "Greater staff understanding and confidence",
     "Stronger relational practice across school",
@@ -47,7 +63,7 @@ export default function CPDPage() {
             Training, CPD and behaviour support for schools.
           </h1>
           <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-700 md:text-xl">
-            Warren Dodd Education provides whole-staff CPD, behaviour support, mentoring and outreach for schools looking to strengthen relationships, understanding, inclusion and classroom practice.
+            Whole-staff CPD, behaviour support, mentoring and outreach designed to strengthen relationships, understanding, inclusion and calm classroom practice.
           </p>
         </div>
 
@@ -91,10 +107,7 @@ export default function CPDPage() {
               Understanding Behaviour &amp; Masculinity
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-700">
-              A whole-staff CPD offer that explores behaviour through a wider lens — bringing together relationships, masculinity, emotional development, online culture, PSHE links and practical classroom strategy.
-            </p>
-            <p className="mt-4 text-lg leading-8 text-slate-700">
-              The aim is not simply to manage behaviour more effectively, but to understand children more deeply and respond in ways that strengthen trust, belonging and long-term engagement.
+              A whole-staff CPD offer that explores behaviour through the lenses of relationships, masculinity, emotional development, online culture, PSHE links and practical classroom strategy.
             </p>
           </div>
 
@@ -121,40 +134,28 @@ export default function CPDPage() {
           <div className="grid gap-8 lg:grid-cols-2">
             <div className="rounded-[2rem] bg-[#12284C] p-8 text-white">
               <p className="text-sm uppercase tracking-[0.18em] text-slate-300">
-                Who this is for
+                Training impact
               </p>
               <div className="mt-6 space-y-5 text-slate-200">
-                <p>Senior leaders looking to strengthen behaviour culture</p>
-                <p>Pastoral teams and inclusion leads</p>
-                <p>Staff teams wanting practical and thoughtful CPD</p>
-                <p>Schools looking for deeper understanding around boys, behaviour and belonging</p>
-                <p>Settings wanting mentoring, outreach or behaviour support alongside training</p>
+                {impactPoints.map((item) => (
+                  <p key={item}>{item}</p>
+                ))}
               </div>
             </div>
 
             <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
               <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
-                Delivery options
+                Staff reflections
               </p>
-              <div className="mt-6 space-y-6 text-slate-700">
-                <div>
-                  <p className="font-semibold text-[#12284C]">Whole-staff training</p>
-                  <p className="mt-1 leading-7">
-                    INSET, twilight or staff-meeting delivery shaped around your school context.
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-[#12284C]">Targeted support</p>
-                  <p className="mt-1 leading-7">
-                    Follow-up work for identified pupils, staff teams or behaviour priorities.
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-[#12284C]">Mentoring and outreach</p>
-                  <p className="mt-1 leading-7">
-                    Relationship-led support that helps children feel understood, supported and able to re-engage.
-                  </p>
-                </div>
+              <div className="mt-6 space-y-4">
+                {testimonials.map((quote) => (
+                  <div
+                    key={quote}
+                    className="rounded-2xl border border-slate-200 bg-[#F8F8F6] p-5"
+                  >
+                    <p className="italic leading-7 text-slate-700">“{quote}”</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -164,7 +165,7 @@ export default function CPDPage() {
       <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:py-20">
         <div className="max-w-4xl">
           <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
-            What schools can expect
+            Outcomes for schools
           </p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
             Practical support grounded in relationships, understanding and real school context.
