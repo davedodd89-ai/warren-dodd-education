@@ -109,6 +109,9 @@ export default function CPDPage() {
             <p className="mt-6 text-lg leading-8 text-slate-700">
               A whole-staff CPD offer that explores behaviour through the lenses of relationships, masculinity, emotional development, online culture, PSHE links and practical classroom strategy.
             </p>
+            <p className="mt-4 text-lg leading-8 text-slate-700">
+              The aim is not simply to manage behaviour more effectively, but to understand children more deeply and respond in ways that strengthen trust, belonging and long-term engagement.
+            </p>
           </div>
 
           <div className="rounded-[2rem] border border-[#D8C28A] bg-[#F8F3E7] p-8 shadow-sm">
@@ -136,6 +139,9 @@ export default function CPDPage() {
               <p className="text-sm uppercase tracking-[0.18em] text-slate-300">
                 Training impact
               </p>
+              <h3 className="mt-3 text-3xl font-semibold text-white">
+                What staff took from the training
+              </h3>
               <div className="mt-6 space-y-5 text-slate-200">
                 {impactPoints.map((item) => (
                   <p key={item}>{item}</p>
@@ -147,6 +153,9 @@ export default function CPDPage() {
               <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
                 Staff reflections
               </p>
+              <h3 className="mt-3 text-3xl font-semibold text-[#12284C]">
+                What staff said after the training
+              </h3>
               <div className="mt-6 space-y-4">
                 {testimonials.map((quote) => (
                   <div
