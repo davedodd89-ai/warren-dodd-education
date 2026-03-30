@@ -2,6 +2,22 @@ import Image from "next/image";
 import SiteHeader from "../SiteHeader";
 
 export default function CPDPage() {
+  const testimonials = [
+    "This was one of the most insightful and up-to-date reflections of the world boys are growing up in.",
+    "This has opened my eyes and made me reflect deeply on my practice.",
+    "The non-humiliation response section was brilliant and actually quite moving.",
+    "Very high standard training. Engaging, passionate and highly relevant.",
+    "The statistics were powerful and the role play made the strategies easy to apply.",
+    "Very informative and extremely relevant to what is happening in society now.",
+  ];
+
+  const impactPoints = [
+    "Staff repeatedly said the training gave them a clearer lens for understanding boys’ behaviour, shame responses, emotional literacy and online influence.",
+    "The most frequently cited learning point was that humiliation is often a core fear behind challenging behaviour, and that many incidents are driven by shame and defence rather than simple defiance.",
+    "The statistical evidence was described as surprising, shocking and powerful, helping connect classroom experience with wider social and developmental patterns.",
+    "Staff identified immediate next steps including calmer behaviour responses, stronger relationship-building and more explicit teaching of emotional vocabulary.",
+  ];
+
   const offers = [
     {
       title: "Whole-staff CPD",
@@ -24,30 +40,6 @@ export default function CPDPage() {
     "Online culture, influence and PSHE links",
     "Practical classroom strategies for calm and clarity",
     "Support approaches that strengthen inclusion",
-  ];
-
-  const impactPoints = [
-    "Staff repeatedly said the training gave them a clearer lens for understanding boys’ behaviour, shame responses, emotional literacy and online influence.",
-    "The most frequently cited learning point was the understanding that humiliation is often a core fear behind challenging behaviour, and that many incidents are driven by shame and defence rather than simple defiance.",
-    "The statistical evidence was described as surprising, shocking and powerful, helping connect classroom experience with wider social and developmental patterns.",
-    "Staff committed to immediate changes in practice, including calmer behaviour responses, stronger relationship-building and more explicit emotional vocabulary teaching.",
-  ];
-
-  const testimonials = [
-    "This was one of the most insightful and up-to-date reflections of the world boys are growing up in.",
-    "This has opened my eyes and made me reflect deeply on my practice.",
-    "The non-humiliation response section was brilliant and actually quite moving.",
-    "Very high standard training. Engaging, passionate and highly relevant.",
-    "The statistics were powerful and the role play made the strategies easy to apply.",
-    "Very informative and extremely relevant to what is happening in society now.",
-  ];
-
-  const outcomes = [
-    "Greater staff understanding and confidence",
-    "Stronger relational practice across school",
-    "Improved consistency in behaviour responses",
-    "More thoughtful support for boys and vulnerable pupils",
-    "A calmer, more inclusive learning culture",
   ];
 
   return (
@@ -76,6 +68,43 @@ export default function CPDPage() {
             className="h-auto w-full object-cover"
             priority
           />
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 pb-16 md:px-10 lg:pb-20">
+        <div className="grid gap-8 lg:grid-cols-2">
+          <div className="rounded-[2rem] bg-[#12284C] p-8 text-white">
+            <p className="text-sm uppercase tracking-[0.18em] text-slate-300">
+              Training impact
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold">
+              What staff took from the training
+            </h2>
+            <div className="mt-6 space-y-5 text-slate-200">
+              {impactPoints.map((item) => (
+                <p key={item}>{item}</p>
+              ))}
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+            <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
+              Staff reflections
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold text-[#12284C]">
+              What staff said after the training
+            </h2>
+            <div className="mt-6 space-y-4">
+              {testimonials.map((quote) => (
+                <div
+                  key={quote}
+                  className="rounded-2xl border border-slate-200 bg-[#F8F8F6] p-5"
+                >
+                  <p className="italic leading-7 text-slate-700">“{quote}”</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -129,67 +158,6 @@ export default function CPDPage() {
               ))}
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="border-y border-slate-200 bg-[#F4F7FB]">
-        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:py-20">
-          <div className="grid gap-8 lg:grid-cols-2">
-            <div className="rounded-[2rem] bg-[#12284C] p-8 text-white">
-              <p className="text-sm uppercase tracking-[0.18em] text-slate-300">
-                Training impact
-              </p>
-              <h3 className="mt-3 text-3xl font-semibold text-white">
-                What staff took from the training
-              </h3>
-              <div className="mt-6 space-y-5 text-slate-200">
-                {impactPoints.map((item) => (
-                  <p key={item}>{item}</p>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
-                Staff reflections
-              </p>
-              <h3 className="mt-3 text-3xl font-semibold text-[#12284C]">
-                What staff said after the training
-              </h3>
-              <div className="mt-6 space-y-4">
-                {testimonials.map((quote) => (
-                  <div
-                    key={quote}
-                    className="rounded-2xl border border-slate-200 bg-[#F8F8F6] p-5"
-                  >
-                    <p className="italic leading-7 text-slate-700">“{quote}”</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 lg:py-20">
-        <div className="max-w-4xl">
-          <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
-            Outcomes for schools
-          </p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-            Practical support grounded in relationships, understanding and real school context.
-          </h2>
-        </div>
-
-        <div className="mt-10 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-          {outcomes.map((item) => (
-            <div
-              key={item}
-              className="rounded-[1.8rem] border border-slate-200 bg-white px-6 py-5 shadow-sm"
-            >
-              {item}
-            </div>
-          ))}
         </div>
       </section>
 
