@@ -218,7 +218,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="problem" className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
+      <section id="problem" className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
             <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
@@ -259,7 +259,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="why" className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
+      <section id="why" className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="flex flex-col justify-between rounded-[2rem] bg-[#12284C] p-10 text-white">
             <div>
@@ -332,7 +332,7 @@ export default function Page() {
       </section>
 
       <section className="border-y border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-22">
+        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
             <div className="rounded-[2rem] bg-[#12284C] p-8 text-white">
               <video
@@ -376,7 +376,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
+      <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
         <div className="max-w-3xl">
           <p className="text-sm uppercase tracking-[0.25em] text-slate-500">
             What changes
@@ -406,7 +406,7 @@ export default function Page() {
       </section>
 
       <section id="programme" className="border-y border-slate-200 bg-[#F4F7FB]">
-        <div className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
+        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
             <div>
               <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
@@ -462,7 +462,7 @@ export default function Page() {
       </section>
 
       <section className="border-y border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
+        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
           <div className="max-w-3xl">
             <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
               Support for schools
@@ -519,7 +519,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="testimonials" className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
+      <section id="testimonials" className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
         <div className="max-w-3xl">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
             What families say
@@ -555,7 +555,7 @@ export default function Page() {
       </section>
 
       <section className="border-y border-slate-200 bg-[#12284C] text-white">
-        <div className="mx-auto max-w-7xl px-6 py-18 md:px-10 lg:py-24">
+        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.2em] text-slate-400">
@@ -585,7 +585,7 @@ export default function Page() {
       </section>
 
       <section className="bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-18 text-center md:px-10 lg:py-24">
+        <div className="mx-auto max-w-5xl px-6 py-20 text-center md:px-10 lg:py-24">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
             Next step
           </p>
