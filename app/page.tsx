@@ -186,8 +186,8 @@ export default function Page() {
                 Parent feedback
               </p>
               <p className="mt-4 text-lg leading-8 text-slate-800">
-                “From day one, our son felt that David was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.”
-              </p>
+  “From the outset, David took the time to fully understand our son: his struggles, his interests, what motivates him, and what holds him back. Connection and understanding the child clearly come first. This is why he is so successful.”
+</p>
             </div>
 
 
