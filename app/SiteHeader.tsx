@@ -17,7 +17,7 @@ export default function SiteHeader() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-[#F7F7F4]/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-[#F7F7F4]/90 shadow-[0_8px_30px_rgba(15,23,42,0.06)] backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-4 py-3 md:px-8">
         <div className="flex items-center justify-between gap-4">
           <a href="/" className="flex items-center">
