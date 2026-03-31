@@ -20,24 +20,15 @@ export default function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-[#F7F7F4]/95 backdrop-blur">
       <div className="mx-auto max-w-7xl px-4 py-3 md:px-8">
         <div className="flex items-center justify-between gap-3">
-          <a href="/" className="flex min-w-0 items-center gap-3">
+          <a href="/" className="flex items-center">
             <Image
               src="/logo.png"
               alt="Warren Dodd Education"
-              width={72}
-              height={72}
-              className="h-14 w-14 flex-none object-contain sm:h-16 sm:w-16"
+              width={180}
+              height={180}
+              className="h-14 w-auto object-contain sm:h-16"
               priority
             />
-
-            <div className="min-w-0">
-              <p className="truncate text-[1.45rem] font-semibold leading-none tracking-[-0.04em] text-[#12284C] sm:text-[1.85rem]">
-                Warren Dodd Education
-              </p>
-              <p className="hidden text-[0.72rem] uppercase tracking-[0.18em] text-slate-500 md:block">
-                Bespoke daytime tutoring • training &amp; CPD • home &amp; hybrid education
-              </p>
-            </div>
           </a>
 
           <div className="hidden xl:flex items-center gap-4">

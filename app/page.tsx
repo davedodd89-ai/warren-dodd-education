@@ -129,25 +129,23 @@ export default function Page() {
 
       <SiteHeader />
 
-      <section className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-12 pt-4 md:px-10 lg:pb-16 lg:pt-6">
-        <div className="pointer-events-none absolute inset-0 -z-10 flex items-start justify-end">
-          <Image
-            src="/logo.png"
-            alt=""
-            width={1500}
-            height={1500}
-            className="mt-[-150px] mr-[-120px] h-auto w-[760px] object-contain opacity-[0.05] md:w-[920px] xl:w-[1120px]"
-            priority
-          />
-        </div>
-
-        <div className="grid items-end gap-8 lg:grid-cols-[1.28fr_0.72fr] lg:gap-10">
-          <div className="relative z-10 max-w-4xl">
-            <div className="inline-flex max-w-full flex-wrap items-center rounded-3xl border border-slate-200 bg-white/94 px-4 py-3 text-sm font-medium leading-6 text-slate-700 shadow-sm">
-              <span>Bespoke daytime tutoring for children aged 8–11</span>
-              <span className="mx-2 text-slate-300">•</span>
-              <span>Home education and hybrid education families</span>
+      <section className="mx-auto max-w-7xl px-6 pb-12 pt-6 md:px-10 lg:pb-16 lg:pt-8">
+        <div className="grid items-end gap-10 lg:grid-cols-[1.28fr_0.72fr] lg:gap-10">
+          <div className="relative z-10 mx-auto max-w-4xl text-center lg:mx-0 lg:text-left">
+            <div className="mb-6 flex justify-center lg:justify-start">
+              <Image
+                src="/logo.png"
+                alt="Warren Dodd Education"
+                width={380}
+                height={380}
+                className="h-auto w-[180px] object-contain sm:w-[220px] md:w-[260px]"
+                priority
+              />
             </div>
+
+            <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+              Bespoke daytime tutoring • Training &amp; CPD • Home &amp; hybrid education
+            </p>
 
             <p className="mt-6 text-xl font-medium leading-9 text-[#12284C] md:text-2xl">
               It’s not <span className="font-semibold text-[#D8B35B]">what</span> we learn.
@@ -167,7 +165,7 @@ export default function Page() {
               A premium, relationship-led and psychology-informed approach to daytime tutoring that helps children feel more secure, more capable and more engaged in learning. Built on 15 years of teaching experience, a degree in Psychology, and a deep understanding of how children learn, connect and grow in confidence.
             </p>
 
-            <div className="mt-6 flex flex-wrap items-center gap-3 text-sm">
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm lg:justify-start">
               <span className="rounded-full border border-emerald-300 bg-emerald-50 px-4 py-2 text-emerald-800">
                 Maximum 4 children
               </span>
@@ -179,7 +177,7 @@ export default function Page() {
               </span>
             </div>
 
-            <div className="mt-8 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="mt-8 rounded-[2rem] border border-slate-200 bg-white p-6 text-left shadow-sm">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
                 Parent feedback
               </p>
@@ -188,7 +186,7 @@ export default function Page() {
               </p>
             </div>
 
-            <div className="mt-6 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
               <a
                 href="/contact"
                 className="rounded-full bg-[#12284C] px-7 py-4 text-center font-semibold text-white shadow-xl transition hover:-translate-y-0.5"

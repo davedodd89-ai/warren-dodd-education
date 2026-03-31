@@ -9,3 +9,24 @@ body {
   background: #f7f7f4;
   color: #0f172a;
 }
+@keyframes logoFloat {
+  0% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateX(2deg) rotateY(-2deg);
+  }
+  100% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+}
+
+.logo-float {
+  animation: logoFloat 6s ease-in-out infinite;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.logo-glow {
+  filter: drop-shadow(0 18px 30px rgba(18, 40, 76, 0.12));
+}
