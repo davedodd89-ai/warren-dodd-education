@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SiteHeader from "./SiteHeader";
+import HomeschoolParentSupportSection from "./HomeschoolParentSupportSection";
 
 export default function Page() {
   const trustPoints = [
@@ -24,6 +25,15 @@ export default function Page() {
     "Reflection, praise, next steps and a sense of success",
   ];
 
+  const whoItsFor = [
+    "have lost confidence in learning",
+    "struggle in busy classroom settings",
+    "avoid or resist schoolwork",
+    "benefit from smaller, calmer and more structured teaching",
+    "need closer support, clearer routines and stronger relationships",
+    "are in home education or hybrid education and need more than standard tutoring",
+  ];
+
   const testimonials = [
     {
       child: "Current pupil, aged 8",
@@ -32,6 +42,11 @@ export default function Page() {
         "From the outset, David took the time to fully understand our son: his struggles, his interests, what motivates him, and what holds him back. Connection and understanding the child clearly come first, and the teaching follows naturally. This is why he is so successful.",
         "Every session feels tailored specifically to our son, and he genuinely looks forward to their time together, which speaks volumes.",
         "David brings wonderful variety to each session, weaving our son’s interests into the learning in creative and meaningful ways.",
+      ],
+    },
+    {
+      child: "Parent of current pupil, aged 8",
+      quotes: [
         "Perhaps most importantly, David has built our son’s confidence enormously. It has been a joy to watch him approach new topics with such positivity and belief in himself.",
         "From day one, our son felt that David was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.",
         "David is an absolute credit to the teaching profession. We feel incredibly lucky to have found him and cannot recommend him highly enough.",
@@ -99,7 +114,7 @@ export default function Page() {
     {
       question: "When does it run?",
       answer:
-        "This is daytime provision, not an after-school one-hour slot. It is designed to fit families using home education and hybrid education arrangements.",
+        "Sessions run in the daytime for families using home education or hybrid education. This is not a one-hour after-school tutor slot.",
     },
     {
       question: "Why are places limited?",
@@ -114,7 +129,7 @@ export default function Page() {
 
       <SiteHeader />
 
-      <section className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-12 pt-2 md:px-10 lg:pb-16 lg:pt-3">
+      <section className="relative mx-auto max-w-7xl overflow-hidden px-6 pb-12 pt-4 md:px-10 lg:pb-16 lg:pt-6">
         <div className="pointer-events-none absolute inset-0 -z-10 flex items-start justify-end">
           <Image
             src="/logo.png"
@@ -128,22 +143,28 @@ export default function Page() {
 
         <div className="grid items-end gap-8 lg:grid-cols-[1.28fr_0.72fr] lg:gap-10">
           <div className="relative z-10 max-w-4xl">
-            <div className="inline-flex flex-wrap items-center rounded-full border border-slate-200 bg-white/94 px-4 py-2.5 text-sm font-medium text-slate-700 shadow-sm">
+            <div className="inline-flex max-w-full flex-wrap items-center rounded-3xl border border-slate-200 bg-white/94 px-4 py-3 text-sm font-medium leading-6 text-slate-700 shadow-sm">
               <span>Bespoke daytime tutoring for children aged 8–11</span>
               <span className="mx-2 text-slate-300">•</span>
               <span>Home education and hybrid education families</span>
             </div>
 
-            <h1 className="mt-5 max-w-5xl text-[2.3rem] font-semibold leading-[0.98] tracking-[-0.05em] text-[#12284C] md:text-[3.3rem] lg:text-[4rem] xl:text-[4.35rem]">
+            <p className="mt-6 text-xl font-medium leading-9 text-[#12284C] md:text-2xl">
+              It’s not <span className="font-semibold text-[#D8B35B]">what</span> we learn.
+              <br className="hidden sm:block" />
+              It’s <span className="font-semibold text-[#D8B35B]">how</span> we learn.
+            </p>
+
+            <h1 className="mt-5 max-w-5xl text-[2.15rem] font-semibold leading-[0.98] tracking-[-0.05em] text-[#12284C] sm:text-[2.7rem] md:text-[3.3rem] lg:text-[4rem] xl:text-[4.35rem]">
               Bespoke daytime tutoring that builds confidence, self-belief and resilience.
             </h1>
 
-            <p className="mt-4 max-w-3xl text-[1.15rem] font-medium leading-8 text-slate-700 md:text-[1.35rem]">
+            <p className="mt-4 max-w-3xl text-[1.1rem] font-medium leading-8 text-slate-700 md:text-[1.3rem]">
               Built around your child and their needs.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-8 text-slate-700 md:text-[1.02rem]">
-              A premium, relationship-led approach to daytime tutoring that helps children feel more secure, more capable and more engaged in learning — while building foundations that matter far beyond the lesson itself.
+              A premium, relationship-led and psychology-informed approach to daytime tutoring that helps children feel more secure, more capable and more engaged in learning. Built on 15 years of teaching experience, a degree in Psychology, and a deep understanding of how children learn, connect and grow in confidence.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center gap-3 text-sm">
@@ -156,6 +177,15 @@ export default function Page() {
               <span className="rounded-full border border-sky-300 bg-sky-50 px-4 py-2 text-sky-800">
                 Daytime only
               </span>
+            </div>
+
+            <div className="mt-8 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
+                Parent feedback
+              </p>
+              <p className="mt-4 text-lg leading-8 text-slate-800">
+                “From day one, our son felt that David was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.”
+              </p>
             </div>
 
             <div className="mt-6 flex flex-col gap-4 sm:flex-row">
@@ -259,6 +289,27 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="mx-auto max-w-7xl px-6 pb-20 md:px-10 lg:pb-24">
+        <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+          <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+            Who this is for
+          </p>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
+            This is for children who need more than standard tutoring.
+          </h2>
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
+            {whoItsFor.map((item) => (
+              <div
+                key={item}
+                className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-5 py-4 text-slate-800 shadow-sm"
+              >
+                This is for children who {item}.
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="why" className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="flex flex-col justify-between rounded-[2rem] bg-[#12284C] p-10 text-white">
@@ -298,7 +349,7 @@ export default function Page() {
               <div>
                 <p className="font-semibold text-[#12284C]">Led by a specialist</p>
                 <p className="mt-1">
-                  15+ years’ experience across mainstream and SEND. Teacher, coach, and behaviour specialist. A service built around who your child is, not just what they need to learn.
+                  15+ years’ experience across mainstream and SEND. Teacher, coach, behaviour specialist, and Psychology graduate. A service built around who your child is, not just what they need to learn.
                 </p>
               </div>
 
@@ -310,9 +361,9 @@ export default function Page() {
               </div>
 
               <div>
-                <p className="font-semibold text-[#12284C]">High-trust, not high-pressure</p>
+                <p className="font-semibold text-[#12284C]">Psychology-informed teaching</p>
                 <p className="mt-1">
-                  Children take ownership of learning in an environment built on trust, clarity and calm support — not pressure or fear.
+                  Teaching is shaped by a deep understanding of child development, motivation, emotional security and how confidence affects learning.
                 </p>
               </div>
 
@@ -328,6 +379,41 @@ export default function Page() {
               Academic progress matters. But it is strongest when built on foundations that last far beyond school.
             </p>
           </div>
+        </div>
+      </section>
+
+      <section id="testimonials" className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
+        <div className="max-w-3xl">
+          <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+            What families say
+          </p>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
+            Families speak about confidence, trust, motivation and real change.
+          </h2>
+          <p className="mt-6 text-lg leading-8 text-slate-700">
+            The strongest feedback is not just that children improve academically. It is that they feel different in themselves.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-8 md:grid-cols-2">
+          {testimonials.map((item) => (
+            <div
+              key={item.child}
+              className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm"
+            >
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
+                {item.child}
+              </p>
+
+              <div className="mt-6 space-y-5">
+                {item.quotes.map((quote) => (
+                  <div key={quote} className="border-l-2 border-slate-200 pl-4">
+                    <p className="text-base leading-7 text-slate-800">“{quote}”</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -363,13 +449,13 @@ export default function Page() {
                 Built on relationship-based teaching and a deep understanding of how children learn.
               </h2>
               <p className="mt-6 text-lg leading-8 text-slate-700">
-                I started Warren Dodd Education because too many children begin to lose confidence in themselves as learners. My work is built on understanding how children learn, what motivates them, and how the right relationship can help them re-engage, grow and thrive.
+                I started Warren Dodd Education because too many children begin to lose confidence in themselves as learners. My work is built on relationship-based teaching, a strong understanding of child development, and a belief that progress is strongest when children feel understood, respected and emotionally secure.
               </p>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                With 15 years of experience across mainstream and SEND, I have seen first-hand how confidence, self-esteem and engagement shape academic progress. I make every effort to understand the child in front of me — their strengths, their interests, their barriers, and the way they learn best.
+                With 15 years of experience across mainstream and SEND, alongside a degree in Psychology and a Primary PGCE, I have developed a deep understanding of how children learn, what motivates them, and how trust, clarity and connection can transform engagement.
               </p>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                This is why Warren Dodd Education is not just about tutoring. It is about creating the kind of environment where children feel respected, understood and capable again.
+                I make every effort to understand the child in front of me — their strengths, their interests, their barriers, and the way they learn best. This is why Warren Dodd Education is not just about tutoring. It is about creating the kind of environment where children can feel capable again and begin to thrive.
               </p>
             </div>
           </div>
@@ -405,6 +491,8 @@ export default function Page() {
         </div>
       </section>
 
+      <HomeschoolParentSupportSection />
+
       <section id="programme" className="border-y border-slate-200 bg-[#F4F7FB]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
@@ -438,7 +526,7 @@ export default function Page() {
                 </p>
                 <p className="mt-3 text-5xl font-semibold text-[#12284C]">£195</p>
                 <p className="mt-2 text-lg text-slate-700">
-                  Per child, per 3-hour session
+                  Per child for a structured 3-hour daytime session
                 </p>
               </div>
               <div className="space-y-4 px-8 py-8 text-slate-700">
@@ -448,6 +536,7 @@ export default function Page() {
                 <p>Designed for home and hybrid education</p>
                 <p>Limited places available</p>
               </div>
+
               <div className="px-8 pb-8">
                 <a
                   href="/contact"
@@ -519,41 +608,6 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="testimonials" className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
-        <div className="max-w-3xl">
-          <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-            What families say
-          </p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-            Parents talk about deep understanding, confidence, motivation and genuine change.
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-slate-700">
-            The strongest feedback is not just that children improve academically. It is that they feel different in themselves.
-          </p>
-        </div>
-
-        <div className="mt-12 grid gap-8 lg:grid-cols-3">
-          {testimonials.map((item) => (
-            <div
-              key={item.child}
-              className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm"
-            >
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
-                {item.child}
-              </p>
-
-              <div className="mt-6 space-y-5">
-                {item.quotes.map((quote) => (
-                  <div key={quote} className="border-l-2 border-slate-200 pl-4">
-                    <p className="text-base leading-7 text-slate-800">“{quote}”</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       <section className="border-y border-slate-200 bg-[#12284C] text-white">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
@@ -590,17 +644,17 @@ export default function Page() {
             Next step
           </p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-            Start with a simple conversation.
+            Book a consultation to see if this is the right fit for your child.
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-            Whether you are a parent exploring bespoke daytime tutoring, or a school interested in CPD, behaviour support, mentoring or outreach, I would be pleased to discuss what Warren Dodd Education could offer.
+            Maximum 4 children per session. Limited places available. If you are exploring bespoke daytime tutoring, home education support, or hybrid education provision, start with a simple conversation.
           </p>
           <div className="mt-10">
             <a
               href="/contact"
               className="inline-flex rounded-full bg-[#12284C] px-8 py-4 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
             >
-              Go to Contact Page
+              Book a Consultation
             </a>
           </div>
         </div>
