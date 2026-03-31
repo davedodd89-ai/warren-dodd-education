@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SiteHeader from "./SiteHeader";
 import HomeschoolParentSupportSection from "./HomeschoolParentSupportSection";
 
@@ -181,15 +180,25 @@ export default function Page() {
               </span>
             </div>
 
-            <div className="mt-8 rounded-[2rem] border border-slate-200 bg-white p-6 text-left shadow-sm">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
-                Parent feedback
-              </p>
-              <p className="mt-4 text-lg leading-8 text-slate-800">
-  “From the outset, David took the time to fully understand our son: his struggles, his interests, what motivates him, and what holds him back. Connection and understanding the child clearly come first. This is why he is so successful.”
-</p>
-            </div>
+            <div className="mt-8 grid gap-4 sm:grid-cols-3 max-w-5xl">
+              <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
+                <p className="text-sm leading-6 text-slate-800">
+                  “From the outset, David took the time to fully understand our son: his struggles, his interests, what motivates him, and what holds him back. Connection and understanding the child clearly come first, and the teaching follows naturally.”
+                </p>
+              </div>
 
+              <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
+                <p className="text-sm leading-6 text-slate-800">
+                  “From day one, our son felt that David was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.”
+                </p>
+              </div>
+
+              <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
+                <p className="text-sm leading-6 text-slate-800">
+                  “We are hugely grateful for your work with David. You are his best teacher he’s ever had and have somehow instilled a love for his learning. You must have superpowers! He genuinely looks forward to the sessions and wants to go.”
+                </p>
+              </div>
+            </div>
 
             <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
               <a
