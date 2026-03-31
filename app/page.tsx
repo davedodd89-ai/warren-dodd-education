@@ -35,35 +35,51 @@ export default function Page() {
 
   const testimonials = [
     {
-      child: "Current pupil, aged 8",
+      child: "Parent of boy aged 8",
       quotes: [
-        "We have seen outstanding progress in our 8-year-old boy over the past year, and a huge part of that is down to David’s exceptional approach to tutoring.",
-        "From the outset, David took the time to fully understand our son: his struggles, his interests, what motivates him, and what holds him back. Connection and understanding the child clearly come first, and the teaching follows naturally. This is why he is so successful.",
+        "Mr Dodd is an exceptional teacher. His passion for the psychology of how boys learn has enabled him to truly understand our son’s learning style and engage his full potential in a fun, nurturing way.",
+        "We feel very fortunate to have found Mr Dodd and look forward to the journey ahead.",
+      ],
+    },
+    {
+      child: "Parent of girl aged 10",
+      quotes: [
+        "Mr Dodd has been tutoring our son and daughter for the past 18 months, and they have both genuinely enjoyed the sessions. He’s taken the time to get to know them as individuals, which has helped build trust and keep them engaged.",
+        "He also makes a point of ending each lesson on a positive note, often with something light and fun.",
+        "He’s worked closely with us to tailor the tutoring to each child’s needs, so we’re consistently getting real value from the time.",
+        "Beyond the sessions themselves, Mr Dodd has also supported us as parents by helping us frame the right questions for their class teachers, which has made it easier to stay aligned and reinforce learning at home.",
+      ],
+    },
+    {
+      child: "Parent of boy aged 8",
+      quotes: [
+        "We have seen outstanding progress in our 8-year-old boy over the past year, and a huge part of that is down to Mr Dodd’s exceptional approach to tutoring.",
+        "From the outset, Mr Dodd took the time to fully understand our son: his struggles, his interests, what motivates him, and what holds him back. Connection and understanding the child clearly come first, and the teaching follows naturally. This is why he is so successful.",
         "Every session feels tailored specifically to our son, and he genuinely looks forward to their time together, which speaks volumes.",
-        "David brings wonderful variety to each session, weaving our son’s interests into the learning in creative and meaningful ways.",
+        "Mr Dodd brings wonderful variety to each session, weaving our son’s interests into the learning in creative and meaningful ways.",
       ],
     },
     {
-      child: "Parent of current pupil, aged 8",
+      child: "Parent of boy aged 9",
       quotes: [
-        "Perhaps most importantly, David has built our son’s confidence enormously. It has been a joy to watch him approach new topics with such positivity and belief in himself.",
-        "From day one, our son felt that David was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.",
-        "David is an absolute credit to the teaching profession. We feel incredibly lucky to have found him and cannot recommend him highly enough.",
+        "Perhaps most importantly, Mr Dodd has built our son’s confidence enormously. It has been a joy to watch him approach new topics with such positivity and belief in himself.",
+        "From day one, our son felt that Mr Dodd was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.",
+        "Mr Dodd is an absolute credit to the teaching profession. We feel incredibly lucky to have found him and cannot recommend him highly enough.",
       ],
     },
     {
-      child: "Past pupil ‘D’",
+      child: "Parent of past pupil ‘D’",
       quotes: [
-        "We are hugely grateful for your work with David. You are his best teacher he’s ever had and have somehow instilled a love for his learning.",
+        "We are hugely grateful for your work with D. You are his best teacher he’s ever had and have somehow instilled a love for his learning.",
         "You must have superpowers! He genuinely looks forward to the sessions and wants to go.",
-        "You are unique and thank you for being who you are and what you do, helping David.",
+        "You are unique and thank you for being who you are and what you do, helping D.",
         "He holds you in the highest regards, so passionately.",
         "You have become so popular in our house we have made up a tongue twister about you, Mr Dodd!",
-        "You help David thrive and you are a favourite in the house and in the family. You are fab.",
+        "You help D thrive and you are a favourite in the house and in the family. You are fab.",
       ],
     },
     {
-      child: "Current pupil ‘B’",
+      child: "Parent of boy aged 10",
       quotes: [
         "Mr Dodd has been tutoring ‘B’ for over two years and has consistently outdone himself. He engages ‘B’ in every lesson and makes learning as fun as possible.",
         "Not only has he helped ‘B’ tackle difficult topics in Maths and English, we have also seen a real positive change in ‘B’s confidence.",
@@ -180,23 +196,52 @@ export default function Page() {
               </span>
             </div>
 
-            <div className="mt-8 grid gap-4 sm:grid-cols-3 max-w-5xl">
-              <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
-                <p className="text-sm leading-6 text-slate-800">
-                  “From the outset, David took the time to fully understand our son: his struggles, his interests, what motivates him, and what holds him back. Connection and understanding the child clearly come first, and the teaching follows naturally.”
+            <div className="mt-8 max-w-5xl space-y-4">
+              <div className="rounded-[1.75rem] border border-slate-200 bg-white/95 px-6 py-5 text-left shadow-sm">
+                <p className="text-[1rem] leading-7 text-slate-800">
+                  “Mr Dodd is an exceptional teacher. His passion for the psychology of how boys learn has enabled him to truly understand our son’s learning style and engage his full potential in a fun, nurturing way. We feel very fortunate to have found Mr Dodd and look forward to the journey ahead.”
+                </p>
+                <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  Parent of boy aged 8
                 </p>
               </div>
 
-              <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
-                <p className="text-sm leading-6 text-slate-800">
-                  “From day one, our son felt that David was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.”
-                </p>
-              </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
+                  <p className="text-sm leading-6 text-slate-800">
+                    “Mr Dodd has been tutoring our son and daughter for the past 18 months, and they have both genuinely enjoyed the sessions. He’s taken the time to get to know them as individuals, which has helped build trust and keep them engaged.”
+                  </p>
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+                    Parent of girl aged 10
+                  </p>
+                </div>
 
-              <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
-                <p className="text-sm leading-6 text-slate-800">
-                  “We are hugely grateful for your work with David. You are his best teacher he’s ever had and have somehow instilled a love for his learning. You must have superpowers! He genuinely looks forward to the sessions and wants to go.”
-                </p>
+                <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
+                  <p className="text-sm leading-6 text-slate-800">
+                    “From the outset, Mr Dodd took the time to fully understand our son: his struggles, his interests, what motivates him, and what holds him back. Connection and understanding the child clearly come first, and the teaching follows naturally.”
+                  </p>
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+                    Parent of boy aged 8
+                  </p>
+                </div>
+
+                <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
+                  <p className="text-sm leading-6 text-slate-800">
+                    “From day one, our son felt that Mr Dodd was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.”
+                  </p>
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+                    Parent of boy aged 9
+                  </p>
+                </div>
+
+                <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
+                  <p className="text-sm leading-6 text-slate-800">
+                    “We are hugely grateful for your work with D. You are his best teacher he’s ever had and have somehow instilled a love for his learning. You must have superpowers! He genuinely looks forward to the sessions and wants to go.”
+                  </p>
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
+                    Parent of past pupil ‘D’
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -260,7 +305,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="problem" className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
+      <section id="challenge" className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
             <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
@@ -322,7 +367,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="why" className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
+      <section id="why" className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="flex flex-col justify-between rounded-[2rem] bg-[#12284C] p-10 text-white">
             <div>
@@ -394,7 +439,7 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="testimonials" className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
+      <section id="testimonials" className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
         <div className="max-w-3xl">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
             What families say
@@ -408,9 +453,9 @@ export default function Page() {
         </div>
 
         <div className="mt-12 grid gap-8 md:grid-cols-2">
-          {testimonials.map((item) => (
+          {testimonials.map((item, index) => (
             <div
-              key={item.child}
+              key={`${item.child}-${index}`}
               className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm"
             >
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
@@ -418,8 +463,11 @@ export default function Page() {
               </p>
 
               <div className="mt-6 space-y-5">
-                {item.quotes.map((quote) => (
-                  <div key={quote} className="border-l-2 border-slate-200 pl-4">
+                {item.quotes.map((quote, quoteIndex) => (
+                  <div
+                    key={`${item.child}-${index}-quote-${quoteIndex}`}
+                    className="border-l-2 border-slate-200 pl-4"
+                  >
                     <p className="text-base leading-7 text-slate-800">“{quote}”</p>
                   </div>
                 ))}
@@ -443,7 +491,7 @@ export default function Page() {
               >
                 <source src="/hero-video.mp4" type="video/mp4" />
               </video>
-              <h3 className="mt-6 text-center text-3xl font-semibold">David Dodd</h3>
+              <h3 className="mt-6 text-center text-3xl font-semibold">Warren Dodd</h3>
               <p className="mt-2 text-center text-sm uppercase tracking-[0.18em] text-slate-300">
                 BSc (Hons) • QTS • Psychology-led
               </p>
@@ -505,7 +553,7 @@ export default function Page() {
 
       <HomeschoolParentSupportSection />
 
-      <section id="programme" className="border-y border-slate-200 bg-[#F4F7FB]">
+      <section id="programme" className="scroll-mt-32 border-y border-slate-200 bg-[#F4F7FB]">
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
             <div>
@@ -650,10 +698,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="bg-white">
+      <section id="enquiry" className="scroll-mt-32 bg-white">
         <div className="mx-auto max-w-5xl px-6 py-20 text-center md:px-10 lg:py-24">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-            Next step
+            Enquiry
           </p>
           <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
             Book a consultation to see if this is the right fit for your child.
@@ -661,7 +709,7 @@ export default function Page() {
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
             Maximum 4 children per session. Limited places available. If you are exploring bespoke daytime tutoring, home education support, or hybrid education provision, start with a simple conversation.
           </p>
-          <div className="mt-10">
+          <div className="mt-10 flex justify-center">
             <a
               href="/contact"
               className="inline-flex rounded-full bg-[#12284C] px-8 py-4 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"

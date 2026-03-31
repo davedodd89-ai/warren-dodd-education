@@ -4,10 +4,11 @@ import { useState } from "react";
 import Image from "next/image";
 
 const navItems = [
-  { label: "The Problem", href: "#problem" },
+  { label: "The Challenge", href: "#challenge" },
   { label: "Why Us", href: "#why" },
   { label: "Programme", href: "#programme" },
   { label: "Testimonials", href: "#testimonials" },
+  { label: "Enquiry", href: "#enquiry" },
   { label: "Training & CPD", href: "/cpd" },
   { label: "School Support", href: "/schools" },
   { label: "Contact", href: "/contact" },
@@ -55,6 +56,7 @@ export default function SiteHeader() {
           <button
             type="button"
             aria-label="Toggle menu"
+            aria-expanded={open}
             onClick={() => setOpen((prev) => !prev)}
             className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 bg-white text-[#12284C] xl:hidden"
           >
