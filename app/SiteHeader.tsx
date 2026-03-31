@@ -19,14 +19,14 @@ export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-[#F7F7F4]/95 backdrop-blur">
       <div className="mx-auto max-w-7xl px-4 py-3 md:px-8">
-        <div className="flex items-center justify-between gap-3">
+        <div className="flex items-center justify-between gap-4">
           <a href="/" className="flex items-center">
             <Image
               src="/logo.png"
               alt="Warren Dodd Education"
-              width={180}
-              height={180}
-              className="h-14 w-auto object-contain sm:h-16"
+              width={220}
+              height={220}
+              className="h-16 w-auto object-contain sm:h-20"
               priority
             />
           </a>

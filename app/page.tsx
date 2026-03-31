@@ -132,15 +132,19 @@ export default function Page() {
       <section className="mx-auto max-w-7xl px-6 pb-12 pt-6 md:px-10 lg:pb-16 lg:pt-8">
         <div className="grid items-end gap-10 lg:grid-cols-[1.28fr_0.72fr] lg:gap-10">
           <div className="relative z-10 mx-auto max-w-4xl text-center lg:mx-0 lg:text-left">
-            <div className="mb-6 flex justify-center lg:justify-start">
-              <Image
-                src="/logo.png"
-                alt="Warren Dodd Education"
-                width={380}
-                height={380}
-                className="h-auto w-[180px] object-contain sm:w-[220px] md:w-[260px]"
-                priority
-              />
+            <div className="mb-8 overflow-hidden rounded-[2rem] border border-white/80 bg-white/95 p-3 shadow-[0_16px_50px_rgba(15,23,42,0.10)] lg:hidden">
+              <div className="overflow-hidden rounded-[1.4rem] bg-slate-100">
+                <video
+                  className="h-[220px] w-full object-cover object-center"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  poster="/logo.png"
+                >
+                  <source src="/hero-video.mp4" type="video/mp4" />
+                </video>
+              </div>
             </div>
 
             <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
@@ -202,7 +206,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="mx-auto w-full max-w-[300px] md:max-w-[340px] lg:max-w-[360px]">
+          <div className="mx-auto hidden w-full max-w-[300px] md:max-w-[340px] lg:block lg:max-w-[360px]">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[2.2rem] bg-slate-200/15 blur-2xl" />
               <div className="relative overflow-hidden rounded-[2rem] border border-white/80 bg-white/95 p-3 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
