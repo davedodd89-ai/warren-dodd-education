@@ -146,8 +146,8 @@ export default function Page() {
       <SiteHeader />
 
       <section className="mx-auto max-w-7xl px-6 pb-12 pt-6 md:px-10 lg:pb-16 lg:pt-8">
-        <div className="grid items-end gap-10 lg:grid-cols-[1.28fr_0.72fr] lg:gap-10">
-          <div className="relative z-10 mx-auto max-w-4xl text-center lg:mx-0 lg:text-left">
+        <div className="grid items-start gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
+          <div className="relative z-10 mx-auto max-w-3xl text-center lg:mx-0 lg:text-left">
             <div className="mb-8 overflow-hidden rounded-[2rem] border border-white/80 bg-white/95 p-3 shadow-[0_16px_50px_rgba(15,23,42,0.10)] lg:hidden">
               <div className="overflow-hidden rounded-[1.4rem] bg-slate-100">
                 <video
@@ -173,7 +173,7 @@ export default function Page() {
               It’s <span className="font-semibold text-[#D8B35B]">how</span> we learn.
             </p>
 
-            <h1 className="mt-5 max-w-5xl text-[2.15rem] font-semibold leading-[0.98] tracking-[-0.05em] text-[#12284C] sm:text-[2.7rem] md:text-[3.3rem] lg:text-[4rem] xl:text-[4.35rem]">
+            <h1 className="mt-5 max-w-3xl text-[2.15rem] font-semibold leading-[0.98] tracking-[-0.05em] text-[#12284C] sm:text-[2.7rem] md:text-[3.3rem] lg:text-[4rem] xl:text-[4.35rem]">
               Bespoke daytime tutoring that builds confidence, self-belief and resilience.
             </h1>
 
@@ -197,7 +197,7 @@ export default function Page() {
               </span>
             </div>
 
-            <div className="mt-8 max-w-5xl space-y-4">
+            <div className="mt-8 max-w-3xl space-y-4">
               <div className="rounded-[1.75rem] border border-slate-200 bg-white/95 px-6 py-5 text-left shadow-sm">
                 <p className="text-[1rem] leading-7 text-slate-800">
                   “Mr Dodd is an exceptional teacher. His passion for the psychology of how boys learn has enabled him to truly understand our son’s learning style and engage his full potential in a fun, nurturing way. We feel very fortunate to have found Mr Dodd and look forward to the journey ahead.”
@@ -262,13 +262,13 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="mx-auto hidden w-full max-w-[300px] md:max-w-[340px] lg:block lg:max-w-[360px]">
+          <div className="mx-auto hidden w-full max-w-[420px] lg:block xl:max-w-[460px]">
             <div className="relative">
               <div className="absolute -inset-4 rounded-[2.2rem] bg-slate-200/15 blur-2xl" />
               <div className="relative overflow-hidden rounded-[2rem] border border-white/80 bg-white/95 p-3 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
                 <div className="overflow-hidden rounded-[1.4rem] bg-slate-100">
                   <video
-                    className="h-[250px] w-full object-cover object-center md:h-[290px]"
+                    className="h-[280px] w-full object-cover object-center xl:h-[320px]"
                     autoPlay
                     muted
                     loop
@@ -279,13 +279,34 @@ export default function Page() {
                   </video>
                 </div>
 
-                <div className="px-4 pb-4 pt-4">
-                  <p className="text-sm font-medium text-slate-900 md:text-base">
+                <div className="px-5 pb-5 pt-5">
+                  <p className="text-base font-medium text-slate-900 md:text-lg">
                     Calm, personal, premium support for children aged 8–11.
                   </p>
-                  <p className="mt-2 text-sm leading-6 text-slate-600">
-                    Designed for families seeking depth, care and real progress.
+                  <p className="mt-2 text-sm leading-7 text-slate-600 md:text-base">
+                    Designed for families seeking depth, care and meaningful long-term progress.
                   </p>
+
+                  <div className="mt-5 grid gap-3">
+                    <div className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm text-slate-800">
+                      Maximum 4 children per session
+                    </div>
+                    <div className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm text-slate-800">
+                      Relationship-led and psychology-informed
+                    </div>
+                    <div className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm text-slate-800">
+                      Built for home education and hybrid education families
+                    </div>
+                  </div>
+
+                  <div className="mt-6">
+                    <Link
+                      href="/contact"
+                      className="inline-flex w-full items-center justify-center rounded-full bg-[#12284C] px-6 py-4 text-center font-semibold text-white transition hover:-translate-y-0.5"
+                    >
+                      Enquire About a Place
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
@@ -342,6 +363,51 @@ export default function Page() {
                   {item}
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
+          <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+            <div className="rounded-[2rem] bg-[#12284C] p-8 text-white">
+              <video
+                className="mx-auto h-36 w-36 rounded-full object-cover object-center"
+                autoPlay
+                muted
+                loop
+                playsInline
+                poster="/logo.png"
+              >
+                <source src="/hero-video.mp4" type="video/mp4" />
+              </video>
+              <h3 className="mt-6 text-center text-3xl font-semibold">Warren Dodd</h3>
+              <p className="mt-2 text-center text-sm uppercase tracking-[0.18em] text-slate-300">
+                BSc (Hons) • QTS • Psychology-led
+              </p>
+
+              <p className="mt-8 text-center text-xl italic leading-9 text-[#C9E77D]">
+                “I started Warren Dodd Education because I truly believe I can offer something unique and inviting for all children.”
+              </p>
+            </div>
+
+            <div>
+              <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+                Why I started Warren Dodd Education
+              </p>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
+                Built on relationship-based teaching and a deep understanding of how children learn.
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-slate-700">
+                I started Warren Dodd Education because too many children begin to lose confidence in themselves as learners. My work is built on relationship-based teaching, a strong understanding of child development, and a belief that progress is strongest when children feel understood, respected and emotionally secure.
+              </p>
+              <p className="mt-4 text-lg leading-8 text-slate-700">
+                With 15 years of experience across mainstream and SEND, alongside a degree in Psychology and a Primary PGCE, I have developed a deep understanding of how children learn, what motivates them, and how trust, clarity and connection can transform engagement.
+              </p>
+              <p className="mt-4 text-lg leading-8 text-slate-700">
+                I make every effort to understand the child in front of me — their strengths, their interests, their barriers, and the way they learn best. This is why Warren Dodd Education is not just about tutoring. It is about creating the kind of environment where children can feel capable again and begin to thrive.
+              </p>
             </div>
           </div>
         </div>
@@ -475,51 +541,6 @@ export default function Page() {
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      <section className="border-y border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
-          <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-            <div className="rounded-[2rem] bg-[#12284C] p-8 text-white">
-              <video
-                className="mx-auto h-36 w-36 rounded-full object-cover object-center"
-                autoPlay
-                muted
-                loop
-                playsInline
-                poster="/logo.png"
-              >
-                <source src="/hero-video.mp4" type="video/mp4" />
-              </video>
-              <h3 className="mt-6 text-center text-3xl font-semibold">Warren Dodd</h3>
-              <p className="mt-2 text-center text-sm uppercase tracking-[0.18em] text-slate-300">
-                BSc (Hons) • QTS • Psychology-led
-              </p>
-
-              <p className="mt-8 text-center text-xl italic leading-9 text-[#C9E77D]">
-                “I started Warren Dodd Education because I truly believe I can offer something unique and inviting for all children.”
-              </p>
-            </div>
-
-            <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-                Why I started Warren Dodd Education
-              </p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-                Built on relationship-based teaching and a deep understanding of how children learn.
-              </h2>
-              <p className="mt-6 text-lg leading-8 text-slate-700">
-                I started Warren Dodd Education because too many children begin to lose confidence in themselves as learners. My work is built on relationship-based teaching, a strong understanding of child development, and a belief that progress is strongest when children feel understood, respected and emotionally secure.
-              </p>
-              <p className="mt-4 text-lg leading-8 text-slate-700">
-                With 15 years of experience across mainstream and SEND, alongside a degree in Psychology and a Primary PGCE, I have developed a deep understanding of how children learn, what motivates them, and how trust, clarity and connection can transform engagement.
-              </p>
-              <p className="mt-4 text-lg leading-8 text-slate-700">
-                I make every effort to understand the child in front of me — their strengths, their interests, their barriers, and the way they learn best. This is why Warren Dodd Education is not just about tutoring. It is about creating the kind of environment where children can feel capable again and begin to thrive.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 

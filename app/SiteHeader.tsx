@@ -54,12 +54,12 @@ export default function SiteHeader() {
 
         {/* mobile / tablet */}
         <div className="xl:hidden">
-          <div className="flex items-center justify-between gap-3">
-            <Link href="/" className="min-w-0 flex-1">
+          <div className="relative flex min-h-[110px] items-center justify-center">
+            <Link href="/" className="flex justify-center">
               <img
                 src="/logo.svg"
                 alt="Warren Dodd Education"
-                className="h-auto w-[235px] max-w-full object-contain"
+                className="h-auto w-[220px] max-w-full object-contain sm:w-[235px]"
               />
             </Link>
 
@@ -68,7 +68,7 @@ export default function SiteHeader() {
               aria-label="Toggle menu"
               aria-expanded={open}
               onClick={() => setOpen((prev) => !prev)}
-              className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-300 bg-white text-[#12284C]"
+              className="absolute right-0 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-300 bg-white text-[#12284C]"
             >
               <span className="text-2xl leading-none">{open ? "×" : "☰"}</span>
             </button>
