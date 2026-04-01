@@ -18,11 +18,11 @@ export default function Page() {
   ];
 
   const programme = [
-    "Warm arrival, emotional check-in and calm start",
-    "Focused English and Maths teaching tailored to the child",
-    "Movement, conversation and regulation during active break",
-    "Collaborative problem-solving and resilience building",
-    "Reflection, praise, next steps and a sense of success",
+    "A calm, safe start that helps your child feel settled and ready to learn",
+    "Personalised English and Maths teaching matched to their needs and confidence level",
+    "Movement and regulation breaks that reduce overwhelm and improve focus",
+    "Problem-solving and guided challenge that rebuild resilience and independence",
+    "Positive reflection so they leave feeling proud, successful and ready for tomorrow",
   ];
 
   const whoItsFor = [
@@ -164,17 +164,21 @@ export default function Page() {
             </div>
 
             <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-              Bespoke daytime tutoring • Training &amp; CPD • Home &amp; hybrid education
+              Bespoke daytime tutoring • Training &amp; CPD • Home &amp; hybrid
+              education
             </p>
 
             <p className="mt-6 text-xl font-medium leading-9 text-[#12284C] md:text-2xl">
-              It’s not <span className="font-semibold text-[#D8B35B]">what</span> we learn.
+              It’s not <span className="font-semibold text-[#D8B35B]">what</span>{" "}
+              we learn.
               <br className="hidden sm:block" />
-              It’s <span className="font-semibold text-[#D8B35B]">how</span> we learn.
+              It’s <span className="font-semibold text-[#D8B35B]">how</span> we
+              learn.
             </p>
 
             <h1 className="mt-5 max-w-3xl text-[2.15rem] font-semibold leading-[0.98] tracking-[-0.05em] text-[#12284C] sm:text-[2.7rem] md:text-[3.3rem] lg:text-[4rem] xl:text-[4.35rem]">
-              Bespoke daytime tutoring that builds confidence, self-belief and resilience.
+              Bespoke daytime tutoring that builds confidence, self-belief and
+              resilience.
             </h1>
 
             <p className="mt-4 max-w-3xl text-[1.1rem] font-medium leading-8 text-slate-700 md:text-[1.3rem]">
@@ -182,7 +186,12 @@ export default function Page() {
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-8 text-slate-700 md:text-[1.02rem]">
-              A premium, relationship-led and psychology-informed approach to daytime tutoring that helps children feel more secure, more capable and more engaged in learning. Built on 15 years of teaching experience, a degree in Psychology, and a deep understanding of how children learn, connect and grow in confidence.
+              A premium, relationship-led and psychology-informed approach to
+              daytime tutoring that helps children feel more secure, more
+              capable and more engaged in learning. Built on 15 years of
+              teaching experience, a degree in Psychology, and a deep
+              understanding of how children learn, connect and grow in
+              confidence.
             </p>
 
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm lg:justify-start">
@@ -200,7 +209,11 @@ export default function Page() {
             <div className="mt-8 max-w-3xl space-y-4">
               <div className="rounded-[1.75rem] border border-slate-200 bg-white/95 px-6 py-5 text-left shadow-sm">
                 <p className="text-[1rem] leading-7 text-slate-800">
-                  “Mr Dodd is an exceptional teacher. His passion for the psychology of how boys learn has enabled him to truly understand our son’s learning style and engage his full potential in a fun, nurturing way. We feel very fortunate to have found Mr Dodd and look forward to the journey ahead.”
+                  “Mr Dodd is an exceptional teacher. His passion for the
+                  psychology of how boys learn has enabled him to truly
+                  understand our son’s learning style and engage his full
+                  potential in a fun, nurturing way. We feel very fortunate to
+                  have found Mr Dodd and look forward to the journey ahead.”
                 </p>
                 <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
                   Parent of boy aged 8
@@ -210,7 +223,11 @@ export default function Page() {
               <div className="grid gap-4 sm:grid-cols-2">
                 <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
                   <p className="text-sm leading-6 text-slate-800">
-                    “Mr Dodd has been tutoring our son and daughter for the past 18 months, and they have both genuinely enjoyed the sessions. He’s taken the time to get to know them as individuals, which has helped build trust and keep them engaged.”
+                    “Mr Dodd has been tutoring our son and daughter for the past
+                    18 months, and they have both genuinely enjoyed the
+                    sessions. He’s taken the time to get to know them as
+                    individuals, which has helped build trust and keep them
+                    engaged.”
                   </p>
                   <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
                     Parent of girl aged 10
@@ -219,7 +236,11 @@ export default function Page() {
 
                 <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
                   <p className="text-sm leading-6 text-slate-800">
-                    “From the outset, Mr Dodd took the time to fully understand our son: his struggles, his interests, what motivates him, and what holds him back. Connection and understanding the child clearly come first, and the teaching follows naturally.”
+                    “From the outset, Mr Dodd took the time to fully understand
+                    our son: his struggles, his interests, what motivates him,
+                    and what holds him back. Connection and understanding the
+                    child clearly come first, and the teaching follows
+                    naturally.”
                   </p>
                   <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
                     Parent of boy aged 8
@@ -228,7 +249,9 @@ export default function Page() {
 
                 <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
                   <p className="text-sm leading-6 text-slate-800">
-                    “From day one, our son felt that Mr Dodd was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.”
+                    “From day one, our son felt that Mr Dodd was on his side,
+                    that they were a team, and this created a strong sense of
+                    mutual respect that has been invaluable.”
                   </p>
                   <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
                     Parent of boy aged 9
@@ -237,7 +260,10 @@ export default function Page() {
 
                 <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
                   <p className="text-sm leading-6 text-slate-800">
-                    “We are hugely grateful for your work with D. You are his best teacher he’s ever had and have somehow instilled a love for his learning. You must have superpowers! He genuinely looks forward to the sessions and wants to go.”
+                    “We are hugely grateful for your work with D. You are his
+                    best teacher he’s ever had and have somehow instilled a love
+                    for his learning. You must have superpowers! He genuinely
+                    looks forward to the sessions and wants to go.”
                   </p>
                   <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
                     Parent of past pupil ‘D’
@@ -284,7 +310,8 @@ export default function Page() {
                     Calm, personal, premium support for children aged 8–11.
                   </p>
                   <p className="mt-2 text-sm leading-7 text-slate-600 md:text-base">
-                    Designed for families seeking depth, care and meaningful long-term progress.
+                    Designed for families seeking depth, care and meaningful
+                    long-term progress.
                   </p>
 
                   <div className="mt-5 grid gap-3">
@@ -327,23 +354,31 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="challenge" className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
+      <section
+        id="challenge"
+        className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24"
+      >
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
             <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
               The challenge many families are facing
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-              For many children, the issue is not ability — it is confidence, self-esteem and how they experience learning.
+              For many children, the issue is not ability — it is confidence,
+              self-esteem and how they experience learning.
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-700">
-              When children lose belief in themselves, learning can begin to feel heavy, frustrating or distant.
+              When children lose belief in themselves, learning can begin to
+              feel heavy, frustrating or distant.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              Many benefit from smaller groups, closer guidance and an approach that understands how they learn best.
+              Many benefit from smaller groups, closer guidance and an approach
+              that understands how they learn best.
             </p>
             <p className="mt-4 text-lg leading-8 text-slate-700">
-              For boys in particular, confidence and engagement are often shaped by whether they feel understood, respected and genuinely connected to the adult teaching them.
+              For boys in particular, confidence and engagement are often shaped
+              by whether they feel understood, respected and genuinely connected
+              to the adult teaching them.
             </p>
           </div>
 
@@ -389,7 +424,8 @@ export default function Page() {
               </p>
 
               <p className="mt-8 text-center text-xl italic leading-9 text-[#C9E77D]">
-                “I started Warren Dodd Education because I truly believe I can offer something unique and inviting for all children.”
+                “I started Warren Dodd Education because I truly believe I can
+                offer something unique and inviting for all children.”
               </p>
             </div>
 
@@ -398,16 +434,29 @@ export default function Page() {
                 Why I started Warren Dodd Education
               </p>
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-                Built on relationship-based teaching and a deep understanding of how children learn.
+                Built on relationship-based teaching and a deep understanding of
+                how children learn.
               </h2>
               <p className="mt-6 text-lg leading-8 text-slate-700">
-                I started Warren Dodd Education because too many children begin to lose confidence in themselves as learners. My work is built on relationship-based teaching, a strong understanding of child development, and a belief that progress is strongest when children feel understood, respected and emotionally secure.
+                I started Warren Dodd Education because too many children begin
+                to lose confidence in themselves as learners. My work is built
+                on relationship-based teaching, a strong understanding of child
+                development, and a belief that progress is strongest when
+                children feel understood, respected and emotionally secure.
               </p>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                With 15 years of experience across mainstream and SEND, alongside a degree in Psychology and a Primary PGCE, I have developed a deep understanding of how children learn, what motivates them, and how trust, clarity and connection can transform engagement.
+                With 15 years of experience across mainstream and SEND,
+                alongside a degree in Psychology and a Primary PGCE, I have
+                developed a deep understanding of how children learn, what
+                motivates them, and how trust, clarity and connection can
+                transform engagement.
               </p>
               <p className="mt-4 text-lg leading-8 text-slate-700">
-                I make every effort to understand the child in front of me — their strengths, their interests, their barriers, and the way they learn best. This is why Warren Dodd Education is not just about tutoring. It is about creating the kind of environment where children can feel capable again and begin to thrive.
+                I make every effort to understand the child in front of me —
+                their strengths, their interests, their barriers, and the way
+                they learn best. This is why Warren Dodd Education is not just
+                about tutoring. It is about creating the kind of environment
+                where children can feel capable again and begin to thrive.
               </p>
             </div>
           </div>
@@ -435,7 +484,10 @@ export default function Page() {
         </div>
       </section>
 
-      <section id="why" className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
+      <section
+        id="why"
+        className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24"
+      >
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="flex flex-col justify-between rounded-[2rem] bg-[#12284C] p-10 text-white">
             <div>
@@ -444,9 +496,11 @@ export default function Page() {
               </h2>
 
               <p className="mt-8 text-lg leading-8 text-slate-300">
-                It’s not <span className="font-semibold text-[#D8B35B]">what</span> we learn.
+                It’s not <span className="font-semibold text-[#D8B35B]">what</span>{" "}
+                we learn.
                 <br />
-                It’s <span className="font-semibold text-[#D8B35B]">how</span> we learn.
+                It’s <span className="font-semibold text-[#D8B35B]">how</span>{" "}
+                we learn.
               </p>
             </div>
 
@@ -463,7 +517,10 @@ export default function Page() {
             <div className="mt-4 h-[3px] w-16 bg-[#D8B35B]" />
 
             <p className="mt-6 text-lg leading-8 text-slate-700">
-              The qualities that shape a child’s future — confidence, resilience, self-belief, emotional literacy and communication — are often recognised, but not always given the time and care they deserve.
+              The qualities that shape a child’s future — confidence,
+              resilience, self-belief, emotional literacy and communication —
+              are often recognised, but not always given the time and care they
+              deserve.
             </p>
 
             <p className="mt-4 text-xl font-semibold text-[#12284C]">
@@ -472,42 +529,60 @@ export default function Page() {
 
             <div className="mt-8 space-y-6 text-slate-700">
               <div>
-                <p className="font-semibold text-[#12284C]">Led by a specialist</p>
+                <p className="font-semibold text-[#12284C]">
+                  Led by a specialist
+                </p>
                 <p className="mt-1">
-                  15+ years’ experience across mainstream and SEND. Teacher, coach, behaviour specialist, and Psychology graduate. A service built around who your child is, not just what they need to learn.
+                  15+ years’ experience across mainstream and SEND. Teacher,
+                  coach, behaviour specialist, and Psychology graduate. A
+                  service built around who your child is, not just what they
+                  need to learn.
                 </p>
               </div>
 
               <div>
-                <p className="font-semibold text-[#12284C]">Relationship-led by design</p>
+                <p className="font-semibold text-[#12284C]">
+                  Relationship-led by design
+                </p>
                 <p className="mt-1">
-                  Children work best when they feel known, respected and supported. That sits at the centre of the offer.
+                  Children work best when they feel known, respected and
+                  supported. That sits at the centre of the offer.
                 </p>
               </div>
 
               <div>
-                <p className="font-semibold text-[#12284C]">Psychology-informed teaching</p>
+                <p className="font-semibold text-[#12284C]">
+                  Psychology-informed teaching
+                </p>
                 <p className="mt-1">
-                  Teaching is shaped by a deep understanding of child development, motivation, emotional security and how confidence affects learning.
+                  Teaching is shaped by a deep understanding of child
+                  development, motivation, emotional security and how confidence
+                  affects learning.
                 </p>
               </div>
 
               <div>
                 <p className="font-semibold text-[#12284C]">What we build</p>
                 <p className="mt-1">
-                  Confidence, self-esteem, resilience and growth — woven into every session, not bolted on. Small groups. Relationship-based. Progress that lasts.
+                  Confidence, self-esteem, resilience and growth — woven into
+                  every session, not bolted on. Small groups. Relationship-based.
+                  Progress that lasts.
                 </p>
               </div>
             </div>
 
             <p className="mt-10 text-lg font-semibold text-[#12284C]">
-              Academic progress matters. But it is strongest when built on foundations that last far beyond school.
+              Academic progress matters. But it is strongest when built on
+              foundations that last far beyond school.
             </p>
           </div>
         </div>
       </section>
 
-      <section id="testimonials" className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
+      <section
+        id="testimonials"
+        className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24"
+      >
         <div className="max-w-3xl">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
             What families say
@@ -516,7 +591,8 @@ export default function Page() {
             Families speak about confidence, trust, motivation and real change.
           </h2>
           <p className="mt-6 text-lg leading-8 text-slate-700">
-            The strongest feedback is not just that children improve academically. It is that they feel different in themselves.
+            The strongest feedback is not just that children improve
+            academically. It is that they feel different in themselves.
           </p>
         </div>
 
@@ -536,7 +612,9 @@ export default function Page() {
                     key={`${item.child}-${index}-quote-${quoteIndex}`}
                     className="border-l-2 border-slate-200 pl-4"
                   >
-                    <p className="text-base leading-7 text-slate-800">“{quote}”</p>
+                    <p className="text-base leading-7 text-slate-800">
+                      “{quote}”
+                    </p>
                   </div>
                 ))}
               </div>
@@ -560,11 +638,15 @@ export default function Page() {
 
           <h2 className="mt-4 text-4xl font-semibold leading-tight tracking-tight text-[#12284C] md:text-6xl">
             Confidence. Self-esteem. Resilience. Engagement.
-            <span className="mt-2 block">A child who finally feels understood.</span>
+            <span className="mt-2 block">
+              A child who finally feels understood.
+            </span>
           </h2>
 
           <p className="mt-6 text-xl leading-9 text-slate-600">
-            This is not just academic progress. It is a shift in how a child sees themselves, how they approach learning, and how they feel every day.
+            This is not just academic progress. It is a shift in how a child
+            sees themselves, how they approach learning, and how they feel every
+            day.
           </p>
         </div>
 
@@ -574,7 +656,9 @@ export default function Page() {
               key={item.title}
               className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-md"
             >
-              <h3 className="text-2xl font-semibold text-[#12284C]">{item.title}</h3>
+              <h3 className="text-2xl font-semibold text-[#12284C]">
+                {item.title}
+              </h3>
               <p className="mt-4 leading-7 text-slate-700">{item.text}</p>
             </div>
           ))}
@@ -583,7 +667,10 @@ export default function Page() {
 
       <HomeschoolParentSupportSection />
 
-      <section id="programme" className="scroll-mt-32 border-y border-slate-200 bg-[#F4F7FB]">
+      <section
+        id="programme"
+        className="scroll-mt-32 border-y border-slate-200 bg-[#F4F7FB]"
+      >
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
             <div>
@@ -594,18 +681,71 @@ export default function Page() {
                 Built around your child and their needs.
               </h2>
               <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
-                This is not an after-school one-hour slot. It is carefully designed daytime provision for children aged 8 to 11 who need a more personal, energising and confidence-building way to learn — especially those in home education and hybrid education.
+                This is not an after-school one-hour slot. It is carefully
+                designed daytime provision for children aged 8 to 11 who need a
+                more personal, energising and confidence-building way to learn —
+                especially those in home education and hybrid education.
               </p>
 
               <div className="mt-10 grid gap-4">
                 {programme.map((item) => (
                   <div
                     key={item}
-                    className="rounded-2xl border border-slate-200 bg-white px-6 py-5 text-slate-800 shadow-sm"
+                    className="rounded-[1.75rem] border border-[#e6d3d3] bg-[#f3dddd] px-6 py-5 text-[#4b2230] shadow-sm"
                   >
-                    {item}
+                    <p className="text-lg font-medium leading-8">{item}</p>
                   </div>
                 ))}
+              </div>
+
+              <div className="mt-10 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+                <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+                  Why this model works
+                </p>
+                <h3 className="mt-4 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+                  Built for meaningful progress, confidence and whole-child
+                  development.
+                </h3>
+
+                <div className="mt-6 space-y-5 text-lg leading-8 text-slate-700">
+                  <p>
+                    The three-hour structure is intentionally designed to create
+                    momentum, focus and success without cognitive overload. For
+                    many boys, a shorter, high-quality session leads to stronger
+                    engagement, better regulation and more consistent progress
+                    than a longer day that leaves them drained.
+                  </p>
+
+                  <p>
+                    Groups are capped at <strong>just four children</strong>,
+                    creating the ideal balance between highly personalised
+                    teaching and the social growth many boys thrive on:
+                    resilience, mutual respect, empathy, confident speaking,
+                    active listening and collaborative problem-solving.
+                  </p>
+
+                  <p>
+                    This means children are not only supported in English and
+                    Maths, but also in the character and communication skills
+                    that are often overlooked and yet make a huge difference to
+                    confidence, relationships and future success.
+                  </p>
+
+                  <p>
+                    This approach is strengthened by my background in{" "}
+                    <strong>oracy and communication development</strong>,
+                    including published work with Cambridge University. In a
+                    small-group setting, children have meaningful opportunities
+                    to speak, listen, reflect, build confidence and learn how to
+                    contribute positively within a team.
+                  </p>
+
+                  <p>
+                    For families looking for something more personal than
+                    mainstream provision, this creates an environment where boys
+                    can feel safe, understood, motivated and successful again.
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -614,7 +754,9 @@ export default function Page() {
                 <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
                   Investment
                 </p>
-                <p className="mt-3 text-5xl font-semibold text-[#12284C]">£195</p>
+                <p className="mt-3 text-5xl font-semibold text-[#12284C]">
+                  £195
+                </p>
                 <p className="mt-2 text-lg text-slate-700">
                   Per child for a structured 3-hour daytime session
                 </p>
@@ -626,7 +768,6 @@ export default function Page() {
                 <p>Designed for home and hybrid education</p>
                 <p>Limited places available</p>
               </div>
-
               <div className="px-8 pb-8">
                 <Link
                   href="/contact"
@@ -650,7 +791,9 @@ export default function Page() {
               Training, CPD and behaviour support for schools.
             </h2>
             <p className="mt-6 text-lg leading-8 text-slate-700">
-              Warren Dodd Education also provides whole-staff CPD, behaviour support, mentoring and outreach for schools looking to strengthen relationships, understanding, inclusion and classroom practice.
+              Warren Dodd Education also provides whole-staff CPD, behaviour
+              support, mentoring and outreach for schools looking to strengthen
+              relationships, understanding, inclusion and classroom practice.
             </p>
           </div>
 
@@ -663,7 +806,9 @@ export default function Page() {
                 Understanding Behaviour &amp; Masculinity
               </h3>
               <p className="mt-4 leading-8 text-slate-700">
-                Whole-staff CPD for schools exploring behaviour, masculinity, emotional literacy, online culture, PSHE links and practical classroom strategies.
+                Whole-staff CPD for schools exploring behaviour, masculinity,
+                emotional literacy, online culture, PSHE links and practical
+                classroom strategies.
               </p>
               <div className="mt-6">
                 <Link
@@ -683,7 +828,9 @@ export default function Page() {
                 Mentoring, outreach and behaviour support
               </h3>
               <p className="mt-4 leading-8 text-slate-700">
-                Tailored support for schools through mentoring, in-class guidance, behaviour support and wider outreach work focused on calm, inclusive and relational practice.
+                Tailored support for schools through mentoring, in-class
+                guidance, behaviour support and wider outreach work focused on
+                calm, inclusive and relational practice.
               </p>
               <div className="mt-6">
                 <Link
@@ -709,7 +856,8 @@ export default function Page() {
                 Clearer, simpler, easier to understand.
               </h2>
               <p className="mt-6 text-lg leading-8 text-slate-300">
-                Families should know exactly what this is, who it is for, and why the small-group model matters.
+                Families should know exactly what this is, who it is for, and
+                why the small-group model matters.
               </p>
             </div>
 
@@ -737,7 +885,9 @@ export default function Page() {
             Book a consultation to see if this is the right fit for your child.
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-            Maximum 4 children per session. Limited places available. If you are exploring bespoke daytime tutoring, home education support, or hybrid education provision, start with a simple conversation.
+            Maximum 4 children per session. Limited places available. If you are
+            exploring bespoke daytime tutoring, home education support, or
+            hybrid education provision, start with a simple conversation.
           </p>
           <div className="mt-10 flex justify-center">
             <Link
