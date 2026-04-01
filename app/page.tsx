@@ -372,17 +372,18 @@ export default function Page() {
         <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
           <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
             <div className="rounded-[2rem] bg-[#12284C] p-8 text-white">
-              <video
-                className="mx-auto h-36 w-36 rounded-full object-cover object-center"
-                autoPlay
-                muted
-                loop
-                playsInline
-                poster="/logo.png"
-              >
-                <source src="/hero-video.mp4" type="video/mp4" />
-              </video>
-              <h3 className="mt-6 text-center text-3xl font-semibold">Warren Dodd</h3>
+              <div className="mx-auto h-40 w-40 overflow-hidden rounded-full border-4 border-white/10 shadow-lg">
+                <img
+                  src="/hero.jpg"
+                  alt="David Warren Dodd"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              <h3 className="mt-6 text-center text-3xl font-semibold">
+                David Warren Dodd
+              </h3>
+
               <p className="mt-2 text-center text-sm uppercase tracking-[0.18em] text-slate-300">
                 BSc (Hons) • QTS • Psychology-led
               </p>
