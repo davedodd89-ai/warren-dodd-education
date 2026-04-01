@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SiteHeader from "./SiteHeader";
 import HomeschoolParentSupportSection from "./HomeschoolParentSupportSection";
 
@@ -246,18 +247,18 @@ export default function Page() {
             </div>
 
             <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
-              <a
+              <Link
                 href="/contact"
                 className="rounded-full bg-[#12284C] px-7 py-4 text-center font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
               >
                 Book a Consultation
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/cpd"
                 className="rounded-full border border-slate-300 bg-white px-7 py-4 text-center font-medium text-slate-900 transition hover:bg-slate-100"
               >
                 Explore Training &amp; CPD
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -598,12 +599,12 @@ export default function Page() {
               </div>
 
               <div className="px-8 pb-8">
-                <a
+                <Link
                   href="/contact"
                   className="inline-flex w-full items-center justify-center rounded-full bg-[#12284C] px-6 py-4 text-center font-semibold text-white transition hover:-translate-y-0.5"
                 >
                   Enquire About a Place
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -636,12 +637,12 @@ export default function Page() {
                 Whole-staff CPD for schools exploring behaviour, masculinity, emotional literacy, online culture, PSHE links and practical classroom strategies.
               </p>
               <div className="mt-6">
-                <a
+                <Link
                   href="/cpd"
                   className="inline-flex rounded-full bg-[#12284C] px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5"
                 >
                   View CPD Page
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -656,12 +657,12 @@ export default function Page() {
                 Tailored support for schools through mentoring, in-class guidance, behaviour support and wider outreach work focused on calm, inclusive and relational practice.
               </p>
               <div className="mt-6">
-                <a
+                <Link
                   href="/schools"
                   className="inline-flex rounded-full border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-900 transition hover:bg-slate-100"
                 >
                   View School Support
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -710,12 +711,12 @@ export default function Page() {
             Maximum 4 children per session. Limited places available. If you are exploring bespoke daytime tutoring, home education support, or hybrid education provision, start with a simple conversation.
           </p>
           <div className="mt-10 flex justify-center">
-            <a
+            <Link
               href="/contact"
               className="inline-flex rounded-full bg-[#12284C] px-8 py-4 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
             >
               Book a Consultation
-            </a>
+            </Link>
           </div>
         </div>
       </section>
