@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 const navItems = [
@@ -20,27 +19,18 @@ export default function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-[#F7F7F4]/95 shadow-[0_8px_30px_rgba(15,23,42,0.06)] backdrop-blur-md">
-      <div className="mx-auto max-w-7xl px-4 py-4 md:px-8">
+      <div className="mx-auto max-w-7xl px-4 py-2 md:px-8">
         {/* desktop */}
         <div className="hidden xl:block">
-          <Link href="/" className="flex flex-col items-center text-center">
-            <Image
-              src="/logo.png"
+          <Link href="/" className="flex flex-col items-center">
+            <img
+              src="/logo.svg"
               alt="Warren Dodd Education"
-              width={320}
-              height={320}
-              className="h-28 w-28 object-contain"
-              priority
+              className="h-auto w-[390px] object-contain"
             />
-            <p className="mt-2 text-2xl font-semibold tracking-tight text-[#12284C]">
-              Warren Dodd Education
-            </p>
-            <p className="text-sm text-slate-600">
-              Bespoke daytime tutoring • Confidence • Resilience
-            </p>
           </Link>
 
-          <div className="mt-5 flex items-center justify-center gap-6">
+          <div className="mt-3 flex items-center justify-center gap-6">
             <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-medium text-slate-700">
               {navItems.map((item) => (
                 <Link
@@ -65,23 +55,12 @@ export default function SiteHeader() {
         {/* mobile / tablet */}
         <div className="xl:hidden">
           <div className="flex items-center justify-between gap-3">
-            <Link href="/" className="flex min-w-0 items-center gap-3">
-              <Image
-                src="/logo.png"
+            <Link href="/" className="min-w-0 flex-1">
+              <img
+                src="/logo.svg"
                 alt="Warren Dodd Education"
-                width={220}
-                height={220}
-                className="h-20 w-20 shrink-0 object-contain"
-                priority
+                className="h-auto w-[235px] max-w-full object-contain"
               />
-              <div className="min-w-0">
-                <p className="truncate text-base font-semibold tracking-tight text-[#12284C]">
-                  Warren Dodd Education
-                </p>
-                <p className="text-xs text-slate-600">
-                  Bespoke daytime tutoring
-                </p>
-              </div>
             </Link>
 
             <button
@@ -96,7 +75,7 @@ export default function SiteHeader() {
           </div>
 
           {open && (
-            <div className="mt-4 rounded-3xl border border-slate-200 bg-white p-5 shadow-lg">
+            <div className="mt-3 rounded-3xl border border-slate-200 bg-white p-5 shadow-lg">
               <nav className="grid gap-2 text-base font-medium text-slate-800">
                 {navItems.map((item) => (
                   <Link
