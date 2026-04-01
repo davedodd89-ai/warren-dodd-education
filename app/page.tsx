@@ -545,8 +545,15 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
-        <div className="max-w-3xl">
+      <section className="relative mx-auto max-w-7xl overflow-hidden px-6 py-20 md:px-10 lg:py-24">
+        <img
+          src="/logo.svg"
+          alt=""
+          aria-hidden="true"
+          className="pointer-events-none absolute right-[-120px] top-8 hidden w-[320px] opacity-[0.035] lg:block xl:w-[380px]"
+        />
+
+        <div className="relative max-w-3xl">
           <p className="text-sm uppercase tracking-[0.25em] text-slate-500">
             What changes
           </p>
@@ -561,7 +568,7 @@ export default function Page() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="relative mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {transformationCards.map((item) => (
             <div
               key={item.title}
@@ -743,8 +750,15 @@ export default function Page() {
         </div>
       </section>
 
-      <footer className="border-t border-slate-200 bg-white py-6 text-center text-sm text-slate-500">
-        Warren Dodd Education
+      <footer className="border-t border-slate-200 bg-white">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center px-6 py-8 text-center md:px-10">
+          <img
+            src="/logo.svg"
+            alt="Warren Dodd Education"
+            className="mb-4 h-auto w-[120px] opacity-80"
+          />
+          <p className="text-sm text-slate-500">Warren Dodd Education</p>
+        </div>
       </footer>
     </div>
   );
