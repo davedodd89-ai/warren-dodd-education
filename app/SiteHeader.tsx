@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   { label: "The Challenge", href: "/#challenge" },
@@ -16,21 +17,59 @@ const navItems = [
 
 export default function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-[#F7F7F4]/95 shadow-[0_8px_30px_rgba(15,23,42,0.06)] backdrop-blur-md">
-      <div className="mx-auto max-w-7xl px-4 py-2 md:px-8">
-        {/* desktop */}
-        <div className="hidden xl:block">
-          <Link href="/" className="flex flex-col items-center">
-            <img
-              src="/logo.svg"
-              alt="Warren Dodd Education"
-              className="h-auto w-[390px] object-contain"
-            />
-          </Link>
+      <div
+        className={`mx-auto max-w-7xl px-4 md:px-8 ${
+          isHome ? "py-2" : "py-3"
+        }`}
+      >
+        {/* desktop home */}
+        {isHome ? (
+          <div className="hidden xl:block">
+            <Link href="/" className="flex flex-col items-center">
+              <img
+                src="/logo.svg"
+                alt="Warren Dodd Education"
+                className="h-auto w-[390px] object-contain"
+              />
+            </Link>
 
-          <div className="mt-3 flex items-center justify-center gap-6">
+            <div className="mt-3 flex items-center justify-center gap-6">
+              <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-medium text-slate-700">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    className="transition hover:text-[#12284C]"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </nav>
+
+              <Link
+                href="/contact"
+                className="rounded-full bg-[#12284C] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+              >
+                Make an Enquiry
+              </Link>
+            </div>
+          </div>
+        ) : (
+          /* desktop inner pages */
+          <div className="hidden xl:flex xl:items-center xl:justify-between xl:gap-8">
+            <Link href="/" className="shrink-0">
+              <img
+                src="/logo.svg"
+                alt="Warren Dodd Education"
+                className="h-auto w-[220px] object-contain"
+              />
+            </Link>
+
             <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-medium text-slate-700">
               {navItems.map((item) => (
                 <Link
@@ -45,21 +84,27 @@ export default function SiteHeader() {
 
             <Link
               href="/contact"
-              className="rounded-full bg-[#12284C] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+              className="shrink-0 rounded-full bg-[#12284C] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
             >
               Make an Enquiry
             </Link>
           </div>
-        </div>
+        )}
 
         {/* mobile / tablet */}
         <div className="xl:hidden">
-          <div className="relative flex min-h-[110px] items-center justify-center">
+          <div
+            className={`relative flex items-center justify-center ${
+              isHome ? "min-h-[110px]" : "min-h-[82px]"
+            }`}
+          >
             <Link href="/" className="flex justify-center">
               <img
                 src="/logo.svg"
                 alt="Warren Dodd Education"
-                className="h-auto w-[220px] max-w-full object-contain sm:w-[235px]"
+                className={`h-auto max-w-full object-contain ${
+                  isHome ? "w-[220px] sm:w-[235px]" : "w-[170px] sm:w-[185px]"
+                }`}
               />
             </Link>
 
