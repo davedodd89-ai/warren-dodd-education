@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import SiteHeader from "./SiteHeader";
 
 export default function Page() {
@@ -42,7 +42,7 @@ export default function Page() {
     },
     {
       title: "Confidence for parents",
-      text: "Know exactly what matters most each day through clear priorities in reading, writing, maths, and wider enrichment — without trying to recreate a full school timetable at home.",
+      text: "Know exactly what matters most each day through clear priorities in reading, writing, maths, and wider enrichment - without trying to recreate a full school timetable at home.",
     },
     {
       title: "Less resistance, more engagement",
@@ -114,7 +114,7 @@ export default function Page() {
 
             <p className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
               Our work is relationship-led at its core, built on human trust,
-              mutual respect and empathy — because children learn best when they
+              mutual respect and empathy - because children learn best when they
               feel genuinely known, understood, and valued. Social and emotional
               support matters deeply, and creating a calm, friendly and safe
               learning environment is a central part of what we do.
@@ -155,7 +155,7 @@ export default function Page() {
               </p>
 
               <p className="mt-2 text-xl font-semibold text-[#12284C] md:text-2xl">
-                Tuesday mornings · 9:30–12:30
+                Tuesday mornings · 9:30-12:30
               </p>
 
               <p className="mt-2 text-base font-medium text-slate-700 md:text-lg">
@@ -300,7 +300,7 @@ export default function Page() {
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                I make every effort to understand the child in front of me —
+                I make every effort to understand the child in front of me -
                 their strengths, their interests, their barriers, and the way
                 they learn best. This is why the work is not just about
                 tutoring. It is about creating the kind of environment where
@@ -377,7 +377,7 @@ export default function Page() {
                   This is not an after-school one-hour slot. It is carefully
                   designed daytime provision for children aged 8 to 11 who need
                   a more personal, energising and confidence-building way to
-                  learn — especially those in home education and flexi
+                  learn - especially those in home education and flexi
                   schooling.
                 </p>
 
@@ -405,7 +405,7 @@ export default function Page() {
 
                 <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
                   When home learning begins to feel exhausting, the issue is
-                  rarely effort — it is usually structure, pace, and emotional
+                  rarely effort - it is usually structure, pace, and emotional
                   load. My support helps parents simplify the day, reduce
                   pressure, and rebuild confidence so learning becomes
                   sustainable again.

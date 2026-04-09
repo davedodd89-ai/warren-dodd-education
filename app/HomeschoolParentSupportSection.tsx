@@ -1,4 +1,4 @@
-export default function HomeschoolParentSupportSection() {
+﻿export default function HomeschoolParentSupportSection() {
   const benefits = [
     {
       title: "Reduced daily pressure",
@@ -6,7 +6,7 @@ export default function HomeschoolParentSupportSection() {
     },
     {
       title: "Confidence for parents",
-      text: "Know exactly what matters most each day through clear priorities in reading, writing, maths, and wider enrichment—without trying to recreate a full school timetable at home.",
+      text: "Know exactly what matters most each day through clear priorities in reading, writing, maths, and wider enrichment-without trying to recreate a full school timetable at home.",
     },
     {
       title: "Less resistance, more engagement",
@@ -31,7 +31,7 @@ export default function HomeschoolParentSupportSection() {
           </h2>
 
           <p className="mt-5 text-lg leading-8 text-slate-600">
-            When home learning begins to feel exhausting, the issue is rarely effort—it
+            When home learning begins to feel exhausting, the issue is rarely effort-it
             is usually structure, pace, and emotional load. My support helps parents
             simplify the day, reduce pressure, and rebuild confidence so learning
             becomes sustainable again.
