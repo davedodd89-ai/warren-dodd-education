@@ -149,6 +149,33 @@ export default function Page() {
               </span>
             </div>
 
+            <div className="mt-6 rounded-[1.6rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-5 shadow-sm">
+              <p className="text-xs uppercase tracking-[0.18em] text-slate-500 md:text-sm">
+                Launching now
+              </p>
+
+              <p className="mt-2 text-xl font-semibold text-[#12284C] md:text-2xl">
+                Tuesday mornings · 9:30–12:30
+              </p>
+
+              <p className="mt-2 text-base font-medium text-slate-700 md:text-lg">
+                Alderley Edge, Cheshire
+              </p>
+
+              <p className="mt-3 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
+                Includes break time, snacks, refreshments and a calm social
+                learning environment.
+              </p>
+
+              <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
+                Maximum 4 children · limited launch places
+              </p>
+
+              <p className="mt-3 text-sm font-medium text-slate-700 md:text-base">
+                Now taking enquiries for September 2026
+              </p>
+            </div>
+
             <div className="mt-7">
               <Link
                 href="/contact"
