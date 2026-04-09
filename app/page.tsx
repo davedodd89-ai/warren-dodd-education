@@ -67,6 +67,18 @@ export default function Page() {
 
       <SiteHeader />
 
+      <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-6 text-center md:px-10">
+          <p className="text-xl font-medium leading-9 text-[#12284C] md:text-2xl">
+            It’s not <span className="font-semibold text-[#D8B35B]">what</span>{" "}
+            we learn.
+            <br />
+            It’s <span className="font-semibold text-[#D8B35B]">how</span> we
+            learn.
+          </p>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-7xl px-6 pb-10 pt-6 md:px-10 md:pb-12 md:pt-8">
         <div className="grid items-start gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-10">
           <div className="order-1 mx-auto w-full max-w-[360px] lg:order-2 lg:max-w-[390px]">
@@ -95,47 +107,45 @@ export default function Page() {
               What we offer
             </p>
 
-            <h1 className="mt-4 text-[1.95rem] font-semibold leading-[0.97] tracking-[-0.05em] text-[#12284C] sm:text-[2.4rem] md:text-[2.95rem] lg:text-[3.55rem]">
-              Bespoke premium daytime education for home-educated children and
+            <h1 className="mt-4 max-w-4xl text-[2.2rem] font-semibold leading-[0.95] tracking-[-0.05em] text-[#12284C] sm:text-[2.8rem] md:text-[3.5rem] lg:text-[4.2rem]">
+              Bespoke daytime education for home-educated children and
               flexi-schoolers.
             </h1>
 
-            <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 md:text-[1.04rem] md:leading-8">
-              <span className="font-semibold text-[#12284C]">
-                Bespoke daytime education for home-educated children and
-                flexi-schoolers — designed to make learning genuinely engaging,
-                enjoyable and confidence-building.
-              </span>
+            <p className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              Our work is relationship-led at its core, built on human trust,
+              mutual respect and empathy — because children learn best when they
+              feel genuinely known, understood, and valued. Social and emotional
+              support matters deeply, and creating a calm, friendly and safe
+              learning environment is a central part of what we do.
+              Understanding what truly motivates each child is where our
+              strengths lie.
             </p>
 
-            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-[1.04rem] md:leading-8">
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
               Warren Dodd Education is personal, thoughtful, and built around
               knowing each child well: their interests, strengths, learning
               style, and the emotional factors that shape how they engage.
             </p>
 
-            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-[1.04rem] md:leading-8">
-              Our work is relationship-led at its core, built on foundations of
-              mutual respect and empathy — because children learn best when they
-              feel genuinely known, understood, and valued. Understanding what
-              truly motivates them is where our strengths lie.
-            </p>
-
-            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-[1.04rem] md:leading-8">
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
               The work is driven by a genuine passion for helping children grow
-              in confidence, self-belief, and resilience — and for giving them
-              a real sense of ownership over their own learning.
+              in confidence, self-belief and resilience, while giving them a
+              stronger sense of ownership over their learning journey.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-2.5">
               <span className="rounded-full border border-amber-300 bg-amber-50 px-3.5 py-2 text-xs text-amber-800 md:text-sm">
-                Bespoke by design
+                Maximum 4 children
               </span>
               <span className="rounded-full border border-sky-300 bg-sky-50 px-3.5 py-2 text-xs text-sky-800 md:text-sm">
-                Daytime only
+                3-hour daytime sessions
               </span>
               <span className="rounded-full border border-emerald-300 bg-emerald-50 px-3.5 py-2 text-xs text-emerald-800 md:text-sm">
                 Home education &amp; flexi schooling
+              </span>
+              <span className="rounded-full border border-rose-300 bg-rose-50 px-3.5 py-2 text-xs text-rose-800 md:text-sm">
+                Limited places available
               </span>
             </div>
 
@@ -148,18 +158,6 @@ export default function Page() {
               </Link>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="border-y border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-6 text-center md:px-10">
-          <p className="text-xl font-medium leading-9 text-[#12284C] md:text-2xl">
-            It’s not <span className="font-semibold text-[#D8B35B]">what</span>{" "}
-            we learn.
-            <br />
-            It’s <span className="font-semibold text-[#D8B35B]">how</span> we
-            learn.
-          </p>
         </div>
       </section>
 
@@ -315,6 +313,10 @@ export default function Page() {
 
               <p className="mt-3 text-lg font-medium text-[#12284C]">
                 £195 per daytime session
+              </p>
+
+              <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-slate-500">
+                Maximum 4 children per group
               </p>
 
               <div className="mt-5 space-y-2.5 text-sm text-slate-700 md:text-base">
