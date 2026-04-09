@@ -1,23 +1,33 @@
 import Link from "next/link";
 import SiteHeader from "./SiteHeader";
-import HomeschoolParentSupportSection from "./HomeschoolParentSupportSection";
 
 export default function Page() {
-  const trustPoints = [
-    "Bespoke daytime tutoring for children aged 8–11",
-    "Designed for home education and hybrid education families",
-    "Maximum 4 children per session for close support",
-    "Psychology-informed, relationship-led teaching",
+  const testimonialSnippets = [
+    {
+      quote:
+        "Mr Dodd is an exceptional teacher. His passion for the psychology of how boys learn has enabled him to truly understand our son’s learning style and engage his full potential in a fun, nurturing way.",
+      source: "Parent of boy aged 8",
+    },
+    {
+      quote:
+        "From day one, our son felt that Mr Dodd was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.",
+      source: "Parent of boy aged 9",
+    },
+    {
+      quote:
+        "From the outset, Mr Dodd took the time to fully understand our son: his struggles, his interests, what motivates him, and what holds him back. Connection and understanding come first, and the teaching follows naturally.",
+      source: "Parent of boy aged 8",
+    },
   ];
 
-  const outcomes = [
-    "A child who feels more confident in themselves",
-    "A child who feels understood rather than judged",
-    "A child who enjoys learning again",
-    "A child who grows in self-esteem, resilience and belief",
+  const whoIAmPoints = [
+    "15 years in primary education",
+    "BSc (Hons) Psychology, Primary PGCE and QTS",
+    "Experience across mainstream and SEND",
+    "Teaching shaped around the child, not just the curriculum",
   ];
 
-  const programme = [
+  const programmePoints = [
     "A calm, safe start that helps your child feel settled and ready to learn",
     "Personalised English and Maths teaching matched to their needs and confidence level",
     "Movement and regulation breaks that reduce overwhelm and improve focus",
@@ -25,276 +35,48 @@ export default function Page() {
     "Positive reflection so they leave feeling proud, successful and ready for tomorrow",
   ];
 
-  const whoItsFor = [
-    "have lost confidence in learning",
-    "struggle in busy classroom settings",
-    "avoid or resist schoolwork",
-    "benefit from smaller, calmer and more structured teaching",
-    "need closer support, clearer routines and stronger relationships",
-    "are in home education or hybrid education and need more than standard tutoring",
-  ];
-
-  const testimonials = [
+  const homeEducationSupport = [
     {
-      child: "Parent of boy aged 8",
-      quotes: [
-        "Mr Dodd is an exceptional teacher. His passion for the psychology of how boys learn has enabled him to truly understand our son’s learning style and engage his full potential in a fun, nurturing way.",
-        "We feel very fortunate to have found Mr Dodd and look forward to the journey ahead.",
-      ],
+      title: "Reduced daily pressure",
+      text: "Bring calm and structure back into home learning with a rhythm that reduces conflict, decision fatigue, and the sense that learning never truly ends.",
     },
     {
-      child: "Parent of girl aged 10",
-      quotes: [
-        "Mr Dodd has been tutoring our son and daughter for the past 18 months, and they have both genuinely enjoyed the sessions. He’s taken the time to get to know them as individuals, which has helped build trust and keep them engaged.",
-        "He also makes a point of ending each lesson on a positive note, often with something light and fun.",
-        "He’s worked closely with us to tailor the tutoring to each child’s needs, so we’re consistently getting real value from the time.",
-        "Beyond the sessions themselves, Mr Dodd has also supported us as parents by helping us frame the right questions for their class teachers, which has made it easier to stay aligned and reinforce learning at home.",
-      ],
+      title: "Confidence for parents",
+      text: "Know exactly what matters most each day through clear priorities in reading, writing, maths, and wider enrichment — without trying to recreate a full school timetable at home.",
     },
     {
-      child: "Parent of boy aged 8",
-      quotes: [
-        "We have seen outstanding progress in our 8-year-old boy over the past year, and a huge part of that is down to Mr Dodd’s exceptional approach to tutoring.",
-        "From the outset, Mr Dodd took the time to fully understand our son: his struggles, his interests, what motivates him, and what holds him back. Connection and understanding the child clearly come first, and the teaching follows naturally. This is why he is so successful.",
-        "Every session feels tailored specifically to our son, and he genuinely looks forward to their time together, which speaks volumes.",
-        "Mr Dodd brings wonderful variety to each session, weaving our son’s interests into the learning in creative and meaningful ways.",
-      ],
+      title: "Less resistance, more engagement",
+      text: "Sessions are built around your child’s attention span, interests, and emotional needs so learning feels purposeful rather than a daily battle.",
     },
     {
-      child: "Parent of boy aged 9",
-      quotes: [
-        "Perhaps most importantly, Mr Dodd has built our son’s confidence enormously. It has been a joy to watch him approach new topics with such positivity and belief in himself.",
-        "From day one, our son felt that Mr Dodd was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.",
-        "Mr Dodd is an absolute credit to the teaching profession. We feel incredibly lucky to have found him and cannot recommend him highly enough.",
-      ],
-    },
-    {
-      child: "Parent of past pupil ‘D’",
-      quotes: [
-        "We are hugely grateful for your work with D. You are his best teacher he’s ever had and have somehow instilled a love for his learning.",
-        "You must have superpowers! He genuinely looks forward to the sessions and wants to go.",
-        "You are unique and thank you for being who you are and what you do, helping D.",
-        "He holds you in the highest regards, so passionately.",
-        "You have become so popular in our house we have made up a tongue twister about you, Mr Dodd!",
-        "You help D thrive and you are a favourite in the house and in the family. You are fab.",
-      ],
-    },
-    {
-      child: "Parent of boy aged 10",
-      quotes: [
-        "Mr Dodd has been tutoring ‘B’ for over two years and has consistently outdone himself. He engages ‘B’ in every lesson and makes learning as fun as possible.",
-        "Not only has he helped ‘B’ tackle difficult topics in Maths and English, we have also seen a real positive change in ‘B’s confidence.",
-        "Mr Dodd is so much more than just a tutor. He is also a brilliant role model. We highly recommend him to anyone considering a tutor for their child.",
-      ],
+      title: "Expert guidance without the overwhelm",
+      text: "You do not need to carry every subject, every routine, and every decision alone. I help create a sustainable plan that works for real family life.",
     },
   ];
 
-  const transformationCards = [
-    {
-      title: "Confidence",
-      text: "A child who no longer doubts themselves first, but begins to think, “I can do this.”",
-    },
-    {
-      title: "Self-esteem",
-      text: "A child who feels valued, respected and proud of who they are — not compared, labelled or overlooked.",
-    },
-    {
-      title: "Resilience",
-      text: "A child who keeps going when learning feels demanding, rather than stepping back from it.",
-    },
-    {
-      title: "Engagement",
-      text: "A child who becomes interested, involved and willing to try, because learning feels relevant and achievable.",
-    },
-    {
-      title: "Understanding",
-      text: "A child who feels deeply understood, because teaching is built around how they think, feel and learn.",
-    },
-    {
-      title: "Belonging",
-      text: "A child who feels safe, supported and on the same team as the adult teaching them.",
-    },
-  ];
-
-  const faqs = [
-    {
-      question: "What exactly is Warren Dodd Education?",
-      answer:
-        "A premium bespoke daytime tutoring programme for children aged 8 to 11, especially those in home education or hybrid education. It combines English and Maths with confidence-building, resilience, communication and emotional development.",
-    },
-    {
-      question: "Who is it for?",
-      answer:
-        "It is designed for children who need more than generic tutoring, especially those who benefit from a more personalised, closely supported and relationship-based approach.",
-    },
-    {
-      question: "When does it run?",
-      answer:
-        "Sessions run in the daytime for families using home education or hybrid education. This is not a one-hour after-school tutor slot.",
-    },
-    {
-      question: "Why are places limited?",
-      answer:
-        "Because this is bespoke by design. With a maximum of four children per session, every child can be deeply known, properly supported and carefully challenged.",
-    },
+  const enquiryPoints = [
+    "Home education support",
+    "Flexi schooling support",
+    "Daytime tutoring",
+    "A more personal alternative to traditional tutoring",
   ];
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#F7F7F4] text-slate-900">
-      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[680px] bg-[radial-gradient(circle_at_top,rgba(18,40,76,0.06),transparent_42%),radial-gradient(circle_at_right,rgba(18,40,76,0.04),transparent_34%)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[460px] bg-[radial-gradient(circle_at_top,rgba(18,40,76,0.06),transparent_42%),radial-gradient(circle_at_right,rgba(18,40,76,0.04),transparent_34%)]" />
 
       <SiteHeader />
 
-      <section className="mx-auto max-w-7xl px-6 pb-12 pt-6 md:px-10 lg:pb-16 lg:pt-8">
-        <div className="grid items-start gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
-          <div className="relative z-10 mx-auto max-w-3xl text-center lg:mx-0 lg:text-left">
-            <div className="mb-8 overflow-hidden rounded-[2rem] border border-white/80 bg-white/95 p-3 shadow-[0_16px_50px_rgba(15,23,42,0.10)] lg:hidden">
-              <div className="overflow-hidden rounded-[1.4rem] bg-slate-100">
-                <video
-                  className="h-[220px] w-full object-cover object-center"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  poster="/logo.png"
-                >
-                  <source src="/hero-video.mp4" type="video/mp4" />
-                </video>
-              </div>
-            </div>
-
-            <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-              Bespoke daytime tutoring • Training &amp; CPD • Home &amp; hybrid
-              education
-            </p>
-
-            <p className="mt-6 text-xl font-medium leading-9 text-[#12284C] md:text-2xl">
-              It’s not <span className="font-semibold text-[#D8B35B]">what</span>{" "}
-              we learn.
-              <br className="hidden sm:block" />
-              It’s <span className="font-semibold text-[#D8B35B]">how</span> we
-              learn.
-            </p>
-
-            <h1 className="mt-5 max-w-3xl text-[2.15rem] font-semibold leading-[0.98] tracking-[-0.05em] text-[#12284C] sm:text-[2.7rem] md:text-[3.3rem] lg:text-[4rem] xl:text-[4.35rem]">
-              Bespoke daytime tutoring that builds confidence, self-belief and
-              resilience.
-            </h1>
-
-            <p className="mt-4 max-w-3xl text-[1.1rem] font-medium leading-8 text-slate-700 md:text-[1.3rem]">
-              Built around your child and their needs.
-            </p>
-
-            <p className="mt-4 max-w-3xl text-base leading-8 text-slate-700 md:text-[1.02rem]">
-              A premium, relationship-led and psychology-informed approach to
-              daytime tutoring that helps children feel more secure, more
-              capable and more engaged in learning. Built on 15 years of
-              teaching experience, a degree in Psychology, and a deep
-              understanding of how children learn, connect and grow in
-              confidence.
-            </p>
-
-            <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-sm lg:justify-start">
-              <span className="rounded-full border border-emerald-300 bg-emerald-50 px-4 py-2 text-emerald-800">
-                Maximum 4 children
-              </span>
-              <span className="rounded-full border border-amber-300 bg-amber-50 px-4 py-2 text-amber-800">
-                Bespoke by design
-              </span>
-              <span className="rounded-full border border-sky-300 bg-sky-50 px-4 py-2 text-sky-800">
-                Daytime only
-              </span>
-            </div>
-
-            <div className="mt-8 max-w-3xl space-y-4">
-              <div className="rounded-[1.75rem] border border-slate-200 bg-white/95 px-6 py-5 text-left shadow-sm">
-                <p className="text-[1rem] leading-7 text-slate-800">
-                  “Mr Dodd is an exceptional teacher. His passion for the
-                  psychology of how boys learn has enabled him to truly
-                  understand our son’s learning style and engage his full
-                  potential in a fun, nurturing way. We feel very fortunate to
-                  have found Mr Dodd and look forward to the journey ahead.”
-                </p>
-                <p className="mt-4 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-                  Parent of boy aged 8
-                </p>
-              </div>
-
-              <div className="grid gap-4 sm:grid-cols-2">
-                <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
-                  <p className="text-sm leading-6 text-slate-800">
-                    “Mr Dodd has been tutoring our son and daughter for the past
-                    18 months, and they have both genuinely enjoyed the
-                    sessions. He’s taken the time to get to know them as
-                    individuals, which has helped build trust and keep them
-                    engaged.”
-                  </p>
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-                    Parent of girl aged 10
-                  </p>
-                </div>
-
-                <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
-                  <p className="text-sm leading-6 text-slate-800">
-                    “From the outset, Mr Dodd took the time to fully understand
-                    our son: his struggles, his interests, what motivates him,
-                    and what holds him back. Connection and understanding the
-                    child clearly come first, and the teaching follows
-                    naturally.”
-                  </p>
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-                    Parent of boy aged 8
-                  </p>
-                </div>
-
-                <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
-                  <p className="text-sm leading-6 text-slate-800">
-                    “From day one, our son felt that Mr Dodd was on his side,
-                    that they were a team, and this created a strong sense of
-                    mutual respect that has been invaluable.”
-                  </p>
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-                    Parent of boy aged 9
-                  </p>
-                </div>
-
-                <div className="rounded-[1.5rem] border border-slate-200 bg-white/95 px-5 py-4 text-left shadow-sm">
-                  <p className="text-sm leading-6 text-slate-800">
-                    “We are hugely grateful for your work with D. You are his
-                    best teacher he’s ever had and have somehow instilled a love
-                    for his learning. You must have superpowers! He genuinely
-                    looks forward to the sessions and wants to go.”
-                  </p>
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">
-                    Parent of past pupil ‘D’
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
-              <Link
-                href="/contact"
-                className="rounded-full bg-[#12284C] px-7 py-4 text-center font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
-              >
-                Book a Consultation
-              </Link>
-              <Link
-                href="/cpd"
-                className="rounded-full border border-slate-300 bg-white px-7 py-4 text-center font-medium text-slate-900 transition hover:bg-slate-100"
-              >
-                Explore Training &amp; CPD
-              </Link>
-            </div>
-          </div>
-
-          <div className="mx-auto hidden w-full max-w-[420px] lg:block xl:max-w-[460px]">
+      <section className="mx-auto max-w-7xl px-6 pb-10 pt-6 md:px-10 md:pb-12 md:pt-8">
+        <div className="grid items-start gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-10">
+          <div className="order-1 mx-auto w-full max-w-[360px] lg:order-2 lg:max-w-[390px]">
             <div className="relative">
-              <div className="absolute -inset-4 rounded-[2.2rem] bg-slate-200/15 blur-2xl" />
-              <div className="relative overflow-hidden rounded-[2rem] border border-white/80 bg-white/95 p-3 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
-                <div className="overflow-hidden rounded-[1.4rem] bg-slate-100">
+              <div className="absolute -inset-2 rounded-[1.6rem] bg-slate-200/15 blur-2xl" />
+
+              <div className="relative overflow-hidden rounded-[1.5rem] border border-white/80 bg-white/95 p-2 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
+                <div className="overflow-hidden rounded-[1.15rem] bg-slate-100">
                   <video
-                    className="h-[280px] w-full object-cover object-center xl:h-[320px]"
+                    className="h-[180px] w-full object-cover object-center md:h-[220px] lg:h-[260px]"
                     autoPlay
                     muted
                     loop
@@ -304,110 +86,138 @@ export default function Page() {
                     <source src="/hero-video.mp4" type="video/mp4" />
                   </video>
                 </div>
-
-                <div className="px-5 pb-5 pt-5">
-                  <p className="text-base font-medium text-slate-900 md:text-lg">
-                    Calm, personal, premium support for children aged 8–11.
-                  </p>
-                  <p className="mt-2 text-sm leading-7 text-slate-600 md:text-base">
-                    Designed for families seeking depth, care and meaningful
-                    long-term progress.
-                  </p>
-
-                  <div className="mt-5 grid gap-3">
-                    <div className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm text-slate-800">
-                      Maximum 4 children per session
-                    </div>
-                    <div className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm text-slate-800">
-                      Relationship-led and psychology-informed
-                    </div>
-                    <div className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm text-slate-800">
-                      Built for home education and hybrid education families
-                    </div>
-                  </div>
-
-                  <div className="mt-6">
-                    <Link
-                      href="/contact"
-                      className="inline-flex w-full items-center justify-center rounded-full bg-[#12284C] px-6 py-4 text-center font-semibold text-white transition hover:-translate-y-0.5"
-                    >
-                      Enquire About a Place
-                    </Link>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
+
+          <div className="order-2 max-w-3xl lg:order-1">
+            <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+              What we offer
+            </p>
+
+            <h1 className="mt-4 text-[1.95rem] font-semibold leading-[0.97] tracking-[-0.05em] text-[#12284C] sm:text-[2.4rem] md:text-[2.95rem] lg:text-[3.55rem]">
+              Bespoke premium daytime education for home-educated children and
+              flexi-schoolers.
+            </h1>
+
+            <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 md:text-[1.04rem] md:leading-8">
+              <span className="font-semibold text-[#12284C]">
+                Bespoke daytime education for home-educated children and
+                flexi-schoolers — designed to make learning genuinely engaging,
+                enjoyable and confidence-building.
+              </span>
+            </p>
+
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-[1.04rem] md:leading-8">
+              Warren Dodd Education is personal, thoughtful, and built around
+              knowing each child well: their interests, strengths, learning
+              style, and the emotional factors that shape how they engage.
+            </p>
+
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-[1.04rem] md:leading-8">
+              Our work is relationship-led at its core, built on foundations of
+              mutual respect and empathy — because children learn best when they
+              feel genuinely known, understood, and valued. Understanding what
+              truly motivates them is where our strengths lie.
+            </p>
+
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-[1.04rem] md:leading-8">
+              The work is driven by a genuine passion for helping children grow
+              in confidence, self-belief, and resilience — and for giving them
+              a real sense of ownership over their own learning.
+            </p>
+
+            <div className="mt-6 flex flex-wrap gap-2.5">
+              <span className="rounded-full border border-amber-300 bg-amber-50 px-3.5 py-2 text-xs text-amber-800 md:text-sm">
+                Bespoke by design
+              </span>
+              <span className="rounded-full border border-sky-300 bg-sky-50 px-3.5 py-2 text-xs text-sky-800 md:text-sm">
+                Daytime only
+              </span>
+              <span className="rounded-full border border-emerald-300 bg-emerald-50 px-3.5 py-2 text-xs text-emerald-800 md:text-sm">
+                Home education &amp; flexi schooling
+              </span>
+            </div>
+
+            <div className="mt-7">
+              <Link
+                href="/contact"
+                className="inline-flex rounded-full bg-[#12284C] px-7 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
+              >
+                Make an Enquiry
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
       <section className="border-y border-slate-200 bg-white">
-        <div className="mx-auto grid max-w-7xl gap-5 px-6 py-9 text-center md:grid-cols-4 md:px-10">
-          {trustPoints.map((item) => (
-            <div
-              key={item}
-              className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-5 text-sm text-slate-800 shadow-sm"
+        <div className="mx-auto max-w-7xl px-6 py-6 text-center md:px-10">
+          <p className="text-xl font-medium leading-9 text-[#12284C] md:text-2xl">
+            It’s not <span className="font-semibold text-[#D8B35B]">what</span>{" "}
+            we learn.
+            <br />
+            It’s <span className="font-semibold text-[#D8B35B]">how</span> we
+            learn.
+          </p>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-12">
+          <div className="flex items-end justify-between gap-6">
+            <div className="max-w-2xl">
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                What families say
+              </p>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-3xl">
+                Families talk about trust, confidence and real change.
+              </h2>
+            </div>
+
+            <div className="hidden md:block">
+              <Link
+                href="/testimonials"
+                className="text-sm font-semibold text-[#12284C] underline underline-offset-4"
+              >
+                Read more
+              </Link>
+            </div>
+          </div>
+
+          <div className="mt-6 grid gap-4 lg:grid-cols-3">
+            {testimonialSnippets.map((item) => (
+              <div
+                key={item.quote}
+                className="flex h-full flex-col justify-between rounded-[1.5rem] border border-slate-200 bg-[#FBFBF9] p-5 shadow-sm"
+              >
+                <p className="text-sm leading-6 text-slate-800 md:text-base md:leading-7">
+                  “{item.quote}”
+                </p>
+
+                <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500 md:text-xs">
+                  {item.source}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-5 md:hidden">
+            <Link
+              href="/testimonials"
+              className="text-sm font-semibold text-[#12284C] underline underline-offset-4"
             >
-              {item}
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section
-        id="challenge"
-        className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24"
-      >
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-            <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-              The challenge many families are facing
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-              For many children, the issue is not ability — it is confidence,
-              self-esteem and how they experience learning.
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-slate-700">
-              When children lose belief in themselves, learning can begin to
-              feel heavy, frustrating or distant.
-            </p>
-            <p className="mt-4 text-lg leading-8 text-slate-700">
-              Many benefit from smaller groups, closer guidance and an approach
-              that understands how they learn best.
-            </p>
-            <p className="mt-4 text-lg leading-8 text-slate-700">
-              For boys in particular, confidence and engagement are often shaped
-              by whether they feel understood, respected and genuinely connected
-              to the adult teaching them.
-            </p>
-          </div>
-
-          <div className="rounded-[2rem] border border-[#D8C28A] bg-[#F8F3E7] p-8 shadow-sm">
-            <p className="text-sm uppercase tracking-[0.2em] text-[#8B6B1F]">
-              What this builds
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-              A child who feels safe, known, engaged and ready to grow.
-            </h2>
-            <div className="mt-8 grid gap-4">
-              {outcomes.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl border border-white bg-white px-5 py-4 text-slate-800 shadow-sm"
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
+              Read more
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="border-y border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
-          <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-            <div className="rounded-[2rem] bg-[#12284C] p-8 text-white">
-              <div className="mx-auto h-40 w-40 overflow-hidden rounded-full border-4 border-white/10 shadow-lg">
+      <section className="border-y border-slate-200 bg-[#F7F7F4]">
+        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
+          <div className="grid gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
+            <div className="rounded-[1.7rem] bg-[#12284C] p-7 text-white shadow-sm">
+              <div className="mx-auto h-32 w-32 overflow-hidden rounded-full border-4 border-white/10 shadow-lg md:h-36 md:w-36">
                 <img
                   src="/hero.jpg"
                   alt="David Warren Dodd"
@@ -415,497 +225,228 @@ export default function Page() {
                 />
               </div>
 
-              <h3 className="mt-6 text-center text-3xl font-semibold">
+              <h2 className="mt-5 text-center text-2xl font-semibold md:text-3xl">
                 David Warren Dodd
-              </h3>
+              </h2>
 
-              <p className="mt-2 text-center text-sm uppercase tracking-[0.18em] text-slate-300">
-                BSc (Hons) • QTS • Psychology-led
+              <p className="mt-2 text-center text-xs uppercase tracking-[0.18em] text-slate-300 md:text-sm">
+                BSc (Hons) • Primary PGCE • QTS
               </p>
 
-              <p className="mt-8 text-center text-xl italic leading-9 text-[#C9E77D]">
-                “I started Warren Dodd Education because I truly believe I can
-                offer something unique and inviting for all children.”
+              <p className="mt-5 text-center text-base leading-7 text-slate-200 md:text-lg md:leading-8">
+                Relationship-led, psychology-informed education built around the
+                whole child.
               </p>
+
+              <div className="mt-6 text-center">
+                <Link
+                  href="/why"
+                  className="inline-flex rounded-full border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+                >
+                  Read more about the approach
+                </Link>
+              </div>
             </div>
 
-            <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-                Why I started Warren Dodd Education
+            <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm">
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                Who I am
               </p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-                Built on relationship-based teaching and a deep understanding of
-                how children learn.
+
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+                Built on trusted relationships and a deep understanding of how
+                children learn.
               </h2>
-              <p className="mt-6 text-lg leading-8 text-slate-700">
+
+              <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
                 I started Warren Dodd Education because too many children begin
                 to lose confidence in themselves as learners. My work is built
                 on relationship-based teaching, a strong understanding of child
                 development, and a belief that progress is strongest when
                 children feel understood, respected and emotionally secure.
               </p>
-              <p className="mt-4 text-lg leading-8 text-slate-700">
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
                 With 15 years of experience across mainstream and SEND,
                 alongside a degree in Psychology and a Primary PGCE, I have
                 developed a deep understanding of how children learn, what
                 motivates them, and how trust, clarity and connection can
                 transform engagement.
               </p>
-              <p className="mt-4 text-lg leading-8 text-slate-700">
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
                 I make every effort to understand the child in front of me —
                 their strengths, their interests, their barriers, and the way
-                they learn best. This is why Warren Dodd Education is not just
-                about tutoring. It is about creating the kind of environment
-                where children can feel capable again and begin to thrive.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 pb-20 md:px-10 lg:pb-24">
-        <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-          <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-            Who this is for
-          </p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-            This is for children who need more than standard tutoring.
-          </h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {whoItsFor.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-5 py-4 text-slate-800 shadow-sm"
-              >
-                This is for children who {item}.
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="why"
-        className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24"
-      >
-        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="flex flex-col justify-between rounded-[2rem] bg-[#12284C] p-10 text-white">
-            <div>
-              <h2 className="text-3xl font-semibold leading-tight md:text-5xl">
-                Why Warren Dodd Education?
-              </h2>
-
-              <p className="mt-8 text-lg leading-8 text-slate-300">
-                It’s not <span className="font-semibold text-[#D8B35B]">what</span>{" "}
-                we learn.
-                <br />
-                It’s <span className="font-semibold text-[#D8B35B]">how</span>{" "}
-                we learn.
-              </p>
-            </div>
-
-            <p className="mt-10 text-xs tracking-[0.3em] text-slate-400">
-              CONFIDENCE. SELF-BELIEF. RESILIENCE. GROWTH.
-            </p>
-          </div>
-
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-10 shadow-sm">
-            <h3 className="text-3xl font-semibold text-[#12284C] md:text-4xl">
-              Education is more than English and Maths.
-            </h3>
-
-            <div className="mt-4 h-[3px] w-16 bg-[#D8B35B]" />
-
-            <p className="mt-6 text-lg leading-8 text-slate-700">
-              The qualities that shape a child’s future — confidence,
-              resilience, self-belief, emotional literacy and communication —
-              are often recognised, but not always given the time and care they
-              deserve.
-            </p>
-
-            <p className="mt-4 text-xl font-semibold text-[#12284C]">
-              Warren Dodd Education exists to change that.
-            </p>
-
-            <div className="mt-8 space-y-6 text-slate-700">
-              <div>
-                <p className="font-semibold text-[#12284C]">
-                  Led by a specialist
-                </p>
-                <p className="mt-1">
-                  15+ years’ experience across mainstream and SEND. Teacher,
-                  coach, behaviour specialist, and Psychology graduate. A
-                  service built around who your child is, not just what they
-                  need to learn.
-                </p>
-              </div>
-
-              <div>
-                <p className="font-semibold text-[#12284C]">
-                  Relationship-led by design
-                </p>
-                <p className="mt-1">
-                  Children work best when they feel known, respected and
-                  supported. That sits at the centre of the offer.
-                </p>
-              </div>
-
-              <div>
-                <p className="font-semibold text-[#12284C]">
-                  Psychology-informed teaching
-                </p>
-                <p className="mt-1">
-                  Teaching is shaped by a deep understanding of child
-                  development, motivation, emotional security and how confidence
-                  affects learning.
-                </p>
-              </div>
-
-              <div>
-                <p className="font-semibold text-[#12284C]">What we build</p>
-                <p className="mt-1">
-                  Confidence, self-esteem, resilience and growth — woven into
-                  every session, not bolted on. Small groups. Relationship-based.
-                  Progress that lasts.
-                </p>
-              </div>
-            </div>
-
-            <p className="mt-10 text-lg font-semibold text-[#12284C]">
-              Academic progress matters. But it is strongest when built on
-              foundations that last far beyond school.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="testimonials"
-        className="scroll-mt-32 mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24"
-      >
-        <div className="max-w-3xl">
-          <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-            What families say
-          </p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-            Families speak about confidence, trust, motivation and real change.
-          </h2>
-          <p className="mt-6 text-lg leading-8 text-slate-700">
-            The strongest feedback is not just that children improve
-            academically. It is that they feel different in themselves.
-          </p>
-        </div>
-
-        <div className="mt-12 grid gap-8 md:grid-cols-2">
-          {testimonials.map((item, index) => (
-            <div
-              key={`${item.child}-${index}`}
-              className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm"
-            >
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
-                {item.child}
+                they learn best. This is why the work is not just about
+                tutoring. It is about creating the kind of environment where
+                children can feel capable again and begin to thrive.
               </p>
 
-              <div className="mt-6 space-y-5">
-                {item.quotes.map((quote, quoteIndex) => (
-                  <div
-                    key={`${item.child}-${index}-quote-${quoteIndex}`}
-                    className="border-l-2 border-slate-200 pl-4"
-                  >
-                    <p className="text-base leading-7 text-slate-800">
-                      “{quote}”
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="relative mx-auto max-w-7xl overflow-hidden px-6 py-20 md:px-10 lg:py-24">
-        <img
-          src="/logo.svg"
-          alt=""
-          aria-hidden="true"
-          className="pointer-events-none absolute right-[-120px] top-8 hidden w-[320px] opacity-[0.035] lg:block xl:w-[380px]"
-        />
-
-        <div className="relative max-w-3xl">
-          <p className="text-sm uppercase tracking-[0.25em] text-slate-500">
-            What changes
-          </p>
-
-          <h2 className="mt-4 text-4xl font-semibold leading-tight tracking-tight text-[#12284C] md:text-6xl">
-            Confidence. Self-esteem. Resilience. Engagement.
-            <span className="mt-2 block">
-              A child who finally feels understood.
-            </span>
-          </h2>
-
-          <p className="mt-6 text-xl leading-9 text-slate-600">
-            This is not just academic progress. It is a shift in how a child
-            sees themselves, how they approach learning, and how they feel every
-            day.
-          </p>
-        </div>
-
-        <div className="relative mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
-          {transformationCards.map((item) => (
-            <div
-              key={item.title}
-              className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm transition hover:shadow-md"
-            >
-              <h3 className="text-2xl font-semibold text-[#12284C]">
-                {item.title}
-              </h3>
-              <p className="mt-4 leading-7 text-slate-700">{item.text}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <HomeschoolParentSupportSection />
-
-      <section
-        id="programme"
-        className="scroll-mt-32 border-y border-slate-200 bg-[#F4F7FB]"
-      >
-        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
-          <div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-start">
-            <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-                The bespoke daytime programme
-              </p>
-              <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-                Built around your child and their needs.
-              </h2>
-              <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
-                This is not an after-school one-hour slot. It is carefully
-                designed daytime provision for children aged 8 to 11 who need a
-                more personal, energising and confidence-building way to learn —
-                especially those in home education and hybrid education.
-              </p>
-
-              <div className="mt-10 grid gap-4">
-                {programme.map((item) => (
+              <div className="mt-6 grid gap-3">
+                {whoIAmPoints.map((item) => (
                   <div
                     key={item}
-                    className="rounded-[1.75rem] border border-[#e6d3d3] bg-[#f3dddd] px-6 py-5 text-[#4b2230] shadow-sm"
+                    className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3.5 text-sm text-slate-800 shadow-sm md:text-base"
                   >
-                    <p className="text-lg font-medium leading-8">{item}</p>
+                    {item}
                   </div>
                 ))}
               </div>
-
-              <div className="mt-10 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
-                <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-                  Why this model works
-                </p>
-                <h3 className="mt-4 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-                  Built for meaningful progress, confidence and whole-child
-                  development.
-                </h3>
-
-                <div className="mt-6 space-y-5 text-lg leading-8 text-slate-700">
-                  <p>
-                    The three-hour structure is intentionally designed to create
-                    momentum, focus and success without cognitive overload. For
-                    many boys, a shorter, high-quality session leads to stronger
-                    engagement, better regulation and more consistent progress
-                    than a longer day that leaves them drained.
-                  </p>
-
-                  <p>
-                    Groups are capped at <strong>just four children</strong>,
-                    creating the ideal balance between highly personalised
-                    teaching and the social growth many boys thrive on:
-                    resilience, mutual respect, empathy, confident speaking,
-                    active listening and collaborative problem-solving.
-                  </p>
-
-                  <p>
-                    This means children are not only supported in English and
-                    Maths, but also in the character and communication skills
-                    that are often overlooked and yet make a huge difference to
-                    confidence, relationships and future success.
-                  </p>
-
-                  <p>
-                    This approach is strengthened by my background in{" "}
-                    <strong>oracy and communication development</strong>,
-                    including published work with Cambridge University. In a
-                    small-group setting, children have meaningful opportunities
-                    to speak, listen, reflect, build confidence and learn how to
-                    contribute positively within a team.
-                  </p>
-
-                  <p>
-                    For families looking for something more personal than
-                    mainstream provision, this creates an environment where boys
-                    can feel safe, understood, motivated and successful again.
-                  </p>
-                </div>
-              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="rounded-[2rem] border border-slate-200 bg-white shadow-2xl shadow-slate-300/20">
-              <div className="border-b border-slate-200 px-8 py-8">
-                <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-                  Investment
-                </p>
-                <p className="mt-3 text-5xl font-semibold text-[#12284C]">
-                  £195
-                </p>
-                <p className="mt-2 text-lg text-slate-700">
-                  Per child for a structured 3-hour daytime session
-                </p>
+      <section className="bg-[#F7F7F4]">
+        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
+          <div className="grid gap-6 lg:grid-cols-[0.86fr_1.14fr]">
+            <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm">
+              <p className="text-xs uppercase tracking-[0.2em] text-slate-500 md:text-sm">
+                Investment
+              </p>
+
+              <p className="mt-3 text-4xl font-semibold text-[#12284C] md:text-5xl">
+                £65
+              </p>
+
+              <p className="mt-2 text-base text-slate-700 md:text-lg">
+                Per hour · 3-hour sessions
+              </p>
+
+              <p className="mt-3 text-lg font-medium text-[#12284C]">
+                £195 per daytime session
+              </p>
+
+              <div className="mt-5 space-y-2.5 text-sm text-slate-700 md:text-base">
+                <p>Bespoke daytime education</p>
+                <p>Relationship-led and psychology-informed</p>
+                <p>Home education and flexi-school families</p>
+                <p>Built to grow confidence and independence</p>
               </div>
-              <div className="space-y-4 px-8 py-8 text-slate-700">
-                <p>Premium small-group teaching</p>
-                <p>Maximum four children</p>
-                <p>Daytime provision in Cheshire</p>
-                <p>Designed for home and hybrid education</p>
-                <p>Limited places available</p>
-              </div>
-              <div className="px-8 pb-8">
+
+              <div className="mt-7">
                 <Link
                   href="/contact"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-[#12284C] px-6 py-4 text-center font-semibold text-white transition hover:-translate-y-0.5"
+                  className="inline-flex w-full items-center justify-center rounded-full bg-[#12284C] px-6 py-3.5 text-center font-semibold text-white transition hover:-translate-y-0.5"
                 >
-                  Enquire About a Place
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
-          <div className="max-w-3xl">
-            <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-              Support for schools
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-              Training, CPD and behaviour support for schools.
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-slate-700">
-              Warren Dodd Education also provides whole-staff CPD, behaviour
-              support, mentoring and outreach for schools looking to strengthen
-              relationships, understanding, inclusion and classroom practice.
-            </p>
-          </div>
-
-          <div className="mt-10 grid gap-6 lg:grid-cols-2">
-            <div className="rounded-[2rem] border border-slate-200 bg-[#F8F8F6] p-8 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
-                Training &amp; CPD
-              </p>
-              <h3 className="mt-3 text-2xl font-semibold text-[#12284C]">
-                Understanding Behaviour &amp; Masculinity
-              </h3>
-              <p className="mt-4 leading-8 text-slate-700">
-                Whole-staff CPD for schools exploring behaviour, masculinity,
-                emotional literacy, online culture, PSHE links and practical
-                classroom strategies.
-              </p>
-              <div className="mt-6">
-                <Link
-                  href="/cpd"
-                  className="inline-flex rounded-full bg-[#12284C] px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5"
-                >
-                  View CPD Page
+                  Make an Enquiry
                 </Link>
               </div>
             </div>
 
-            <div className="rounded-[2rem] border border-slate-200 bg-[#F8F8F6] p-8 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
-                School support
-              </p>
-              <h3 className="mt-3 text-2xl font-semibold text-[#12284C]">
-                Mentoring, outreach and behaviour support
-              </h3>
-              <p className="mt-4 leading-8 text-slate-700">
-                Tailored support for schools through mentoring, in-class
-                guidance, behaviour support and wider outreach work focused on
-                calm, inclusive and relational practice.
-              </p>
-              <div className="mt-6">
-                <Link
-                  href="/schools"
-                  className="inline-flex rounded-full border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-900 transition hover:bg-slate-100"
-                >
-                  View School Support
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <div className="grid gap-6">
+              <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm">
+                <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                  The bespoke daytime programme
+                </p>
 
-      <section className="border-y border-slate-200 bg-[#12284C] text-white">
-        <div className="mx-auto max-w-7xl px-6 py-20 md:px-10 lg:py-24">
-          <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
-            <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-slate-400">
-                Questions parents often have
-              </p>
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-5xl">
-                Clearer, simpler, easier to understand.
-              </h2>
-              <p className="mt-6 text-lg leading-8 text-slate-300">
-                Families should know exactly what this is, who it is for, and
-                why the small-group model matters.
-              </p>
-            </div>
+                <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+                  Built around your child and their needs.
+                </h2>
 
-            <div className="space-y-4">
-              {faqs.map((item) => (
-                <div
-                  key={item.question}
-                  className="rounded-[2rem] border border-white/10 bg-white/5 p-6"
-                >
-                  <h3 className="text-xl font-semibold">{item.question}</h3>
-                  <p className="mt-3 leading-7 text-slate-300">{item.answer}</p>
+                <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                  This is not an after-school one-hour slot. It is carefully
+                  designed daytime provision for children aged 8 to 11 who need
+                  a more personal, energising and confidence-building way to
+                  learn — especially those in home education and flexi
+                  schooling.
+                </p>
+
+                <div className="mt-6 grid gap-3">
+                  {programmePoints.map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-[1.3rem] border border-[#e9cfcf] bg-[#f3dddd] px-4 py-4 text-sm leading-6 text-[#4b2230] shadow-sm md:text-base md:leading-7"
+                    >
+                      {item}
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+
+              <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm">
+                <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                  For home-educating families
+                </p>
+
+                <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+                  Calm, structured support for parents carrying the weight of
+                  home education.
+                </h2>
+
+                <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                  When home learning begins to feel exhausting, the issue is
+                  rarely effort — it is usually structure, pace, and emotional
+                  load. My support helps parents simplify the day, reduce
+                  pressure, and rebuild confidence so learning becomes
+                  sustainable again.
+                </p>
+
+                <div className="mt-6 grid gap-4 md:grid-cols-2">
+                  {homeEducationSupport.map((item) => (
+                    <div
+                      key={item.title}
+                      className="rounded-[1.4rem] border border-slate-200 bg-[#FBFBF9] p-5 shadow-sm"
+                    >
+                      <h3 className="text-base font-semibold text-[#12284C] md:text-lg">
+                        {item.title}
+                      </h3>
+                      <p className="mt-3 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
+                        {item.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="enquiry" className="scroll-mt-32 bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-20 text-center md:px-10 lg:py-24">
-          <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+      <section className="border-t border-slate-200 bg-white">
+        <div className="mx-auto max-w-5xl px-6 py-10 text-center md:px-10 md:py-14">
+          <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
             Enquiry
           </p>
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-            Book a consultation to see if this is the right fit for your child.
+
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+            Make an enquiry to see if this feels like the right fit.
           </h2>
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-            Maximum 4 children per session. Limited places available. If you are
-            exploring bespoke daytime tutoring, home education support, or
-            hybrid education provision, start with a simple conversation.
+
+          <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+            Whether you are exploring home education support, flexi schooling
+            support or daytime tutoring, the first step is a simple
+            conversation.
           </p>
-          <div className="mt-10 flex justify-center">
+
+          <div className="mt-7 flex flex-wrap justify-center gap-2.5">
+            {enquiryPoints.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-slate-300 bg-[#FBFBF9] px-3.5 py-2 text-xs text-slate-700 md:text-sm"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+
+          <div className="mt-8">
             <Link
               href="/contact"
-              className="inline-flex rounded-full bg-[#12284C] px-8 py-4 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
+              className="inline-flex rounded-full bg-[#12284C] px-8 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
             >
-              Book a Consultation
+              Make an Enquiry
             </Link>
           </div>
         </div>
       </section>
 
       <footer className="border-t border-slate-200 bg-white">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center px-6 py-8 text-center md:px-10">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center px-6 py-7 text-center md:px-10">
           <img
             src="/logo.svg"
             alt="Warren Dodd Education"
-            className="mb-4 h-auto w-[120px] opacity-80"
+            className="mb-3 h-auto w-[110px] opacity-80"
           />
           <p className="text-sm text-slate-500">Warren Dodd Education</p>
         </div>

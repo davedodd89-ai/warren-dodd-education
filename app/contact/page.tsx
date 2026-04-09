@@ -1,277 +1,146 @@
-"use client";
-
-import Link from "next/link";
-import { FormEvent, useState } from "react";
 import SiteHeader from "../SiteHeader";
 
 export default function ContactPage() {
-  const [parentName, setParentName] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [childAge, setChildAge] = useState("");
-  const [supportType, setSupportType] = useState("");
-  const [message, setMessage] = useState("");
+  const enquiryPrompts = [
+    "Your child’s age and year group",
+    "Whether you are home educating or using flexi schooling",
+    "What kind of support you are looking for",
+    "Any current barriers around confidence, motivation or engagement",
+    "What days or times you are hoping for",
+  ];
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-
-    const subject = "New Warren Dodd Education enquiry";
-    const body = [
-      `Parent name: ${parentName}`,
-      `Email: ${email}`,
-      `Mobile number: ${phone || "Not provided"}`,
-      `Child age: ${childAge}`,
-      `Support type: ${supportType}`,
-      "",
-      "Tell me about your child:",
-      message,
-    ].join("\n");
-
-    window.location.href = `mailto:warrendoddeducation@outlook.com?subject=${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-  }
+  const discussionPoints = [
+    "Whether the sessions feel like the right fit for your child",
+    "How the 3-hour daytime sessions work",
+    "What kind of support would be most helpful",
+    "How confidence, motivation and engagement are currently affecting learning",
+    "What a good next step would look like for your family",
+  ];
 
   return (
     <div className="min-h-screen bg-[#F7F7F4] text-slate-900">
       <SiteHeader />
 
-      <main className="mx-auto max-w-7xl px-6 pb-20 pt-10 md:px-10 lg:pb-24 lg:pt-14">
-        <section className="grid gap-10 lg:grid-cols-[1fr_0.95fr] lg:items-start">
-          <div>
+      <section className="mx-auto max-w-6xl px-6 py-16 md:px-10 lg:py-20">
+        <div className="mx-auto max-w-3xl text-center">
+          <p className="text-sm uppercase tracking-[0.22em] text-slate-500">
+            Enquiry
+          </p>
+
+          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#12284C] md:text-6xl">
+            Get in touch to discuss your child and the support you are looking
+            for.
+          </h1>
+
+          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-700">
+            If you are exploring bespoke daytime education, home education
+            support or flexi schooling support, the simplest next step is to get
+            in touch directly.
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-6 lg:grid-cols-[0.88fr_1.12fr]">
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
             <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-              Contact Warren Dodd Education
+              Pricing
             </p>
 
-            <h1 className="mt-4 max-w-4xl text-4xl font-semibold leading-[0.95] tracking-tight text-[#12284C] md:text-6xl">
-              Start with a simple conversation about your child.
-            </h1>
+            <p className="mt-3 text-5xl font-semibold text-[#12284C]">£65</p>
 
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700">
-              Tell me where things currently feel difficult, what you would like
-              to improve, and whether you are exploring bespoke daytime tutoring,
-              hybrid education, home education support, or confidence-led
-              provision.
+            <p className="mt-2 text-lg text-slate-700">
+              Per hour · 3-hour sessions
             </p>
 
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <div className="rounded-[1.5rem] border border-slate-200 bg-white px-5 py-5 shadow-sm">
-                <p className="text-sm uppercase tracking-[0.16em] text-slate-500">
-                  Personal response
-                </p>
-                <p className="mt-2 leading-7 text-slate-800">
-                  Every enquiry is read and responded to personally by David
-                  Warren Dodd.
-                </p>
-              </div>
+            <p className="mt-3 text-lg font-medium text-[#12284C]">
+              £195 per daytime session
+            </p>
 
-              <div className="rounded-[1.5rem] border border-slate-200 bg-white px-5 py-5 shadow-sm">
-                <p className="text-sm uppercase tracking-[0.16em] text-slate-500">
-                  Typical reply time
-                </p>
-                <p className="mt-2 leading-7 text-slate-800">
-                  Usually within 24 hours.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-8 rounded-[2rem] border border-slate-200 bg-white p-6 shadow-[0_16px_50px_rgba(15,23,42,0.08)] md:p-8">
-              <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
-                Book a consultation
-              </p>
-
-              <h2 className="mt-3 text-2xl font-semibold text-[#12284C] md:text-3xl">
-                Enquiry form
-              </h2>
-
-              <p className="mt-3 max-w-2xl text-slate-700">
-                Complete the form below and your email app will open with a
-                ready-written enquiry.
-              </p>
-
-              <form onSubmit={handleSubmit} className="mt-8 space-y-5">
-                <div>
-                  <label className="mb-2 block text-sm font-medium text-slate-700">
-                    Parent name
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={parentName}
-                    onChange={(e) => setParentName(e.target.value)}
-                    className="w-full rounded-2xl border border-slate-300 px-4 py-3"
-                  />
-                </div>
-
-                <div>
-                  <label className="mb-2 block text-sm font-medium text-slate-700">
-                    Email address
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    className="w-full rounded-2xl border border-slate-300 px-4 py-3"
-                  />
-                </div>
-
-                <div>
-                  <label className="mb-2 block text-sm font-medium text-slate-700">
-                    Mobile number (optional)
-                  </label>
-                  <input
-                    type="tel"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    className="w-full rounded-2xl border border-slate-300 px-4 py-3"
-                  />
-                </div>
-
-                <div>
-                  <label className="mb-2 block text-sm font-medium text-slate-700">
-                    Child age
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    value={childAge}
-                    onChange={(e) => setChildAge(e.target.value)}
-                    className="w-full rounded-2xl border border-slate-300 px-4 py-3"
-                  />
-                </div>
-
-                <div>
-                  <label className="mb-2 block text-sm font-medium text-slate-700">
-                    What support are you looking for?
-                  </label>
-                  <select
-                    required
-                    value={supportType}
-                    onChange={(e) => setSupportType(e.target.value)}
-                    className="w-full rounded-2xl border border-slate-300 px-4 py-3"
-                  >
-                    <option value="">Select one</option>
-                    <option>Daytime tutoring</option>
-                    <option>Home education support</option>
-                    <option>Hybrid education</option>
-                    <option>Confidence and engagement support</option>
-                    <option>Not sure yet</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="mb-2 block text-sm font-medium text-slate-700">
-                    Tell me about your child
-                  </label>
-                  <textarea
-                    rows={6}
-                    required
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    className="w-full rounded-2xl border border-slate-300 px-4 py-3"
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-[#12284C] px-6 py-4 font-semibold text-white"
-                >
-                  Continue to email
-                </button>
-              </form>
+            <div className="mt-8 space-y-3 text-slate-700">
+              <p>Bespoke daytime education</p>
+              <p>Relationship-led and psychology-informed</p>
+              <p>Home education and flexi-school families</p>
+              <p>Designed to build confidence and independence</p>
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div className="rounded-[2rem] bg-[#12284C] p-8 text-white shadow-[0_16px_50px_rgba(15,23,42,0.14)]">
-              <div className="mx-auto h-40 w-40 overflow-hidden rounded-full border-4 border-white/10 shadow-lg">
-                <img
-                  src="/hero.jpg"
-                  alt="David Warren Dodd"
-                  className="h-full w-full object-cover"
-                />
-              </div>
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+            <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+              Contact details
+            </p>
 
-              <h2 className="mt-6 text-center text-3xl font-semibold">
-                David Warren Dodd
-              </h2>
-
-              <p className="mt-2 text-center text-sm uppercase tracking-[0.18em] text-slate-300">
-                BSc (Hons) • QTS • Psychology-led
-              </p>
-
-              <p className="mt-8 text-center text-lg leading-8 text-slate-200">
-                If you are unsure whether this is the right fit, start with a
-                simple message and I will personally help you think through the
-                best next step.
-              </p>
-            </div>
-
-            <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.16em] text-slate-500">
-                Direct contact
-              </p>
-
-              <div className="mt-4 space-y-4">
-                <div>
-                  <p className="text-sm font-medium text-slate-500">Email</p>
-                  <a
-                    href="mailto:warrendoddeducation@outlook.com"
-                    className="mt-1 inline-block text-lg font-medium text-[#12284C] underline"
-                  >
-                    warrendoddeducation@outlook.com
-                  </a>
-                </div>
-
-                <div>
-                  <p className="text-sm font-medium text-slate-500">
-                    WhatsApp / mobile
-                  </p>
-                  <a
-                    href="https://wa.me/447512341730"
-                    className="mt-1 inline-block text-lg font-medium text-[#12284C] underline"
-                  >
-                    07512 341730
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="rounded-[2rem] border border-slate-200 bg-[#F8F8F6] p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.16em] text-slate-500">
-                Helpful to include
-              </p>
-
-              <div className="mt-4 space-y-3 text-slate-800">
-                <p>• Your child’s age</p>
-                <p>• What support you are looking for</p>
-                <p>• Confidence or engagement concerns</p>
-              </div>
-            </div>
-
-            <div className="rounded-[2rem] border border-slate-200 bg-white p-6 shadow-sm">
-              <p className="text-sm uppercase tracking-[0.16em] text-slate-500">
-                Explore first
-              </p>
-
-              <p className="mt-3 leading-7 text-slate-700">
-                You can also read more about the bespoke programme before
-                getting in touch.
-              </p>
-
-              <div className="mt-5">
-                <Link
-                  href="/#programme"
-                  className="inline-flex rounded-full border border-slate-300 bg-white px-6 py-3 font-medium text-slate-900"
+            <div className="mt-6 space-y-6">
+              <div>
+                <p className="text-sm font-medium uppercase tracking-[0.14em] text-slate-500">
+                  Email
+                </p>
+                <a
+                  href="mailto:warrendoddeducation@outlook.com"
+                  className="mt-2 block text-xl font-semibold text-[#12284C] underline underline-offset-4"
                 >
-                  View the programme
-                </Link>
+                  warrendoddeducation@outlook.com
+                </a>
+              </div>
+
+              <div>
+                <p className="text-sm font-medium uppercase tracking-[0.14em] text-slate-500">
+                  Mobile
+                </p>
+                <a
+                  href="tel:07512341730"
+                  className="mt-2 block text-xl font-semibold text-[#12284C]"
+                >
+                  07512 341730
+                </a>
+              </div>
+            </div>
+
+            <div className="mt-8 rounded-[1.5rem] border border-slate-200 bg-[#FBFBF9] p-5">
+              <p className="text-base font-semibold text-[#12284C]">
+                What to include in your enquiry
+              </p>
+
+              <div className="mt-4 grid gap-3">
+                {enquiryPrompts.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm leading-6 text-slate-700"
+                  >
+                    {item}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+
+        <div className="mt-6 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+          <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+            Discussion starting points
+          </p>
+
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+            Useful things we can discuss together.
+          </h2>
+
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-700">
+            You do not need to have everything worked out before getting in
+            touch. An initial conversation can simply help clarify whether the
+            sessions feel right, what your child needs most, and what the best
+            next step might be.
+          </p>
+
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {discussionPoints.map((item) => (
+              <div
+                key={item}
+                className="rounded-[1.4rem] border border-slate-200 bg-[#FBFBF9] px-5 py-4 text-slate-800 shadow-sm"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

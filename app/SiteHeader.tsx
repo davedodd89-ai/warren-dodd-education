@@ -1,110 +1,61 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const navItems = [
-  { label: "The Challenge", href: "/#challenge" },
-  { label: "Why Us", href: "/#why" },
-  { label: "Programme", href: "/#programme" },
-  { label: "Testimonials", href: "/#testimonials" },
-  { label: "Enquiry", href: "/#enquiry" },
-  { label: "Training & CPD", href: "/cpd" },
-  { label: "School Support", href: "/schools" },
-  { label: "Contact", href: "/contact" },
+  { label: "Why Warren Dodd", href: "/why" },
+  { label: "Testimonials", href: "/testimonials" },
+  { label: "Schools", href: "/schools" },
 ];
 
 export default function SiteHeader() {
-  const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const isHome = pathname === "/";
+  const [open, setOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-[#F7F7F4]/95 shadow-[0_8px_30px_rgba(15,23,42,0.06)] backdrop-blur-md">
-      <div
-        className={`mx-auto max-w-7xl px-4 md:px-8 ${
-          isHome ? "py-2" : "py-3"
-        }`}
-      >
-        {/* desktop home */}
-        {isHome ? (
-          <div className="hidden xl:block">
-            <Link href="/" className="flex flex-col items-center">
-              <img
-                src="/logo.svg"
-                alt="Warren Dodd Education"
-                className="h-auto w-[390px] object-contain"
-              />
-            </Link>
+      <div className="mx-auto max-w-7xl px-4 py-3 md:px-8">
+        <div className="hidden xl:flex xl:items-center xl:justify-between xl:gap-8">
+          <Link href="/" className="shrink-0">
+            <img
+              src="/logo.svg"
+              alt="Warren Dodd Education"
+              className={`h-auto object-contain ${
+                isHome ? "w-[260px]" : "w-[220px]"
+              }`}
+            />
+          </Link>
 
-            <div className="mt-3 flex items-center justify-center gap-6">
-              <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-medium text-slate-700">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.label}
-                    href={item.href}
-                    className="transition hover:text-[#12284C]"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </nav>
-
+          <nav className="flex items-center gap-6 text-sm font-medium text-slate-700">
+            {navItems.map((item) => (
               <Link
-                href="/contact"
-                className="rounded-full bg-[#12284C] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
+                key={item.label}
+                href={item.href}
+                className="transition hover:text-[#12284C]"
               >
-                Make an Enquiry
+                {item.label}
               </Link>
-            </div>
-          </div>
-        ) : (
-          /* desktop inner pages */
-          <div className="hidden xl:flex xl:items-center xl:justify-between xl:gap-8">
-            <Link href="/" className="shrink-0">
-              <img
-                src="/logo.svg"
-                alt="Warren Dodd Education"
-                className="h-auto w-[220px] object-contain"
-              />
-            </Link>
+            ))}
+          </nav>
 
-            <nav className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm font-medium text-slate-700">
-              {navItems.map((item) => (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  className="transition hover:text-[#12284C]"
-                >
-                  {item.label}
-                </Link>
-              ))}
-            </nav>
-
-            <Link
-              href="/contact"
-              className="shrink-0 rounded-full bg-[#12284C] px-5 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
-            >
-              Make an Enquiry
-            </Link>
-          </div>
-        )}
-
-        {/* mobile / tablet */}
-        <div className="xl:hidden">
-          <div
-            className={`relative flex items-center justify-center ${
-              isHome ? "min-h-[110px]" : "min-h-[82px]"
-            }`}
+          <Link
+            href="/contact"
+            className="rounded-full bg-[#12284C] px-6 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5"
           >
+            Make an Enquiry
+          </Link>
+        </div>
+
+        <div className="xl:hidden">
+          <div className="relative flex min-h-[82px] items-center justify-between">
             <Link href="/" className="flex justify-center">
               <img
                 src="/logo.svg"
                 alt="Warren Dodd Education"
-                className={`h-auto max-w-full object-contain ${
-                  isHome ? "w-[220px] sm:w-[235px]" : "w-[170px] sm:w-[185px]"
-                }`}
+                className="h-auto w-[190px] object-contain sm:w-[210px]"
               />
             </Link>
 
@@ -113,7 +64,7 @@ export default function SiteHeader() {
               aria-label="Toggle menu"
               aria-expanded={open}
               onClick={() => setOpen((prev) => !prev)}
-              className="absolute right-0 inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-300 bg-white text-[#12284C]"
+              className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-300 bg-white text-[#12284C]"
             >
               <span className="text-2xl leading-none">{open ? "×" : "☰"}</span>
             </button>
