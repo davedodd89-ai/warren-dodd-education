@@ -70,7 +70,7 @@ export default function ContactPage() {
               Contact details
             </p>
 
-            <div className="mt-6 space-y-6">
+            <div className="mt-6 space-y-8">
               <div className="min-w-0">
                 <p className="text-sm font-medium uppercase tracking-[0.14em] text-slate-500">
                   Email
@@ -87,12 +87,31 @@ export default function ContactPage() {
                 <p className="text-sm font-medium uppercase tracking-[0.14em] text-slate-500">
                   Mobile
                 </p>
-                <a
-                  href="tel:07512341730"
-                  className="mt-2 block text-lg font-semibold text-[#12284C] sm:text-xl"
-                >
-                  07512 341730
-                </a>
+
+                <div className="mt-3 grid gap-3">
+                  <a
+                    href="https://wa.me/447512341730"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-xl bg-[#12284C] px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+                  >
+                    Message on WhatsApp
+                  </a>
+
+                  <a
+                    href="sms:07512341730"
+                    className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-[#12284C] transition hover:bg-slate-50"
+                  >
+                    Send a text message
+                  </a>
+
+                  <a
+                    href="tel:07512341730"
+                    className="text-center text-lg font-semibold text-[#12284C] sm:text-xl"
+                  >
+                    Or call 07512 341730
+                  </a>
+                </div>
               </div>
             </div>
 
