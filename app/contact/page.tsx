@@ -18,10 +18,10 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#F7F7F4] text-slate-900">
+    <div className="min-h-screen w-full overflow-x-clip bg-[#F7F7F4] text-slate-900">
       <SiteHeader />
 
-      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 md:px-10 lg:py-20">
+      <section className="mx-auto w-full max-w-6xl overflow-x-clip px-4 py-14 sm:px-6 md:px-10 lg:py-20">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm uppercase tracking-[0.22em] text-slate-500">
             Enquiry
@@ -39,8 +39,8 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-[0.88fr_1.12fr]">
-          <div className="rounded-[1.5rem] sm:rounded-[2rem] border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
+        <div className="mt-10 grid w-full gap-6 lg:grid-cols-[0.88fr_1.12fr]">
+          <div className="min-w-0 rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
             <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
               Pricing
             </p>
@@ -57,7 +57,7 @@ export default function ContactPage() {
               £195 per daytime session
             </p>
 
-            <div className="mt-8 space-y-3 text-sm sm:text-base text-slate-700">
+            <div className="mt-8 space-y-3 text-sm text-slate-700 sm:text-base">
               <p>Bespoke daytime education</p>
               <p>Relationship-led and psychology-informed</p>
               <p>Home education and flexi-school families</p>
@@ -65,25 +65,25 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="rounded-[1.5rem] sm:rounded-[2rem] border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
+          <div className="min-w-0 rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
             <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
               Contact details
             </p>
 
             <div className="mt-6 space-y-6">
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm font-medium uppercase tracking-[0.14em] text-slate-500">
                   Email
                 </p>
                 <a
                   href="mailto:warrendoddeducation@outlook.com"
-                  className="mt-2 block break-words text-lg font-semibold text-[#12284C] underline underline-offset-4 sm:text-xl"
+                  className="mt-2 block min-w-0 break-words text-lg font-semibold text-[#12284C] underline underline-offset-4 sm:text-xl"
                 >
                   warrendoddeducation@outlook.com
                 </a>
               </div>
 
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm font-medium uppercase tracking-[0.14em] text-slate-500">
                   Mobile
                 </p>
@@ -96,7 +96,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="mt-8 rounded-[1.25rem] sm:rounded-[1.5rem] border border-slate-200 bg-[#FBFBF9] p-4 sm:p-5">
+            <div className="mt-8 rounded-[1.25rem] border border-slate-200 bg-[#FBFBF9] p-4 sm:rounded-[1.5rem] sm:p-5">
               <p className="text-base font-semibold text-[#12284C]">
                 What to include in your enquiry
               </p>
@@ -105,7 +105,7 @@ export default function ContactPage() {
                 {enquiryPrompts.map((item) => (
                   <div
                     key={item}
-                    className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm leading-6 text-slate-700"
+                    className="min-w-0 rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm leading-6 text-slate-700"
                   >
                     {item}
                   </div>
@@ -115,7 +115,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="mt-6 rounded-[1.5rem] sm:rounded-[2rem] border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
+        <div className="mt-6 w-full min-w-0 rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
             Discussion starting points
           </p>
@@ -135,7 +135,7 @@ export default function ContactPage() {
             {discussionPoints.map((item) => (
               <div
                 key={item}
-                className="rounded-[1.2rem] sm:rounded-[1.4rem] border border-slate-200 bg-[#FBFBF9] px-5 py-4 text-sm sm:text-base text-slate-800 shadow-sm"
+                className="min-w-0 rounded-[1.2rem] border border-slate-200 bg-[#FBFBF9] px-5 py-4 text-sm text-slate-800 shadow-sm sm:rounded-[1.4rem] sm:text-base"
               >
                 {item}
               </div>
