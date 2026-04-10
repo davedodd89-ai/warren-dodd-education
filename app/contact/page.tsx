@@ -18,21 +18,21 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F7F7F4] text-slate-900">
+    <div className="min-h-screen overflow-x-hidden bg-[#F7F7F4] text-slate-900">
       <SiteHeader />
 
-      <section className="mx-auto max-w-6xl px-6 py-16 md:px-10 lg:py-20">
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 md:px-10 lg:py-20">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm uppercase tracking-[0.22em] text-slate-500">
             Enquiry
           </p>
 
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#12284C] md:text-6xl">
+          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] sm:text-4xl md:text-6xl">
             Get in touch to discuss your child and the support you are looking
             for.
           </h1>
 
-          <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-700">
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
             If you are exploring bespoke daytime education, home education
             support or flexi schooling support, the simplest next step is to get
             in touch directly.
@@ -40,14 +40,16 @@ export default function ContactPage() {
         </div>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-[0.88fr_1.12fr]">
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+          <div className="rounded-[1.5rem] sm:rounded-[2rem] border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
             <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
               Pricing
             </p>
 
-            <p className="mt-3 text-5xl font-semibold text-[#12284C]">£65</p>
+            <p className="mt-3 text-4xl font-semibold text-[#12284C] sm:text-5xl">
+              £65
+            </p>
 
-            <p className="mt-2 text-lg text-slate-700">
+            <p className="mt-2 text-base text-slate-700 sm:text-lg">
               Per hour · 3-hour sessions
             </p>
 
@@ -55,7 +57,7 @@ export default function ContactPage() {
               £195 per daytime session
             </p>
 
-            <div className="mt-8 space-y-3 text-slate-700">
+            <div className="mt-8 space-y-3 text-sm sm:text-base text-slate-700">
               <p>Bespoke daytime education</p>
               <p>Relationship-led and psychology-informed</p>
               <p>Home education and flexi-school families</p>
@@ -63,7 +65,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+          <div className="rounded-[1.5rem] sm:rounded-[2rem] border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
             <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
               Contact details
             </p>
@@ -75,7 +77,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href="mailto:warrendoddeducation@outlook.com"
-                  className="mt-2 block text-xl font-semibold text-[#12284C] underline underline-offset-4"
+                  className="mt-2 block break-words text-lg font-semibold text-[#12284C] underline underline-offset-4 sm:text-xl"
                 >
                   warrendoddeducation@outlook.com
                 </a>
@@ -87,14 +89,14 @@ export default function ContactPage() {
                 </p>
                 <a
                   href="tel:07512341730"
-                  className="mt-2 block text-xl font-semibold text-[#12284C]"
+                  className="mt-2 block text-lg font-semibold text-[#12284C] sm:text-xl"
                 >
                   07512 341730
                 </a>
               </div>
             </div>
 
-            <div className="mt-8 rounded-[1.5rem] border border-slate-200 bg-[#FBFBF9] p-5">
+            <div className="mt-8 rounded-[1.25rem] sm:rounded-[1.5rem] border border-slate-200 bg-[#FBFBF9] p-4 sm:p-5">
               <p className="text-base font-semibold text-[#12284C]">
                 What to include in your enquiry
               </p>
@@ -113,16 +115,16 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="mt-6 rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+        <div className="mt-6 rounded-[1.5rem] sm:rounded-[2rem] border border-slate-200 bg-white p-6 sm:p-8 shadow-sm">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
             Discussion starting points
           </p>
 
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-[#12284C] sm:text-3xl md:text-4xl">
             Useful things we can discuss together.
           </h2>
 
-          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-700">
+          <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
             You do not need to have everything worked out before getting in
             touch. An initial conversation can simply help clarify whether the
             sessions feel right, what your child needs most, and what the best
@@ -133,7 +135,7 @@ export default function ContactPage() {
             {discussionPoints.map((item) => (
               <div
                 key={item}
-                className="rounded-[1.4rem] border border-slate-200 bg-[#FBFBF9] px-5 py-4 text-slate-800 shadow-sm"
+                className="rounded-[1.2rem] sm:rounded-[1.4rem] border border-slate-200 bg-[#FBFBF9] px-5 py-4 text-sm sm:text-base text-slate-800 shadow-sm"
               >
                 {item}
               </div>
