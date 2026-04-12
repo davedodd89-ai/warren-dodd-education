@@ -100,6 +100,21 @@ export default function Page() {
                   Now taking enquiries for September 2026
                 </p>
               </div>
+
+              <div className="flex flex-wrap gap-2.5">
+                <span className="rounded-full border border-amber-300 bg-amber-50 px-3.5 py-2 text-xs text-amber-800 md:text-sm">
+                  Maximum 4 children
+                </span>
+                <span className="rounded-full border border-sky-300 bg-sky-50 px-3.5 py-2 text-xs text-sky-800 md:text-sm">
+                  3-hour daytime sessions
+                </span>
+                <span className="rounded-full border border-emerald-300 bg-emerald-50 px-3.5 py-2 text-xs text-emerald-800 md:text-sm">
+                  Home education &amp; flexi schooling
+                </span>
+                <span className="rounded-full border border-rose-300 bg-rose-50 px-3.5 py-2 text-xs text-rose-800 md:text-sm">
+                  Limited places available
+                </span>
+              </div>
             </div>
           </div>
 
@@ -151,21 +166,6 @@ export default function Page() {
               confidence, self-belief and resilience, while giving them a
               stronger sense of ownership over their learning journey.
             </p>
-
-            <div className="mt-6 flex flex-wrap gap-2.5">
-              <span className="rounded-full border border-amber-300 bg-amber-50 px-3.5 py-2 text-xs text-amber-800 md:text-sm">
-                Maximum 4 children
-              </span>
-              <span className="rounded-full border border-sky-300 bg-sky-50 px-3.5 py-2 text-xs text-sky-800 md:text-sm">
-                3-hour daytime sessions
-              </span>
-              <span className="rounded-full border border-emerald-300 bg-emerald-50 px-3.5 py-2 text-xs text-emerald-800 md:text-sm">
-                Home education &amp; flexi schooling
-              </span>
-              <span className="rounded-full border border-rose-300 bg-rose-50 px-3.5 py-2 text-xs text-rose-800 md:text-sm">
-                Limited places available
-              </span>
-            </div>
 
             <div className="mt-7">
               <Link
