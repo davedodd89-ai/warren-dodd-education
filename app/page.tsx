@@ -51,34 +51,64 @@ export default function Page() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-10 pt-6 md:px-10 md:pb-12 md:pt-8">
-        <div className="grid items-start gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:gap-10">
-          <div className="order-1 mx-auto w-full max-w-[280px] sm:max-w-[300px] lg:order-2 lg:max-w-[390px]">
-            <div className="relative">
-              <div className="absolute -inset-2 rounded-[1.6rem] bg-slate-200/15 blur-2xl" />
+        <div className="grid items-start gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-start lg:gap-12">
+          <div className="order-1 mx-auto w-full max-w-[280px] sm:max-w-[300px] md:max-w-[430px] lg:order-2 lg:mx-0 lg:max-w-none">
+            <div className="lg:sticky lg:top-28 lg:space-y-6">
+              <div className="relative">
+                <div className="absolute -inset-3 rounded-[1.8rem] bg-slate-200/20 blur-3xl" />
 
-              <div className="relative overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
-                <div className="overflow-hidden rounded-[1rem] bg-slate-100">
-                  <video
-                    className="h-[130px] w-full object-cover object-center sm:h-[150px] md:h-[220px] lg:h-[260px]"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    poster="/logo.png"
-                  >
-                    <source src="/hero-video.mp4" type="video/mp4" />
-                  </video>
+                <div className="relative overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
+                  <div className="overflow-hidden rounded-[1rem] bg-slate-100">
+                    <video
+                      className="h-[130px] w-full object-cover object-center sm:h-[150px] md:h-[220px] lg:h-[320px]"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      poster="/logo.png"
+                    >
+                      <source src="/hero-video.mp4" type="video/mp4" />
+                    </video>
+                  </div>
                 </div>
+              </div>
+
+              <div className="rounded-[1.6rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-5 shadow-sm lg:p-6">
+                <p className="text-xs uppercase tracking-[0.18em] text-slate-500 md:text-sm">
+                  Launching soon
+                </p>
+
+                <p className="mt-2 text-xl font-semibold text-[#12284C] md:text-2xl">
+                  Morning daytime sessions
+                </p>
+
+                <p className="mt-2 text-base font-medium text-slate-700 md:text-lg">
+                  Cheshire venue being finalised
+                </p>
+
+                <p className="mt-3 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
+                  Includes movement and regulation breaks, snacks, refreshments
+                  and a calm social learning environment to enhance engagement
+                  and learning.
+                </p>
+
+                <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
+                  Maximum 4 children per session
+                </p>
+
+                <p className="mt-3 text-sm font-medium text-slate-700 md:text-base">
+                  Now taking enquiries for September 2026
+                </p>
               </div>
             </div>
           </div>
 
-          <div className="order-2 max-w-3xl lg:order-1">
+          <div className="order-2 max-w-3xl lg:order-1 lg:max-w-[720px]">
             <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
               What we offer
             </p>
 
-            <h1 className="mt-4 max-w-4xl text-[1.75rem] font-semibold leading-[0.95] tracking-[-0.04em] text-[#12284C] sm:text-[2.4rem] md:text-[3.5rem] lg:text-[4.2rem]">
+            <h1 className="mt-4 max-w-4xl text-[1.75rem] font-semibold leading-[0.95] tracking-[-0.04em] text-[#12284C] sm:text-[2.4rem] md:text-[3.5rem] lg:max-w-[780px] lg:text-[4.2rem]">
               Bespoke daytime education for home-educated children and
               flexi-schoolers.
             </h1>
@@ -109,8 +139,11 @@ export default function Page() {
               each child well: their interests, strengths, learning style, and
               the emotional factors that shape how they engage. Alongside the
               teaching of subjects, we’re offering high quality mentorship to
-              the children with us, remaining kind and compassionate. We believe
-              every child is unique.
+              the children with us, remaining kind and compassionate. We truly
+              value strong communication and trusted relationships with parents
+              and carers too, because meaningful progress is strongest when the
+              adults around a child work together with clarity, care and shared
+              understanding.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
@@ -132,33 +165,6 @@ export default function Page() {
               <span className="rounded-full border border-rose-300 bg-rose-50 px-3.5 py-2 text-xs text-rose-800 md:text-sm">
                 Limited places available
               </span>
-            </div>
-
-            <div className="mt-6 rounded-[1.6rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-5 shadow-sm">
-              <p className="text-xs uppercase tracking-[0.18em] text-slate-500 md:text-sm">
-                Launching now
-              </p>
-
-              <p className="mt-2 text-xl font-semibold text-[#12284C] md:text-2xl">
-                Tuesday mornings · 9:30-12:30
-              </p>
-
-              <p className="mt-2 text-base font-medium text-slate-700 md:text-lg">
-                Alderley Edge, Cheshire
-              </p>
-
-              <p className="mt-3 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
-                Includes movement and regulation breaks, snacks, refreshments and a calm social
-                learning environment to enhance engagement and learning.
-              </p>
-
-              <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
-                Maximum 4 children per session
-              </p>
-
-              <p className="mt-3 text-sm font-medium text-slate-700 md:text-base">
-                Now taking enquiries for September 2026
-              </p>
             </div>
 
             <div className="mt-7">
@@ -241,6 +247,10 @@ export default function Page() {
 
               <p className="mt-2 text-center text-xs uppercase tracking-[0.18em] text-slate-300 md:text-sm">
                 BSc (Hons) Psychology • Primary PGCE • QTS
+              </p>
+
+              <p className="mt-3 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
+                Enhanced DBS Checked • First Aid Trained
               </p>
 
               <ul className="mt-5 space-y-3 text-center text-base leading-7 text-slate-200 md:text-lg md:leading-8">
