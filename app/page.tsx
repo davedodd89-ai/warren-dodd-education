@@ -15,16 +15,14 @@ export default function Page() {
     },
     {
       quote:
-        "From the outset, Mr Dodd took the time to fully understand our son: his struggles, his interests, what motivates him, and what holds him back. Connection and understanding come first, and the teaching follows naturally.",
-      source: "Parent of boy aged 8",
+        "He has worked closely with us to tailor the tutoring to each child’s needs, and we consistently feel real value in every session.",
+      source: "Parent of girl aged 9",
     },
-  ];
-
-  const whoIAmPoints = [
-    "15 years in primary education",
-    "BSc (Hons) Psychology, Primary PGCE and QTS",
-    "Experience across mainstream and SEND",
-    "Teaching shaped around the child, not just the curriculum",
+    {
+      quote:
+        "The calm, personalised approach has helped our daughter grow in confidence and begin enjoying learning again.",
+      source: "Parent of girl aged 10",
+    },
   ];
 
   const enquiryPoints = [
@@ -73,7 +71,7 @@ export default function Page() {
                 </div>
               </div>
 
-              <div className="hidden lg:block rounded-[1.6rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-5 shadow-sm lg:p-6">
+              <div className="hidden rounded-[1.6rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-5 shadow-sm lg:block lg:p-6">
                 <p className="text-xs uppercase tracking-[0.18em] text-slate-500 md:text-sm">
                   Launching soon
                 </p>
@@ -101,7 +99,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="hidden lg:flex flex-wrap gap-2.5">
+              <div className="hidden flex-wrap gap-2.5 lg:flex">
                 <span className="rounded-full border border-amber-300 bg-amber-50 px-3.5 py-2 text-xs text-amber-800 md:text-sm">
                   Maximum 4 children
                 </span>
@@ -135,36 +133,33 @@ export default function Page() {
 
             <p className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
               Warren Dodd Education provides bespoke, premium daytime tutoring
-              in English and Maths and the wider curriculum, for children aged
-              8-11 within Cheshire and Stockport.
+              in English, Maths and the wider curriculum for children aged 8–11
+              within Cheshire and Stockport.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
               Our teaching is relationship-led at its core, built on human
-              trust, mutual respect and empathy - because children learn best
-              when they feel genuinely known, understood, and valued. Social
-              and emotional support matters deeply, and creating a calm, fun and
-              safe learning environment is a central part of what we do.
-              Understanding what truly motivates each child is where our
-              strengths lie.
+              trust, mutual respect and empathy — because children learn best
+              when they feel genuinely known, understood and valued. Social and
+              emotional development sits alongside academic progress in
+              everything we do, and creating a calm, safe and enjoyable learning
+              environment is central to our approach.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Our approach is personal, thoughtful, and built around knowing
-              each child well: their interests, strengths, learning style, and
-              the emotional factors that shape how they engage. Alongside the
-              teaching of subjects, we’re offering high quality mentorship to
-              the children with us, remaining kind and compassionate. We truly
-              value strong communication and trusted relationships with parents
-              and carers too, because meaningful progress is strongest when the
-              adults around a child work together with clarity, care and shared
-              understanding.
+              Every child is understood as an individual — their interests,
+              strengths, learning style and the emotional factors that shape how
+              they engage. Alongside subject teaching, we provide high quality
+              mentorship, supporting children to grow in confidence,
+              self-belief and resilience, and to develop a stronger sense of
+              ownership over their own learning.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              We are driven by a genuine passion for helping children grow in
-              confidence, self-belief and resilience, while giving them a
-              stronger sense of ownership over their learning journey.
+              Open, regular communication with parents and carers is central to
+              everything we do — because meaningful progress is strongest when
+              the adults around a child work together with clarity, care and
+              shared understanding.
             </p>
 
             <div className="mt-6 space-y-5 lg:hidden">
@@ -246,7 +241,7 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="mt-6 grid gap-4 lg:grid-cols-3">
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
             {testimonialSnippets.map((item) => (
               <div
                 key={item.quote}
@@ -281,13 +276,13 @@ export default function Page() {
               <div className="mx-auto h-32 w-32 overflow-hidden rounded-full border-4 border-white/10 shadow-lg md:h-36 md:w-36">
                 <img
                   src="/hero.jpg"
-                  alt="David Warren Dodd"
+                  alt="David Dodd"
                   className="h-full w-full object-cover"
                 />
               </div>
 
               <h2 className="mt-5 text-center text-2xl font-semibold md:text-3xl">
-                David Warren Dodd
+                David Dodd
               </h2>
 
               <p className="mt-2 text-center text-xs uppercase tracking-[0.18em] text-slate-300 md:text-sm">
@@ -297,16 +292,6 @@ export default function Page() {
               <p className="mt-3 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
                 Enhanced DBS Checked • First Aid Trained
               </p>
-
-              <ul className="mt-5 space-y-3 text-center text-base leading-7 text-slate-200 md:text-lg md:leading-8">
-                <li>Current Primary School Teacher in Manchester</li>
-                <li>Lead Teaching and Learning Coach.</li>
-                <li>
-                  Relationship-led, psychology-informed education built around
-                  the whole child.
-                </li>
-                <li>Highly experienced and skilled practitioner.</li>
-              </ul>
 
               <div className="mt-6 text-center">
                 <Link
@@ -320,48 +305,57 @@ export default function Page() {
 
             <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                Who I am
+                About me
               </p>
 
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-                Built on trusted relationships and a deep understanding of how
-                children learn.
+                David Dodd, Founder
               </h2>
 
-              <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                I started Warren Dodd Education because too many children begin
-                to lose confidence in themselves as learners. My work is built
-                on relationship-based teaching, a strong understanding of child
-                development, and a belief that progress is strongest when
-                children feel understood, respected and emotionally secure.
+              <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                I have always had a passion for developing a genuine, deep
+                understanding of how children think, learn and behave — and for
+                building the kind of powerful, trusting relationships that help
+                them thrive. In fifteen years of teaching, I have found that
+                this understanding, and these relationships, are what truly make
+                the difference. That's why I started Warren Dodd Education: to
+                make that approach available to home educated children and
+                flexi-schoolers, and to develop it further in schools too.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                With 15 years of experience across mainstream and SEND,
-                alongside a degree in Psychology and a Primary PGCE, I have
-                developed a deep understanding of how children learn, what
-                motivates them, and how trust, clarity and connection can
-                transform engagement.
+                With a background in Psychology and extensive experience
+                teaching across every year group in KS1 and KS2, including
+                significant work with SEND and neurodivergent children, I have
+                spent my career learning what truly motivates children — and
+                using that understanding to help them feel safe, capable and
+                ready to engage. That work has taken me beyond the classroom
+                too: leading staff development on behaviour and coaching
+                colleagues on relationship-led teaching within the North
+                Manchester Primary Federation, alongside Oracy development work
+                with Cambridge University and contributing to school improvement
+                at a senior level.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                I make every effort to understand the child in front of me -
-                their strengths, their interests, their barriers, and the way
-                they learn best. This is why the work is not just about
-                tutoring. It is about creating the kind of environment where
-                children can feel capable again and begin to thrive.
+                What I bring into every session is warmth, calm, humour and care
+                — because I know that children learn best when they feel known.
               </p>
 
-              <div className="mt-6 grid gap-3">
-                {whoIAmPoints.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3.5 text-sm text-slate-800 shadow-sm md:text-base"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                That understanding — of child development, motivation and
+                relationship — is the foundation Warren Dodd Education is built
+                on.
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                Working closely with parents and carers is something I value
+                deeply — open, regular communication has been one of the most
+                powerful tools in my extensive experience in helping children
+                make progress socially, emotionally and educationally, and in
+                supporting them as they prepare for the next stage — whether
+                that is high school or continued home education.
+              </p>
             </div>
           </div>
         </div>
