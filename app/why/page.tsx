@@ -8,6 +8,10 @@ export default function WhyPage() {
       text: "This is especially well suited to children who are home educated, or who attend school for most of the week but would benefit from spending part of their week in a more personalised tutoring group. It offers a calm, purposeful and carefully structured space for children who need something more bespoke alongside, or instead of, the usual model.",
     },
     {
+      title: "Neurodivergent children who need to feel understood",
+      text: "This can be a particularly strong fit for neurodivergent children who benefit from adults taking the time to understand how they think, feel, communicate and engage. Many children do better when they feel properly known, when expectations are clear, and when the environment is calm, relational and responsive rather than rushed or overwhelming.",
+    },
+    {
       title: "Children who benefit from small-group learning",
       text: "Some children thrive when learning feels more personal. In a smaller group, they are often more willing to speak, ask questions, build confidence and take part fully. The environment allows children to feel known, supported and included, while still benefiting from the motivation and social development that comes from learning alongside others.",
     },
@@ -26,6 +30,10 @@ export default function WhyPage() {
     {
       title: "Children who simply need the right environment",
       text: "This is not only for children who are struggling. It is also for children who would flourish with a more thoughtful, relationship-led and personalised approach. For some families, it is about giving their child a setting where they can feel calmer, happier, more confident and more fully themselves as a learner.",
+    },
+    {
+      title: "Experience that is relationship-led",
+      text: "With experience across mainstream and SEND, my approach is built around understanding the child in front of me properly. Relationship-led teaching matters deeply here. When children feel known, respected and safe with the adult leading them, they are far more likely to engage, trust the process and begin to grow in confidence.",
     },
   ];
 
@@ -79,11 +87,21 @@ export default function WhyPage() {
               </p>
 
               <p>
-                It can also be a strong fit for children who need help rebuilding
-                confidence, developing self-belief, navigating social and
-                emotional challenges, or simply learning in a smaller group where
-                they feel more understood, more settled and more willing to
-                engage.
+                It can also be a particularly strong fit for neurodivergent
+                children, and for children who need to feel properly understood,
+                genuinely known and emotionally safe before learning begins to
+                flow. With experience across mainstream and SEND, my work is
+                built around taking the time to understand the child in front of
+                me and creating a relationship-led environment where they can
+                settle, trust, engage and grow.
+              </p>
+
+              <p>
+                It can also be a strong fit for children who need help
+                rebuilding confidence, developing self-belief, navigating social
+                and emotional challenges, or simply learning in a smaller group
+                where they feel more understood, more settled and more willing
+                to engage.
               </p>
             </div>
           </div>

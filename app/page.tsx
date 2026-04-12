@@ -73,7 +73,7 @@ export default function Page() {
                 </div>
               </div>
 
-              <div className="rounded-[1.6rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-5 shadow-sm lg:p-6">
+              <div className="hidden lg:block rounded-[1.6rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-5 shadow-sm lg:p-6">
                 <p className="text-xs uppercase tracking-[0.18em] text-slate-500 md:text-sm">
                   Launching soon
                 </p>
@@ -101,7 +101,7 @@ export default function Page() {
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-2.5">
+              <div className="hidden lg:flex flex-wrap gap-2.5">
                 <span className="rounded-full border border-amber-300 bg-amber-50 px-3.5 py-2 text-xs text-amber-800 md:text-sm">
                   Maximum 4 children
                 </span>
@@ -166,6 +166,51 @@ export default function Page() {
               confidence, self-belief and resilience, while giving them a
               stronger sense of ownership over their learning journey.
             </p>
+
+            <div className="mt-6 space-y-5 lg:hidden">
+              <div className="rounded-[1.6rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-5 shadow-sm">
+                <p className="text-xs uppercase tracking-[0.18em] text-slate-500 md:text-sm">
+                  Launching soon
+                </p>
+
+                <p className="mt-2 text-xl font-semibold text-[#12284C] md:text-2xl">
+                  Daytime sessions
+                </p>
+
+                <p className="mt-2 text-base font-medium text-slate-700 md:text-lg">
+                  Cheshire
+                </p>
+
+                <p className="mt-4 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
+                  Calm, personalised small-group learning, with optional home
+                  introductions to help each child feel known, comfortable and
+                  ready to begin.
+                </p>
+
+                <p className="mt-4 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
+                  Maximum 4 children per session
+                </p>
+
+                <p className="mt-3 text-sm font-medium text-slate-700 md:text-base">
+                  Enquiries now open for September 2026
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-2.5">
+                <span className="rounded-full border border-amber-300 bg-amber-50 px-3.5 py-2 text-xs text-amber-800 md:text-sm">
+                  Maximum 4 children
+                </span>
+                <span className="rounded-full border border-sky-300 bg-sky-50 px-3.5 py-2 text-xs text-sky-800 md:text-sm">
+                  3-hour daytime sessions
+                </span>
+                <span className="rounded-full border border-emerald-300 bg-emerald-50 px-3.5 py-2 text-xs text-emerald-800 md:text-sm">
+                  Home education &amp; flexi schooling
+                </span>
+                <span className="rounded-full border border-rose-300 bg-rose-50 px-3.5 py-2 text-xs text-rose-800 md:text-sm">
+                  Limited places available
+                </span>
+              </div>
+            </div>
 
             <div className="mt-7">
               <Link
