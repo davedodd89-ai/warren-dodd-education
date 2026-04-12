@@ -10,18 +10,18 @@ export default function Page() {
     },
     {
       quote:
-        "From day one, our son felt that Mr Dodd was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.",
-      source: "Parent of boy aged 9",
-    },
-    {
-      quote:
         "He has worked closely with us to tailor the tutoring to each child’s needs, and we consistently feel real value in every session.",
       source: "Parent of girl aged 9",
     },
     {
       quote:
-        "The calm, personalised approach has helped our daughter grow in confidence and begin enjoying learning again.",
-      source: "Parent of girl aged 10",
+        "From day one, our son felt that Mr Dodd was on his side, that they were a team, and this created a strong sense of mutual respect that has been invaluable.",
+      source: "Parent of boy aged 9",
+    },
+    {
+      quote:
+        "From the outset, Mr Dodd took the time to fully understand our son: his struggles, his interests, what motivates him, and what holds him back. Connection and understanding come first, and the teaching follows naturally.",
+      source: "Parent of boy aged 8",
     },
   ];
 
