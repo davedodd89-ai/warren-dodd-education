@@ -51,7 +51,7 @@ export default function Page() {
       </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-10 pt-6 md:px-10 md:pb-12 md:pt-8">
-        <div className="grid items-start gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:items-start lg:gap-12">
+        <div className="grid items-start gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:gap-12">
           <div className="order-1 mx-auto w-full max-w-[280px] sm:max-w-[300px] md:max-w-[430px] lg:order-2 lg:mx-0 lg:max-w-none">
             <div className="lg:sticky lg:top-28 lg:space-y-6">
               <div className="relative">
@@ -79,25 +79,25 @@ export default function Page() {
                 </p>
 
                 <p className="mt-2 text-xl font-semibold text-[#12284C] md:text-2xl">
-                  Morning daytime sessions
+                  Daytime sessions
                 </p>
 
                 <p className="mt-2 text-base font-medium text-slate-700 md:text-lg">
-                  Cheshire venue being finalised
+                  Cheshire
                 </p>
 
-                <p className="mt-3 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
-                  Includes movement and regulation breaks, snacks, refreshments
-                  and a calm social learning environment to enhance engagement
-                  and learning.
+                <p className="mt-4 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
+                  Calm, personalised small-group learning, with optional home
+                  introductions to help each child feel known, comfortable and
+                  ready to begin.
                 </p>
 
-                <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
+                <p className="mt-4 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
                   Maximum 4 children per session
                 </p>
 
                 <p className="mt-3 text-sm font-medium text-slate-700 md:text-base">
-                  Now taking enquiries for September 2026
+                  Enquiries now open for September 2026
                 </p>
               </div>
 
@@ -129,13 +129,13 @@ export default function Page() {
             </h1>
 
             <p className="mt-5 max-w-3xl text-lg font-medium leading-8 text-[#12284C] md:text-xl md:leading-9">
-              A calm, welcoming and personalised approach that helps children feel
-              understood, supported and ready to learn.
+              A calm, welcoming and personalised approach that helps children
+              feel understood, supported and ready to learn.
             </p>
 
             <p className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Warren Dodd Education provides bespoke, premium daytime tutoring in
-              English and Maths and the wider curriculum, for children aged
+              Warren Dodd Education provides bespoke, premium daytime tutoring
+              in English and Maths and the wider curriculum, for children aged
               8-11 within Cheshire and Stockport.
             </p>
 
@@ -256,7 +256,10 @@ export default function Page() {
               <ul className="mt-5 space-y-3 text-center text-base leading-7 text-slate-200 md:text-lg md:leading-8">
                 <li>Current Primary School Teacher in Manchester</li>
                 <li>Lead Teaching and Learning Coach.</li>
-                <li>Relationship-led, psychology-informed education built around the whole child.</li>
+                <li>
+                  Relationship-led, psychology-informed education built around
+                  the whole child.
+                </li>
                 <li>Highly experienced and skilled practitioner.</li>
               </ul>
 
