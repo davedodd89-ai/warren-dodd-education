@@ -85,9 +85,9 @@ export default function Page() {
                 </p>
 
                 <p className="mt-4 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
-                  Calm, personalised small-group learning, with optional home
-                  introductions to help each child feel known, comfortable and
-                  ready to begin.
+                  A calm, personalised small-group approach, with a
+                  no-obligation home visit before joining so we can make sure it
+                  feels like the right fit for your child.
                 </p>
 
                 <p className="mt-4 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
@@ -177,9 +177,9 @@ export default function Page() {
                 </p>
 
                 <p className="mt-4 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
-                  Calm, personalised small-group learning, with optional home
-                  introductions to help each child feel known, comfortable and
-                  ready to begin.
+                  A calm, personalised small-group approach, with a
+                  no-obligation home visit before joining so we can make sure it
+                  feels like the right fit for your child.
                 </p>
 
                 <p className="mt-4 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
@@ -323,7 +323,7 @@ export default function Page() {
                 flexi-schoolers, and to develop it further in schools too.
               </p>
 
-              <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
                 With a background in Psychology and extensive experience
                 teaching across every year group in KS1 and KS2, including
                 significant work with SEND and neurodivergent children, I have
