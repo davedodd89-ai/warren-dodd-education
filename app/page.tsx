@@ -56,9 +56,9 @@ export default function Page() {
                 <div className="absolute -inset-3 rounded-[1.8rem] bg-slate-200/20 blur-3xl" />
 
                 <div className="relative overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
-                  <div className="h-[220px] overflow-hidden rounded-[1rem] bg-slate-100 md:h-[300px] lg:h-[420px]">
+                  <div className="overflow-hidden rounded-[1rem] bg-slate-100">
                     <video
-                      className="block h-full w-full object-cover"
+                      className="h-[130px] w-full object-cover object-center sm:h-[150px] md:h-[220px] lg:h-[320px]"
                       autoPlay
                       muted
                       loop
