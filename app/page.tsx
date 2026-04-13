@@ -133,13 +133,13 @@ export default function Page() {
 
             <p className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
               Warren Dodd Education provides bespoke, premium daytime tutoring
-              in English, Maths and the wider curriculum for children aged 8–11
+              in English, Maths and the wider curriculum for children aged 8-11
               within Cheshire and Stockport.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
               Our teaching is relationship-led at its core, built on human
-              trust, mutual respect and empathy — because children learn best
+              trust, mutual respect and empathy - because children learn best
               when they feel genuinely known, understood and valued. Social and
               emotional development sits alongside academic progress in
               everything we do, and creating a calm, safe and enjoyable learning
@@ -147,7 +147,7 @@ export default function Page() {
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Every child is understood as an individual — their interests,
+              Every child is understood as an individual - their interests,
               strengths, learning style and the emotional factors that shape how
               they engage. Alongside subject teaching, we provide high quality
               mentorship, supporting children to grow in confidence,
@@ -157,7 +157,7 @@ export default function Page() {
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
               Open, regular communication with parents and carers is central to
-              everything we do — because meaningful progress is strongest when
+              everything we do - because meaningful progress is strongest when
               the adults around a child work together with clarity, care and
               shared understanding.
             </p>
@@ -286,11 +286,11 @@ export default function Page() {
               </h2>
 
               <p className="mt-2 text-center text-xs uppercase tracking-[0.18em] text-slate-300 md:text-sm">
-                BSc (Hons) Psychology • Primary PGCE • QTS
+                BSc (Hons) Psychology - Primary PGCE - QTS
               </p>
 
               <p className="mt-3 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
-                Enhanced DBS Checked • First Aid Trained
+                Enhanced DBS Checked - First Aid Trained
               </p>
 
               <div className="mt-6 text-center">
@@ -314,7 +314,7 @@ export default function Page() {
 
               <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
                 I have always had a passion for developing a genuine, deep
-                understanding of how children think, learn and behave — and for
+                understanding of how children think, learn and behave - and for
                 building the kind of powerful, trusting relationships that help
                 them thrive. In fifteen years of teaching, I have found that
                 this understanding, and these relationships, are what truly make
@@ -323,11 +323,11 @@ export default function Page() {
                 flexi-schoolers, and to develop it further in schools too.
               </p>
 
-              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
                 With a background in Psychology and extensive experience
                 teaching across every year group in KS1 and KS2, including
                 significant work with SEND and neurodivergent children, I have
-                spent my career learning what truly motivates children — and
+                spent my career learning what truly motivates children - and
                 using that understanding to help them feel safe, capable and
                 ready to engage. That work has taken me beyond the classroom
                 too: leading staff development on behaviour and coaching
@@ -339,21 +339,21 @@ export default function Page() {
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
                 What I bring into every session is warmth, calm, humour and care
-                — because I know that children learn best when they feel known.
+                - because I know that children learn best when they feel known.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                That understanding — of child development, motivation and
-                relationship — is the foundation Warren Dodd Education is built
+                That understanding - of child development, motivation and
+                relationship - is the foundation Warren Dodd Education is built
                 on.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
                 Working closely with parents and carers is something I value
-                deeply — open, regular communication has been one of the most
+                deeply - open, regular communication has been one of the most
                 powerful tools in my extensive experience in helping children
                 make progress socially, emotionally and educationally, and in
-                supporting them as they prepare for the next stage — whether
+                supporting them as they prepare for the next stage - whether
                 that is high school or continued home education.
               </p>
             </div>
@@ -374,7 +374,7 @@ export default function Page() {
               </p>
 
               <p className="mt-2 text-base text-slate-700 md:text-lg">
-                Per hour · 3-hour sessions
+                Per hour - 3-hour sessions
               </p>
 
               <p className="mt-3 text-lg font-medium text-[#12284C]">
