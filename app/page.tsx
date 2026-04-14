@@ -32,6 +32,13 @@ export default function Page() {
     "A more personal alternative to traditional tutoring",
   ];
 
+  const venueHighlights = [
+    "Tuesday mornings",
+    "9:30am - 12:30pm",
+    "Alderley Edge, Cheshire",
+    "Maximum 4 children",
+  ];
+
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#F7F7F4] text-slate-900">
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[460px] bg-[radial-gradient(circle_at_top,rgba(18,40,76,0.06),transparent_42%),radial-gradient(circle_at_right,rgba(18,40,76,0.04),transparent_34%)]" />
@@ -71,30 +78,42 @@ export default function Page() {
                 </div>
               </div>
 
-              <div className="hidden rounded-[1.6rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-5 shadow-sm lg:block lg:p-6">
-                <p className="text-xs uppercase tracking-[0.18em] text-slate-500 md:text-sm">
+              <div className="hidden rounded-[1.7rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-6 shadow-sm lg:block">
+                <p className="text-xs uppercase tracking-[0.22em] text-slate-500">
                   Launching soon
                 </p>
 
-                <p className="mt-2 text-xl font-semibold text-[#12284C] md:text-2xl">
+                <h2 className="mt-3 text-[2rem] font-semibold leading-tight text-[#12284C]">
                   Daytime sessions
-                </p>
+                </h2>
 
-                <p className="mt-2 text-base font-medium text-slate-700 md:text-lg">
+                <p className="mt-2 text-lg font-medium text-slate-700">
                   Cheshire
                 </p>
 
-                <p className="mt-4 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
-                  A calm, personalised small-group approach, with a
-                  no-obligation home visit before joining so we can make sure it
-                  feels like the right fit for your child.
+                <p className="mt-5 text-base leading-8 text-slate-700">
+                  A calm, personalised small-group approach, with a no-obligation
+                  home visit before joining so we can make sure it feels like the
+                  right fit for your child.
                 </p>
 
-                <p className="mt-4 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
+                <div className="mt-6 space-y-2">
+                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
+                    Tuesday mornings
+                  </p>
+                  <p className="text-base font-medium text-slate-700">
+                    9:30am - 12:30pm
+                  </p>
+                  <p className="text-base font-medium text-slate-700">
+                    Alderley Edge, Cheshire
+                  </p>
+                </div>
+
+                <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
                   Maximum 4 children per session
                 </p>
 
-                <p className="mt-3 text-sm font-medium text-slate-700 md:text-base">
+                <p className="mt-3 text-base font-medium text-slate-700">
                   Enquiries now open for September 2026
                 </p>
               </div>
@@ -104,13 +123,13 @@ export default function Page() {
                   Maximum 4 children
                 </span>
                 <span className="rounded-full border border-sky-300 bg-sky-50 px-3.5 py-2 text-xs text-sky-800 md:text-sm">
-                  3-hour daytime sessions
+                  Tuesday 9:30am - 12:30pm
                 </span>
                 <span className="rounded-full border border-emerald-300 bg-emerald-50 px-3.5 py-2 text-xs text-emerald-800 md:text-sm">
-                  Home education &amp; flexi schooling
+                  Alderley Edge, Cheshire
                 </span>
                 <span className="rounded-full border border-rose-300 bg-rose-50 px-3.5 py-2 text-xs text-rose-800 md:text-sm">
-                  Limited places available
+                  September 2026 enquiries open
                 </span>
               </div>
             </div>
@@ -177,12 +196,24 @@ export default function Page() {
                 </p>
 
                 <p className="mt-4 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
-                  A calm, personalised small-group approach, with a
-                  no-obligation home visit before joining so we can make sure it
-                  feels like the right fit for your child.
+                  A calm, personalised small-group approach, with a no-obligation
+                  home visit before joining so we can make sure it feels like the
+                  right fit for your child.
                 </p>
 
-                <p className="mt-4 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
+                <div className="mt-5 space-y-1">
+                  <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#12284C]">
+                    Tuesday mornings
+                  </p>
+                  <p className="text-sm font-medium text-slate-700 md:text-base">
+                    9:30am - 12:30pm
+                  </p>
+                  <p className="text-sm font-medium text-slate-700 md:text-base">
+                    Alderley Edge, Cheshire
+                  </p>
+                </div>
+
+                <p className="mt-5 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
                   Maximum 4 children per session
                 </p>
 
@@ -196,13 +227,13 @@ export default function Page() {
                   Maximum 4 children
                 </span>
                 <span className="rounded-full border border-sky-300 bg-sky-50 px-3.5 py-2 text-xs text-sky-800 md:text-sm">
-                  3-hour daytime sessions
+                  Tuesday 9:30am - 12:30pm
                 </span>
                 <span className="rounded-full border border-emerald-300 bg-emerald-50 px-3.5 py-2 text-xs text-emerald-800 md:text-sm">
-                  Home education &amp; flexi schooling
+                  Alderley Edge, Cheshire
                 </span>
                 <span className="rounded-full border border-rose-300 bg-rose-50 px-3.5 py-2 text-xs text-rose-800 md:text-sm">
-                  Limited places available
+                  September 2026 enquiries open
                 </span>
               </div>
             </div>
@@ -214,6 +245,64 @@ export default function Page() {
               >
                 Make an Enquiry
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
+          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+            <div>
+              <div className="overflow-hidden rounded-[1.8rem] border border-slate-200 bg-slate-100 shadow-sm">
+                <img
+                  src="/venue.jpg"
+                  alt="Venue for Warren Dodd Education daytime sessions in Cheshire"
+                  className="h-[260px] w-full object-cover sm:h-[320px] lg:h-[420px]"
+                />
+              </div>
+            </div>
+
+            <div className="flex h-full flex-col justify-center rounded-[1.8rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-8">
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                New venue confirmed
+              </p>
+
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+                Tuesday morning sessions now have a home.
+              </h2>
+
+              <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                I am pleased to now be able to offer a dedicated venue space in
+                Alderley Edge, Cheshire for daytime sessions starting in
+                September 2026.
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                This gives families a clear, consistent setting for calm,
+                focused learning each week, while keeping the small-group,
+                relationship-led approach at the heart of the provision.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-2.5">
+                {venueHighlights.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-slate-300 bg-white px-3.5 py-2 text-xs text-slate-700 md:text-sm"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-7">
+                <Link
+                  href="/contact"
+                  className="inline-flex rounded-full bg-[#12284C] px-7 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
+                >
+                  Register your interest
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -248,7 +337,7 @@ export default function Page() {
                 className="flex h-full flex-col justify-between rounded-[1.5rem] border border-slate-200 bg-[#FBFBF9] p-5 shadow-sm"
               >
                 <p className="text-sm leading-6 text-slate-800 md:text-base md:leading-7">
-                  “{item.quote}”
+                  "{item.quote}"
                 </p>
 
                 <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500 md:text-xs">
