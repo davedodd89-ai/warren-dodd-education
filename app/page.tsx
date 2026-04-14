@@ -45,6 +45,13 @@ export default function Page() {
     "Maximum 4 children",
   ];
 
+  const weeklySessionPoints = [
+    "Reserved weekly group place",
+    "3-hour daytime session",
+    "Maximum 4 children",
+    "Built for consistency, not drop-in support",
+  ];
+
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#F7F7F4] text-slate-900">
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[460px] bg-[radial-gradient(circle_at_top,rgba(18,40,76,0.06),transparent_42%),radial-gradient(circle_at_right,rgba(18,40,76,0.04),transparent_34%)]" />
@@ -94,13 +101,13 @@ export default function Page() {
                 </h2>
 
                 <p className="mt-2 text-lg font-medium text-slate-700">
-                  Cheshire
+                  Alderley Edge, Cheshire
                 </p>
 
                 <p className="mt-5 text-base leading-8 text-slate-700">
-                  A calm, personalised small-group approach, with a no-obligation
-                  home visit before joining so we can make sure it feels like the
-                  right fit for your child.
+                  A calm, engaging and personalised small-group approach, with a
+                  no-obligation free home visit before joining so we can make sure
+                  it feels like the right fit for your child.
                 </p>
 
                 <div className="mt-6 space-y-2">
@@ -110,17 +117,10 @@ export default function Page() {
                   <p className="text-base font-medium text-slate-700">
                     9:30am - 12:30pm
                   </p>
-                  <p className="text-base font-medium text-slate-700">
-                    Alderley Edge, Cheshire
-                  </p>
                 </div>
 
                 <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
                   Maximum 4 children per session
-                </p>
-
-                <p className="mt-3 text-base font-medium text-slate-700">
-                  A calm weekly rhythm beginning in September 2026
                 </p>
               </div>
 
@@ -157,40 +157,58 @@ export default function Page() {
             </p>
 
             <p className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Warren Dodd Education provides bespoke, premium daytime education
+              Warren Dodd Education provides{" "}
+              <span className="font-semibold text-[#12284C]">
+                bespoke, premium daytime education
+              </span>{" "}
               in English, Maths and the wider curriculum for children aged 8-11
               within Cheshire and Stockport.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Our teaching is relationship-led at its core, built on human
-              trust, mutual respect and empathy - because children learn best
-              when they feel genuinely known, understood and valued. Social and
-              emotional development sits alongside academic progress in
-              everything we do, and creating a calm, safe and enjoyable learning
-              environment is central to our approach.
+              Our teaching is{" "}
+              <span className="font-semibold text-[#12284C]">
+                relationship-led
+              </span>{" "}
+              at its core, built on human trust, mutual respect and empathy -
+              because children learn best when they feel genuinely known,
+              understood and valued.{" "}
+              <span className="font-semibold text-[#12284C]">
+                Social and emotional development
+              </span>{" "}
+              sits alongside academic progress in everything we do, and creating
+              a calm, safe and enjoyable learning environment is central to our
+              approach.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
               Every child is understood as an individual - their interests,
               strengths, learning style and the emotional factors that shape how
               they engage. Alongside subject teaching, we provide high quality
-              mentorship, supporting children to grow in confidence,
-              self-belief and resilience, and to develop a stronger sense of
-              ownership over their own learning.
+              mentorship, supporting children to grow in{" "}
+              <span className="font-semibold text-[#12284C]">
+                confidence, self-belief and resilience
+              </span>
+              , and to develop a stronger sense of ownership over their own
+              learning.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              This is a specialised learning experience designed for children
-              who benefit from a calmer, more personal and more thoughtfully
-              tailored way of learning.
+              This is a{" "}
+              <span className="font-semibold text-[#12284C]">
+                specialised learning experience
+              </span>{" "}
+              designed for children who benefit from a calmer, more personal and
+              more thoughtfully tailored way of learning.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Open, regular communication with parents and carers is central to
-              everything we do - because meaningful progress is strongest when
-              the adults around a child work together with clarity, care and
-              shared understanding.
+              <span className="font-semibold text-[#12284C]">
+                Open, regular communication with parents and carers
+              </span>{" "}
+              is central to everything we do - because meaningful progress is
+              strongest when the adults around a child work together with
+              clarity, care and shared understanding.
             </p>
 
             <div className="mt-6 space-y-5 lg:hidden">
@@ -204,13 +222,13 @@ export default function Page() {
                 </p>
 
                 <p className="mt-2 text-base font-medium text-slate-700 md:text-lg">
-                  Cheshire
+                  Alderley Edge, Cheshire
                 </p>
 
                 <p className="mt-4 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
-                  A calm, personalised small-group approach, with a no-obligation
-                  home visit before joining so we can make sure it feels like the
-                  right fit for your child.
+                  A calm, engaging and personalised small-group approach, with a
+                  no-obligation free home visit before joining so we can make sure
+                  it feels like the right fit for your child.
                 </p>
 
                 <div className="mt-5 space-y-1">
@@ -220,17 +238,10 @@ export default function Page() {
                   <p className="text-sm font-medium text-slate-700 md:text-base">
                     9:30am - 12:30pm
                   </p>
-                  <p className="text-sm font-medium text-slate-700 md:text-base">
-                    Alderley Edge, Cheshire
-                  </p>
                 </div>
 
                 <p className="mt-5 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
                   Maximum 4 children per session
-                </p>
-
-                <p className="mt-3 text-sm font-medium text-slate-700 md:text-base">
-                  A calm weekly rhythm beginning in September 2026
                 </p>
               </div>
 
@@ -306,48 +317,72 @@ export default function Page() {
               </h2>
 
               <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                I have always had a passion for developing a genuine, deep
-                understanding of how children think, learn and behave - and for
-                building the kind of powerful, trusting relationships that help
-                them thrive. In fifteen years of teaching, I have found that
-                this understanding, and these relationships, are what truly make
-                the difference. That's why I started Warren Dodd Education: to
-                make that approach available to home educated children and
-                flexi-schoolers, and to develop it further in schools too.
-              </p>
-
-              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                With a background in Psychology and extensive experience
-                teaching across every year group in KS1 and KS2, including
-                significant work with SEND and neurodivergent children, I have
-                spent my career learning what truly motivates children - and
-                using that understanding to help them feel safe, capable and
-                ready to engage. That work has taken me beyond the classroom
+                With a background in{" "}
+                <span className="font-semibold text-[#12284C]">Psychology</span>{" "}
+                and extensive experience teaching across every year group in KS1
+                and KS2, including significant work with{" "}
+                <span className="font-semibold text-[#12284C]">
+                  SEND and neurodivergent children
+                </span>
+                , I have spent my career learning{" "}
+                <span className="font-semibold text-[#12284C]">
+                  what truly motivates children
+                </span>{" "}
+                - and using that understanding to help them feel safe, capable
+                and ready to engage. That work has taken me beyond the classroom
                 too: leading staff development on behaviour and coaching
-                colleagues on relationship-led teaching within the North
-                Manchester Primary Federation, alongside Oracy development work
-                with Cambridge University and contributing to school improvement
-                at a senior level.
+                colleagues on{" "}
+                <span className="font-semibold text-[#12284C]">
+                  relationship-led teaching
+                </span>{" "}
+                within the North Manchester Primary Federation, alongside Oracy
+                development work with{" "}
+                <span className="font-semibold text-[#12284C]">
+                  Cambridge University
+                </span>{" "}
+                and contributing to
+                <span className="font-semibold text-[#12284C]">
+                  {" "}
+                  school improvement at a senior level
+                </span>
+                .
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                What I bring into every session is warmth, calm, humour and care
-                - because I know that children learn best when they feel known.
+                What I bring into every session is{" "}
+                <span className="font-semibold text-[#12284C]">
+                  warmth, calm, humour and care
+                </span>{" "}
+                - because I know that{" "}
+                <span className="font-semibold text-[#12284C]">
+                  children learn best when they feel known
+                </span>
+                .
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                That understanding - of child development, motivation and
-                relationship - is the foundation Warren Dodd Education is built
-                on.
+                That understanding - of{" "}
+                <span className="font-semibold text-[#12284C]">
+                  child development, motivation and relationship
+                </span>{" "}
+                - is the foundation Warren Dodd Education is built on.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                Working closely with parents and carers is something I value
-                deeply - open, regular communication has been one of the most
-                powerful tools in my extensive experience in helping children
-                make progress socially, emotionally and educationally, and in
-                supporting them as they prepare for the next stage - whether
-                that is high school or continued home education.
+                <span className="font-semibold text-[#12284C]">
+                  Working closely with parents and carers
+                </span>{" "}
+                is something I value deeply -{" "}
+                <span className="font-semibold text-[#12284C]">
+                  open, regular communication
+                </span>{" "}
+                has been one of the most powerful tools in my extensive
+                experience in helping children make progress{" "}
+                <span className="font-semibold text-[#12284C]">
+                  socially, emotionally and educationally
+                </span>
+                , and in supporting them as they prepare for the next stage -
+                whether that is high school or continued home education.
               </p>
             </div>
           </div>
@@ -480,30 +515,29 @@ export default function Page() {
           <div className="mx-auto max-w-2xl">
             <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm md:p-8">
               <p className="text-xs uppercase tracking-[0.2em] text-slate-500 md:text-sm">
-                Investment
+                Regular weekly group sessions
               </p>
 
-              <p className="mt-3 text-4xl font-semibold text-[#12284C] md:text-5xl">
-                £195
+              <p className="mt-3 text-2xl font-semibold text-[#12284C] md:text-3xl">
+                A reserved weekly place, designed for consistency.
               </p>
 
-              <p className="mt-2 text-base text-slate-700 md:text-lg">
-                Per daytime session
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                Sessions are designed as a regular weekly commitment rather than
+                occasional drop-in support. Each child joins as part of a small,
+                consistent group so that trust, rhythm and meaningful progress
+                can build over time.
               </p>
 
-              <p className="mt-3 text-lg font-medium text-[#12284C]">
-                A specialised learning experience
-              </p>
-
-              <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-slate-500">
-                Maximum 4 children per group
-              </p>
-
-              <div className="mt-5 space-y-2.5 text-sm text-slate-700 md:text-base">
-                <p>3-hour bespoke, weekly daytime session</p>
-                <p>Relationship-led and psychology-informed</p>
-                <p>Home education and flexi-school families</p>
-                <p>Built to grow confidence and independence</p>
+              <div className="mt-6 flex flex-wrap gap-2.5">
+                {weeklySessionPoints.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-slate-300 bg-[#FBFBF9] px-3.5 py-2 text-xs text-slate-700 md:text-sm"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
 
               <div className="mt-7">
@@ -511,7 +545,7 @@ export default function Page() {
                   href="/contact"
                   className="inline-flex w-full items-center justify-center rounded-full bg-[#12284C] px-6 py-3.5 text-center font-semibold text-white transition hover:-translate-y-0.5"
                 >
-                  Make an Enquiry
+                  Enquire now
                 </Link>
               </div>
             </div>

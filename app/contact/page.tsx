@@ -11,7 +11,7 @@ export default function ContactPage() {
 
   const discussionPoints = [
     "Whether the sessions feel like the right fit for your child",
-    "How the 3-hour daytime sessions work",
+    "How the regular weekly group sessions work",
     "What kind of support would be most helpful",
     "How confidence, motivation and engagement are currently affecting learning",
     "What a strong next step would look like for your family",
@@ -84,12 +84,12 @@ export default function ContactPage() {
                 <p>1. You get in touch with a few details about your child.</p>
                 <p>2. We arrange an initial conversation.</p>
                 <p>
-                  3. A no-obligation home visit helps us decide whether it feels
-                  like the right fit.
+                  3. A no-obligation free home visit helps us decide whether it
+                  feels like the right fit.
                 </p>
                 <p>
-                  4. If it does, we discuss the best next step for September
-                  2026.
+                  4. If it does, we discuss a regular weekly place from
+                  September 2026.
                 </p>
               </div>
             </div>
@@ -108,11 +108,11 @@ export default function ContactPage() {
               </p>
 
               <p className="mt-2 text-base text-slate-700 sm:text-lg">
-                Per daytime session
+                Per weekly daytime session
               </p>
 
-              <p className="mt-3 text-lg font-medium text-[#12284C]">
-                A specialised learning experience
+              <p className="mt-3 text-lg font-semibold text-[#12284C]">
+                A reserved weekly group place
               </p>
 
               <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-slate-500">
@@ -129,20 +129,21 @@ export default function ContactPage() {
 
             <div className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
               <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-                Why enquire now
+                Important to know
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
-                Because this is a small, carefully designed provision rather than
-                a high-volume tutoring model. With only four children per
-                session, early enquiries make sense for families who want to
-                explore whether this could be the right fit for September.
+                This provision is designed around a regular weekly group
+                structure rather than occasional drop-in support. The aim is to
+                give each child a calm, dependable rhythm and a consistent small
+                group in which trust, confidence and progress can build over
+                time.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
-                The approach is built around calm structure, tailored challenge,
-                genuine trust and close understanding of each child. That is the
-                value families are investing in.
+                Because places are limited, enquiries now are for families who
+                are seriously exploring whether a reserved weekly place from
+                September 2026 could be the right fit.
               </p>
             </div>
           </div>
