@@ -86,7 +86,7 @@ export default function Page() {
 
               <div className="hidden rounded-[1.7rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-6 shadow-sm lg:block">
                 <p className="text-xs uppercase tracking-[0.22em] text-slate-500">
-                  Launching soon
+                  Beginning September 2026
                 </p>
 
                 <h2 className="mt-3 text-[2rem] font-semibold leading-tight text-[#12284C]">
@@ -120,7 +120,7 @@ export default function Page() {
                 </p>
 
                 <p className="mt-3 text-base font-medium text-slate-700">
-                  Enquiries now open for September 2026
+                  A calm weekly rhythm beginning in September 2026
                 </p>
               </div>
 
@@ -135,7 +135,7 @@ export default function Page() {
                   Alderley Edge, Cheshire
                 </span>
                 <span className="rounded-full border border-rose-300 bg-rose-50 px-3.5 py-2 text-xs text-rose-800 md:text-sm">
-                  September 2026 enquiries open
+                  Weekly from September 2026
                 </span>
               </div>
             </div>
@@ -196,7 +196,7 @@ export default function Page() {
             <div className="mt-6 space-y-5 lg:hidden">
               <div className="rounded-[1.6rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-5 shadow-sm">
                 <p className="text-xs uppercase tracking-[0.18em] text-slate-500 md:text-sm">
-                  Launching soon
+                  Beginning September 2026
                 </p>
 
                 <p className="mt-2 text-xl font-semibold text-[#12284C] md:text-2xl">
@@ -215,7 +215,7 @@ export default function Page() {
 
                 <div className="mt-5 space-y-1">
                   <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#12284C]">
-                    Tuesday mornings
+                    Tuesday mornings. Weekly from September 2026.
                   </p>
                   <p className="text-sm font-medium text-slate-700 md:text-base">
                     9:30am - 12:30pm
@@ -230,7 +230,7 @@ export default function Page() {
                 </p>
 
                 <p className="mt-3 text-sm font-medium text-slate-700 md:text-base">
-                  Enquiries now open for September 2026
+                  A calm weekly rhythm beginning in September 2026
                 </p>
               </div>
 
@@ -245,7 +245,7 @@ export default function Page() {
                   Alderley Edge, Cheshire
                 </span>
                 <span className="rounded-full border border-rose-300 bg-rose-50 px-3.5 py-2 text-xs text-rose-800 md:text-sm">
-                  September 2026 enquiries open
+                  Weekly from September 2026
                 </span>
               </div>
             </div>
