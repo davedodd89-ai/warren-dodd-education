@@ -105,7 +105,7 @@ export default function Page() {
 
                 <div className="mt-6 space-y-2">
                   <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
-                    Tuesday mornings
+                    Tuesday mornings. Weekly from September 2026.
                   </p>
                   <p className="text-base font-medium text-slate-700">
                     9:30am - 12:30pm
@@ -147,7 +147,7 @@ export default function Page() {
             </p>
 
             <h1 className="mt-4 max-w-4xl text-[1.75rem] font-semibold leading-[0.95] tracking-[-0.04em] text-[#12284C] sm:text-[2.4rem] md:text-[3.5rem] lg:max-w-[780px] lg:text-[4.2rem]">
-              Bespoke daytime education for home-educated children and
+              Bespoke weekly daytime education for home-educated children and
               flexi-schoolers.
             </h1>
 
@@ -500,7 +500,7 @@ export default function Page() {
               </p>
 
               <div className="mt-5 space-y-2.5 text-sm text-slate-700 md:text-base">
-                <p>3-hour bespoke daytime session</p>
+                <p>3-hour bespoke, weekly daytime session</p>
                 <p>Relationship-led and psychology-informed</p>
                 <p>Home education and flexi-school families</p>
                 <p>Built to grow confidence and independence</p>
