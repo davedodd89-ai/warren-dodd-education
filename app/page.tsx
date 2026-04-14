@@ -25,6 +25,12 @@ export default function Page() {
     },
   ];
 
+  const featuredTestimonial = {
+    quote:
+      "David is a consistently outstanding teacher in terms of both his delivery and the outcomes his children achieve. He has taught across the primary age range and has worked extensively in Year 6 in recent years. He is exceptionally skilled at meeting the needs of children through tailored learning experiences and adapting his teaching where needed.",
+    source: "Executive Headteacher",
+  };
+
   const enquiryPoints = [
     "Home education support",
     "Flexi schooling support",
@@ -347,6 +353,18 @@ export default function Page() {
             ))}
           </div>
 
+          <div className="mt-4">
+            <div className="rounded-[1.6rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-7">
+              <p className="text-base leading-7 text-slate-800 md:text-lg md:leading-8">
+                "{featuredTestimonial.quote}"
+              </p>
+
+              <p className="mt-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#12284C] md:text-xs">
+                {featuredTestimonial.source}
+              </p>
+            </div>
+          </div>
+
           <div className="mt-5 md:hidden">
             <Link
               href="/testimonials"
@@ -407,8 +425,8 @@ export default function Page() {
                 building the kind of powerful, trusting relationships that help
                 them thrive. In fifteen years of teaching, I have found that
                 this understanding, and these relationships, are what truly make
-                the difference. That's why I started Warren Dodd Education: to
-                make that approach available to home educated children and
+                the difference. That is why I started Warren Dodd Education: to
+                make that approach available to home-educated children and
                 flexi-schoolers, and to develop it further in schools too.
               </p>
 
@@ -440,8 +458,8 @@ export default function Page() {
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
                 Working closely with parents and carers is something I value
                 deeply - open, regular communication has been one of the most
-                powerful tools in my extensive experience in helping children
-                make progress socially, emotionally and educationally, and in
+                powerful tools in my experience in helping children make
+                progress socially, emotionally and educationally, and in
                 supporting them as they prepare for the next stage - whether
                 that is high school or continued home education.
               </p>
