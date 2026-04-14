@@ -76,7 +76,7 @@ export default function Page() {
                       muted
                       loop
                       playsInline
-                      poster="/logo.png"
+                      poster="/logo-new.png"
                     >
                       <source src="/hero-video.mp4" type="video/mp4" />
                     </video>
