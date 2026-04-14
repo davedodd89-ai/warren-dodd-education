@@ -262,127 +262,6 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="border-y border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
-          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
-            <div>
-              <div className="overflow-hidden rounded-[1.8rem] border border-slate-200 bg-slate-100 shadow-sm">
-                <img
-                  src="/venue.jpg"
-                  alt="Venue for Warren Dodd Education daytime sessions in Cheshire"
-                  className="h-[260px] w-full object-cover sm:h-[320px] lg:h-[420px]"
-                />
-              </div>
-            </div>
-
-            <div className="flex h-full flex-col justify-center rounded-[1.8rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-8">
-              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                New venue confirmed
-              </p>
-
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-                Tuesday morning sessions now have a home.
-              </h2>
-
-              <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                I am pleased to now be able to offer a dedicated venue space in
-                Alderley Edge, Cheshire for daytime sessions starting in
-                September 2026.
-              </p>
-
-              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                This gives families a clear, consistent setting for calm,
-                focused learning each week, while keeping the small-group,
-                relationship-led approach at the heart of the provision.
-              </p>
-
-              <div className="mt-6 flex flex-wrap gap-2.5">
-                {venueHighlights.map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-full border border-slate-300 bg-white px-3.5 py-2 text-xs text-slate-700 md:text-sm"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-
-              <div className="mt-7">
-                <Link
-                  href="/contact"
-                  className="inline-flex rounded-full bg-[#12284C] px-7 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
-                >
-                  Register your interest
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-12">
-          <div className="flex items-end justify-between gap-6">
-            <div className="max-w-2xl">
-              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                What people say
-              </p>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-3xl">
-                Families and professionals speak about trust, confidence and
-                real change.
-              </h2>
-            </div>
-
-            <div className="hidden md:block">
-              <Link
-                href="/testimonials"
-                className="text-sm font-semibold text-[#12284C] underline underline-offset-4"
-              >
-                Read more
-              </Link>
-            </div>
-          </div>
-
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
-            {testimonialSnippets.map((item) => (
-              <div
-                key={item.quote}
-                className="flex h-full flex-col justify-between rounded-[1.5rem] border border-slate-200 bg-[#FBFBF9] p-5 shadow-sm"
-              >
-                <p className="text-sm leading-6 text-slate-800 md:text-base md:leading-7">
-                  "{item.quote}"
-                </p>
-
-                <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500 md:text-xs">
-                  {item.source}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-4">
-            <div className="rounded-[1.6rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-7">
-              <p className="text-base leading-7 text-slate-800 md:text-lg md:leading-8">
-                "{featuredTestimonial.quote}"
-              </p>
-
-              <p className="mt-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#12284C] md:text-xs">
-                {featuredTestimonial.source}
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-5 md:hidden">
-            <Link
-              href="/testimonials"
-              className="text-sm font-semibold text-[#12284C] underline underline-offset-4"
-            >
-              Read more
-            </Link>
-          </div>
-        </div>
-      </section>
-
       <section className="border-y border-slate-200 bg-[#F7F7F4]">
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
           <div className="grid gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
@@ -470,6 +349,127 @@ export default function Page() {
                 supporting them as they prepare for the next stage - whether
                 that is high school or continued home education.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-12">
+          <div className="flex items-end justify-between gap-6">
+            <div className="max-w-2xl">
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                What people say
+              </p>
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-3xl">
+                Families and professionals speak about trust, confidence and
+                real change.
+              </h2>
+            </div>
+
+            <div className="hidden md:block">
+              <Link
+                href="/testimonials"
+                className="text-sm font-semibold text-[#12284C] underline underline-offset-4"
+              >
+                Read more
+              </Link>
+            </div>
+          </div>
+
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {testimonialSnippets.map((item) => (
+              <div
+                key={item.quote}
+                className="flex h-full flex-col justify-between rounded-[1.5rem] border border-slate-200 bg-[#FBFBF9] p-5 shadow-sm"
+              >
+                <p className="text-sm leading-6 text-slate-800 md:text-base md:leading-7">
+                  "{item.quote}"
+                </p>
+
+                <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500 md:text-xs">
+                  {item.source}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-4">
+            <div className="rounded-[1.6rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-7">
+              <p className="text-base leading-7 text-slate-800 md:text-lg md:leading-8">
+                "{featuredTestimonial.quote}"
+              </p>
+
+              <p className="mt-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#12284C] md:text-xs">
+                {featuredTestimonial.source}
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-5 md:hidden">
+            <Link
+              href="/testimonials"
+              className="text-sm font-semibold text-[#12284C] underline underline-offset-4"
+            >
+              Read more
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
+          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
+            <div>
+              <div className="overflow-hidden rounded-[1.8rem] border border-slate-200 bg-slate-100 shadow-sm">
+                <img
+                  src="/venue.jpg"
+                  alt="Venue for Warren Dodd Education daytime sessions in Cheshire"
+                  className="h-[260px] w-full object-cover sm:h-[320px] lg:h-[420px]"
+                />
+              </div>
+            </div>
+
+            <div className="flex h-full flex-col justify-center rounded-[1.8rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-8">
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                New venue confirmed
+              </p>
+
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+                Tuesday morning sessions now have a home.
+              </h2>
+
+              <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                I am pleased to now be able to offer a dedicated venue space in
+                Alderley Edge, Cheshire for daytime sessions starting in
+                September 2026.
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                This gives families a clear, consistent setting for calm,
+                focused learning each week, while keeping the small-group,
+                relationship-led approach at the heart of the provision.
+              </p>
+
+              <div className="mt-6 flex flex-wrap gap-2.5">
+                {venueHighlights.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-slate-300 bg-white px-3.5 py-2 text-xs text-slate-700 md:text-sm"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+
+              <div className="mt-7">
+                <Link
+                  href="/contact"
+                  className="inline-flex rounded-full bg-[#12284C] px-7 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
+                >
+                  Register your interest
+                </Link>
+              </div>
             </div>
           </div>
         </div>
