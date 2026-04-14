@@ -119,9 +119,7 @@ export default function Page() {
                   Maximum 4 children per session
                 </p>
 
-                
-
-                <p className="mt-2 text-base font-medium text-slate-700">
+                <p className="mt-3 text-base font-medium text-slate-700">
                   Enquiries now open for September 2026
                 </p>
               </div>
@@ -165,8 +163,7 @@ export default function Page() {
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              This is a specialised learning experience rather than standard
-              tutoring. Our work is relationship-led at its core, built on human
+              Our teaching is relationship-led at its core, built on human
               trust, mutual respect and empathy - because children learn best
               when they feel genuinely known, understood and valued. Social and
               emotional development sits alongside academic progress in
@@ -184,11 +181,9 @@ export default function Page() {
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              At the heart of this is a clear approach: calm structure, tailored
-              challenge, relationship, reflection and genuine understanding of
-              what helps a child feel safe enough to engage fully. This is the
-              foundation of what might best be described as the Warren Dodd
-              Method.
+              This is a specialised learning experience designed for children
+              who benefit from a calmer, more personal and more thoughtfully
+              tailored way of learning.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
@@ -235,10 +230,6 @@ export default function Page() {
                 </p>
 
                 <p className="mt-3 text-sm font-medium text-slate-700 md:text-base">
-                  £195 per daytime session
-                </p>
-
-                <p className="mt-2 text-sm font-medium text-slate-700 md:text-base">
                   Enquiries now open for September 2026
                 </p>
               </div>
@@ -334,10 +325,11 @@ export default function Page() {
           <div className="flex items-end justify-between gap-6">
             <div className="max-w-2xl">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                What families say
+                What people say
               </p>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-3xl">
-                Families talk about trust, confidence and real change.
+                Families and professionals speak about trust, confidence and
+                real change.
               </h2>
             </div>
 
@@ -440,8 +432,8 @@ export default function Page() {
                 building the kind of powerful, trusting relationships that help
                 them thrive. In fifteen years of teaching, I have found that
                 this understanding, and these relationships, are what truly make
-                the difference. That is why I started Warren Dodd Education: to
-                make that approach available to home-educated children and
+                the difference. That's why I started Warren Dodd Education: to
+                make that approach available to home educated children and
                 flexi-schoolers, and to develop it further in schools too.
               </p>
 
@@ -473,8 +465,8 @@ export default function Page() {
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
                 Working closely with parents and carers is something I value
                 deeply - open, regular communication has been one of the most
-                powerful tools in my experience in helping children make
-                progress socially, emotionally and educationally, and in
+                powerful tools in my extensive experience in helping children
+                make progress socially, emotionally and educationally, and in
                 supporting them as they prepare for the next stage - whether
                 that is high school or continued home education.
               </p>
@@ -511,7 +503,7 @@ export default function Page() {
                 <p>3-hour bespoke daytime session</p>
                 <p>Relationship-led and psychology-informed</p>
                 <p>Home education and flexi-school families</p>
-                <p>Built to grow confidence, resilience and independence</p>
+                <p>Built to grow confidence and independence</p>
               </div>
 
               <div className="mt-7">
