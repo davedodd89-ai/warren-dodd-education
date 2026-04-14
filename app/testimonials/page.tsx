@@ -44,6 +44,13 @@ export default function TestimonialsPage() {
     },
   ];
 
+  const trustPoints = [
+    "Trust and mutual respect",
+    "Children feeling understood",
+    "Tailored support",
+    "Confidence growing alongside progress",
+  ];
+
   return (
     <div className="min-h-screen bg-[#F7F7F4] text-slate-900">
       <SiteHeader />
@@ -61,9 +68,20 @@ export default function TestimonialsPage() {
 
           <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
             The strongest feedback is rarely just about academic outcomes. It is
-            about children feeling understood, relationships being built well,
+            about children feeling understood, relationships being built well
             and confidence growing alongside progress.
           </p>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-2.5">
+            {trustPoints.map((item) => (
+              <span
+                key={item}
+                className="rounded-full border border-slate-300 bg-[#FBFBF9] px-3.5 py-2 text-xs text-slate-700 md:text-sm"
+              >
+                {item}
+              </span>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -72,6 +90,10 @@ export default function TestimonialsPage() {
           <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
             School leadership perspective
           </p>
+
+          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+            Professional confidence in the approach.
+          </h2>
 
           <p className="mt-5 text-lg leading-8 text-slate-800 md:text-[1.35rem] md:leading-9">
             "{featuredTestimonial.quote}"
@@ -90,8 +112,17 @@ export default function TestimonialsPage() {
               Parent testimonials
             </p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-              Feedback from families.
+              What families notice most.
             </h2>
+          </div>
+
+          <div className="hidden md:block">
+            <Link
+              href="/why"
+              className="text-sm font-semibold text-[#12284C] underline underline-offset-4"
+            >
+              Read more about the approach
+            </Link>
           </div>
         </div>
 
@@ -111,16 +142,25 @@ export default function TestimonialsPage() {
             </div>
           ))}
         </div>
+
+        <div className="mt-5 md:hidden">
+          <Link
+            href="/why"
+            className="text-sm font-semibold text-[#12284C] underline underline-offset-4"
+          >
+            Read more about the approach
+          </Link>
+        </div>
       </section>
 
       <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto max-w-6xl px-6 py-10 md:px-10 md:py-14">
           <div className="max-w-2xl">
             <p className="text-sm uppercase tracking-[0.22em] text-slate-500">
-              Additional feedback
+              More feedback
             </p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-              More reflections from parents.
+              Further reflections from parents.
             </h2>
           </div>
 
@@ -158,12 +198,19 @@ export default function TestimonialsPage() {
           and start a conversation.
         </p>
 
-        <div className="mt-8">
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Link
             href="/contact"
             className="inline-flex rounded-full bg-[#12284C] px-8 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
           >
             Make an Enquiry
+          </Link>
+
+          <Link
+            href="/why"
+            className="inline-flex rounded-full border border-slate-300 bg-white px-8 py-3.5 font-semibold text-[#12284C] transition hover:bg-slate-50"
+          >
+            Read more about the approach
           </Link>
         </div>
       </section>

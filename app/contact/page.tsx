@@ -83,8 +83,14 @@ export default function ContactPage() {
               <div className="mt-4 space-y-3 text-sm leading-6 text-slate-700 sm:text-base">
                 <p>1. You get in touch with a few details about your child.</p>
                 <p>2. We arrange an initial conversation.</p>
-                <p>3. A no-obligation home visit helps us decide whether it feels like the right fit.</p>
-                <p>4. If it does, we discuss the best next step for September 2026.</p>
+                <p>
+                  3. A no-obligation home visit helps us decide whether it feels
+                  like the right fit.
+                </p>
+                <p>
+                  4. If it does, we discuss the best next step for September
+                  2026.
+                </p>
               </div>
             </div>
           </div>
@@ -94,19 +100,23 @@ export default function ContactPage() {
           <div className="min-w-0 space-y-6">
             <div className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
               <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
-                Pricing
+                Investment
               </p>
 
               <p className="mt-3 text-4xl font-semibold text-[#12284C] sm:text-5xl">
-                £65
+                £195
               </p>
 
               <p className="mt-2 text-base text-slate-700 sm:text-lg">
-                Per hour · 3-hour sessions
+                Per daytime session
               </p>
 
               <p className="mt-3 text-lg font-medium text-[#12284C]">
-                £195 per daytime session
+                A specialised learning experience
+              </p>
+
+              <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-slate-500">
+                3-hour session · maximum 4 children
               </p>
 
               <div className="mt-8 space-y-3 text-sm text-slate-700 sm:text-base">
@@ -127,6 +137,12 @@ export default function ContactPage() {
                 a high-volume tutoring model. With only four children per
                 session, early enquiries make sense for families who want to
                 explore whether this could be the right fit for September.
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+                The approach is built around calm structure, tailored challenge,
+                genuine trust and close understanding of each child. That is the
+                value families are investing in.
               </p>
             </div>
           </div>

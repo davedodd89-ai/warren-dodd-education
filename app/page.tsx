@@ -34,7 +34,7 @@ export default function Page() {
   const enquiryPoints = [
     "Home education support",
     "Flexi schooling support",
-    "Daytime tutoring",
+    "Daytime education",
     "A more personal alternative to traditional tutoring",
   ];
 
@@ -119,7 +119,9 @@ export default function Page() {
                   Maximum 4 children per session
                 </p>
 
-                <p className="mt-3 text-base font-medium text-slate-700">
+                
+
+                <p className="mt-2 text-base font-medium text-slate-700">
                   Enquiries now open for September 2026
                 </p>
               </div>
@@ -157,13 +159,14 @@ export default function Page() {
             </p>
 
             <p className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Warren Dodd Education provides bespoke, premium daytime tutoring
+              Warren Dodd Education provides bespoke, premium daytime education
               in English, Maths and the wider curriculum for children aged 8-11
               within Cheshire and Stockport.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Our teaching is relationship-led at its core, built on human
+              This is a specialised learning experience rather than standard
+              tutoring. Our work is relationship-led at its core, built on human
               trust, mutual respect and empathy - because children learn best
               when they feel genuinely known, understood and valued. Social and
               emotional development sits alongside academic progress in
@@ -178,6 +181,14 @@ export default function Page() {
               mentorship, supporting children to grow in confidence,
               self-belief and resilience, and to develop a stronger sense of
               ownership over their own learning.
+            </p>
+
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              At the heart of this is a clear approach: calm structure, tailored
+              challenge, relationship, reflection and genuine understanding of
+              what helps a child feel safe enough to engage fully. This is the
+              foundation of what might best be described as the Warren Dodd
+              Method.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
@@ -224,6 +235,10 @@ export default function Page() {
                 </p>
 
                 <p className="mt-3 text-sm font-medium text-slate-700 md:text-base">
+                  £195 per daytime session
+                </p>
+
+                <p className="mt-2 text-sm font-medium text-slate-700 md:text-base">
                   Enquiries now open for September 2026
                 </p>
               </div>
@@ -477,15 +492,15 @@ export default function Page() {
               </p>
 
               <p className="mt-3 text-4xl font-semibold text-[#12284C] md:text-5xl">
-                £65
+                £195
               </p>
 
               <p className="mt-2 text-base text-slate-700 md:text-lg">
-                Per hour - 3-hour sessions
+                Per daytime session
               </p>
 
               <p className="mt-3 text-lg font-medium text-[#12284C]">
-                £195 per daytime session
+                A specialised learning experience
               </p>
 
               <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-slate-500">
@@ -493,10 +508,10 @@ export default function Page() {
               </p>
 
               <div className="mt-5 space-y-2.5 text-sm text-slate-700 md:text-base">
-                <p>Bespoke daytime education</p>
+                <p>3-hour bespoke daytime session</p>
                 <p>Relationship-led and psychology-informed</p>
                 <p>Home education and flexi-school families</p>
-                <p>Built to grow confidence and independence</p>
+                <p>Built to grow confidence, resilience and independence</p>
               </div>
 
               <div className="mt-7">
@@ -524,7 +539,7 @@ export default function Page() {
 
           <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
             Whether you are exploring home education support, flexi schooling
-            support or daytime tutoring, the first step is a simple
+            support or daytime education, the first step is a simple
             conversation.
           </p>
 
