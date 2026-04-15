@@ -294,8 +294,8 @@ export default function Page() {
               </p>
 
               <p className="mt-3 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
-                Enhanced DBS Checked - First Aid Trained
-              </p>
+  Enhanced DBS Checked - Level 3 Safeguarding Trained - First Aid Trained
+</p>
 
               <div className="mt-6 text-center">
                 <Link
