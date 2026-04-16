@@ -43,6 +43,7 @@ export default function Page() {
     "9:30am - 12:30pm",
     "Alderley Edge, Cheshire",
     "Maximum 4 children",
+    "£180 per weekly session",
   ];
 
   const weeklySessionPoints = [
@@ -116,6 +117,9 @@ export default function Page() {
                   </p>
                   <p className="text-base font-medium text-slate-700">
                     9:30am - 12:30pm
+                  </p>
+                  <p className="text-base font-medium text-slate-700">
+                    £180 per weekly session
                   </p>
                 </div>
 
@@ -238,6 +242,9 @@ export default function Page() {
                   <p className="text-sm font-medium text-slate-700 md:text-base">
                     9:30am - 12:30pm
                   </p>
+                  <p className="text-sm font-medium text-slate-700 md:text-base">
+                    £180 per weekly session
+                  </p>
                 </div>
 
                 <p className="mt-5 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
@@ -294,8 +301,8 @@ export default function Page() {
               </p>
 
               <p className="mt-3 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
-  Enhanced DBS Checked - Level 3 Safeguarding Trained - First Aid Trained
-</p>
+                Enhanced DBS Checked - Level 3 Safeguarding Trained - First Aid Trained
+              </p>
 
               <div className="mt-6 text-center">
                 <Link
@@ -523,10 +530,14 @@ export default function Page() {
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                Sessions are designed as a regular weekly commitment rather than
-                occasional drop-in support. Each child joins as part of a small,
-                consistent group so that trust, rhythm and meaningful progress
-                can build over time.
+                Sessions run weekly. Each child joins the same small, consistent group every week 
+                — a calm, welcoming environment where trust builds, relationships develop, 
+                and progress follows.
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                Weekly sessions are priced at <span className="font-semibold text-[#12284C]">£195</span> for a reserved
+                three-hour place within this specialist small-group provision.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2.5">

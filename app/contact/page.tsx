@@ -23,6 +23,7 @@ export default function ContactPage() {
     "Alderley Edge, Cheshire",
     "Maximum 4 children",
     "September 2026 start",
+    "£180 per weekly session",
   ];
 
   return (
@@ -104,7 +105,7 @@ export default function ContactPage() {
               </p>
 
               <p className="mt-3 text-4xl font-semibold text-[#12284C] sm:text-5xl">
-                £195
+                £180
               </p>
 
               <p className="mt-2 text-base text-slate-700 sm:text-lg">
@@ -133,17 +134,22 @@ export default function ContactPage() {
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
-                This provision is designed around a regular weekly group
-                structure rather than occasional drop-in support. The aim is to
-                give each child a calm, dependable rhythm and a consistent small
-                group in which trust, confidence and progress can build over
-                time.
+                This provision is built around a regular weekly group structure. 
+                Each child belongs to the same small group every session,
+                so trust, confidence and progress can build steadily over time.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
-                Because places are limited, enquiries now are for families who
-                are seriously exploring whether a reserved weekly place from
-                September 2026 could be the right fit.
+                Weekly sessions are priced at{" "}
+                <span className="font-semibold text-[#12284C]">£195</span> for a
+                reserved three-hour place within this specialist small-group
+                provision.
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
+                Because places are limited, enquiries are now open for families who
+                are exploring whether a reserved weekly place from
+                September 2026 could be the right fit for their child. 
               </p>
             </div>
           </div>
