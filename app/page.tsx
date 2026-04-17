@@ -41,8 +41,8 @@ export default function Page() {
   const uspPoints = [
     "Psychology-informed and relationship-led",
     "Built around each child’s strengths, interests and learning style",
-    "Confidence and trust are developed alongside academic progress",
-    "Children are supported to engage, learn and thrive over time",
+    "Confidence, emotional security and readiness to learn",
+    "Carefully structured to help children engage, learn and thrive over time",
   ];
 
   const understandingPoints = [
@@ -253,14 +253,14 @@ export default function Page() {
               <p className="mt-5 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
                 Warren Dodd Education is built on the idea that strong progress
                 begins with how a child feels about learning. When children feel
-                understood, respected, secure and capable, they are far more likely to
-                engage positively and make meaningful progress.
+                understood, respected, secure and capable, they are far more
+                likely to engage positively and make meaningful progress.
               </p>
             </div>
 
             <div className="rounded-[1.8rem] border border-slate-200 bg-[#FBFBF9] p-7 shadow-sm md:p-8">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                At the heart of the approach
+                At the heart of the Warren Dodd Method
               </p>
 
               <div className="mt-5 grid gap-3">
@@ -305,7 +305,7 @@ export default function Page() {
 
               <div className="mt-6 text-center">
                 <Link
-                  href="/why"
+                  href="/approach"
                   className="inline-flex rounded-full border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
                 >
                   Read more about the approach
@@ -373,7 +373,8 @@ export default function Page() {
                 That is what makes this different. The aim is not simply to
                 cover content. It is to change how a child experiences learning,
                 so that confidence, trust and meaningful progress can grow from
-                there. with social and emotional development at our core.
+                there, with social and emotional development woven through the
+                approach.
               </p>
             </div>
           </div>
@@ -408,7 +409,7 @@ export default function Page() {
 
             <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                In practice, this means understanding
+                In practice, this means understanding:
               </p>
 
               <div className="mt-5 grid gap-3">
@@ -424,10 +425,10 @@ export default function Page() {
 
               <div className="mt-7">
                 <Link
-                  href="/why"
+                  href="/approach"
                   className="inline-flex rounded-full border border-[#12284C]/15 bg-[#12284C] px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5"
                 >
-                  Read more about the Warren Dodd Method
+                  Explore the Warren Dodd Method
                 </Link>
               </div>
             </div>
