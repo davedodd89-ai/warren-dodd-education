@@ -75,14 +75,6 @@ export default function WhyPage() {
     },
   ];
 
-  const investmentPoints = [
-    "3-hour bespoke daytime session",
-    "£195 per daytime session",
-    "Maximum 4 children",
-    "Relationship-led and psychology-informed",
-    "Built to grow confidence, resilience and independence",
-  ];
-
   return (
     <div className="min-h-screen bg-[#F7F7F4] text-slate-900">
       <SiteHeader />
@@ -150,65 +142,27 @@ export default function WhyPage() {
 
       <section className="border-b border-slate-200 bg-[#F7F7F4]">
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
-          <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
-            <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm md:p-10">
-              <p className="text-sm uppercase tracking-[0.22em] text-slate-500">
-                The approach
-              </p>
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm md:p-10">
+            <p className="text-sm uppercase tracking-[0.22em] text-slate-500">
+              The approach
+            </p>
 
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-                A calmer, more personal way for children to learn.
-              </h2>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
+              A calmer, more personal way for children to learn.
+            </h2>
 
-              <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                Every part of the session is built around the child in front of
-                me - how they think, what motivates them, where confidence
-                currently sits and what helps them feel safe enough to engage
-                fully.
-              </p>
+            <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              Every part of the session is built around the child in front of me
+              - how they think, what motivates them, where confidence currently
+              sits and what helps them feel safe enough to engage fully.
+            </p>
 
-              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                From there, the structure, level of challenge and group dynamic
-                can be shaped carefully so that progress feels purposeful,
-                confidence grows and children begin to take real ownership over
-                learning.
-              </p>
-            </div>
-
-            <div className="rounded-[2rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-8 shadow-sm md:p-10">
-              <p className="text-sm uppercase tracking-[0.22em] text-slate-500">
-                Investment
-              </p>
-
-              <p className="mt-3 text-4xl font-semibold text-[#12284C] md:text-5xl">
-                £195
-              </p>
-
-              <p className="mt-2 text-base text-slate-700 md:text-lg">
-                Per daytime session
-              </p>
-
-              <p className="mt-3 text-lg font-medium text-[#12284C]">
-                A specialised learning experience
-              </p>
-
-              <div className="mt-6 flex flex-wrap gap-2.5">
-                {investmentPoints.map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-full border border-slate-300 bg-white px-3.5 py-2 text-xs text-slate-700 md:text-sm"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-
-              <p className="mt-6 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
-                A 3-hour small-group daytime session designed to build
-                confidence, independence and meaningful academic progress in a
-                calm, highly personalised environment.
-              </p>
-            </div>
+            <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              From there, the structure, level of challenge and group dynamic
+              can be shaped carefully so that progress feels purposeful,
+              confidence grows and children begin to take real ownership over
+              learning.
+            </p>
           </div>
         </div>
       </section>
