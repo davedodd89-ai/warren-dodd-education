@@ -18,12 +18,12 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#F7F7F4] text-slate-900">
+    <div className="min-h-screen w-full overflow-x-hidden bg-[#F7F7F4] text-slate-900">
       <SiteHeader />
 
       <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6 md:px-8 lg:px-10 lg:py-20">
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm uppercase tracking-[0.22em] text-slate-500">
+        <div className="mx-auto max-w-3xl px-1 text-center">
+          <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
             Contact
           </p>
 
@@ -38,10 +38,10 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-          <div className="space-y-6 order-1">
-            <div className="rounded-[1.5rem] border border-[#D8B35B]/50 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
-              <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+        <div className="mt-10 grid min-w-0 gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="order-1 min-w-0 space-y-6">
+            <div className="min-w-0 rounded-[1.5rem] border border-[#D8B35B]/50 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
+              <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
                 Contact details
               </p>
 
@@ -54,44 +54,44 @@ export default function ContactPage() {
                 a few key details is enough to begin the conversation.
               </p>
 
-              <div className="mt-8 grid gap-4">
-                <div className="rounded-[1.25rem] border border-slate-200 bg-[#FBFBF9] p-4 sm:rounded-[1.5rem] sm:p-6">
+              <div className="mt-8 grid min-w-0 gap-4">
+                <div className="min-w-0 rounded-[1.25rem] border border-slate-200 bg-[#FBFBF9] p-4 sm:rounded-[1.5rem] sm:p-6">
                   <p className="text-sm font-medium uppercase tracking-[0.14em] text-slate-500">
                     Email
                   </p>
                   <a
                     href="mailto:warrendoddeducation@outlook.com"
-                    className="mt-3 block break-words text-lg font-semibold text-[#12284C] underline underline-offset-4 sm:text-2xl"
+                    className="mt-3 block min-w-0 break-all text-lg font-semibold text-[#12284C] underline underline-offset-4 sm:text-2xl"
                   >
                     warrendoddeducation@outlook.com
                   </a>
                 </div>
 
-                <div className="rounded-[1.25rem] border border-slate-200 bg-[#FBFBF9] p-4 sm:rounded-[1.5rem] sm:p-6">
+                <div className="min-w-0 rounded-[1.25rem] border border-slate-200 bg-[#FBFBF9] p-4 sm:rounded-[1.5rem] sm:p-6">
                   <p className="text-sm font-medium uppercase tracking-[0.14em] text-slate-500">
                     Mobile
                   </p>
 
                   <a
                     href="tel:07512341730"
-                    className="mt-3 block text-lg font-semibold text-[#12284C] sm:text-2xl"
+                    className="mt-3 block min-w-0 break-words text-lg font-semibold text-[#12284C] sm:text-2xl"
                   >
                     07512 341730
                   </a>
 
-                  <div className="mt-5 grid gap-3">
+                  <div className="mt-5 grid min-w-0 gap-3">
                     <a
                       href="https://wa.me/447512341730"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex w-full items-center justify-center rounded-xl bg-[#12284C] px-4 py-3 text-center text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+                      className="inline-flex w-full min-w-0 items-center justify-center rounded-xl bg-[#12284C] px-4 py-3 text-center text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
                     >
                       Message on WhatsApp
                     </a>
 
                     <a
                       href="sms:07512341730"
-                      className="inline-flex w-full items-center justify-center rounded-xl border border-slate-300 bg-white px-4 py-3 text-center text-sm font-semibold text-[#12284C] transition hover:bg-slate-50"
+                      className="inline-flex w-full min-w-0 items-center justify-center rounded-xl border border-slate-300 bg-white px-4 py-3 text-center text-sm font-semibold text-[#12284C] transition hover:bg-slate-50"
                     >
                       Send a text message
                     </a>
@@ -100,8 +100,8 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8 lg:hidden">
-              <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+            <div className="min-w-0 rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8 lg:hidden">
+              <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
                 Weekly place
               </p>
 
@@ -117,7 +117,7 @@ export default function ContactPage() {
                 A reserved weekly group place
               </p>
 
-              <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-slate-500">
+              <p className="mt-3 text-sm font-medium uppercase tracking-[0.14em] text-slate-500">
                 3-hour session · maximum 4 children
               </p>
 
@@ -129,7 +129,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
+            <div className="min-w-0 rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
               <p className="text-sm uppercase tracking-[0.16em] text-slate-500">
                 What happens next
               </p>
@@ -148,16 +148,16 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
+            <div className="min-w-0 rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
               <p className="text-base font-semibold text-[#12284C]">
                 What to include in your enquiry
               </p>
 
-              <div className="mt-4 grid gap-3">
+              <div className="mt-4 grid min-w-0 gap-3">
                 {enquiryPrompts.map((item) => (
                   <div
                     key={item}
-                    className="rounded-xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm leading-6 text-slate-700"
+                    className="min-w-0 rounded-xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm leading-6 text-slate-700"
                   >
                     {item}
                   </div>
@@ -166,9 +166,9 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="order-2 hidden space-y-6 lg:block">
-            <div className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
-              <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+          <div className="order-2 hidden min-w-0 space-y-6 lg:block">
+            <div className="min-w-0 rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
+              <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
                 Weekly place
               </p>
 
@@ -184,7 +184,7 @@ export default function ContactPage() {
                 A reserved weekly group place
               </p>
 
-              <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-slate-500">
+              <p className="mt-3 text-sm font-medium uppercase tracking-[0.14em] text-slate-500">
                 3-hour session · maximum 4 children
               </p>
 
@@ -196,8 +196,8 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
-              <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+            <div className="min-w-0 rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
+              <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
                 Important to know
               </p>
 
@@ -217,8 +217,8 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="mt-6 rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
-          <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+        <div className="mt-6 min-w-0 rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
+          <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
             Useful discussion points
           </p>
 
@@ -233,11 +233,11 @@ export default function ContactPage() {
             might be.
           </p>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <div className="mt-6 grid min-w-0 gap-4 md:grid-cols-2">
             {discussionPoints.map((item) => (
               <div
                 key={item}
-                className="rounded-[1.2rem] border border-slate-200 bg-[#FBFBF9] px-5 py-4 text-sm text-slate-800 shadow-sm sm:rounded-[1.4rem] sm:text-base"
+                className="min-w-0 rounded-[1.2rem] border border-slate-200 bg-[#FBFBF9] px-5 py-4 text-sm text-slate-800 shadow-sm sm:rounded-[1.4rem] sm:text-base"
               >
                 {item}
               </div>
