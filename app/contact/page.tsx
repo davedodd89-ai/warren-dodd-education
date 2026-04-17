@@ -86,13 +86,18 @@ export default function ContactPage() {
                   <p className="text-sm font-medium uppercase tracking-[0.14em] text-slate-500">
                     Email
                   </p>
-                  <a
-                    href="mailto:warrendoddeducation@outlook.com"
-                    aria-label="Email warrendoddeducation@outlook.com"
-                    className="mt-3 block max-w-full text-[1rem] font-semibold leading-7 text-[#12284C] underline underline-offset-4 [overflow-wrap:anywhere] sm:text-2xl sm:leading-8"
-                  >
-                    warrendoddeducation@outlook.com
-                  </a>
+
+                  <div className="mt-3 min-w-0 overflow-hidden">
+                    <a
+                      href="mailto:warrendoddeducation@outlook.com"
+                      aria-label="Email warrendoddeducation@outlook.com"
+                      className="block w-full min-w-0 text-[0.92rem] font-semibold leading-6 text-[#12284C] underline underline-offset-4 break-words sm:text-xl sm:leading-8"
+                    >
+                      warrendoddeducation@
+                      <wbr />
+                      outlook.com
+                    </a>
+                  </div>
                 </div>
 
                 <div className="min-w-0 rounded-[1.25rem] border border-slate-200 bg-[#FBFBF9] p-4 sm:rounded-[1.5rem] sm:p-6">
