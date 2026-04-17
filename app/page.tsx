@@ -1,5 +1,11 @@
 ﻿import Link from "next/link";
+import { Playfair_Display } from "next/font/google";
 import SiteHeader from "./SiteHeader";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+});
 
 export default function Page() {
   const testimonialSnippets = [
@@ -70,15 +76,39 @@ export default function Page() {
 
       <section className="mx-auto max-w-7xl px-6 pb-10 pt-6 md:px-10 md:pb-12 md:pt-8">
         <div className="grid items-start gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:gap-12">
-          <div className="order-1 max-w-3xl lg:max-w-[720px]">
+          <div className="order-1 mx-auto w-full max-w-[280px] sm:max-w-[320px] md:max-w-[430px] lg:order-2 lg:mx-0 lg:max-w-none">
+            <div className="lg:sticky lg:top-28">
+              <div className="relative">
+                <div className="absolute -inset-3 rounded-[1.8rem] bg-slate-200/20 blur-3xl" />
+
+                <div className="relative overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
+                  <div className="overflow-hidden rounded-[1rem] bg-slate-100">
+                    <video
+                      className="h-[150px] w-full object-cover object-center sm:h-[180px] md:h-[240px] lg:h-[320px]"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src="/hero-video.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="order-2 max-w-3xl lg:order-1 lg:max-w-[720px]">
             <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
               Bespoke daytime education
             </p>
 
-            <h1 className="mt-4 max-w-4xl text-[1.85rem] font-semibold leading-[0.96] tracking-[-0.04em] text-[#12284C] sm:text-[2.5rem] md:text-[3.6rem] lg:max-w-[780px] lg:text-[4.2rem]">
-              Bespoke weekly daytime education for home-educated children and
-              flexi-schoolers.
-            </h1>
+         <h1
+  className={`${playfair.className} mt-3 max-w-4xl text-[1.16rem] font-semibold leading-[0.98] tracking-[0em] text-[#12284C] sm:text-[1.5rem] md:mt-4 md:text-[2.35rem] lg:max-w-[16ch] lg:text-[3.2rem]`}
+>
+  Bespoke weekly daytime education for home-educated children and
+  flexi-schoolers.
+</h1>
 
             <p className="mt-5 max-w-3xl text-lg font-medium leading-8 text-[#12284C] md:text-xl md:leading-9">
               A calm, welcoming and personalised approach that helps children
@@ -135,60 +165,46 @@ export default function Page() {
               </span>
             </div>
           </div>
+        </div>
 
-          <div className="order-2 mx-auto w-full max-w-[280px] sm:max-w-[300px] md:max-w-[430px] lg:mx-0 lg:max-w-none">
-            <div className="lg:sticky lg:top-28 lg:space-y-6">
-              <div className="relative">
-                <div className="absolute -inset-3 rounded-[1.8rem] bg-slate-200/20 blur-3xl" />
+        <div className="mt-8 max-w-[720px] lg:max-w-[760px]">
+          <div className="relative overflow-hidden rounded-[1.7rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-6 shadow-sm">
+  <div
+  className="absolute inset-0 bg-cover bg-center opacity-[0.36]"
+  style={{ backgroundImage: "url('/venue.jpg')" }}
+/>
+<div className="absolute inset-0 bg-[#FBFBF9]/72" />
+            <div className="relative">
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500">
+                Beginning September 2026
+              </p>
 
-                <div className="relative overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
-                  <div className="overflow-hidden rounded-[1rem] bg-slate-100">
-                    <video
-                      className="h-[130px] w-full object-cover object-center sm:h-[150px] md:h-[220px] lg:h-[320px]"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      poster="/hero.jpg"
-                    >
-                      <source src="/hero-video.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                </div>
-              </div>
+              <h2 className="mt-3 text-[2rem] font-semibold leading-tight text-[#12284C]">
+                Daytime sessions
+              </h2>
 
-              <div className="rounded-[1.7rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-6 shadow-sm">
-                <p className="text-xs uppercase tracking-[0.22em] text-slate-500">
-                  Beginning September 2026
+              <p className="mt-2 text-lg font-medium text-slate-700">
+                Alderley Edge, Cheshire
+              </p>
+
+              <p className="mt-5 text-base leading-8 text-slate-700">
+                A calm, engaging and personalised small-group approach, with a
+                no-obligation free home visit before joining so we can make sure
+                it feels like the right fit for your child.
+              </p>
+
+              <div className="mt-6 space-y-2">
+                <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
+                  Tuesday mornings. Weekly from September 2026.
                 </p>
-
-                <h2 className="mt-3 text-[2rem] font-semibold leading-tight text-[#12284C]">
-                  Daytime sessions
-                </h2>
-
-                <p className="mt-2 text-lg font-medium text-slate-700">
-                  Alderley Edge, Cheshire
-                </p>
-
-                <p className="mt-5 text-base leading-8 text-slate-700">
-                  A calm, engaging and personalised small-group approach, with a
-                  no-obligation free home visit before joining so we can make sure
-                  it feels like the right fit for your child.
-                </p>
-
-                <div className="mt-6 space-y-2">
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
-                    Tuesday mornings. Weekly from September 2026.
-                  </p>
-                  <p className="text-base font-medium text-slate-700">
-                    9:30am - 12:30pm
-                  </p>
-                </div>
-
-                <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
-                  Maximum 4 children per session
+                <p className="text-base font-medium text-slate-700">
+                  9:30am - 12:30pm
                 </p>
               </div>
+
+              <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
+                Maximum 4 children per session
+              </p>
             </div>
           </div>
         </div>
