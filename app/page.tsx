@@ -31,13 +31,6 @@ export default function Page() {
     source: "Executive Headteacher",
   };
 
-  const weeklySessionPoints = [
-    "Reserved weekly group place",
-    "3-hour daytime session",
-    "Maximum 4 children",
-    "Built for consistency, not drop-in support",
-  ];
-
   const uspPoints = [
     "Psychology-informed and relationship-led",
     "Built around each child’s strengths, interests and learning style",
@@ -46,10 +39,17 @@ export default function Page() {
   ];
 
   const understandingPoints = [
-    "what captures a child’s interest and attention",
-    "how they respond best to support, challenge and encouragement",
-    "the pace, structure and style that helps them learn well",
-    "how to build confidence so engagement feels natural and lasting",
+    "WHAT CAPTURES A CHILD'S INTEREST AND ATTENTION",
+    "HOW THEY RESPOND BEST TO SUPPORT, CHALLENGE AND ENCOURAGEMENT",
+    "THE PACE, STRUCTURE AND STYLE THAT HELPS THEM LEARN WELL",
+    "HOW TO BUILD CONFIDENCE SO ENGAGEMENT FEELS NATURAL AND LASTING",
+  ];
+
+  const weeklySessionPoints = [
+    "Reserved weekly group place",
+    "3-hour daytime session",
+    "Calm, consistent small-group environment",
+    "Built for consistency, not drop-in support",
   ];
 
   return (
@@ -70,7 +70,73 @@ export default function Page() {
 
       <section className="mx-auto max-w-7xl px-6 pb-10 pt-6 md:px-10 md:pb-12 md:pt-8">
         <div className="grid items-start gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:gap-12">
-          <div className="order-1 mx-auto w-full max-w-[280px] sm:max-w-[300px] md:max-w-[430px] lg:order-2 lg:mx-0 lg:max-w-none">
+          <div className="order-1 max-w-3xl lg:max-w-[720px]">
+            <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+              Bespoke daytime education
+            </p>
+
+            <h1 className="mt-4 max-w-4xl text-[1.85rem] font-semibold leading-[0.96] tracking-[-0.04em] text-[#12284C] sm:text-[2.5rem] md:text-[3.6rem] lg:max-w-[780px] lg:text-[4.2rem]">
+              Bespoke weekly daytime education for home-educated children and
+              flexi-schoolers.
+            </h1>
+
+            <p className="mt-5 max-w-3xl text-lg font-medium leading-8 text-[#12284C] md:text-xl md:leading-9">
+              A calm, welcoming and personalised approach that helps children
+              feel understood, supported and ready to learn.
+            </p>
+
+            <p className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              Warren Dodd Education provides{" "}
+              <span className="font-semibold text-[#12284C]">
+                bespoke, premium daytime education
+              </span>{" "}
+              in English, Maths and the wider curriculum for children aged 8-11
+              across Cheshire and Stockport.
+            </p>
+
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              Designed for children who benefit from a calmer, more personal and
+              more thoughtfully tailored way of learning, this is a{" "}
+              <span className="font-semibold text-[#12284C]">
+                weekly small-group provision
+              </span>{" "}
+              where academic progress is built through trust, confidence and
+              strong relationships.
+            </p>
+
+            <div className="mt-7 flex flex-wrap gap-3">
+              <Link
+                href="/contact"
+                className="inline-flex rounded-full bg-[#12284C] px-7 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
+              >
+                Make an Enquiry
+              </Link>
+
+              <Link
+                href="/approach"
+                className="inline-flex rounded-full border border-slate-300 bg-white px-7 py-3.5 font-semibold text-[#12284C] transition hover:-translate-y-0.5"
+              >
+                Explore the Approach
+              </Link>
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-2.5">
+              <span className="rounded-full border border-sky-300 bg-sky-50 px-3.5 py-2 text-xs text-sky-800 md:text-sm">
+                Tuesday 9:30am - 12:30pm
+              </span>
+              <span className="rounded-full border border-emerald-300 bg-emerald-50 px-3.5 py-2 text-xs text-emerald-800 md:text-sm">
+                Alderley Edge, Cheshire
+              </span>
+              <span className="rounded-full border border-amber-300 bg-amber-50 px-3.5 py-2 text-xs text-amber-800 md:text-sm">
+                Maximum 4 children
+              </span>
+              <span className="rounded-full border border-rose-300 bg-rose-50 px-3.5 py-2 text-xs text-rose-800 md:text-sm">
+                Weekly from September 2026
+              </span>
+            </div>
+          </div>
+
+          <div className="order-2 mx-auto w-full max-w-[280px] sm:max-w-[300px] md:max-w-[430px] lg:mx-0 lg:max-w-none">
             <div className="lg:sticky lg:top-28 lg:space-y-6">
               <div className="relative">
                 <div className="absolute -inset-3 rounded-[1.8rem] bg-slate-200/20 blur-3xl" />
@@ -83,7 +149,7 @@ export default function Page() {
                       muted
                       loop
                       playsInline
-                      poster="/logo-new.png"
+                      poster="/hero.jpg"
                     >
                       <source src="/hero-video.mp4" type="video/mp4" />
                     </video>
@@ -91,7 +157,7 @@ export default function Page() {
                 </div>
               </div>
 
-              <div className="hidden rounded-[1.7rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-6 shadow-sm lg:block">
+              <div className="rounded-[1.7rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-6 shadow-sm">
                 <p className="text-xs uppercase tracking-[0.22em] text-slate-500">
                   Beginning September 2026
                 </p>
@@ -123,115 +189,6 @@ export default function Page() {
                   Maximum 4 children per session
                 </p>
               </div>
-
-              <div className="hidden flex-wrap gap-2.5 lg:flex">
-                <span className="rounded-full border border-amber-300 bg-amber-50 px-3.5 py-2 text-xs text-amber-800 md:text-sm">
-                  Maximum 4 children
-                </span>
-                <span className="rounded-full border border-sky-300 bg-sky-50 px-3.5 py-2 text-xs text-sky-800 md:text-sm">
-                  Tuesday 9:30am - 12:30pm
-                </span>
-                <span className="rounded-full border border-emerald-300 bg-emerald-50 px-3.5 py-2 text-xs text-emerald-800 md:text-sm">
-                  Alderley Edge, Cheshire
-                </span>
-                <span className="rounded-full border border-rose-300 bg-rose-50 px-3.5 py-2 text-xs text-rose-800 md:text-sm">
-                  Weekly from September 2026
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div className="order-2 max-w-3xl lg:order-1 lg:max-w-[720px]">
-            <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-              What we offer
-            </p>
-
-            <h1 className="mt-4 max-w-4xl text-[1.75rem] font-semibold leading-[0.95] tracking-[-0.04em] text-[#12284C] sm:text-[2.4rem] md:text-[3.5rem] lg:max-w-[780px] lg:text-[4.2rem]">
-              Bespoke weekly daytime education for home-educated children and
-              flexi-schoolers.
-            </h1>
-
-            <p className="mt-5 max-w-3xl text-lg font-medium leading-8 text-[#12284C] md:text-xl md:leading-9">
-              A calm, welcoming and personalised approach that helps children
-              feel understood, supported and ready to learn.
-            </p>
-
-            <p className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Warren Dodd Education provides{" "}
-              <span className="font-semibold text-[#12284C]">
-                bespoke, premium daytime education
-              </span>{" "}
-              in English, Maths and the wider curriculum for children aged 8-11
-              within Cheshire and Stockport.
-            </p>
-
-            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Designed for children who benefit from a calmer, more personal and
-              more thoughtfully tailored way of learning, this is a{" "}
-              <span className="font-semibold text-[#12284C]">
-                specialised weekly provision
-              </span>{" "}
-              where academic progress is built through trust, confidence and
-              strong relationships.
-            </p>
-
-            <div className="mt-7">
-              <Link
-                href="/contact"
-                className="inline-flex rounded-full bg-[#12284C] px-7 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
-              >
-                Make an Enquiry
-              </Link>
-            </div>
-
-            <div className="mt-6 space-y-5 lg:hidden">
-              <div className="rounded-[1.6rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-5 shadow-sm">
-                <p className="text-xs uppercase tracking-[0.18em] text-slate-500 md:text-sm">
-                  Beginning September 2026
-                </p>
-
-                <p className="mt-2 text-xl font-semibold text-[#12284C] md:text-2xl">
-                  Daytime sessions
-                </p>
-
-                <p className="mt-2 text-base font-medium text-slate-700 md:text-lg">
-                  Alderley Edge, Cheshire
-                </p>
-
-                <p className="mt-4 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
-                  A calm, engaging and personalised small-group approach, with a
-                  no-obligation free home visit before joining so we can make sure
-                  it feels like the right fit for your child.
-                </p>
-
-                <div className="mt-5 space-y-1">
-                  <p className="text-sm font-semibold uppercase tracking-[0.16em] text-[#12284C]">
-                    Tuesday mornings. Weekly from September 2026.
-                  </p>
-                  <p className="text-sm font-medium text-slate-700 md:text-base">
-                    9:30am - 12:30pm
-                  </p>
-                </div>
-
-                <p className="mt-5 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
-                  Maximum 4 children per session
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-2.5">
-                <span className="rounded-full border border-amber-300 bg-amber-50 px-3.5 py-2 text-xs text-amber-800 md:text-sm">
-                  Maximum 4 children
-                </span>
-                <span className="rounded-full border border-sky-300 bg-sky-50 px-3.5 py-2 text-xs text-sky-800 md:text-sm">
-                  Tuesday 9:30am - 12:30pm
-                </span>
-                <span className="rounded-full border border-emerald-300 bg-emerald-50 px-3.5 py-2 text-xs text-emerald-800 md:text-sm">
-                  Alderley Edge, Cheshire
-                </span>
-                <span className="rounded-full border border-rose-300 bg-rose-50 px-3.5 py-2 text-xs text-rose-800 md:text-sm">
-                  Weekly from September 2026
-                </span>
-              </div>
             </div>
           </div>
         </div>
@@ -251,10 +208,10 @@ export default function Page() {
               </h2>
 
               <p className="mt-5 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
-                Warren Dodd Education is built on the idea that strong progress
-                begins with how a child feels about learning. When children feel
-                understood, respected, secure and capable, they are far more
-                likely to engage positively and make meaningful progress.
+                Strong progress begins with how a child feels about learning.
+                When children feel understood, respected, secure and capable,
+                they are far more likely to engage positively and make
+                meaningful progress.
               </p>
             </div>
 
@@ -364,73 +321,10 @@ export default function Page() {
                 <span className="font-semibold text-[#12284C]">
                   warmth, calm, humour and care
                 </span>
-                , but also clear professional judgement. Children are understood
+                , alongside clear professional judgement. Children are understood
                 properly, taught thoughtfully and supported in a way that feels
                 personal, motivating and achievable.
               </p>
-
-              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                That is what makes this different. The aim is not simply to
-                cover content. It is to change how a child experiences learning,
-                so that confidence, trust and meaningful progress can grow from
-                there, with social and emotional development woven through the
-                approach.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-y border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
-          <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-            <div className="rounded-[1.7rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-7 shadow-sm">
-              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                Understanding the child
-              </p>
-
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-                Skilled at building learning around the individual.
-              </h2>
-
-              <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                Every child is understood as an individual - their interests,
-                strengths, learning style, confidence level and the emotional
-                factors that shape how they respond.
-              </p>
-
-              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                This allows learning to be shaped in a way that feels more
-                relevant, more motivating and more achievable, rather than
-                something generic that is simply delivered in the same way to
-                everyone.
-              </p>
-            </div>
-
-            <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm">
-              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                In practice, this means understanding:
-              </p>
-
-              <div className="mt-5 grid gap-3">
-                {understandingPoints.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm leading-6 text-slate-700 md:text-base"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-7">
-                <Link
-                  href="/approach"
-                  className="inline-flex rounded-full border border-[#12284C]/15 bg-[#12284C] px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5"
-                >
-                  Explore the Warren Dodd Method
-                </Link>
-              </div>
             </div>
           </div>
         </div>
@@ -501,6 +395,61 @@ export default function Page() {
 
       <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
+          <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+            <div className="rounded-[1.7rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-7 shadow-sm">
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                Understanding the child
+              </p>
+
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+                Skilled at building learning around the individual.
+              </h2>
+
+              <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                Every child is understood as an individual - their interests,
+                strengths, learning style, confidence level and the emotional
+                factors that shape how they respond.
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                This allows learning to be shaped in a way that feels more
+                relevant, more motivating and more achievable, rather than
+                something generic that is simply delivered in the same way to
+                everyone.
+              </p>
+            </div>
+
+            <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm">
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                In practice, this means understanding:
+              </p>
+
+              <div className="mt-5 grid gap-3">
+                {understandingPoints.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm font-medium uppercase tracking-[0.08em] leading-6 text-slate-700 md:text-base"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-7">
+                <Link
+                  href="/approach"
+                  className="inline-flex rounded-full border border-[#12284C]/15 bg-[#12284C] px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5"
+                >
+                  Explore the Warren Dodd Method
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
             <div>
               <div className="overflow-hidden rounded-[1.8rem] border border-slate-200 bg-slate-100 shadow-sm">
@@ -514,7 +463,7 @@ export default function Page() {
 
             <div className="flex h-full flex-col justify-center rounded-[1.8rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-8">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                New venue confirmed
+                Venue confirmed
               </p>
 
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
