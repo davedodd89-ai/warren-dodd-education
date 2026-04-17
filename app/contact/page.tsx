@@ -193,7 +193,7 @@ export default function ContactPage() {
 
               <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
                 Families are encouraged to get in touch early if they are
-                seriously exploring whether a reserved weekly place could be the
+                exploring whether a reserved weekly place could be the
                 right fit from September 2026.
               </p>
             </div>
