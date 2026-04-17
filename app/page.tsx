@@ -38,6 +38,20 @@ export default function Page() {
     "Built for consistency, not drop-in support",
   ];
 
+  const uspPoints = [
+    "Psychology-informed and relationship-led",
+    "Built around each child’s strengths, interests and learning style",
+    "Confidence and trust are developed alongside academic progress",
+    "Children are supported to engage, learn and thrive over time",
+  ];
+
+  const understandingPoints = [
+    "what captures a child’s interest and attention",
+    "how they respond best to support, challenge and encouragement",
+    "the pace, structure and style that helps them learn well",
+    "how to build confidence so engagement feels natural and lasting",
+  ];
+
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#F7F7F4] text-slate-900">
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[460px] bg-[radial-gradient(circle_at_top,rgba(18,40,76,0.06),transparent_42%),radial-gradient(circle_at_right,rgba(18,40,76,0.04),transparent_34%)]" />
@@ -152,50 +166,23 @@ export default function Page() {
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Our teaching is{" "}
+              Designed for children who benefit from a calmer, more personal and
+              more thoughtfully tailored way of learning, this is a{" "}
               <span className="font-semibold text-[#12284C]">
-                relationship-led
+                specialised weekly provision
               </span>{" "}
-              at its core, built on human trust, mutual respect and empathy -
-              because children learn best when they feel genuinely known,
-              understood and valued.{" "}
-              <span className="font-semibold text-[#12284C]">
-                Social and emotional development
-              </span>{" "}
-              sits alongside academic progress in everything we do, and creating
-              a calm, safe and enjoyable learning environment is central to our
-              approach.
+              where academic progress is built through trust, confidence and
+              strong relationships.
             </p>
 
-            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Every child is understood as an individual - their interests,
-              strengths, learning style and the emotional factors that shape how
-              they engage. Alongside subject teaching, we provide high quality
-              mentorship, supporting children to grow in{" "}
-              <span className="font-semibold text-[#12284C]">
-                confidence, self-belief and resilience
-              </span>
-              , and to develop a stronger sense of ownership over their own
-              learning.
-            </p>
-
-            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              This is a{" "}
-              <span className="font-semibold text-[#12284C]">
-                specialised learning experience
-              </span>{" "}
-              designed for children who benefit from a calmer, more personal and
-              more thoughtfully tailored way of learning.
-            </p>
-
-            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              <span className="font-semibold text-[#12284C]">
-                Open, regular communication with parents and carers
-              </span>{" "}
-              is central to everything we do - because meaningful progress is
-              strongest when the adults around a child work together with
-              clarity, care and shared understanding.
-            </p>
+            <div className="mt-7">
+              <Link
+                href="/contact"
+                className="inline-flex rounded-full bg-[#12284C] px-7 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
+              >
+                Make an Enquiry
+              </Link>
+            </div>
 
             <div className="mt-6 space-y-5 lg:hidden">
               <div className="rounded-[1.6rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-5 shadow-sm">
@@ -246,14 +233,46 @@ export default function Page() {
                 </span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="mt-7">
-              <Link
-                href="/contact"
-                className="inline-flex rounded-full bg-[#12284C] px-7 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
-              >
-                Make an Enquiry
-              </Link>
+      <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
+          <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-8">
+            <div className="rounded-[1.8rem] bg-[#12284C] p-7 text-white shadow-sm md:p-8">
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-300 md:text-sm">
+                What makes this different
+              </p>
+
+              <h2 className="mt-4 max-w-xl text-3xl font-semibold leading-tight md:text-[2.6rem]">
+                This is designed to change how a child experiences learning, not
+                just what they learn.
+              </h2>
+
+              <p className="mt-5 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
+                Warren Dodd Education is built on the idea that strong progress
+                begins with how a child feels about learning. When children feel
+                understood, respected, secure and capable, they are far more likely to
+                engage positively and make meaningful progress.
+              </p>
+            </div>
+
+            <div className="rounded-[1.8rem] border border-slate-200 bg-[#FBFBF9] p-7 shadow-sm md:p-8">
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                At the heart of the approach
+              </p>
+
+              <div className="mt-5 grid gap-3">
+                {uspPoints.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm leading-6 text-slate-700 md:text-base"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -261,7 +280,7 @@ export default function Page() {
 
       <section className="border-y border-slate-200 bg-[#F7F7F4]">
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
-          <div className="grid gap-6 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
+          <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
             <div className="rounded-[1.7rem] bg-[#12284C] p-7 text-white shadow-sm">
               <div className="mx-auto h-32 w-32 overflow-hidden rounded-full border-4 border-white/10 shadow-lg md:h-36 md:w-36">
                 <img
@@ -280,7 +299,8 @@ export default function Page() {
               </p>
 
               <p className="mt-3 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
-                Enhanced DBS Checked - Level 3 Safeguarding Trained - First Aid Trained
+                Current Teacher - Enhanced DBS Checked - Level 3 Safeguarding
+                Trained - First Aid Trained
               </p>
 
               <div className="mt-6 text-center">
@@ -295,81 +315,121 @@ export default function Page() {
 
             <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                About me
+                Why this approach works
               </p>
 
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-                David Dodd, Founder
+                Built on understanding what helps each child feel motivated,
+                confident and ready to learn.
               </h2>
 
               <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                With a background in{" "}
+                I am a{" "}
+                <span className="font-semibold text-[#12284C]">
+                  current teacher
+                </span>{" "}
+                with a degree in{" "}
                 <span className="font-semibold text-[#12284C]">Psychology</span>{" "}
-                and extensive experience teaching across every year group in KS1
-                and KS2, including significant work with{" "}
+                and extensive experience across primary education, including
+                significant work with{" "}
                 <span className="font-semibold text-[#12284C]">
                   SEND and neurodivergent children
                 </span>
-                , I have spent my career learning{" "}
+                .
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                A central part of my work is understanding what helps each child
+                engage well: what captures their interest, what builds their
+                confidence, how they respond best to challenge and what kind of
+                teaching helps them thrive.
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                That understanding has been shaped not only through classroom
+                teaching, but also through staff development in behaviour,
+                coaching colleagues in{" "}
                 <span className="font-semibold text-[#12284C]">
-                  what truly motivates children
-                </span>{" "}
-                - and using that understanding to help them feel safe, capable
-                and ready to engage. That work has taken me beyond the classroom
-                too: leading staff development on behaviour and coaching
-                colleagues on{" "}
+                  relationship-led practice
+                </span>
+                , and work connected to{" "}
                 <span className="font-semibold text-[#12284C]">
-                  relationship-led teaching
-                </span>{" "}
-                within the North Manchester Primary Federation, alongside Oracy
-                development work with{" "}
-                <span className="font-semibold text-[#12284C]">
-                  Cambridge University
-                </span>{" "}
-                and contributing to
-                <span className="font-semibold text-[#12284C]">
-                  {" "}
-                  school improvement at a senior level
+                  Voice21 / Cambridge-linked oracy practice
                 </span>
                 .
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                What I bring into every session is{" "}
+                What I bring into sessions is{" "}
                 <span className="font-semibold text-[#12284C]">
                   warmth, calm, humour and care
-                </span>{" "}
-                - because I know that{" "}
-                <span className="font-semibold text-[#12284C]">
-                  children learn best when they feel known
                 </span>
-                .
+                , but also clear professional judgement. Children are understood
+                properly, taught thoughtfully and supported in a way that feels
+                personal, motivating and achievable.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                That understanding - of{" "}
-                <span className="font-semibold text-[#12284C]">
-                  child development, motivation and relationship
-                </span>{" "}
-                - is the foundation Warren Dodd Education is built on.
+                That is what makes this different. The aim is not simply to
+                cover content. It is to change how a child experiences learning,
+                so that confidence, trust and meaningful progress can grow from
+                there. with social and emotional development at our core.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-y border-slate-200 bg-white">
+        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
+          <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+            <div className="rounded-[1.7rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-7 shadow-sm">
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                Understanding the child
+              </p>
+
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+                Skilled at building learning around the individual.
+              </h2>
+
+              <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                Every child is understood as an individual - their interests,
+                strengths, learning style, confidence level and the emotional
+                factors that shape how they respond.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                <span className="font-semibold text-[#12284C]">
-                  Working closely with parents and carers
-                </span>{" "}
-                is something I value deeply -{" "}
-                <span className="font-semibold text-[#12284C]">
-                  open, regular communication
-                </span>{" "}
-                has been one of the most powerful tools in my extensive
-                experience in helping children make progress{" "}
-                <span className="font-semibold text-[#12284C]">
-                  socially, emotionally and educationally
-                </span>
-                , and in supporting them as they prepare for the next stage -
-                whether that is high school or continued home education.
+                This allows learning to be shaped in a way that feels more
+                relevant, more motivating and more achievable, rather than
+                something generic that is simply delivered in the same way to
+                everyone.
               </p>
+            </div>
+
+            <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm">
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                In practice, this means understanding
+              </p>
+
+              <div className="mt-5 grid gap-3">
+                {understandingPoints.map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm leading-6 text-slate-700 md:text-base"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-7">
+                <Link
+                  href="/why"
+                  className="inline-flex rounded-full border border-[#12284C]/15 bg-[#12284C] px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5"
+                >
+                  Read more about the Warren Dodd Method
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -498,9 +558,9 @@ export default function Page() {
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                Sessions run weekly. Each child joins the same small, consistent group every week
-                - a calm, welcoming environment where trust builds, relationships develop,
-                and progress follows.
+                Sessions run weekly. Each child joins the same small, consistent
+                group every week - a calm, welcoming environment where trust
+                builds, relationships develop, and progress follows.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2.5">
