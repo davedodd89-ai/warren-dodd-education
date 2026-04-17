@@ -31,21 +31,6 @@ export default function Page() {
     source: "Executive Headteacher",
   };
 
-  const enquiryPoints = [
-    "Home education support",
-    "Flexi schooling support",
-    "Daytime education",
-    "A more personal alternative to traditional tutoring",
-  ];
-
-  const venueHighlights = [
-    "Tuesday mornings",
-    "9:30am - 12:30pm",
-    "Alderley Edge, Cheshire",
-    "Maximum 4 children",
-    "£180 per weekly session",
-  ];
-
   const weeklySessionPoints = [
     "Reserved weekly group place",
     "3-hour daytime session",
@@ -118,7 +103,6 @@ export default function Page() {
                   <p className="text-base font-medium text-slate-700">
                     9:30am - 12:30pm
                   </p>
-               
                 </div>
 
                 <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
@@ -240,7 +224,6 @@ export default function Page() {
                   <p className="text-sm font-medium text-slate-700 md:text-base">
                     9:30am - 12:30pm
                   </p>
-                  
                 </div>
 
                 <p className="mt-5 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
@@ -489,7 +472,6 @@ export default function Page() {
                 relationship-led approach at the heart of the provision.
               </p>
 
-              
               <div className="mt-7">
                 <Link
                   href="/contact"
@@ -516,14 +498,9 @@ export default function Page() {
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                Sessions run weekly. Each child joins the same small, consistent group every week 
-                — a calm, welcoming environment where trust builds, relationships develop, 
+                Sessions run weekly. Each child joins the same small, consistent group every week
+                - a calm, welcoming environment where trust builds, relationships develop,
                 and progress follows.
-              </p>
-
-              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                Weekly sessions are priced at <span className="font-semibold text-[#12284C]">£180</span> for a reserved
-                three-hour place within this specialist small-group provision.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-2.5">
@@ -546,44 +523,6 @@ export default function Page() {
                 </Link>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-t border-slate-200 bg-white">
-        <div className="mx-auto max-w-5xl px-6 py-10 text-center md:px-10 md:py-14">
-          <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-            Enquiry
-          </p>
-
-          <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-            Make an enquiry to see if this feels like the right fit.
-          </h2>
-
-          <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-            Whether you are exploring home education support, flexi schooling
-            support or daytime education, the first step is a simple
-            conversation.
-          </p>
-
-          <div className="mt-7 flex flex-wrap justify-center gap-2.5">
-            {enquiryPoints.map((item) => (
-              <span
-                key={item}
-                className="rounded-full border border-slate-300 bg-[#FBFBF9] px-3.5 py-2 text-xs text-slate-700 md:text-sm"
-              >
-                {item}
-              </span>
-            ))}
-          </div>
-
-          <div className="mt-8">
-            <Link
-              href="/contact"
-              className="inline-flex rounded-full bg-[#12284C] px-8 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
-            >
-              Make an Enquiry
-            </Link>
           </div>
         </div>
       </section>

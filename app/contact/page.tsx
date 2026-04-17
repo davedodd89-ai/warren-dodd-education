@@ -18,16 +18,16 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen w-full overflow-x-clip bg-[#F7F7F4] text-slate-900">
+    <div className="min-h-screen overflow-x-hidden bg-[#F7F7F4] text-slate-900">
       <SiteHeader />
 
-      <section className="mx-auto w-full max-w-6xl overflow-x-clip px-4 py-14 sm:px-6 md:px-10 lg:py-20">
+      <section className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6 md:px-8 lg:px-10 lg:py-20">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm uppercase tracking-[0.22em] text-slate-500">
             Contact
           </p>
 
-          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] sm:text-4xl md:text-6xl">
+          <h1 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] sm:text-4xl md:text-5xl lg:text-6xl">
             Get in touch to discuss whether this feels like the right fit.
           </h1>
 
@@ -38,9 +38,9 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-          <div className="space-y-6">
-            <div className="rounded-[1.5rem] border border-[#D8B35B]/50 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
+        <div className="mt-10 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="space-y-6 order-1">
+            <div className="rounded-[1.5rem] border border-[#D8B35B]/50 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
               <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
                 Contact details
               </p>
@@ -54,44 +54,44 @@ export default function ContactPage() {
                 a few key details is enough to begin the conversation.
               </p>
 
-              <div className="mt-8 grid gap-5">
-                <div className="rounded-[1.25rem] border border-slate-200 bg-[#FBFBF9] p-5 sm:rounded-[1.5rem] sm:p-6">
+              <div className="mt-8 grid gap-4">
+                <div className="rounded-[1.25rem] border border-slate-200 bg-[#FBFBF9] p-4 sm:rounded-[1.5rem] sm:p-6">
                   <p className="text-sm font-medium uppercase tracking-[0.14em] text-slate-500">
                     Email
                   </p>
                   <a
                     href="mailto:warrendoddeducation@outlook.com"
-                    className="mt-3 block break-words text-xl font-semibold text-[#12284C] underline underline-offset-4 sm:text-2xl"
+                    className="mt-3 block break-words text-lg font-semibold text-[#12284C] underline underline-offset-4 sm:text-2xl"
                   >
                     warrendoddeducation@outlook.com
                   </a>
                 </div>
 
-                <div className="rounded-[1.25rem] border border-slate-200 bg-[#FBFBF9] p-5 sm:rounded-[1.5rem] sm:p-6">
+                <div className="rounded-[1.25rem] border border-slate-200 bg-[#FBFBF9] p-4 sm:rounded-[1.5rem] sm:p-6">
                   <p className="text-sm font-medium uppercase tracking-[0.14em] text-slate-500">
                     Mobile
                   </p>
 
                   <a
                     href="tel:07512341730"
-                    className="mt-3 block text-xl font-semibold text-[#12284C] sm:text-2xl"
+                    className="mt-3 block text-lg font-semibold text-[#12284C] sm:text-2xl"
                   >
                     07512 341730
                   </a>
 
-                  <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                  <div className="mt-5 grid gap-3">
                     <a
                       href="https://wa.me/447512341730"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center rounded-xl bg-[#12284C] px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+                      className="inline-flex w-full items-center justify-center rounded-xl bg-[#12284C] px-4 py-3 text-center text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
                     >
                       Message on WhatsApp
                     </a>
 
                     <a
                       href="sms:07512341730"
-                      className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm font-semibold text-[#12284C] transition hover:bg-slate-50"
+                      className="inline-flex w-full items-center justify-center rounded-xl border border-slate-300 bg-white px-4 py-3 text-center text-sm font-semibold text-[#12284C] transition hover:bg-slate-50"
                     >
                       Send a text message
                     </a>
@@ -100,7 +100,36 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
+            <div className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8 lg:hidden">
+              <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
+                Weekly place
+              </p>
+
+              <p className="mt-3 text-4xl font-semibold text-[#12284C] sm:text-5xl">
+                £180
+              </p>
+
+              <p className="mt-2 text-base text-slate-700 sm:text-lg">
+                Per weekly daytime session
+              </p>
+
+              <p className="mt-3 text-lg font-semibold text-[#12284C]">
+                A reserved weekly group place
+              </p>
+
+              <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-slate-500">
+                3-hour session · maximum 4 children
+              </p>
+
+              <div className="mt-8 space-y-3 text-sm text-slate-700 sm:text-base">
+                <p>Tuesday mornings</p>
+                <p>9:30am - 12:30pm</p>
+                <p>Alderley Edge, Cheshire</p>
+                <p>Beginning September 2026</p>
+              </div>
+            </div>
+
+            <div className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
               <p className="text-sm uppercase tracking-[0.16em] text-slate-500">
                 What happens next
               </p>
@@ -119,7 +148,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
+            <div className="rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
               <p className="text-base font-semibold text-[#12284C]">
                 What to include in your enquiry
               </p>
@@ -137,7 +166,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="space-y-6">
+          <div className="order-2 hidden space-y-6 lg:block">
             <div className="rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
               <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
                 Weekly place
@@ -188,7 +217,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <div className="mt-6 w-full rounded-[1.5rem] border border-slate-200 bg-white p-6 shadow-sm sm:rounded-[2rem] sm:p-8">
+        <div className="mt-6 rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
           <p className="text-sm uppercase tracking-[0.2em] text-slate-500">
             Useful discussion points
           </p>
