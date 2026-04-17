@@ -147,23 +147,6 @@ export default function ContactPage() {
                 </p>
               </div>
             </div>
-
-            <div className="min-w-0 rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
-              <p className="text-base font-semibold text-[#12284C]">
-                What to include in your enquiry
-              </p>
-
-              <div className="mt-4 grid min-w-0 gap-3">
-                {enquiryPrompts.map((item) => (
-                  <div
-                    key={item}
-                    className="min-w-0 rounded-xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm leading-6 text-slate-700"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
 
           <div className="order-2 hidden min-w-0 space-y-6 lg:block">
@@ -219,29 +202,53 @@ export default function ContactPage() {
 
         <div className="mt-6 min-w-0 rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
           <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
-            Useful discussion points
+            What to include in your enquiry
           </p>
 
           <h2 className="mt-4 text-2xl font-semibold tracking-tight text-[#12284C] sm:text-3xl md:text-4xl">
-            Things we can talk through together.
+            Useful details and helpful starting points.
           </h2>
 
           <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
             You do not need to have everything worked out before getting in
-            touch. An initial conversation can help clarify whether the sessions
-            feel right, what your child needs most and what the best next step
-            might be.
+            touch. A few simple details are enough to begin the conversation,
+            and we can talk through anything else together.
           </p>
 
-          <div className="mt-6 grid min-w-0 gap-4 md:grid-cols-2">
-            {discussionPoints.map((item) => (
-              <div
-                key={item}
-                className="min-w-0 rounded-[1.2rem] border border-slate-200 bg-[#FBFBF9] px-5 py-4 text-sm text-slate-800 shadow-sm sm:rounded-[1.4rem] sm:text-base"
-              >
-                {item}
+          <div className="mt-6 grid gap-6 lg:grid-cols-2">
+            <div className="min-w-0">
+              <p className="text-base font-semibold text-[#12284C]">
+                It helps to include
+              </p>
+
+              <div className="mt-4 grid gap-3">
+                {enquiryPrompts.map((item) => (
+                  <div
+                    key={item}
+                    className="min-w-0 rounded-xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm leading-6 text-slate-700"
+                  >
+                    {item}
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            <div className="min-w-0">
+              <p className="text-base font-semibold text-[#12284C]">
+                Things we can discuss
+              </p>
+
+              <div className="mt-4 grid gap-3">
+                {discussionPoints.map((item) => (
+                  <div
+                    key={item}
+                    className="min-w-0 rounded-xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm leading-6 text-slate-700"
+                  >
+                    {item}
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
