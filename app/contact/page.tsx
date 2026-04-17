@@ -88,7 +88,8 @@ export default function ContactPage() {
                   </p>
                   <a
                     href="mailto:warrendoddeducation@outlook.com"
-                    className="mt-3 block min-w-0 break-all text-lg font-semibold text-[#12284C] underline underline-offset-4 sm:text-2xl"
+                    aria-label="Email warrendoddeducation@outlook.com"
+                    className="mt-3 block max-w-full text-[1rem] font-semibold leading-7 text-[#12284C] underline underline-offset-4 [overflow-wrap:anywhere] sm:text-2xl sm:leading-8"
                   >
                     warrendoddeducation@outlook.com
                   </a>
