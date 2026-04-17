@@ -100,15 +100,15 @@ export default function ContactPage() {
                   </p>
 
                   <a
-                    href="tel:07512341730"
+                    href="tel:07404510082"
                     className="mt-3 block min-w-0 break-words text-lg font-semibold text-[#12284C] sm:text-2xl"
                   >
-                    07512 341730
+                    07404 510082
                   </a>
 
                   <div className="mt-5 grid min-w-0 gap-3">
                     <a
-                      href="https://wa.me/447512341730"
+                      href="https://wa.me/447404510082"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex w-full min-w-0 items-center justify-center rounded-xl bg-[#12284C] px-4 py-3 text-center text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
@@ -117,7 +117,7 @@ export default function ContactPage() {
                     </a>
 
                     <a
-                      href="sms:07512341730"
+                      href="sms:07404510082"
                       className="inline-flex w-full min-w-0 items-center justify-center rounded-xl border border-slate-300 bg-white px-4 py-3 text-center text-sm font-semibold text-[#12284C] transition hover:bg-slate-50"
                     >
                       Send a text message
