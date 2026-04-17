@@ -63,15 +63,44 @@ export default function WhyPage() {
             <div className="mt-6 space-y-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
               <p>
                 Warren Dodd Education is designed for children who are more
-                likely to thrive when learning feels calm, personal and properly
-                responsive to who they are.
+                likely to thrive when learning feels{" "}
+                <span className="font-semibold text-[#12284C]">
+                  calm, personal
+                </span>{" "}
+                and properly responsive to who they are.
               </p>
 
               <p>
-                For some families, that means finding a more bespoke option
-                alongside school. For others, it means choosing a setting that
-                feels more thoughtful, more relational and more carefully paced
-                than the usual model.
+                For{" "}
+                <span className="font-semibold text-[#12284C]">
+                  home educated families
+                </span>
+                , this provides a consistent,{" "}
+                <span className="font-semibold text-[#12284C]">
+                  structured part of the week
+                </span>{" "}
+                where children can learn alongside others in a{" "}
+                <span className="font-semibold text-[#12284C]">
+                  small, carefully guided group
+                </span>
+                . It brings structure, routine and a sense of shared learning,
+                without losing the flexibility and individuality that home
+                education allows.
+              </p>
+
+              <p>
+                For{" "}
+                <span className="font-semibold text-[#12284C]">
+                  flexi-schooled children
+                </span>
+                , it offers a more thoughtful, relationship-led alternative to
+                traditional tutoring - a setting where they can slow down,
+                rebuild{" "}
+                <span className="font-semibold text-[#12284C]">
+                  confidence
+                </span>{" "}
+                and engage more positively with learning alongside their time in
+                school.
               </p>
 
               <p>
