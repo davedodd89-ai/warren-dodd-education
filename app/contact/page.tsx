@@ -38,7 +38,34 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div className="mt-10 grid min-w-0 gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+        <div className="mt-8 min-w-0 rounded-[1.5rem] border border-slate-200 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
+          <div className="flex flex-col items-center gap-5 text-center sm:flex-row sm:items-center sm:text-left">
+            <div className="h-24 w-24 shrink-0 overflow-hidden rounded-full border-4 border-[#12284C]/10 shadow-sm sm:h-28 sm:w-28">
+              <img
+                src="/hero.jpg"
+                alt="David Dodd"
+                className="h-full w-full object-cover"
+              />
+            </div>
+
+            <div className="min-w-0">
+              <h2 className="text-2xl font-semibold tracking-tight text-[#12284C] sm:text-3xl">
+                David Dodd
+              </h2>
+
+              <p className="mt-2 text-sm uppercase tracking-[0.14em] text-slate-500 sm:text-[0.95rem]">
+                BSc (Hons) Psychology · Primary PGCE · QTS
+              </p>
+
+              <p className="mt-3 max-w-2xl text-base leading-7 text-slate-700">
+                I take the time to understand each child properly, so they feel
+                confident, supported and ready to learn.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-6 grid min-w-0 gap-6 lg:grid-cols-[1.05fr_0.95fr]">
           <div className="order-1 min-w-0 space-y-6">
             <div className="min-w-0 rounded-[1.5rem] border border-[#D8B35B]/50 bg-white p-5 shadow-sm sm:rounded-[2rem] sm:p-7 md:p-8">
               <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
@@ -193,7 +220,7 @@ export default function ContactPage() {
 
               <p className="mt-4 text-base leading-7 text-slate-700 sm:text-lg sm:leading-8">
                 Families are encouraged to get in touch early if they are
-                exploring whether a reserved weekly place could be the
+                seriously exploring whether a reserved weekly place could be the
                 right fit from September 2026.
               </p>
             </div>
