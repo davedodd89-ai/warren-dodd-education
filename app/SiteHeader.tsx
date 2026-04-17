@@ -9,6 +9,7 @@ const navItems = [
   { label: "Our Approach", href: "/approach" },
   { label: "Testimonials", href: "/testimonials" },
   { label: "Support for Schools", href: "/schools" },
+  { label: "Policies", href: "/policies" }, // ← LAST = far right
 ];
 
 export default function SiteHeader() {
@@ -88,7 +89,7 @@ export default function SiteHeader() {
                 aria-label="Toggle menu"
                 aria-expanded={open}
                 onClick={() => setOpen((prev) => !prev)}
-                className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-slate-300 bg-white text-[#12284C]"
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-300 bg-white text-[#12284C]"
               >
                 <span className="text-2xl leading-none">
                   {open ? "×" : "☰"}
