@@ -20,39 +20,8 @@ export default function WhyPage() {
       text: "This can be particularly valuable for children whose confidence has dipped, who doubt themselves as learners, or who carry social and emotional worries that affect how they engage. A calm, kind and compassionate approach can help children feel emotionally safe enough to take risks, persevere and begin to believe in themselves again.",
     },
     {
-      title: "A more bespoke curriculum",
-      text: "Some children benefit from learning that is shaped more closely around their needs, strengths, interests and stage of development. Rather than forcing a child through a one-size-fits-all model, the work is designed to feel purposeful, relevant and appropriately pitched, helping children make stronger progress in a way that feels more natural to them.",
-    },
-    {
       title: "Children who need understanding first",
       text: "Some children do not need more pressure. They need to feel understood properly. They benefit from a professional who is calm, patient and experienced, who takes the time to build trust, understand what motivates them and create the conditions in which they can engage positively with learning again.",
-    },
-    {
-      title: "Children who simply need the right environment",
-      text: "This is not only for children who are struggling. It is also for children who would flourish with a more thoughtful, relationship-led and personalised approach. For some families, it is about giving their child a setting where they can feel calmer, happier, more confident and more fully themselves as a learner.",
-    },
-    {
-      title: "Relationship-led experience",
-      text: "With experience across mainstream and SEND, my approach is built around understanding the child in front of me properly. When children feel known, respected and safe with the adult leading them, they are far more likely to engage, trust the process and begin to grow in confidence.",
-    },
-  ];
-
-  const approachCards = [
-    {
-      title: "Understanding comes first",
-      text: "Before strong learning can happen, children need to feel known. That means taking the time to understand their personality, interests, confidence, learning profile, barriers and motivators rather than rushing straight into content.",
-    },
-    {
-      title: "Calm structure matters",
-      text: "Children often do better when the session has a clear rhythm, calm expectations and a sense of emotional safety. That structure helps reduce pressure, uncertainty and resistance, making engagement more likely.",
-    },
-    {
-      title: "Challenge is carefully pitched",
-      text: "Work needs to be demanding enough to build progress, but not so poorly pitched that it creates avoidance or self-doubt. The aim is to help children experience success, stretch and pride at the right level.",
-    },
-    {
-      title: "Reflection builds ownership",
-      text: "Children make stronger progress when they start to understand themselves as learners. Reflection helps them notice what is working, where they are growing and how they can take more ownership over the process.",
     },
   ];
 
@@ -76,7 +45,7 @@ export default function WhyPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F7F7F4] text-slate-900">
+    <div className="min-h-screen overflow-x-hidden bg-[#F7F7F4] text-slate-900">
       <SiteHeader />
 
       <section className="border-b border-slate-200 bg-white">
@@ -87,37 +56,28 @@ export default function WhyPage() {
             </p>
 
             <h1 className="mt-4 text-[2.3rem] font-semibold leading-[0.95] tracking-[-0.04em] text-[#12284C] md:text-6xl">
-              A more personal, thoughtful approach for children who benefit from
-              being understood properly.
+              A better fit for children who benefit from a calmer, more
+              personal way of learning.
             </h1>
 
             <div className="mt-6 space-y-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
               <p>
-                Warren Dodd Education is built around a simple belief: children
-                make their strongest progress when they feel safe, understood
-                and genuinely part of the learning process.
+                Warren Dodd Education is designed for children who are more
+                likely to thrive when learning feels calm, personal and properly
+                responsive to who they are.
               </p>
 
               <p>
-                This is not standard tutoring built around moving quickly
-                through content. It is a more thoughtful, relationship-led and
-                carefully tailored approach that gives equal importance to how a
-                child feels, how they engage and how they begin to see
-                themselves as a learner.
+                For some families, that means finding a more bespoke option
+                alongside school. For others, it means choosing a setting that
+                feels more thoughtful, more relational and more carefully paced
+                than the usual model.
               </p>
 
               <p>
-                For some children, that means rebuilding confidence. For some,
-                it means finding the right level of challenge. For others, it
-                means finally learning in an environment that feels calmer, more
-                personal and more responsive to who they are.
-              </p>
-
-              <p>
-                The approach is shaped by years of teaching experience, a
-                background in Psychology, work across mainstream and SEND, and a
-                deep understanding of motivation, trust, communication and
-                emotional safety.
+                The aim is not simply to cover content. It is to create the kind
+                of environment in which children feel secure enough to engage,
+                build confidence and make meaningful progress over time.
               </p>
             </div>
 
@@ -130,72 +90,17 @@ export default function WhyPage() {
               </Link>
 
               <Link
-                href="/testimonials"
+                href="/approach"
                 className="inline-flex rounded-full border border-slate-300 bg-white px-7 py-3.5 font-semibold text-[#12284C] transition hover:bg-slate-50"
               >
-                Read Testimonials
+                Read about the approach
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="border-b border-slate-200 bg-[#F7F7F4]">
-        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm md:p-10">
-            <p className="text-sm uppercase tracking-[0.22em] text-slate-500">
-              The approach
-            </p>
-
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-              A calmer, more personal way for children to learn.
-            </h2>
-
-            <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Every part of the session is built around the child in front of me
-              - how they think, what motivates them, where confidence currently
-              sits and what helps them feel safe enough to engage fully.
-            </p>
-
-            <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              From there, the structure, level of challenge and group dynamic
-              can be shaped carefully so that progress feels purposeful,
-              confidence grows and children begin to take real ownership over
-              learning.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
-        <div className="max-w-3xl">
-          <p className="text-sm uppercase tracking-[0.22em] text-slate-500">
-            How the approach works
-          </p>
-
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-            A calm, deliberate process that helps children engage more deeply.
-          </h2>
-        </div>
-
-        <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {approachCards.map((item) => (
-            <div
-              key={item.title}
-              className="rounded-[1.7rem] border border-slate-200 bg-white p-6 shadow-sm"
-            >
-              <h3 className="text-xl font-semibold text-[#12284C]">
-                {item.title}
-              </h3>
-              <p className="mt-4 text-sm leading-6 text-slate-700 md:text-base md:leading-7">
-                {item.text}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="border-y border-slate-200 bg-white">
+      <section className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
           <div className="max-w-4xl">
             <p className="text-sm uppercase tracking-[0.22em] text-slate-500">
@@ -207,8 +112,8 @@ export default function WhyPage() {
             </h2>
 
             <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Some children make stronger progress when learning feels calmer,
-              more personal and more responsive to who they are.
+              Some children make stronger progress when learning feels more
+              personal, more predictable and more responsive to their needs.
             </p>
           </div>
 
@@ -244,15 +149,15 @@ export default function WhyPage() {
           </p>
 
           <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-5xl">
-            Calm, structured support for parents carrying the weight of home
+            Calm, structured support for families carrying the weight of home
             education.
           </h2>
 
           <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-700">
             When home learning begins to feel exhausting, the issue is rarely
-            effort - it is usually structure, pace and emotional load. My
-            support helps parents simplify the day, reduce pressure and rebuild
-            confidence so learning becomes sustainable again.
+            effort alone. More often, it is the emotional load, the constant
+            decision-making and the challenge of sustaining a rhythm that works
+            for both child and parent.
           </p>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -274,19 +179,17 @@ export default function WhyPage() {
 
         <div className="mt-8 rounded-[2rem] border border-slate-200 bg-[#12284C] p-8 text-white shadow-sm md:p-10">
           <p className="text-sm uppercase tracking-[0.22em] text-slate-300">
-            The aim
+            Next step
           </p>
 
           <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
-            The goal is to help children feel safe, confident and ready to grow.
+            Explore whether this feels like the right fit for your child.
           </h2>
 
           <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-200">
-            Whether a child needs a more bespoke curriculum, a smaller and more
-            nurturing learning environment, or simply the guidance of a calm,
-            kind and compassionate professional who understands them well, the
-            purpose is the same: to help them feel more capable, more confident
-            and more positive about learning.
+            If you are considering a more bespoke, relationship-led and
+            thoughtfully structured option for your child, the next step is a
+            simple conversation.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -298,10 +201,10 @@ export default function WhyPage() {
             </Link>
 
             <Link
-              href="/"
+              href="/approach"
               className="inline-flex rounded-full border border-white/20 bg-white/10 px-7 py-4 font-semibold text-white transition hover:bg-white/15"
             >
-              Back to Home
+              Read about the approach
             </Link>
           </div>
         </div>
