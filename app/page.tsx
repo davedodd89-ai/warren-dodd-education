@@ -118,9 +118,7 @@ export default function Page() {
                   <p className="text-base font-medium text-slate-700">
                     9:30am - 12:30pm
                   </p>
-                  <p className="text-base font-medium text-slate-700">
-                    £180 per weekly session
-                  </p>
+               
                 </div>
 
                 <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
@@ -242,9 +240,7 @@ export default function Page() {
                   <p className="text-sm font-medium text-slate-700 md:text-base">
                     9:30am - 12:30pm
                   </p>
-                  <p className="text-sm font-medium text-slate-700 md:text-base">
-                    £180 per weekly session
-                  </p>
+                  
                 </div>
 
                 <p className="mt-5 text-sm font-medium uppercase tracking-[0.16em] text-[#12284C]">
@@ -493,17 +489,7 @@ export default function Page() {
                 relationship-led approach at the heart of the provision.
               </p>
 
-              <div className="mt-6 flex flex-wrap gap-2.5">
-                {venueHighlights.map((item) => (
-                  <span
-                    key={item}
-                    className="rounded-full border border-slate-300 bg-white px-3.5 py-2 text-xs text-slate-700 md:text-sm"
-                  >
-                    {item}
-                  </span>
-                ))}
-              </div>
-
+              
               <div className="mt-7">
                 <Link
                   href="/contact"
@@ -536,7 +522,7 @@ export default function Page() {
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                Weekly sessions are priced at <span className="font-semibold text-[#12284C]">£195</span> for a reserved
+                Weekly sessions are priced at <span className="font-semibold text-[#12284C]">£180</span> for a reserved
                 three-hour place within this specialist small-group provision.
               </p>
 
