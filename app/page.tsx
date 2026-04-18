@@ -1,11 +1,48 @@
-﻿import Link from "next/link";
+﻿"use client";
+
+import Link from "next/link";
 import { Playfair_Display } from "next/font/google";
+import { motion } from "framer-motion";
 import SiteHeader from "./SiteHeader";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
   weight: ["600", "700"],
 });
+
+const sectionVariant = {
+  hidden: { opacity: 0, y: 28 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.7,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
+
+const staggerParent = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.08,
+    },
+  },
+};
+
+const itemVariant = {
+  hidden: { opacity: 0, y: 18 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.55,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
 
 export default function Page() {
   const testimonialSnippets = [
@@ -74,57 +111,58 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 pb-10 pt-6 md:px-10 md:pb-12 md:pt-8">
+      <motion.section
+        className="mx-auto max-w-7xl px-6 pb-10 pt-6 md:px-10 md:pb-12 md:pt-8"
+        initial="hidden"
+        animate="show"
+        variants={sectionVariant}
+      >
         <div className="grid items-start gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:gap-12">
-          <div className="order-1 mx-auto w-full max-w-[280px] sm:max-w-[320px] md:max-w-[430px] lg:order-2 lg:mx-0 lg:max-w-none">
-            <div className="lg:sticky lg:top-28">
-              <div className="relative">
-                <div className="absolute -inset-3 rounded-[1.8rem] bg-slate-200/20 blur-3xl" />
-
-                <div className="relative overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
-                  <div className="overflow-hidden rounded-[1rem] bg-slate-100">
-                    <video
-                      className="h-[150px] w-full object-cover object-center sm:h-[180px] md:h-[240px] lg:h-[320px]"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                    >
-                      <source src="/hero-video.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="order-2 max-w-3xl lg:order-1 lg:max-w-[720px]">
-            <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+          <motion.div
+            className="order-2 max-w-3xl lg:order-1 lg:max-w-[720px]"
+            variants={staggerParent}
+            initial="hidden"
+            animate="show"
+          >
+            <motion.p
+              variants={itemVariant}
+              className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm"
+            >
               Bespoke daytime education
-            </p>
+            </motion.p>
 
-         <h1
-  className={`${playfair.className} mt-3 max-w-4xl text-[1.16rem] font-semibold leading-[0.98] tracking-[0em] text-[#12284C] sm:text-[1.5rem] md:mt-4 md:text-[2.35rem] lg:max-w-[16ch] lg:text-[3.2rem]`}
->
-  Bespoke weekly daytime education for home-educated children and
-  flexi-schoolers.
-</h1>
+            <motion.h1
+              variants={itemVariant}
+              className={`${playfair.className} mt-3 max-w-4xl text-[1.16rem] font-semibold leading-[0.98] tracking-[0em] text-[#12284C] sm:text-[1.5rem] md:mt-4 md:text-[2.35rem] lg:max-w-[16ch] lg:text-[3.2rem]`}
+            >
+              Bespoke weekly daytime education for home-educated children and
+              flexi-schoolers.
+            </motion.h1>
 
-            <p className="mt-5 max-w-3xl text-lg font-medium leading-8 text-[#12284C] md:text-xl md:leading-9">
+            <motion.p
+              variants={itemVariant}
+              className="mt-5 max-w-3xl text-lg font-medium leading-8 text-[#12284C] md:text-xl md:leading-9"
+            >
               A calm, welcoming and personalised approach that helps children
               feel understood, supported and ready to learn.
-            </p>
+            </motion.p>
 
-            <p className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+            <motion.p
+              variants={itemVariant}
+              className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
+            >
               Warren Dodd Education provides{" "}
               <span className="font-semibold text-[#12284C]">
                 bespoke, premium daytime education
               </span>{" "}
               in English, Maths and the wider curriculum for children aged 8-11
               across Cheshire and Stockport.
-            </p>
+            </motion.p>
 
-            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+            <motion.p
+              variants={itemVariant}
+              className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
+            >
               Designed for children who benefit from a calmer, more personal and
               more thoughtfully tailored way of learning, this is a{" "}
               <span className="font-semibold text-[#12284C]">
@@ -132,9 +170,9 @@ export default function Page() {
               </span>{" "}
               where academic progress is built through trust, confidence and
               strong relationships.
-            </p>
+            </motion.p>
 
-            <div className="mt-7 flex flex-wrap gap-3">
+            <motion.div variants={itemVariant} className="mt-7 flex flex-wrap gap-3">
               <Link
                 href="/contact"
                 className="inline-flex rounded-full bg-[#12284C] px-7 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
@@ -148,9 +186,9 @@ export default function Page() {
               >
                 Explore the Approach
               </Link>
-            </div>
+            </motion.div>
 
-            <div className="mt-8 flex flex-wrap gap-2.5">
+            <motion.div variants={itemVariant} className="mt-8 flex flex-wrap gap-2.5">
               <span className="rounded-full border border-sky-300 bg-sky-50 px-3.5 py-2 text-xs text-sky-800 md:text-sm">
                 Tuesday 9:30am - 12:30pm
               </span>
@@ -163,17 +201,52 @@ export default function Page() {
               <span className="rounded-full border border-rose-300 bg-rose-50 px-3.5 py-2 text-xs text-rose-800 md:text-sm">
                 Weekly from September 2026
               </span>
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            className="order-1 mx-auto w-full max-w-[280px] sm:max-w-[320px] md:max-w-[430px] lg:order-2 lg:mx-0 lg:max-w-none"
+            initial={{ opacity: 0, y: 28, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
+          >
+            <div className="lg:sticky lg:top-28">
+              <div className="relative">
+                <div className="absolute -inset-3 rounded-[1.8rem] bg-slate-200/20 blur-3xl" />
+
+                <div className="relative overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
+                  <div className="overflow-hidden rounded-[1rem] bg-slate-100">
+                    <motion.video
+                      className="h-[150px] w-full object-cover object-center sm:h-[180px] md:h-[240px] lg:h-[320px]"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      initial={{ scale: 1.04 }}
+                      animate={{ scale: 1 }}
+                      transition={{ duration: 1.2, ease: "easeOut" }}
+                    >
+                      <source src="/hero-video.mp4" type="video/mp4" />
+                    </motion.video>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        <div className="mt-8 max-w-[720px] lg:max-w-[760px]">
+        <motion.div
+          className="mt-8 max-w-[720px] lg:max-w-[760px]"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
+        >
           <div className="relative overflow-hidden rounded-[1.7rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-6 shadow-sm">
-  <div
-  className="absolute inset-0 bg-cover bg-center opacity-[0.36]"
-  style={{ backgroundImage: "url('/venue.jpg')" }}
-/>
-<div className="absolute inset-0 bg-[#FBFBF9]/72" />
+            <div
+              className="absolute inset-0 bg-cover bg-center opacity-[0.36]"
+              style={{ backgroundImage: "url('/venue.jpg')" }}
+            />
+            <div className="absolute inset-0 bg-[#FBFBF9]/72" />
             <div className="relative">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500">
                 Beginning September 2026
@@ -207,10 +280,16 @@ export default function Page() {
               </p>
             </div>
           </div>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
 
-      <section className="border-y border-slate-200 bg-white">
+      <motion.section
+        className="border-y border-slate-200 bg-white"
+        initial={{ opacity: 0, y: 26 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{ duration: 0.7 }}
+      >
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
           <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-8">
             <div className="rounded-[1.8rem] bg-[#12284C] p-7 text-white shadow-sm md:p-8">
@@ -231,27 +310,40 @@ export default function Page() {
               </p>
             </div>
 
-            <div className="rounded-[1.8rem] border border-slate-200 bg-[#FBFBF9] p-7 shadow-sm md:p-8">
+            <motion.div
+              className="rounded-[1.8rem] border border-slate-200 bg-[#FBFBF9] p-7 shadow-sm md:p-8"
+              variants={staggerParent}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.15 }}
+            >
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
                 At the heart of the Warren Dodd Method
               </p>
 
               <div className="mt-5 grid gap-3">
                 {uspPoints.map((item) => (
-                  <div
+                  <motion.div
                     key={item}
+                    variants={itemVariant}
                     className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm leading-6 text-slate-700 md:text-base"
                   >
                     {item}
-                  </div>
+                  </motion.div>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="border-y border-slate-200 bg-[#F7F7F4]">
+      <motion.section
+        className="border-y border-slate-200 bg-[#F7F7F4]"
+        initial={{ opacity: 0, y: 26 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{ duration: 0.7 }}
+      >
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
           <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
             <div className="rounded-[1.7rem] bg-[#12284C] p-7 text-white shadow-sm">
@@ -297,12 +389,8 @@ export default function Page() {
               </h2>
 
               <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                I am a{" "}
-                <span className="font-semibold text-[#12284C]">
-                  current teacher
-                </span>{" "}
-                with a degree in{" "}
-                <span className="font-semibold text-[#12284C]">Psychology</span>{" "}
+                I am a <span className="font-semibold text-[#12284C]">current teacher</span>{" "}
+                with a degree in <span className="font-semibold text-[#12284C]">Psychology</span>{" "}
                 and extensive experience across primary education, including
                 significant work with{" "}
                 <span className="font-semibold text-[#12284C]">
@@ -344,9 +432,15 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="border-y border-slate-200 bg-white">
+      <motion.section
+        className="border-y border-slate-200 bg-white"
+        initial={{ opacity: 0, y: 26 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{ duration: 0.7 }}
+      >
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-12">
           <div className="flex items-end justify-between gap-6">
             <div className="max-w-2xl">
@@ -369,10 +463,17 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <motion.div
+            className="mt-6 grid gap-4 md:grid-cols-2"
+            variants={staggerParent}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.15 }}
+          >
             {testimonialSnippets.map((item) => (
-              <div
+              <motion.div
                 key={item.quote}
+                variants={itemVariant}
                 className="flex h-full flex-col justify-between rounded-[1.5rem] border border-slate-200 bg-[#FBFBF9] p-5 shadow-sm"
               >
                 <p className="text-sm leading-6 text-slate-800 md:text-base md:leading-7">
@@ -382,11 +483,17 @@ export default function Page() {
                 <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-500 md:text-xs">
                   {item.source}
                 </p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
-          <div className="mt-4">
+          <motion.div
+            className="mt-4"
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.6 }}
+          >
             <div className="rounded-[1.6rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-7">
               <p className="text-base leading-7 text-slate-800 md:text-lg md:leading-8">
                 "{featuredTestimonial.quote}"
@@ -396,7 +503,7 @@ export default function Page() {
                 {featuredTestimonial.source}
               </p>
             </div>
-          </div>
+          </motion.div>
 
           <div className="mt-5 md:hidden">
             <Link
@@ -407,9 +514,15 @@ export default function Page() {
             </Link>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="border-y border-slate-200 bg-white">
+      <motion.section
+        className="border-y border-slate-200 bg-white"
+        initial={{ opacity: 0, y: 26 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{ duration: 0.7 }}
+      >
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
           <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
             <div className="rounded-[1.7rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-7 shadow-sm">
@@ -435,19 +548,26 @@ export default function Page() {
               </p>
             </div>
 
-            <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm">
+            <motion.div
+              className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm"
+              variants={staggerParent}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.15 }}
+            >
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
                 In practice, this means understanding:
               </p>
 
               <div className="mt-5 grid gap-3">
                 {understandingPoints.map((item) => (
-                  <div
+                  <motion.div
                     key={item}
+                    variants={itemVariant}
                     className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm font-medium uppercase tracking-[0.08em] leading-6 text-slate-700 md:text-base"
                   >
                     {item}
-                  </div>
+                  </motion.div>
                 ))}
               </div>
 
@@ -459,15 +579,26 @@ export default function Page() {
                   Explore the Warren Dodd Method
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="border-y border-slate-200 bg-white">
+      <motion.section
+        className="border-y border-slate-200 bg-white"
+        initial={{ opacity: 0, y: 26 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{ duration: 0.7 }}
+      >
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
-            <div>
+            <motion.div
+              initial={{ opacity: 0, y: 18, scale: 0.98 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true, amount: 0.15 }}
+              transition={{ duration: 0.7 }}
+            >
               <div className="overflow-hidden rounded-[1.8rem] border border-slate-200 bg-slate-100 shadow-sm">
                 <img
                   src="/venue.jpg"
@@ -475,7 +606,7 @@ export default function Page() {
                   className="h-[260px] w-full object-cover sm:h-[320px] lg:h-[420px]"
                 />
               </div>
-            </div>
+            </motion.div>
 
             <div className="flex h-full flex-col justify-center rounded-[1.8rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-8">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
@@ -509,9 +640,15 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section className="bg-[#F7F7F4]">
+      <motion.section
+        className="bg-[#F7F7F4]"
+        initial={{ opacity: 0, y: 26 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.15 }}
+        transition={{ duration: 0.7 }}
+      >
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
           <div className="mx-auto max-w-2xl">
             <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm md:p-8">
@@ -529,16 +666,23 @@ export default function Page() {
                 builds, relationships develop, and progress follows.
               </p>
 
-              <div className="mt-6 flex flex-wrap gap-2.5">
+              <motion.div
+                className="mt-6 flex flex-wrap gap-2.5"
+                variants={staggerParent}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true, amount: 0.15 }}
+              >
                 {weeklySessionPoints.map((item) => (
-                  <span
+                  <motion.span
                     key={item}
+                    variants={itemVariant}
                     className="rounded-full border border-slate-300 bg-[#FBFBF9] px-3.5 py-2 text-xs text-slate-700 md:text-sm"
                   >
                     {item}
-                  </span>
+                  </motion.span>
                 ))}
-              </div>
+              </motion.div>
 
               <div className="mt-7">
                 <Link
@@ -551,7 +695,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       <footer className="border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-center px-6 py-7 text-center md:px-10">
