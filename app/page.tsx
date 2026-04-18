@@ -11,13 +11,13 @@ const playfair = Playfair_Display({
 });
 
 const sectionVariant = {
-  hidden: { opacity: 0, y: 28 },
+  hidden: { opacity: 0, y: 24 },
   show: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.7,
-      ease: [0.22, 1, 0.36, 1],
+      ease: "easeOut" as const,
     },
   },
 };
@@ -26,20 +26,20 @@ const staggerParent = {
   hidden: {},
   show: {
     transition: {
-      staggerChildren: 0.1,
-      delayChildren: 0.08,
+      staggerChildren: 0.08,
+      delayChildren: 0.06,
     },
   },
 };
 
 const itemVariant = {
-  hidden: { opacity: 0, y: 18 },
+  hidden: { opacity: 0, y: 16 },
   show: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.55,
-      ease: [0.22, 1, 0.36, 1],
+      ease: "easeOut" as const,
     },
   },
 };
@@ -119,6 +119,33 @@ export default function Page() {
       >
         <div className="grid items-start gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:gap-12">
           <motion.div
+            className="order-1 mx-auto w-full max-w-[280px] sm:max-w-[320px] md:max-w-[430px] lg:order-2 lg:mx-0 lg:max-w-none"
+            initial={{ opacity: 0, y: 24, scale: 0.985 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.75, ease: "easeOut", delay: 0.12 }}
+          >
+            <div className="lg:sticky lg:top-28">
+              <div className="relative">
+                <div className="absolute -inset-3 rounded-[1.8rem] bg-slate-200/20 blur-3xl" />
+
+                <div className="relative overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
+                  <div className="overflow-hidden rounded-[1rem] bg-slate-100">
+                    <video
+                      className="h-[150px] w-full object-cover object-center sm:h-[180px] md:h-[240px] lg:h-[320px]"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src="/hero-video.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
             className="order-2 max-w-3xl lg:order-1 lg:max-w-[720px]"
             variants={staggerParent}
             initial="hidden"
@@ -188,7 +215,10 @@ export default function Page() {
               </Link>
             </motion.div>
 
-            <motion.div variants={itemVariant} className="mt-8 flex flex-wrap gap-2.5">
+            <motion.div
+              variants={itemVariant}
+              className="mt-8 flex flex-wrap gap-2.5"
+            >
               <span className="rounded-full border border-sky-300 bg-sky-50 px-3.5 py-2 text-xs text-sky-800 md:text-sm">
                 Tuesday 9:30am - 12:30pm
               </span>
@@ -203,43 +233,13 @@ export default function Page() {
               </span>
             </motion.div>
           </motion.div>
-
-          <motion.div
-            className="order-1 mx-auto w-full max-w-[280px] sm:max-w-[320px] md:max-w-[430px] lg:order-2 lg:mx-0 lg:max-w-none"
-            initial={{ opacity: 0, y: 28, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
-          >
-            <div className="lg:sticky lg:top-28">
-              <div className="relative">
-                <div className="absolute -inset-3 rounded-[1.8rem] bg-slate-200/20 blur-3xl" />
-
-                <div className="relative overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
-                  <div className="overflow-hidden rounded-[1rem] bg-slate-100">
-                    <motion.video
-                      className="h-[150px] w-full object-cover object-center sm:h-[180px] md:h-[240px] lg:h-[320px]"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      initial={{ scale: 1.04 }}
-                      animate={{ scale: 1 }}
-                      transition={{ duration: 1.2, ease: "easeOut" }}
-                    >
-                      <source src="/hero-video.mp4" type="video/mp4" />
-                    </motion.video>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
         </div>
 
         <motion.div
           className="mt-8 max-w-[720px] lg:max-w-[760px]"
-          initial={{ opacity: 0, y: 24 }}
+          initial={{ opacity: 0, y: 22 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.75, ease: [0.22, 1, 0.36, 1], delay: 0.25 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
         >
           <div className="relative overflow-hidden rounded-[1.7rem] border border-[#D8B35B]/50 bg-[#FBFBF9] p-6 shadow-sm">
             <div
@@ -285,14 +285,20 @@ export default function Page() {
 
       <motion.section
         className="border-y border-slate-200 bg-white"
-        initial={{ opacity: 0, y: 26 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial="hidden"
+        whileInView="show"
         viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.7 }}
+        variants={sectionVariant}
       >
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
           <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-8">
-            <div className="rounded-[1.8rem] bg-[#12284C] p-7 text-white shadow-sm md:p-8">
+            <motion.div
+              className="rounded-[1.8rem] bg-[#12284C] p-7 text-white shadow-sm md:p-8"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.18 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
               <p className="text-xs uppercase tracking-[0.22em] text-slate-300 md:text-sm">
                 What makes this different
               </p>
@@ -308,14 +314,14 @@ export default function Page() {
                 they are far more likely to engage positively and make
                 meaningful progress.
               </p>
-            </div>
+            </motion.div>
 
             <motion.div
               className="rounded-[1.8rem] border border-slate-200 bg-[#FBFBF9] p-7 shadow-sm md:p-8"
               variants={staggerParent}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.15 }}
+              viewport={{ once: true, amount: 0.18 }}
             >
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
                 At the heart of the Warren Dodd Method
@@ -339,14 +345,20 @@ export default function Page() {
 
       <motion.section
         className="border-y border-slate-200 bg-[#F7F7F4]"
-        initial={{ opacity: 0, y: 26 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial="hidden"
+        whileInView="show"
         viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.7 }}
+        variants={sectionVariant}
       >
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
           <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
-            <div className="rounded-[1.7rem] bg-[#12284C] p-7 text-white shadow-sm">
+            <motion.div
+              className="rounded-[1.7rem] bg-[#12284C] p-7 text-white shadow-sm"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.18 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
               <div className="mx-auto h-32 w-32 overflow-hidden rounded-full border-4 border-white/10 shadow-lg md:h-36 md:w-36">
                 <img
                   src="/hero.jpg"
@@ -376,9 +388,15 @@ export default function Page() {
                   Read more about the approach
                 </Link>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm">
+            <motion.div
+              className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.18 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.06 }}
+            >
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
                 Why this approach works
               </p>
@@ -389,8 +407,12 @@ export default function Page() {
               </h2>
 
               <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                I am a <span className="font-semibold text-[#12284C]">current teacher</span>{" "}
-                with a degree in <span className="font-semibold text-[#12284C]">Psychology</span>{" "}
+                I am a{" "}
+                <span className="font-semibold text-[#12284C]">
+                  current teacher
+                </span>{" "}
+                with a degree in{" "}
+                <span className="font-semibold text-[#12284C]">Psychology</span>{" "}
                 and extensive experience across primary education, including
                 significant work with{" "}
                 <span className="font-semibold text-[#12284C]">
@@ -429,17 +451,17 @@ export default function Page() {
                 properly, taught thoughtfully and supported in a way that feels
                 personal, motivating and achievable.
               </p>
-            </div>
+            </motion.div>
           </div>
         </div>
       </motion.section>
 
       <motion.section
         className="border-y border-slate-200 bg-white"
-        initial={{ opacity: 0, y: 26 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial="hidden"
+        whileInView="show"
         viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.7 }}
+        variants={sectionVariant}
       >
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-12">
           <div className="flex items-end justify-between gap-6">
@@ -492,7 +514,7 @@ export default function Page() {
             initial={{ opacity: 0, y: 18 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.15 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
           >
             <div className="rounded-[1.6rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-7">
               <p className="text-base leading-7 text-slate-800 md:text-lg md:leading-8">
@@ -518,14 +540,20 @@ export default function Page() {
 
       <motion.section
         className="border-y border-slate-200 bg-white"
-        initial={{ opacity: 0, y: 26 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial="hidden"
+        whileInView="show"
         viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.7 }}
+        variants={sectionVariant}
       >
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
           <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-            <div className="rounded-[1.7rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-7 shadow-sm">
+            <motion.div
+              className="rounded-[1.7rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-7 shadow-sm"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.18 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
                 Understanding the child
               </p>
@@ -546,14 +574,14 @@ export default function Page() {
                 something generic that is simply delivered in the same way to
                 everyone.
               </p>
-            </div>
+            </motion.div>
 
             <motion.div
               className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm"
               variants={staggerParent}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: true, amount: 0.15 }}
+              viewport={{ once: true, amount: 0.18 }}
             >
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
                 In practice, this means understanding:
@@ -586,18 +614,18 @@ export default function Page() {
 
       <motion.section
         className="border-y border-slate-200 bg-white"
-        initial={{ opacity: 0, y: 26 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial="hidden"
+        whileInView="show"
         viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.7 }}
+        variants={sectionVariant}
       >
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
             <motion.div
-              initial={{ opacity: 0, y: 18, scale: 0.98 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, amount: 0.15 }}
-              transition={{ duration: 0.7 }}
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.18 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
             >
               <div className="overflow-hidden rounded-[1.8rem] border border-slate-200 bg-slate-100 shadow-sm">
                 <img
@@ -608,7 +636,13 @@ export default function Page() {
               </div>
             </motion.div>
 
-            <div className="flex h-full flex-col justify-center rounded-[1.8rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-8">
+            <motion.div
+              className="flex h-full flex-col justify-center rounded-[1.8rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-8"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.18 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.06 }}
+            >
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
                 Venue confirmed
               </p>
@@ -637,21 +671,27 @@ export default function Page() {
                   Register your interest
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </motion.section>
 
       <motion.section
         className="bg-[#F7F7F4]"
-        initial={{ opacity: 0, y: 26 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial="hidden"
+        whileInView="show"
         viewport={{ once: true, amount: 0.15 }}
-        transition={{ duration: 0.7 }}
+        variants={sectionVariant}
       >
         <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
           <div className="mx-auto max-w-2xl">
-            <div className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm md:p-8">
+            <motion.div
+              className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm md:p-8"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.18 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
               <p className="text-xs uppercase tracking-[0.2em] text-slate-500 md:text-sm">
                 Regular weekly group sessions
               </p>
@@ -671,7 +711,7 @@ export default function Page() {
                 variants={staggerParent}
                 initial="hidden"
                 whileInView="show"
-                viewport={{ once: true, amount: 0.15 }}
+                viewport={{ once: true, amount: 0.18 }}
               >
                 {weeklySessionPoints.map((item) => (
                   <motion.span
@@ -692,7 +732,7 @@ export default function Page() {
                   Enquire now
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </motion.section>
