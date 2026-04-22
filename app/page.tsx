@@ -330,8 +330,15 @@ export default function Page() {
               </p>
 
               <p className="mt-3 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
-                Current Teacher - Enhanced DBS Checked - Level 3 Safeguarding
-                Trained - First Aid Trained
+                Current, highly experienced teacher
+              </p>
+
+              <p className="mt-2 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
+                Experienced Teaching and Learning Coach within a Primary Federation of schools
+              </p>
+
+              <p className="mt-2 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
+                Enhanced DBS Checked - Level 3 Safeguarding Trained - First Aid Trained
               </p>
 
               <div className="mt-6 text-center">
@@ -363,11 +370,15 @@ export default function Page() {
               <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
                 I am a{" "}
                 <span className="font-semibold text-[#12284C]">
-                  current teacher
-                </span>{" "}
-                with a degree in{" "}
-                <span className="font-semibold text-[#12284C]">Psychology</span>{" "}
-                and extensive experience across primary education, including
+                  current, highly experienced teacher
+                </span>
+                ,{" "}
+                <span className="font-semibold text-[#12284C]">
+                  Teaching and Learning Coach
+                </span>
+                , and hold a degree in{" "}
+                <span className="font-semibold text-[#12284C]">Psychology</span>,
+                with extensive experience across primary education, including
                 significant work with{" "}
                 <span className="font-semibold text-[#12284C]">
                   SEND and neurodivergent children
@@ -376,22 +387,32 @@ export default function Page() {
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                A central part of my work is understanding what helps each child
-                engage well: what captures their interest, what builds their
-                confidence, how they respond best to challenge and what kind of
-                teaching helps them thrive.
+                A central part of my work is building{" "}
+                <span className="font-semibold text-[#12284C]">
+                  strong, positive working relationships
+                </span>{" "}
+                with children, so they feel known, understood and safe enough to
+                engage well. That means taking time to understand what motivates
+                them, what captures their interest, what common ground helps
+                trust grow, and what kind of support helps them respond with
+                confidence.
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                I am highly experienced in recognising that progress is not just
+                about what a child knows academically. It is also about whether
+                they trust the adult in front of them, whether they feel
+                understood, and whether learning feels personal, achievable and
+                worth engaging in.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
                 That understanding has been shaped not only through classroom
-                teaching, but also through staff development in behaviour,
-                coaching colleagues in{" "}
+                teaching, but also through coaching colleagues, staff
+                development in behaviour, and work connected to{" "}
                 <span className="font-semibold text-[#12284C]">
-                  relationship-led practice
-                </span>
-                , and work connected to{" "}
-                <span className="font-semibold text-[#12284C]">
-                  Voice21 / Cambridge-linked oracy practice
+                  relationship-led practice and Voice21 / Cambridge-linked oracy
+                  practice
                 </span>
                 .
               </p>
@@ -401,9 +422,13 @@ export default function Page() {
                 <span className="font-semibold text-[#12284C]">
                   warmth, calm, humour and care
                 </span>
-                , alongside clear professional judgement. Children are understood
-                properly, taught thoughtfully and supported in a way that feels
-                personal, motivating and achievable.
+                , alongside clear professional judgement. Children are not only
+                taught thoughtfully. They are supported through a{" "}
+                <span className="font-semibold text-[#12284C]">
+                  role-model and mentor approach alongside learning
+                </span>
+                , helping them build trust, confidence, motivation and stronger
+                habits over time.
               </p>
             </motion.div>
           </div>
@@ -666,9 +691,9 @@ export default function Page() {
               </h2>
 
               <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                I am pleased to now be able to offer a stunning, dedicated venue space in
-                Alderley Edge, Cheshire for daytime sessions starting in
-                September 2026.
+                I am pleased to now be able to offer a stunning, dedicated venue
+                space in Alderley Edge, Cheshire for daytime sessions starting
+                in September 2026.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
