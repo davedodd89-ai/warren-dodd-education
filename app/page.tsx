@@ -175,43 +175,53 @@ export default function Page() {
             </motion.p>
 
             <motion.p
-              variants={itemVariant}
-              className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
-            >
-              Warren Dodd Education provides{" "}
-              <span className="font-semibold text-[#12284C]">
-                bespoke, premium daytime education
-              </span>{" "}
-              in English, Maths and the wider curriculum for children aged 8-11
-              across Cheshire and Stockport.
-            </motion.p>
+  variants={itemVariant}
+  className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
+>
+  Warren Dodd Education provides{" "}
+  <span className="font-semibold text-[#12284C]">
+    bespoke, premium daytime education
+  </span>{" "}
+  in English, Maths and the wider curriculum for children aged 8-11
+  across Cheshire and Stockport.
+</motion.p>
 
-            <motion.p
-              variants={itemVariant}
-              className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
-            >
-              Designed for children who benefit from a calmer, more personal and
-              more thoughtfully tailored way of learning, this is a{" "}
-              <span className="font-semibold text-[#12284C]">
-                weekly small-group provision
-              </span>{" "}
-              where academic progress is built through trust, confidence and
-              strong relationships, while also developing self-esteem,
-              resilience, communication, oracy and the wider life skills that
-              help children grow.
-            </motion.p>
+<motion.p
+  variants={itemVariant}
+  className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
+>
+  Designed for children who benefit from a calmer, more personal and
+  more thoughtfully tailored way of learning, this is a{" "}
+  <span className="font-semibold text-[#12284C]">
+    weekly small-group provision
+  </span>{" "}
+  where academic progress is built through trust, confidence and
+  strong relationships, while also developing self-esteem,
+  resilience, communication, oracy and the wider life skills that
+  help children grow.
+</motion.p>
 
-            <motion.p
-              variants={itemVariant}
-              className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
-            >
-              For children who require it, support can also include{" "}
-              <span className="font-semibold text-[#12284C]">
-                11+ preparation
-              </span>{" "}
-              as part of a broader approach that keeps confidence, wellbeing and
-              long-term development firmly in view.
-            </motion.p>
+<motion.p
+  variants={itemVariant}
+  className="mt-4 max-w-3xl text-base font-semibold leading-7 text-[#12284C] md:text-lg md:leading-8"
+>
+  Warren Dodd Education is founded on mutual respect and empathy.
+  They sit at the heart of how our children are taught, how
+  relationships are built, and what we aim to help children develop
+  in themselves even further over time.
+</motion.p>
+
+<motion.p
+  variants={itemVariant}
+  className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
+>
+  For children who require it, support can also include{" "}
+  <span className="font-semibold text-[#12284C]">
+    11+ preparation
+  </span>{" "}
+  as part of a broader approach that keeps confidence, wellbeing and
+  long-term development firmly in view.
+</motion.p>
 
             <motion.div variants={itemVariant} className="mt-7 flex flex-wrap gap-3">
               <Link
