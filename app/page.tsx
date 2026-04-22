@@ -234,7 +234,7 @@ export default function Page() {
               className="mt-8 flex flex-wrap gap-2.5"
             >
               <span className="rounded-full border border-sky-300 bg-sky-50 px-3.5 py-2 text-xs text-sky-800 md:text-sm">
-                Tuesday 9:30am - 12:30pm
+                Tuesday 1:00pm - 4:00pm
               </span>
               <span className="rounded-full border border-emerald-300 bg-emerald-50 px-3.5 py-2 text-xs text-emerald-800 md:text-sm">
                 Alderley Edge, Cheshire
@@ -282,10 +282,10 @@ export default function Page() {
 
               <div className="mt-6 space-y-2">
                 <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#12284C]">
-                  Tuesday mornings. Weekly from September 2026.
+                  Tuesday afternoons. Weekly from September 2026.
                 </p>
                 <p className="text-base font-medium text-slate-700">
-                  9:30am - 12:30pm
+                  1:00pm - 4:00pm
                 </p>
               </div>
 
@@ -662,11 +662,11 @@ export default function Page() {
               </p>
 
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-                Tuesday morning sessions now have a home.
+                Tuesday sessions now have a home.
               </h2>
 
               <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                I am pleased to now be able to offer a dedicated venue space in
+                I am pleased to now be able to offer a stunning, dedicated venue space in
                 Alderley Edge, Cheshire for daytime sessions starting in
                 September 2026.
               </p>

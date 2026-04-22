@@ -156,7 +156,7 @@ export default function ContactPage() {
 
               <div className="mt-8 space-y-3 text-sm text-slate-700 sm:text-base">
                 <p>Tuesday mornings</p>
-                <p>9:30am - 12:30pm</p>
+                <p>1:00pm - 4:00pm</p>
                 <p>Alderley Edge, Cheshire</p>
                 <p>Beginning September 2026</p>
               </div>
@@ -205,8 +205,8 @@ export default function ContactPage() {
               </p>
 
               <div className="mt-8 space-y-3 text-sm text-slate-700 sm:text-base">
-                <p>Tuesday mornings</p>
-                <p>9:30am - 12:30pm</p>
+                <p>Tuesday afternoons</p>
+                <p>1:00pm- 4:00pm</p>
                 <p>Alderley Edge, Cheshire</p>
                 <p>Beginning September 2026</p>
               </div>
