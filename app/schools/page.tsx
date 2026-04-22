@@ -18,6 +18,7 @@ export default function SchoolsPage() {
 
   const trainingTopics = [
     "Understanding behaviour through a relational lens",
+    "Humiliation-free responses to behaviour",
     "Masculinity, boys and engagement in school",
     "Emotional literacy and the factors shaping behaviour",
     "Online culture, influence and how it affects children",
@@ -70,7 +71,7 @@ export default function SchoolsPage() {
           </p>
         </section>
 
-        <section className="mt-8 max-w-4xl">
+        <section className="mt-8 max-w-5xl">
           <div className="rounded-[1.7rem] border border-slate-200 bg-white p-5 shadow-sm sm:p-6 md:p-7">
             <div className="flex flex-col items-center gap-5 text-center sm:flex-row sm:items-center sm:text-left">
               <div className="h-24 w-24 shrink-0 overflow-hidden rounded-full border-4 border-[#12284C]/10 shadow-sm sm:h-28 sm:w-28">
@@ -95,20 +96,35 @@ export default function SchoolsPage() {
                 </p>
 
                 <p className="mt-3 text-base leading-7 text-slate-700">
-                  BSc (Hons) Psychology · Primary PGCE · QTS · 15 years of KS2
-                  experience
+                  BSc (Hons) Psychology · Primary PGCE · QTS · Extensive
+                  experience across <span className="font-semibold text-[#12284C]">KS1 and KS2</span>
+                </p>
+
+                <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">
+                  Experience working within both{" "}
+                  <span className="font-semibold text-[#12284C]">
+                    mainstream and SEND school environments
+                  </span>
+                  , alongside wider work supporting staff development, behaviour
+                  understanding and relationship-led practice.
+                </p>
+
+                <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">
+                  Integral to the integration of{" "}
+                  <span className="font-semibold text-[#12284C]">oracy</span>{" "}
+                  across the North Manchester Primary Federation.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="mt-12 grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+        <section className="mt-12 grid gap-6 lg:grid-cols-[0.78fr_1.22fr] lg:items-center">
           <div className="overflow-hidden rounded-[1.6rem] border border-slate-200 bg-slate-100 shadow-sm">
             <img
               src="/training-cpd.png"
               alt="Staff training and CPD delivery"
-              className="h-[180px] w-full object-cover object-center sm:h-[220px] lg:h-[260px]"
+              className="h-[170px] w-full object-cover object-center sm:h-[210px] lg:h-[250px]"
             />
           </div>
 
@@ -130,7 +146,7 @@ export default function SchoolsPage() {
 
             <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
               The aim is always to offer something credible, useful and
-              professionally grounded — not abstract theory detached from the
+              professionally grounded, not abstract theory detached from the
               realities of classrooms and school life.
             </p>
           </div>
@@ -325,7 +341,7 @@ export default function SchoolsPage() {
             experiencing school.
           </p>
 
-          <div className="mt-6 grid gap-4 md:max-w-3xl md:grid-cols-3">
+          <div className="mt-6 grid max-w-3xl grid-cols-1 gap-4 md:grid-cols-3">
             <div className="rounded-2xl border border-white/15 bg-white/10 p-4">
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-300">
                 Email
@@ -358,7 +374,7 @@ export default function SchoolsPage() {
                 href="https://wa.me/447404510082"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-2 inline-flex items-center gap-2 text-base font-semibold text-white underline underline-offset-4 md:text-lg"
+                className="mt-2 inline-flex w-full items-center gap-2 break-words text-base font-semibold text-white underline underline-offset-4 md:text-lg"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
