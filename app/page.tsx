@@ -298,66 +298,6 @@ export default function Page() {
       </motion.section>
 
       <motion.section
-        className="border-y border-slate-200 bg-white"
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.15 }}
-        variants={sectionVariant}
-      >
-        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
-          <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-8">
-            <motion.div
-              className="rounded-[1.8rem] bg-[#12284C] p-7 text-white shadow-sm md:p-8"
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.18 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-            >
-              <p className="text-xs uppercase tracking-[0.22em] text-slate-300 md:text-sm">
-                What makes this different
-              </p>
-
-              <h2 className="mt-4 max-w-xl text-3xl font-semibold leading-tight md:text-[2.6rem]">
-                This is designed to change how a child experiences learning, not
-                just what they learn.
-              </h2>
-
-              <p className="mt-5 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
-                Strong progress begins with how a child feels about learning.
-                When children feel understood, respected, secure and capable,
-                they are far more likely to engage positively and make
-                meaningful progress.
-              </p>
-            </motion.div>
-
-            <motion.div
-              className="rounded-[1.8rem] border border-slate-200 bg-[#FBFBF9] p-7 shadow-sm md:p-8"
-              variants={staggerParent}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.18 }}
-            >
-              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                At the heart of the Warren Dodd Method
-              </p>
-
-              <div className="mt-5 grid gap-3">
-                {uspPoints.map((item) => (
-                  <motion.div
-                    key={item}
-                    variants={itemVariant}
-                    className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm leading-6 text-slate-700 md:text-base"
-                  >
-                    {item}
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </motion.section>
-
-      <motion.section
         className="border-y border-slate-200 bg-[#F7F7F4]"
         initial="hidden"
         whileInView="show"
@@ -548,6 +488,66 @@ export default function Page() {
             >
               Read more
             </Link>
+          </div>
+        </div>
+      </motion.section>
+
+      <motion.section
+        className="border-y border-slate-200 bg-white"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.15 }}
+        variants={sectionVariant}
+      >
+        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
+          <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-8">
+            <motion.div
+              className="rounded-[1.8rem] bg-[#12284C] p-7 text-white shadow-sm md:p-8"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.18 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-300 md:text-sm">
+                What makes this different
+              </p>
+
+              <h2 className="mt-4 max-w-xl text-3xl font-semibold leading-tight md:text-[2.6rem]">
+                This is designed to change how a child experiences learning, not
+                just what they learn.
+              </h2>
+
+              <p className="mt-5 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
+                Strong progress begins with how a child feels about learning.
+                When children feel understood, respected, secure and capable,
+                they are far more likely to engage positively and make
+                meaningful progress.
+              </p>
+            </motion.div>
+
+            <motion.div
+              className="rounded-[1.8rem] border border-slate-200 bg-[#FBFBF9] p-7 shadow-sm md:p-8"
+              variants={staggerParent}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.18 }}
+            >
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                At the heart of the Warren Dodd Method
+              </p>
+
+              <div className="mt-5 grid gap-3">
+                {uspPoints.map((item) => (
+                  <motion.div
+                    key={item}
+                    variants={itemVariant}
+                    className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm leading-6 text-slate-700 md:text-base"
+                  >
+                    {item}
+                  </motion.div>
+                ))}
+              </div>
+            </motion.div>
           </div>
         </div>
       </motion.section>
