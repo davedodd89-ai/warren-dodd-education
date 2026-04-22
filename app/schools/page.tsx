@@ -341,17 +341,19 @@ export default function SchoolsPage() {
             experiencing school.
           </p>
 
-          <div className="mt-6 grid max-w-3xl grid-cols-1 gap-4 md:grid-cols-3">
-            <div className="rounded-2xl border border-white/15 bg-white/10 p-4">
+          <div className="mt-6 grid max-w-3xl grid-cols-1 gap-4 md:grid-cols-2">
+            <div className="rounded-2xl border border-white/15 bg-white/10 p-4 md:col-span-2">
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-300">
                 Email
               </p>
-              <a
-                href="mailto:warrendoddeducation@outlook.com"
-                className="mt-2 block break-words text-base font-semibold text-white underline underline-offset-4 md:text-lg"
-              >
-                warrendoddeducation@outlook.com
-              </a>
+             <a
+  href="mailto:warrendoddeducation@outlook.com"
+  className="mt-2 block text-base font-semibold text-white underline underline-offset-4 md:text-lg"
+>
+  warrendoddeducation@
+  <br />
+  outlook.com
+</a>
             </div>
 
             <div className="rounded-2xl border border-white/15 bg-white/10 p-4">
@@ -389,7 +391,6 @@ export default function SchoolsPage() {
               </a>
             </div>
           </div>
-
         </section>
       </main>
     </div>
