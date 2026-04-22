@@ -91,7 +91,7 @@ export default function ContactPage() {
                     <a
                       href="mailto:warrendoddeducation@outlook.com"
                       aria-label="Email warrendoddeducation@outlook.com"
-                      className="block w-full min-w-0 text-[0.92rem] font-semibold leading-6 text-[#12284C] underline underline-offset-4 break-words sm:text-xl sm:leading-8"
+                      className="block w-full min-w-0 break-words text-[0.92rem] font-semibold leading-6 text-[#12284C] underline underline-offset-4 sm:text-xl sm:leading-8"
                     >
                       warrendoddeducation@
                       <wbr />
@@ -117,9 +117,18 @@ export default function ContactPage() {
                       href="https://wa.me/447404510082"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex w-full min-w-0 items-center justify-center rounded-xl bg-[#12284C] px-4 py-3 text-center text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
+                      className="inline-flex w-full min-w-0 items-center justify-center gap-2 rounded-xl bg-[#12284C] px-4 py-3 text-center text-sm font-semibold text-white shadow-sm transition hover:opacity-90"
                     >
-                      Message on WhatsApp
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        className="h-4 w-4 shrink-0"
+                        aria-hidden="true"
+                      >
+                        <path d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0C5.5 0 .16 5.34.16 11.91c0 2.1.55 4.16 1.6 5.97L0 24l6.3-1.65a11.86 11.86 0 0 0 5.77 1.47h.01c6.57 0 11.91-5.34 11.91-11.91 0-3.18-1.24-6.16-3.47-8.43ZM12.08 21.8h-.01a9.85 9.85 0 0 1-5.02-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.83 9.83 0 0 1-1.5-5.25C2.2 6.46 6.63 2.03 12.08 2.03c2.63 0 5.1 1.02 6.96 2.89a9.78 9.78 0 0 1 2.87 6.97c0 5.45-4.43 9.9-9.83 9.9Zm5.39-7.36c-.29-.14-1.7-.84-1.97-.93-.26-.1-.45-.14-.65.14-.19.29-.74.93-.9 1.12-.17.19-.33.22-.62.07-.29-.14-1.2-.44-2.29-1.4-.85-.76-1.42-1.7-1.58-1.98-.17-.29-.02-.44.12-.58.12-.12.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.56-.89-2.13-.23-.56-.47-.48-.65-.49h-.55c-.19 0-.5.07-.77.36-.26.29-1 1-.99 2.44 0 1.44 1.05 2.84 1.19 3.03.14.19 2.06 3.15 4.99 4.42.7.3 1.24.48 1.66.61.7.22 1.33.19 1.83.12.56-.08 1.7-.69 1.94-1.35.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33Z" />
+                      </svg>
+                      <span>Message on WhatsApp</span>
                     </a>
 
                     <a
@@ -155,7 +164,7 @@ export default function ContactPage() {
               </p>
 
               <div className="mt-8 space-y-3 text-sm text-slate-700 sm:text-base">
-                <p>Tuesday mornings</p>
+                <p>Tuesday afternoons</p>
                 <p>1:00pm - 4:00pm</p>
                 <p>Alderley Edge, Cheshire</p>
                 <p>Beginning September 2026</p>
@@ -206,7 +215,7 @@ export default function ContactPage() {
 
               <div className="mt-8 space-y-3 text-sm text-slate-700 sm:text-base">
                 <p>Tuesday afternoons</p>
-                <p>1:00pm- 4:00pm</p>
+                <p>1:00pm - 4:00pm</p>
                 <p>Alderley Edge, Cheshire</p>
                 <p>Beginning September 2026</p>
               </div>
