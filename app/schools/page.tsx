@@ -390,14 +390,6 @@ export default function SchoolsPage() {
             </div>
           </div>
 
-          <div className="mt-7 flex flex-wrap gap-3">
-            <Link
-              href="/cpd"
-              className="inline-flex rounded-full border border-white/25 bg-white/10 px-7 py-3.5 font-semibold text-white transition hover:-translate-y-0.5"
-            >
-              View training &amp; CPD
-            </Link>
-          </div>
         </section>
       </main>
     </div>
