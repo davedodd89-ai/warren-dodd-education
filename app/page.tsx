@@ -75,10 +75,10 @@ export default function Page() {
   };
 
   const uspPoints = [
-    "Psychology-informed and relationship-led",
+    "Psychology-informed teaching and relationship-led mentoring",
     "Built around each child’s strengths, interests and learning style",
-    "Confidence, emotional security and readiness to learn",
-    "Carefully structured to help children engage, learn and thrive over time",
+    "Confidence, self-esteem, emotional security and readiness to learn",
+    "Carefully structured to support academic progress, resilience, communication and growth over time",
   ];
 
   const understandingPoints = [
@@ -170,8 +170,8 @@ export default function Page() {
               variants={itemVariant}
               className="mt-5 max-w-3xl text-lg font-medium leading-8 text-[#12284C] md:text-xl md:leading-9"
             >
-              A calm, welcoming and personalised approach that helps children
-              feel understood, supported and ready to learn.
+              Psychology-informed teaching and relationship-led mentoring that
+              helps children feel understood, supported and ready to learn.
             </motion.p>
 
             <motion.p
@@ -196,7 +196,21 @@ export default function Page() {
                 weekly small-group provision
               </span>{" "}
               where academic progress is built through trust, confidence and
-              strong relationships.
+              strong relationships, while also developing self-esteem,
+              resilience, communication, oracy and the wider life skills that
+              help children grow.
+            </motion.p>
+
+            <motion.p
+              variants={itemVariant}
+              className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
+            >
+              For children who require it, support can also include{" "}
+              <span className="font-semibold text-[#12284C]">
+                11+ preparation
+              </span>{" "}
+              as part of a broader approach that keeps confidence, wellbeing and
+              long-term development firmly in view.
             </motion.p>
 
             <motion.div variants={itemVariant} className="mt-7 flex flex-wrap gap-3">
