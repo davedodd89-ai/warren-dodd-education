@@ -82,8 +82,6 @@ export default function Page() {
   ];
 
   const understandingPoints = [
-    "WHAT CAPTURES A CHILD'S INTEREST AND ATTENTION",
-    "HOW THEY RESPOND BEST TO SUPPORT, CHALLENGE AND ENCOURAGEMENT",
     "THE PACE, STRUCTURE AND STYLE THAT HELPS THEM LEARN WELL",
     "HOW TO BUILD CONFIDENCE SO ENGAGEMENT FEELS NATURAL AND LASTING",
   ];
@@ -175,53 +173,53 @@ export default function Page() {
             </motion.p>
 
             <motion.p
-  variants={itemVariant}
-  className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
->
-  Warren Dodd Education provides{" "}
-  <span className="font-semibold text-[#12284C]">
-    bespoke, premium daytime education
-  </span>{" "}
-  in English, Maths and the wider curriculum for children aged 8-11
-  across Cheshire and Stockport.
-</motion.p>
+              variants={itemVariant}
+              className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
+            >
+              Warren Dodd Education provides{" "}
+              <span className="font-semibold text-[#12284C]">
+                bespoke, premium daytime education
+              </span>{" "}
+              in English, Maths and the wider curriculum for children aged 8-11
+              across Cheshire and Stockport.
+            </motion.p>
 
-<motion.p
-  variants={itemVariant}
-  className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
->
-  Designed for children who benefit from a calmer, more personal and
-  more thoughtfully tailored way of learning, this is a{" "}
-  <span className="font-semibold text-[#12284C]">
-    weekly small-group provision
-  </span>{" "}
-  where academic progress is built through trust, confidence and
-  strong relationships, while also developing self-esteem,
-  resilience, communication, oracy and the wider life skills that
-  help children grow.
-</motion.p>
+            <motion.p
+              variants={itemVariant}
+              className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
+            >
+              Designed for children who benefit from a calm, welcoming,  more personal and
+              more thoughtfully tailored way of learning, this is a{" "}
+              <span className="font-semibold text-[#12284C]">
+                weekly small-group provision
+              </span>{" "}
+              where academic progress is built through trust, confidence and
+              strong relationships, while also developing self-esteem,
+              resilience, communication, oracy and the wider life skills that
+              help children grow.
+            </motion.p>
 
-<motion.p
-  variants={itemVariant}
-  className="mt-4 max-w-3xl text-base font-semibold leading-7 text-[#12284C] md:text-lg md:leading-8"
->
-  Warren Dodd Education is founded on mutual respect and empathy.
-  They sit at the heart of how our children are taught, how
-  relationships are built, and what we aim to help children develop
-  in themselves even further over time.
-</motion.p>
+            <motion.p
+              variants={itemVariant}
+              className="mt-4 max-w-3xl text-base font-semibold leading-7 text-[#12284C] md:text-lg md:leading-8"
+            >
+              Warren Dodd Education is founded on mutual respect and empathy.
+              They sit at the heart of how our children are taught, how
+              relationships are built, and what we aim to help children develop
+              in themselves over time.
+            </motion.p>
 
-<motion.p
-  variants={itemVariant}
-  className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
->
-  For children who require it, support can also include{" "}
-  <span className="font-semibold text-[#12284C]">
-    11+ preparation
-  </span>{" "}
-  as part of a broader approach that keeps confidence, wellbeing and
-  long-term development firmly in view.
-</motion.p>
+            <motion.p
+              variants={itemVariant}
+              className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
+            >
+              For children who require it, support can also include{" "}
+              <span className="font-semibold text-[#12284C]">
+                11+ preparation
+              </span>{" "}
+              as part of a broader approach that keeps confidence, wellbeing and
+              long-term development firmly in view.
+            </motion.p>
 
             <motion.div variants={itemVariant} className="mt-7 flex flex-wrap gap-3">
               <Link
@@ -377,69 +375,29 @@ export default function Page() {
                 confident and ready to learn.
               </h2>
 
-              <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                I am a{" "}
-                <span className="font-semibold text-[#12284C]">
-                  current, highly experienced teacher
-                </span>
-                ,{" "}
-                <span className="font-semibold text-[#12284C]">
-                  Teaching and Learning Coach
-                </span>
-                , and hold a degree in{" "}
-                <span className="font-semibold text-[#12284C]">Psychology</span>,
-                with extensive experience across primary education, including
-                significant work with{" "}
-                <span className="font-semibold text-[#12284C]">
-                  SEND and neurodivergent children
-                </span>
-                .
-              </p>
+            <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+  I am a <span className="font-semibold text-[#12284C]">current primary school teacher and Teaching and Learning Coach</span> with a <span className="font-semibold text-[#12284C]">degree in Psychology</span>, <span className="font-semibold text-[#12284C]">fifteen years of KS2 experience</span>, and significant work with SEND and neurodivergent children.
+</p>
 
-              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                A central part of my work is building{" "}
-                <span className="font-semibold text-[#12284C]">
-                  strong, positive working relationships
-                </span>{" "}
-                with children, so they feel known, understood and safe enough to
-                engage well. That means taking time to understand what motivates
-                them, what captures their interest, what common ground helps
-                trust grow, and what kind of support helps them respond with
-                confidence.
-              </p>
+<p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+  A central part of my work is building <span className="font-semibold text-[#12284C]">strong, positive working relationships</span> — so children feel known, understood and safe enough to engage. I work in education every day, and I know how much teaching styles, adult approaches and the right strategies can shape a child&apos;s entire experience of learning.
+</p>
 
-              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                I am highly experienced in recognising that progress is not just
-                about what a child knows academically. It is also about whether
-                they trust the adult in front of them, whether they feel
-                understood, and whether learning feels personal, achievable and
-                worth engaging in.
-              </p>
+<p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+  What makes the difference is when those things come together within a <span className="font-semibold text-[#12284C]">relationship-led, nurturing approach</span>. We highly value taking the time to understand <span className="font-semibold text-[#12284C]">what genuinely motivates each child</span>, what captures their interest, and what kind of support helps them respond with confidence.
+</p>
 
-              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                That understanding has been shaped not only through classroom
-                teaching, but also through coaching colleagues, staff
-                development in behaviour, and work connected to{" "}
-                <span className="font-semibold text-[#12284C]">
-                  relationship-led practice and Voice21 / Cambridge-linked oracy
-                  practice
-                </span>
-                .
-              </p>
+<p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+  This is a key part of helping <span className="font-semibold text-[#12284C]">engagement grow in a way that feels natural, meaningful and lasting</span>.
+</p>
 
-              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                What I bring into sessions is{" "}
-                <span className="font-semibold text-[#12284C]">
-                  warmth, calm, humour and care
-                </span>
-                , alongside clear professional judgement. Children are not only
-                taught thoughtfully. They are supported through a{" "}
-                <span className="font-semibold text-[#12284C]">
-                  role-model and mentor approach alongside learning
-                </span>
-                , helping them build trust, confidence, motivation and stronger
-                habits over time.
-              </p>
+<p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+  What I always aim to bring into sessions is <span className="font-semibold text-[#12284C]">warmth, calm, humour and care</span>, alongside <span className="font-semibold text-[#12284C]">clear professional judgement</span>. That understanding has been shaped through classroom teaching, coaching colleagues, staff development in behaviour, and work connected to relationship-led practice and Voice21 / Cambridge-linked oracy.
+</p>
+
+<p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+  Children are taught thoughtfully and supported through a <span className="font-semibold text-[#12284C]">role-model and mentor approach</span> — building trust, confidence and stronger habits that last well beyond the session itself.
+</p>
             </motion.div>
           </div>
         </div>
@@ -557,6 +515,13 @@ export default function Page() {
                 When children feel understood, respected, secure and capable,
                 they are far more likely to engage positively and make
                 meaningful progress.
+              </p>
+
+              <p className="mt-4 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8 font-semibold">
+                Warren Dodd Education is founded on mutual respect and empathy.
+                They sit at the heart of how children are taught, how
+                relationships are built, and what we aim to help children
+                develop in themselves over time.
               </p>
             </motion.div>
 
