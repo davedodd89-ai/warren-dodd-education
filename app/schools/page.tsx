@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import SiteHeader from "../SiteHeader";
 
 export default function SchoolsPage() {
@@ -12,12 +12,12 @@ export default function SchoolsPage() {
       text: "Support for schools looking to build calmer, clearer and more consistent behaviour systems rooted in relationships, emotional understanding and strong adult practice.",
     },
     {
-      title: "Mentoring and outreach",
-      text: "Tailored mentoring, pupil support and wider outreach work for schools wanting more personalised input for children, staff and families.",
+      title: "Coaching model",
+      text: "A successful coaching model that works alongside teachers and staff to strengthen relationship-led teaching practice through reflection, guidance, modelling and practical next steps.",
     },
     {
-      title: "In-class guidance",
-      text: "Practical support within the classroom to help strengthen routines, relationships, regulation and the quality of day-to-day teaching practice.",
+      title: "Mentoring and outreach",
+      text: "Tailored mentoring, pupil support and wider outreach work for schools wanting more personalised input for children, staff and families.",
     },
   ];
 
@@ -28,6 +28,13 @@ export default function SchoolsPage() {
     "Online culture, influence and how it affects children",
     "Practical classroom strategies that staff can use immediately",
     "Building calmer, more inclusive classroom practice",
+  ];
+
+  const coachingPoints = [
+    "Working alongside teachers and support staff in a practical, grounded way",
+    "Helping staff reflect on relationships, routines, language and responses",
+    "Supporting the development of calm, relational and consistent classroom practice",
+    "Turning training and insight into everyday action",
   ];
 
   const staffReflections = [
@@ -50,14 +57,15 @@ export default function SchoolsPage() {
           </p>
 
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-[#12284C] md:text-6xl">
-            Training, CPD, behaviour support, mentoring and outreach for
-            schools.
+            Training, CPD, behaviour support, coaching, mentoring and outreach
+            for schools.
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-slate-700">
             Warren Dodd Education works with schools to strengthen classroom
             practice, deepen understanding and support children more effectively
-            through training, CPD, behaviour support, mentoring and outreach.
+            through training, CPD, behaviour support, coaching, mentoring and
+            outreach.
           </p>
 
           <p className="mt-4 text-lg leading-8 text-slate-700">
@@ -101,10 +109,10 @@ export default function SchoolsPage() {
           </h2>
 
           <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-700">
-            Training can be shaped around your school’s context and priorities,
-            with particular strengths in behaviour, boys’ engagement,
-            masculinity, emotional literacy, online culture, relational
-            practice and practical classroom strategies.
+            Training can be shaped around your school&apos;s context and
+            priorities, with particular strengths in behaviour, boys&apos;
+            engagement, masculinity, emotional literacy, online culture,
+            relational practice and practical classroom strategies.
           </p>
 
           <div className="mt-8 grid gap-4 md:grid-cols-2">
@@ -122,6 +130,76 @@ export default function SchoolsPage() {
         <div className="mt-12 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
           <div className="rounded-[2rem] bg-[#12284C] p-8 text-white shadow-sm">
             <p className="text-sm uppercase tracking-[0.22em] text-slate-300">
+              Coaching model
+            </p>
+
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight md:text-4xl">
+              A successful coaching model that helps staff embed
+              relationship-led practice.
+            </h2>
+
+            <p className="mt-6 text-base leading-8 text-slate-200">
+              Alongside training and CPD, support can also be delivered through
+              a coaching and implementation model that works directly with teachers and staff.
+            </p>
+
+            <p className="mt-4 text-base leading-8 text-slate-200">
+              The focus is on empowering adults to strengthen their own
+              relationship-led teaching practice so that change is not just
+              discussed in theory, but built into everyday classroom life.
+            </p>
+
+            <div className="mt-8 grid gap-4">
+              {coachingPoints.map((item) => (
+                <div
+                  key={item}
+                  className="rounded-[1.4rem] border border-white/10 bg-white/5 px-5 py-4 text-slate-100"
+                >
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-8 shadow-sm">
+            <p className="text-sm uppercase tracking-[0.22em] text-slate-500">
+              Why this matters
+            </p>
+
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+              Sustainable improvement comes when staff feel supported, equipped
+              and confident.
+            </h2>
+
+            <div className="mt-6 space-y-6 text-base leading-8 text-slate-700">
+              <p>
+                A coaching approach allows schools to move beyond one-off
+                training and into supported implementation.
+              </p>
+
+              <p>
+                Staff are given space to reflect on their current practice,
+                strengthen relationships, refine routines and think carefully
+                about how children experience adult responses in the classroom.
+              </p>
+
+              <p>
+                This helps build calmer, more relational and more consistent
+                practice across school, while also increasing staff confidence
+                and professional ownership.
+              </p>
+
+              <p>
+                The result is not simply better understanding, but stronger
+                everyday practice that can be sustained over time.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="rounded-[2rem] bg-[#12284C] p-8 text-white shadow-sm">
+            <p className="text-sm uppercase tracking-[0.22em] text-slate-300">
               Training impact
             </p>
 
@@ -132,7 +210,7 @@ export default function SchoolsPage() {
             <div className="mt-6 space-y-6 text-base leading-8 text-slate-200">
               <p>
                 Staff repeatedly said the training gave them a clearer lens for
-                understanding boys’ behaviour, shame responses, emotional
+                understanding boys&apos; behaviour, shame responses, emotional
                 literacy and online influence.
               </p>
 
@@ -188,8 +266,8 @@ export default function SchoolsPage() {
 
           <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-200">
             Whether you are looking for whole-staff CPD, behaviour support,
-            mentoring, outreach or practical classroom guidance, the first step
-            is a conversation about what your school needs most.
+            coaching, mentoring, outreach or practical classroom guidance, the
+            first step is a conversation about what your school needs most.
           </p>
 
           <div className="mt-8">
