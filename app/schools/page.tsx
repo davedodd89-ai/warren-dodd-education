@@ -7,12 +7,14 @@ export default function SchoolsPage() {
     "Inset days, twilight sessions and keynote-style delivery",
     "Practical, evidence-informed content rooted in real school experience",
     "Training that helps staff reflect, reframe and strengthen practice",
+    "Day-to-day teaching strategies linked to behaviour, engagement and learning",
   ];
 
   const coachingAreas = [
     "Sequenced coaching for ECTs, developing teachers and experienced staff",
     "Behaviour support rooted in relationships, consistency and emotional understanding",
     "Practical guidance on routines, classroom climate and adult response",
+    "Clear, practical strategies teachers and staff can use straight away",
     "Support that builds teacher ownership rather than simply telling staff what to do",
   ];
 
@@ -22,6 +24,7 @@ export default function SchoolsPage() {
     "Masculinity, boys and engagement in school",
     "Emotional literacy and the factors shaping behaviour",
     "Online culture, influence and how it affects children",
+    "Day-to-day teaching strategies that support behaviour, engagement and learning",
     "Practical strategies for building trust, motivation and stronger relationships",
     "Why children disengage from learning and how schools can respond",
   ];
@@ -29,6 +32,7 @@ export default function SchoolsPage() {
   const coachingSupport = [
     "Coaching ECTs, developing teachers and experienced staff through a clear sequenced model",
     "Strengthening relationship-led teaching, classroom presence and adult consistency",
+    "Providing clear, practical strategies teachers and support staff can use immediately",
     "Helping staff feel part of the development process rather than simply being told what to do",
     "Coaching teachers to strengthen relationships, routines and classroom climate",
     "Supporting staff to respond to behaviour with greater clarity and confidence",
@@ -176,6 +180,13 @@ export default function SchoolsPage() {
               in school.
             </p>
 
+            <p className="mt-4 max-w-xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              CPD can also focus specifically on day-to-day teaching strategies:
+              how staff give instructions, model learning, build routines, use
+              voice, respond to disruption and create classroom conditions where
+              behaviour and learning improve together.
+            </p>
+
             <div className="mt-6 grid gap-3">
               {trainingAreas.map((item) => (
                 <div
@@ -216,6 +227,13 @@ export default function SchoolsPage() {
               feel part of the development process rather than simply being told
               what to do. The aim is to build ownership, confidence and
               sustainable change in everyday practice.
+            </p>
+
+            <p className="mt-4 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
+              Coaching also focuses on clear, practical strategies that teachers
+              and support staff can use straight away, so development feels
+              useful, realistic and connected to the classroom rather than
+              abstract or overly theoretical.
             </p>
 
             <div className="mt-6 grid gap-3">
@@ -303,8 +321,8 @@ export default function SchoolsPage() {
               </p>
               <p className="mt-3 text-sm leading-6 text-slate-700 md:text-base">
                 Best for whole-staff understanding, inset days, twilight
-                sessions and schools that want to introduce or deepen shared
-                thinking across a team.
+                sessions and schools that want practical day-to-day teaching
+                strategies linked to behaviour, engagement and learning.
               </p>
             </div>
 
@@ -316,7 +334,7 @@ export default function SchoolsPage() {
                 Best for schools that want more targeted support for ECTs,
                 developing teachers or experienced staff through sequenced,
                 relationship-led coaching that builds ownership, classroom
-                confidence and sustainable change.
+                confidence and practical strategies staff can use straight away.
               </p>
             </div>
           </div>
@@ -399,15 +417,6 @@ export default function SchoolsPage() {
                 rel="noopener noreferrer"
                 className="mt-2 inline-flex w-full items-center gap-2 break-words text-base font-semibold text-white underline underline-offset-4 md:text-lg"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="h-4 w-4 shrink-0"
-                  aria-hidden="true"
-                >
-                  <path d="M20.52 3.48A11.86 11.86 0 0 0 12.07 0C5.5 0 .16 5.34.16 11.91c0 2.1.55 4.16 1.6 5.97L0 24l6.3-1.65a11.86 11.86 0 0 0 5.77 1.47h.01c6.57 0 11.91-5.34 11.91-11.91 0-3.18-1.24-6.16-3.47-8.43ZM12.08 21.8h-.01a9.85 9.85 0 0 1-5.02-1.38l-.36-.21-3.74.98 1-3.65-.24-.38a9.83 9.83 0 0 1-1.5-5.25C2.2 6.46 6.63 2.03 12.08 2.03c2.63 0 5.1 1.02 6.96 2.89a9.78 9.78 0 0 1 2.87 6.97c0 5.45-4.43 9.9-9.83 9.9Zm5.39-7.36c-.29-.14-1.7-.84-1.97-.93-.26-.1-.45-.14-.65.14-.19.29-.74.93-.9 1.12-.17.19-.33.22-.62.07-.29-.14-1.2-.44-2.29-1.4-.85-.76-1.42-1.7-1.58-1.98-.17-.29-.02-.44.12-.58.12-.12.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.65-1.56-.89-2.13-.23-.56-.47-.48-.65-.49h-.55c-.19 0-.5.07-.77.36-.26.29-1 1-.99 2.44 0 1.44 1.05 2.84 1.19 3.03.14.19 2.06 3.15 4.99 4.42.7.3 1.24.48 1.66.61.7.22 1.33.19 1.83.12.56-.08 1.7-.69 1.94-1.35.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33Z" />
-                </svg>
                 <span>Message directly</span>
               </a>
             </div>
