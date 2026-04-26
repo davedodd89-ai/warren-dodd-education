@@ -99,7 +99,7 @@ export default function SchoolsPage() {
                 </h2>
 
                 <p className="mt-2 text-sm uppercase tracking-[0.14em] text-slate-500 sm:text-[0.95rem]">
-                  Current Primary School Teacher · Teaching and Learning Coach
+                 Current Primary School Teacher · Experienced Teaching and Learning Coach across the North Manchester Primary Federation
                 </p>
 
                 <p className="mt-3 text-base leading-7 text-slate-700">
