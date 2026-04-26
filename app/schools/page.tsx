@@ -81,7 +81,7 @@ export default function SchoolsPage() {
             </p>
 
             <p className="mt-3 max-w-3xl text-xl font-semibold leading-8 text-[#12284C] md:text-2xl md:leading-9">
-              Helping staff move from knowing what they should do to feeling
+              Helping staff move from knowing what they should do, to feeling
               clear about how to do it tomorrow morning.
             </p>
           </div>
