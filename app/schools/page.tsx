@@ -10,10 +10,10 @@ export default function SchoolsPage() {
   ];
 
   const coachingAreas = [
-    "Coaching and development for teachers and support staff",
+    "Sequenced coaching for ECTs, developing teachers and experienced staff",
     "Behaviour support rooted in relationships, consistency and emotional understanding",
     "Practical guidance on routines, classroom climate and adult response",
-    "Support that helps staff feel clearer, calmer and more confident in practice",
+    "Support that builds teacher ownership rather than simply telling staff what to do",
   ];
 
   const trainingTopics = [
@@ -27,7 +27,10 @@ export default function SchoolsPage() {
   ];
 
   const coachingSupport = [
-    "Coaching teachers to strengthen relationships, routines and classroom presence",
+    "Coaching ECTs, developing teachers and experienced staff through a clear sequenced model",
+    "Strengthening relationship-led teaching, classroom presence and adult consistency",
+    "Helping staff feel part of the development process rather than simply being told what to do",
+    "Coaching teachers to strengthen relationships, routines and classroom climate",
     "Supporting staff to respond to behaviour with greater clarity and confidence",
     "Helping staff understand the emotional drivers behind behaviour",
     "Developing more consistent adult approaches across classrooms or teams",
@@ -97,7 +100,10 @@ export default function SchoolsPage() {
 
                 <p className="mt-3 text-base leading-7 text-slate-700">
                   BSc (Hons) Psychology · Primary PGCE · QTS · Extensive
-                  experience across <span className="font-semibold text-[#12284C]">KS1 and KS2</span>
+                  experience across{" "}
+                  <span className="font-semibold text-[#12284C]">
+                    KS1 and KS2
+                  </span>
                 </p>
 
                 <p className="mt-3 max-w-3xl text-base leading-7 text-slate-700">
@@ -188,14 +194,28 @@ export default function SchoolsPage() {
             </p>
 
             <h2 className="mt-4 text-3xl font-semibold leading-tight md:text-4xl">
-              Practical support for teachers and staff working directly with
-              children every day.
+              Sequenced coaching that builds teacher ownership, confidence and
+              stronger classroom practice.
             </h2>
 
             <p className="mt-5 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
               This strand is more hands-on. It focuses on helping staff improve
               day-to-day practice through coaching, reflection, behaviour
               support and clearer adult responses in the classroom.
+            </p>
+
+            <p className="mt-4 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
+              Coaching is centred on relationship-led teaching. It can support
+              ECTs, developing teachers and more experienced staff who want to
+              strengthen classroom presence, relationships, routines and adult
+              responses.
+            </p>
+
+            <p className="mt-4 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
+              The approach is built around a sequenced coaching model, so staff
+              feel part of the development process rather than simply being told
+              what to do. The aim is to build ownership, confidence and
+              sustainable change in everyday practice.
             </p>
 
             <div className="mt-6 grid gap-3">
@@ -293,9 +313,10 @@ export default function SchoolsPage() {
                 Coaching &amp; behaviour support
               </p>
               <p className="mt-3 text-sm leading-6 text-slate-700 md:text-base">
-                Best for schools that want more targeted support for teachers,
-                classroom practice, behaviour response, consistency and staff
-                confidence over time.
+                Best for schools that want more targeted support for ECTs,
+                developing teachers or experienced staff through sequenced,
+                relationship-led coaching that builds ownership, classroom
+                confidence and sustainable change.
               </p>
             </div>
           </div>
@@ -346,14 +367,14 @@ export default function SchoolsPage() {
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-300">
                 Email
               </p>
-             <a
-  href="mailto:warrendoddeducation@outlook.com"
-  className="mt-2 block text-base font-semibold text-white underline underline-offset-4 md:text-lg"
->
-  warrendoddeducation@
-  <br />
-  outlook.com
-</a>
+              <a
+                href="mailto:warrendoddeducation@outlook.com"
+                className="mt-2 block text-base font-semibold text-white underline underline-offset-4 md:text-lg"
+              >
+                warrendoddeducation@
+                <br />
+                outlook.com
+              </a>
             </div>
 
             <div className="rounded-2xl border border-white/15 bg-white/10 p-4">
