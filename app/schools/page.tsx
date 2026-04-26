@@ -1,21 +1,13 @@
-import Link from "next/link";
 import SiteHeader from "../SiteHeader";
 
 export default function SchoolsPage() {
   const trainingAreas = [
     "Whole-staff training and CPD",
     "Inset days, twilight sessions and keynote-style delivery",
+    "Day-to-day teaching strategies linked to behaviour, engagement and learning",
+    "Humiliation-free responses to behaviour",
     "Practical, evidence-informed content rooted in real school experience",
     "Training that helps staff reflect, reframe and strengthen practice",
-    "Day-to-day teaching strategies linked to behaviour, engagement and learning",
-  ];
-
-  const coachingAreas = [
-    "Sequenced coaching for ECTs, developing teachers and experienced staff",
-    "Behaviour support rooted in relationships, consistency and emotional understanding",
-    "Practical guidance on routines, classroom climate and adult response",
-    "Clear, practical strategies teachers and staff can use straight away",
-    "Support that builds teacher ownership rather than simply telling staff what to do",
   ];
 
   const trainingTopics = [
@@ -29,16 +21,22 @@ export default function SchoolsPage() {
     "Why children disengage from learning and how schools can respond",
   ];
 
+  const coachingAreas = [
+    "Sequenced coaching for ECTs, developing teachers and experienced staff",
+    "Relationship-led teaching and classroom presence",
+    "Practical guidance on routines, classroom climate and adult response",
+    "Clear strategies teachers and staff can use straight away",
+    "Support that builds teacher ownership rather than simply telling staff what to do",
+  ];
+
   const coachingSupport = [
     "Coaching ECTs, developing teachers and experienced staff through a clear sequenced model",
     "Strengthening relationship-led teaching, classroom presence and adult consistency",
     "Providing clear, practical strategies teachers and support staff can use immediately",
     "Helping staff feel part of the development process rather than simply being told what to do",
-    "Coaching teachers to strengthen relationships, routines and classroom climate",
     "Supporting staff to respond to behaviour with greater clarity and confidence",
     "Helping staff understand the emotional drivers behind behaviour",
     "Developing more consistent adult approaches across classrooms or teams",
-    "Improving the way children experience boundaries, support and challenge",
     "Strengthening teacher confidence around pupils who are disengaged or hard to reach",
   ];
 
@@ -66,9 +64,9 @@ export default function SchoolsPage() {
           </h1>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-700 md:text-xl md:leading-9">
-            Support for schools that want to strengthen staff understanding,
-            improve classroom practice and build a more relational, thoughtful
-            approach to behaviour, engagement and learning.
+            Support for schools that want to strengthen classroom practice
+            through a practical, relationship-led approach to behaviour,
+            engagement and learning.
           </p>
 
           <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
@@ -76,9 +74,29 @@ export default function SchoolsPage() {
             psychology-informed thinking and a strong understanding of how adult
             approaches shape children&apos;s behaviour, confidence and engagement.
           </p>
+
+          <div className="mt-7 rounded-[1.6rem] border border-[#D8B35B]/40 bg-white p-5 shadow-sm md:p-6">
+            <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
+              The focus
+            </p>
+
+            <p className="mt-3 max-w-3xl text-xl font-semibold leading-8 text-[#12284C] md:text-2xl md:leading-9">
+              Helping staff move from knowing what they should do to feeling
+              clear about how to do it tomorrow morning.
+            </p>
+          </div>
+
+          <div className="mt-7">
+            <a
+              href="#contact"
+              className="inline-flex rounded-full bg-[#12284C] px-6 py-3 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-[#0B1B35]"
+            >
+              Enquire about school support
+            </a>
+          </div>
         </section>
 
-        <section className="mt-8 max-w-5xl">
+        <section className="mt-10 max-w-5xl">
           <div className="rounded-[1.7rem] border border-slate-200 bg-white p-5 shadow-sm sm:p-6 md:p-7">
             <div className="flex flex-col items-center gap-5 text-center sm:flex-row sm:items-center sm:text-left">
               <div className="h-24 w-24 shrink-0 overflow-hidden rounded-full border-4 border-[#12284C]/10 shadow-sm sm:h-28 sm:w-28">
@@ -99,7 +117,8 @@ export default function SchoolsPage() {
                 </h2>
 
                 <p className="mt-2 text-sm uppercase tracking-[0.14em] text-slate-500 sm:text-[0.95rem]">
-                 Current Primary School Teacher · Experienced Teaching and Learning Coach across the North Manchester Primary Federation
+                  Current Primary School Teacher · Experienced Teaching and
+                  Learning Coach across the North Manchester Primary Federation
                 </p>
 
                 <p className="mt-3 text-base leading-7 text-slate-700">
@@ -129,189 +148,161 @@ export default function SchoolsPage() {
           </div>
         </section>
 
-        <section className="mt-12 grid gap-6 lg:grid-cols-[0.78fr_1.22fr] lg:items-center">
-          <div className="overflow-hidden rounded-[1.6rem] border border-slate-200 bg-slate-100 shadow-sm">
-            <img
-              src="/training-cpd.png"
-              alt="Staff training and CPD delivery"
-              className="h-[170px] w-full object-cover object-center sm:h-[210px] lg:h-[250px]"
-            />
-          </div>
+        <section id="cpd" className="scroll-mt-32 mt-14">
+          <div className="rounded-[2rem] border border-[#D8B35B]/30 bg-[#FBFBF9] p-5 shadow-sm md:p-8">
+            <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+              <div className="flex items-center justify-center overflow-hidden rounded-[1.6rem] border border-slate-200 bg-[#1F2946] p-3 shadow-sm">
+                <img
+                  src="/training-cpd.png"
+                  alt="Understanding Behaviour and Masculinity training slide"
+                  className="block h-auto max-h-[560px] w-full object-contain"
+                />
+              </div>
 
-          <div className="rounded-[1.6rem] border border-[#D8B35B]/40 bg-white p-6 shadow-sm md:p-8">
-            <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
-              Staff training &amp; CPD
-            </p>
+              <div className="rounded-[1.8rem] border border-[#D8B35B]/40 bg-white p-7 shadow-sm md:p-9">
+                <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
+                  Staff training &amp; CPD
+                </p>
 
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-              Training that is thoughtful, practical and rooted in real school
-              experience.
-            </h2>
+                <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+                  Training that strengthens understanding and improves day-to-day
+                  classroom practice.
+                </h2>
 
-            <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Training sessions are designed to help staff reflect more deeply on
-              behaviour, relationships, motivation and the wider experiences
-              shaping children in school.
-            </p>
+                <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                  CPD sessions are designed to help staff think more clearly
+                  about behaviour, relationships, motivation and the wider
+                  experiences shaping children in school.
+                </p>
 
-            <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              The aim is always to offer something credible, useful and
-              professionally grounded, not abstract theory detached from the
-              realities of classrooms and school life.
-            </p>
-          </div>
-        </section>
-
-        <section className="mt-12 grid gap-6 lg:grid-cols-[1fr_1fr]">
-          <div className="rounded-[1.8rem] border border-slate-200 bg-white p-7 shadow-sm md:p-8">
-            <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
-              Staff training &amp; CPD
-            </p>
-
-            <h2 className="mt-4 text-3xl font-semibold leading-tight text-[#12284C] md:text-4xl">
-              Whole-staff training designed to deepen understanding and sharpen
-              practice.
-            </h2>
-
-            <p className="mt-5 max-w-xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              This strand is about helping staff step back, think clearly and
-              strengthen the way they understand behaviour, relationships,
-              motivation and the wider forces shaping children&apos;s experiences
-              in school.
-            </p>
-
-            <p className="mt-4 max-w-xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              CPD can also focus specifically on day-to-day teaching strategies:
-              how staff give instructions, model learning, build routines, use
-              voice, respond to disruption and create classroom conditions where
-              behaviour and learning improve together.
-            </p>
-
-            <div className="mt-6 grid gap-3">
-              {trainingAreas.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm leading-6 text-slate-700 md:text-base"
-                >
-                  {item}
-                </div>
-              ))}
+                <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                  This is not abstract theory detached from school life. Training
+                  can focus directly on practical teaching strategies: how staff
+                  give instructions, model learning, build routines, use voice,
+                  respond to disruption and create classroom conditions where
+                  behaviour and learning improve together.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="rounded-[1.8rem] bg-[#12284C] p-7 text-white shadow-sm md:p-8">
-            <p className="text-sm uppercase tracking-[0.18em] text-slate-300">
-              Coaching, behaviour support &amp; teacher development
-            </p>
+            <div className="mt-8 grid gap-6 lg:grid-cols-2">
+              <div className="rounded-[1.8rem] border border-slate-200 bg-white p-7 shadow-sm md:p-8">
+                <h3 className="text-2xl font-semibold tracking-tight text-[#12284C] md:text-3xl">
+                  CPD can include
+                </h3>
 
-            <h2 className="mt-4 text-3xl font-semibold leading-tight md:text-4xl">
-              Sequenced coaching that builds teacher ownership, confidence and
-              stronger classroom practice.
-            </h2>
-
-            <p className="mt-5 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
-              This strand is more hands-on. It focuses on helping staff improve
-              day-to-day practice through coaching, reflection, behaviour
-              support and clearer adult responses in the classroom.
-            </p>
-
-            <p className="mt-4 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
-              Coaching is centred on relationship-led teaching. It can support
-              ECTs, developing teachers and more experienced staff who want to
-              strengthen classroom presence, relationships, routines and adult
-              responses.
-            </p>
-
-            <p className="mt-4 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
-              The approach is built around a sequenced coaching model, so staff
-              feel part of the development process rather than simply being told
-              what to do. The aim is to build ownership, confidence and
-              sustainable change in everyday practice.
-            </p>
-
-            <p className="mt-4 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
-              Coaching also focuses on clear, practical strategies that teachers
-              and support staff can use straight away, so development feels
-              useful, realistic and connected to the classroom rather than
-              abstract or overly theoretical.
-            </p>
-
-            <div className="mt-6 grid gap-3">
-              {coachingAreas.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl border border-white/15 bg-white/10 px-4 py-3 text-sm leading-6 text-white md:text-base"
-                >
-                  {item}
+                <div className="mt-6 grid gap-3">
+                  {trainingAreas.map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm leading-6 text-slate-700 md:text-base"
+                    >
+                      {item}
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+
+              <div className="rounded-[1.8rem] border border-slate-200 bg-white p-7 shadow-sm md:p-8">
+                <h3 className="text-2xl font-semibold tracking-tight text-[#12284C] md:text-3xl">
+                  Training topics
+                </h3>
+
+                <div className="mt-6 grid gap-3">
+                  {trainingTopics.map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm leading-6 text-slate-700 md:text-base"
+                    >
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="mt-12 grid gap-6 lg:grid-cols-[1fr_1fr]">
-          <div className="rounded-[1.8rem] border border-slate-200 bg-white p-7 shadow-sm md:p-8">
-            <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
-              Staff training &amp; CPD
-            </p>
+        <section id="coaching" className="scroll-mt-32 mt-14">
+          <div className="rounded-[2rem] bg-[#12284C] p-5 text-white shadow-sm md:p-8">
+            <div className="rounded-[1.9rem] border border-white/10 bg-white/10 p-7 shadow-sm md:p-10">
+              <p className="text-sm uppercase tracking-[0.18em] text-slate-300">
+                Coaching, behaviour support &amp; teacher development
+              </p>
 
-            <h3 className="mt-4 text-2xl font-semibold tracking-tight text-[#12284C] md:text-3xl">
-              What this can include
-            </h3>
+              <h2 className="mt-4 max-w-4xl text-3xl font-semibold leading-tight md:text-4xl">
+                Sequenced coaching that builds teacher ownership, confidence and
+                stronger classroom practice.
+              </h2>
 
-            <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              Training sessions are designed to be thoughtful, grounded and
-              immediately useful for staff. They can be tailored to the needs of
-              your setting, team or school priorities.
-            </p>
+              <div className="mt-6 grid gap-5 lg:grid-cols-3">
+                <p className="text-base leading-7 text-slate-100 md:text-lg md:leading-8">
+                  Coaching is centred on relationship-led teaching. It can
+                  support ECTs, developing teachers and more experienced staff
+                  who want to strengthen classroom presence, relationships,
+                  routines and adult responses.
+                </p>
 
-            <div className="mt-6 grid gap-3">
-              {trainingTopics.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm leading-6 text-slate-700 md:text-base"
-                >
-                  {item}
-                </div>
-              ))}
+                <p className="text-base leading-7 text-slate-100 md:text-lg md:leading-8">
+                  The approach is built around a sequenced coaching model, so
+                  staff feel part of the development process rather than simply
+                  being told what to do.
+                </p>
+
+                <p className="text-base leading-7 text-slate-100 md:text-lg md:leading-8">
+                  Coaching also focuses on clear, practical strategies that
+                  teachers and support staff can use straight away, so
+                  development feels useful, realistic and connected to the
+                  classroom.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="rounded-[1.8rem] border border-[#12284C]/15 bg-[#12284C] p-7 text-white shadow-sm md:p-8">
-            <p className="text-sm uppercase tracking-[0.18em] text-slate-300">
-              Coaching, behaviour support &amp; teacher development
-            </p>
+            <div className="mt-8 grid gap-6 lg:grid-cols-2">
+              <div className="rounded-[1.8rem] border border-white/15 bg-white p-7 text-slate-900 shadow-sm md:p-8">
+                <h3 className="text-2xl font-semibold tracking-tight text-[#12284C] md:text-3xl">
+                  Coaching can support
+                </h3>
 
-            <h3 className="mt-4 text-2xl font-semibold tracking-tight md:text-3xl">
-              What this can include
-            </h3>
-
-            <p className="mt-4 text-base leading-7 text-slate-100 md:text-lg md:leading-8">
-              This support is designed for schools that want more than a single
-              training session. It allows staff to develop practice over time,
-              with reflection, guidance and practical next steps.
-            </p>
-
-            <div className="mt-6 grid gap-3">
-              {coachingSupport.map((item) => (
-                <div
-                  key={item}
-                  className="rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-sm leading-6 text-white md:text-base"
-                >
-                  {item}
+                <div className="mt-6 grid gap-3">
+                  {coachingAreas.map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm leading-6 text-slate-700 md:text-base"
+                    >
+                      {item}
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
+
+              <div className="rounded-[1.8rem] border border-white/15 bg-white/10 p-7 text-white shadow-sm md:p-8">
+                <h3 className="text-2xl font-semibold tracking-tight md:text-3xl">
+                  What this can include
+                </h3>
+
+                <div className="mt-6 grid gap-3">
+                  {coachingSupport.map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-sm leading-6 text-white md:text-base"
+                    >
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="mt-12 rounded-[1.9rem] border border-slate-200 bg-white p-7 shadow-sm md:p-9">
+        <section className="mt-14 rounded-[1.9rem] border border-slate-200 bg-white p-7 shadow-sm md:p-9">
           <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
             How the support differs
           </p>
 
           <h2 className="mt-4 text-3xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-            Clearer separation between training and ongoing staff development.
+            Clear separation between CPD and ongoing staff development.
           </h2>
 
           <div className="mt-6 grid gap-5 md:grid-cols-2">
@@ -326,11 +317,11 @@ export default function SchoolsPage() {
               </p>
             </div>
 
-            <div className="rounded-2xl bg-[#FBFBF9] p-5">
-              <p className="text-base font-semibold text-[#12284C]">
+            <div className="rounded-2xl bg-[#12284C] p-5 text-white">
+              <p className="text-base font-semibold">
                 Coaching &amp; behaviour support
               </p>
-              <p className="mt-3 text-sm leading-6 text-slate-700 md:text-base">
+              <p className="mt-3 text-sm leading-6 text-slate-100 md:text-base">
                 Best for schools that want more targeted support for ECTs,
                 developing teachers or experienced staff through sequenced,
                 relationship-led coaching that builds ownership, classroom
@@ -340,7 +331,10 @@ export default function SchoolsPage() {
           </div>
         </section>
 
-        <section className="mt-12 rounded-[1.9rem] border border-slate-200 bg-white p-7 shadow-sm md:p-9">
+        <section
+          id="reflections"
+          className="scroll-mt-32 mt-14 rounded-[1.9rem] border border-[#D8B35B]/30 bg-[#FBFBF9] p-7 shadow-sm md:p-9"
+        >
           <p className="text-sm uppercase tracking-[0.18em] text-slate-500">
             Staff reflections
           </p>
@@ -353,7 +347,7 @@ export default function SchoolsPage() {
             {staffReflections.map((quote) => (
               <div
                 key={quote}
-                className="rounded-[1.4rem] border border-slate-200 bg-[#FBFBF9] p-5 shadow-sm"
+                className="rounded-[1.4rem] border border-slate-200 bg-white p-5 shadow-sm"
               >
                 <p className="text-lg italic leading-8 text-slate-800">
                   “{quote}”
@@ -363,7 +357,10 @@ export default function SchoolsPage() {
           </div>
         </section>
 
-        <section className="mt-12 rounded-[1.9rem] bg-[#12284C] p-8 text-white shadow-sm md:p-10">
+        <section
+          id="contact"
+          className="scroll-mt-32 mt-14 rounded-[1.9rem] bg-[#12284C] p-8 text-white shadow-sm md:p-10"
+        >
           <p className="text-sm uppercase tracking-[0.18em] text-slate-300">
             Direct contact
           </p>
