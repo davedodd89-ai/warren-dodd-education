@@ -15,20 +15,14 @@ const sectionVariant = {
   show: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.7,
-      ease: "easeOut" as const,
-    },
+    transition: { duration: 0.7, ease: "easeOut" as const },
   },
 };
 
 const staggerParent = {
   hidden: {},
   show: {
-    transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.06,
-    },
+    transition: { staggerChildren: 0.08, delayChildren: 0.06 },
   },
 };
 
@@ -37,10 +31,7 @@ const itemVariant = {
   show: {
     opacity: 1,
     y: 0,
-    transition: {
-      duration: 0.55,
-      ease: "easeOut" as const,
-    },
+    transition: { duration: 0.55, ease: "easeOut" as const },
   },
 };
 
@@ -74,23 +65,42 @@ export default function Page() {
     source: "Executive Headteacher",
   };
 
-  const uspPoints = [
-    "Psychology-informed teaching and relationship-led mentoring",
-    "Built around each child’s strengths, interests and learning style",
-    "Confidence, self-esteem, emotional security and readiness to learn",
-    "Carefully structured to support academic progress, resilience, communication and growth over time",
+  const processSteps = [
+    {
+      title: "1. Enquiry",
+      text: "You get in touch and share a little about your child, your situation and what you are looking for.",
+    },
+    {
+      title: "2. Free home visit",
+      text: "I visit your home for a no-obligation conversation about your child’s needs, interests, confidence and learning style.",
+    },
+    {
+      title: "3. First session",
+      text: "Your child attends a first session so we can see whether the setting, group and approach feel right.",
+    },
+    {
+      title: "4. Reserved weekly place",
+      text: "If it feels like a strong fit, your child has a consistent weekly place from September 2026.",
+    },
   ];
 
-  const understandingPoints = [
-    "THE PACE, STRUCTURE AND STYLE THAT HELPS THEM LEARN WELL",
-    "HOW TO BUILD CONFIDENCE SO ENGAGEMENT FEELS NATURAL AND LASTING",
-  ];
-
-  const weeklySessionPoints = [
-    "Reserved weekly group place",
-    "3-hour daytime session",
-    "Calm, consistent small-group environment",
-    "Built for consistency, not drop-in support",
+  const practicePoints = [
+    {
+      title: "Motivation",
+      text: "I look for what gives a child energy, pride and buy-in, then use that as a route into learning.",
+    },
+    {
+      title: "Interests",
+      text: "A child’s interests are not treated as distractions. They are often the doorway into deeper engagement.",
+    },
+    {
+      title: "Confidence",
+      text: "Some children need success to feel possible again before they can take risks in English, Maths or wider learning.",
+    },
+    {
+      title: "Pace and structure",
+      text: "I adjust the level of support, challenge, movement, talk and independence so learning feels manageable and purposeful.",
+    },
   ];
 
   return (
@@ -100,49 +110,23 @@ export default function Page() {
       <SiteHeader />
 
       <section className="border-y border-slate-200 bg-white">
-        <div className="mx-auto max-w-7xl px-6 py-3 text-center md:px-10 md:py-5">
-          <p className="text-lg font-medium leading-8 text-[#12284C] md:text-2xl">
-            It’s not just <span className="font-semibold text-[#D8B35B]">what</span>{" "}
-            we learn, it’s <span className="font-semibold text-[#D8B35B]">how</span>{" "}
-            we learn.
+        <div className="mx-auto max-w-7xl px-5 py-3 text-center md:px-10 md:py-5">
+          <p className="text-base font-medium leading-7 text-[#12284C] md:text-2xl md:leading-8">
+            It’s not just{" "}
+            <span className="font-semibold text-[#D8B35B]">what</span> we
+            learn, it’s{" "}
+            <span className="font-semibold text-[#D8B35B]">how</span> we learn.
           </p>
         </div>
       </section>
 
       <motion.section
-        className="mx-auto max-w-7xl px-6 pb-10 pt-6 md:px-10 md:pb-12 md:pt-8"
+        className="mx-auto max-w-7xl px-5 pb-10 pt-6 md:px-10 md:pb-12 md:pt-8"
         initial="hidden"
         animate="show"
         variants={sectionVariant}
       >
         <div className="grid items-start gap-8 lg:grid-cols-[1.02fr_0.98fr] lg:gap-12">
-          <motion.div
-            className="order-1 mx-auto w-full max-w-[280px] sm:max-w-[320px] md:max-w-[430px] lg:order-2 lg:mx-0 lg:max-w-none"
-            initial={{ opacity: 0, y: 24, scale: 0.985 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            transition={{ duration: 0.75, ease: "easeOut", delay: 0.12 }}
-          >
-            <div className="lg:sticky lg:top-28">
-              <div className="relative">
-                <div className="absolute -inset-3 rounded-[1.8rem] bg-slate-200/20 blur-3xl" />
-
-                <div className="relative overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
-                  <div className="overflow-hidden rounded-[1rem] bg-slate-100">
-                    <video
-                      className="h-[150px] w-full object-cover object-center sm:h-[180px] md:h-[240px] lg:h-[320px]"
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                    >
-                      <source src="/hero-video.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
           <motion.div
             className="order-2 max-w-3xl lg:order-1 lg:max-w-[720px]"
             variants={staggerParent}
@@ -151,77 +135,100 @@ export default function Page() {
           >
             <motion.p
               variants={itemVariant}
-              className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm"
+              className="text-xs uppercase tracking-[0.2em] text-slate-500 md:text-sm md:tracking-[0.22em]"
             >
-              Bespoke daytime education
+              Small-group daytime learning for home-educated and flexi-schooled
+              children aged 8-11
             </motion.p>
 
             <motion.h1
-              variants={itemVariant}
-              className={`${playfair.className} mt-3 max-w-4xl text-[1.16rem] font-semibold leading-[0.98] tracking-[0em] text-[#12284C] sm:text-[1.5rem] md:mt-4 md:text-[2.35rem] lg:max-w-[16ch] lg:text-[3.2rem]`}
-            >
-              Bespoke weekly daytime education for home-educated children and
-              flexi-schoolers.
-            </motion.h1>
+  variants={itemVariant}
+  className={`${playfair.className} mt-3 max-w-4xl text-[2.25rem] font-semibold leading-[1.02] tracking-[0em] text-[#12284C] sm:text-[2.85rem] md:mt-4 md:text-[3.45rem] lg:max-w-[20ch] lg:text-[3.85rem]`}
+>
+  Home education does not mean carrying every part of learning alone.
+</motion.h1>
 
-            <motion.p
+<motion.p
+  variants={itemVariant}
+  className="mt-5 max-w-3xl text-lg font-medium leading-8 text-[#12284C] md:text-xl md:leading-9"
+>
+  A calm, teacher-led weekly learning place where children feel known, build
+  confidence, learn alongside others, and parents can step back for a few hours.
+</motion.p>
+
+<motion.p
+  variants={itemVariant}
+  className="mt-3 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
+>
+  Psychology-informed daytime learning for home-educated and flexi-schooled
+  children, with no more than four children in each session.
+</motion.p>
+
+            <motion.div
               variants={itemVariant}
-              className="mt-5 max-w-3xl text-lg font-medium leading-8 text-[#12284C] md:text-xl md:leading-9"
+              className="mt-6 grid gap-3 sm:grid-cols-3"
             >
-              Psychology-informed teaching and relationship-led mentoring that
-              helps children feel understood, supported and ready to learn.
-            </motion.p>
+              <div className="rounded-2xl border border-[#D8B35B]/40 bg-white p-4 shadow-sm">
+                <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
+                  Led by
+                </p>
+                <p className="mt-2 text-sm font-semibold leading-6 text-[#12284C]">
+                  Current primary teacher
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-[#D8B35B]/40 bg-white p-4 shadow-sm">
+                <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
+                  Experience
+                </p>
+                <p className="mt-2 text-sm font-semibold leading-6 text-[#12284C]">
+                  15 years across KS1 and KS2
+                </p>
+              </div>
+
+              <div className="rounded-2xl border border-[#D8B35B]/40 bg-white p-4 shadow-sm">
+                <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
+                  Professional role
+                </p>
+                <p className="mt-2 text-sm font-semibold leading-6 text-[#12284C]">
+                  Teaching and Learning Coach
+                </p>
+              </div>
+            </motion.div>
 
             <motion.p
               variants={itemVariant}
               className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
             >
-              Warren Dodd Education provides{" "}
-              <span className="font-semibold text-[#12284C]">
-                bespoke, premium daytime education
-              </span>{" "}
-              in English, Maths and the wider curriculum for children aged 8-11
-              across Cheshire and Stockport.
+              Warren Dodd Education is for families who want something more
+              personal and more thoughtful than traditional tutoring. It gives
+              children a calm, creative and carefully planned space where
+              confidence, curiosity and self-esteem can grow alongside English,
+              Maths, oracy and wider curriculum learning.
             </motion.p>
 
             <motion.p
               variants={itemVariant}
               className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
             >
-              Designed for children who benefit from a calm, welcoming,  more personal and
-              more thoughtfully tailored way of learning, this is a{" "}
-              <span className="font-semibold text-[#12284C]">
-                weekly small-group provision
-              </span>{" "}
-              where academic progress is built through trust, confidence and
-              strong relationships, while also developing self-esteem,
-              resilience, communication, oracy and the wider life skills that
-              help children grow.
+              Sessions are built around strong relationships, skilled teaching
+              and a clear understanding of how each child thinks, feels, behaves
+              and learns. This is not about simply giving children more work. It
+              is about helping them feel capable, respected and ready to engage.
             </motion.p>
 
             <motion.p
               variants={itemVariant}
               className="mt-4 max-w-3xl text-base font-semibold leading-7 text-[#12284C] md:text-lg md:leading-8"
             >
-              Warren Dodd Education is founded on mutual respect and empathy.
-              They sit at the heart of how our children are taught, how
-              relationships are built, and what we aim to help children develop
-              in themselves over time.
+              This is structure without recreating school: personal enough to
+              feel different, skilled enough to move learning forward.
             </motion.p>
 
-            <motion.p
+            <motion.div
               variants={itemVariant}
-              className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
+              className="mt-7 flex flex-wrap gap-3"
             >
-              For children who require it, support can also include{" "}
-              <span className="font-semibold text-[#12284C]">
-                11+ preparation
-              </span>{" "}
-              as part of a broader approach that keeps confidence, wellbeing and
-              long-term development firmly in view.
-            </motion.p>
-
-            <motion.div variants={itemVariant} className="mt-7 flex flex-wrap gap-3">
               <Link
                 href="/contact"
                 className="inline-flex rounded-full bg-[#12284C] px-7 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
@@ -255,10 +262,36 @@ export default function Page() {
               </span>
             </motion.div>
           </motion.div>
+
+          <motion.div
+            className="order-1 mx-auto w-full max-w-[300px] sm:max-w-[350px] md:max-w-[430px] lg:order-2 lg:mx-0 lg:max-w-none"
+            initial={{ opacity: 0, y: 24, scale: 0.985 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.75, ease: "easeOut", delay: 0.12 }}
+          >
+            <div className="lg:sticky lg:top-28">
+              <div className="relative">
+                <div className="absolute -inset-3 rounded-[1.8rem] bg-slate-200/20 blur-3xl" />
+                <div className="relative overflow-hidden rounded-[1.35rem] border border-white/80 bg-white/95 p-2 shadow-[0_16px_50px_rgba(15,23,42,0.10)]">
+                  <div className="overflow-hidden rounded-[1rem] bg-slate-100">
+                    <video
+                      className="h-[170px] w-full object-cover object-center sm:h-[200px] md:h-[240px] lg:h-[320px]"
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                    >
+                      <source src="/hero-video.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
         </div>
 
         <motion.div
-          className="mt-8 max-w-[720px] lg:max-w-[760px]"
+          className="mt-8 grid gap-4 lg:grid-cols-[0.9fr_1.1fr]"
           initial={{ opacity: 0, y: 22 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
@@ -269,6 +302,7 @@ export default function Page() {
               style={{ backgroundImage: "url('/venue.jpg')" }}
             />
             <div className="absolute inset-0 bg-[#FBFBF9]/72" />
+
             <div className="relative">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500">
                 Beginning September 2026
@@ -283,9 +317,9 @@ export default function Page() {
               </p>
 
               <p className="mt-5 text-base leading-8 text-slate-700">
-                A calm, engaging and personalised small-group approach, with a
-                no-obligation free home visit before joining so we can make sure
-                it feels like the right fit for your child.
+                A calm, engaging and personal small-group approach, with a free
+                home visit before joining so we can make sure it feels like the
+                right fit for your child.
               </p>
 
               <div className="mt-6 space-y-2">
@@ -302,6 +336,29 @@ export default function Page() {
               </p>
             </div>
           </div>
+
+          <div className="rounded-[1.7rem] border border-slate-200 bg-white p-6 shadow-sm">
+            <p className="text-xs uppercase tracking-[0.22em] text-slate-500">
+              What families notice
+            </p>
+
+            <p className="mt-4 text-base leading-7 text-slate-800 md:text-lg md:leading-8">
+              "From day one, our son felt that Mr Dodd was on his side, that
+              they were a team, and this created a strong sense of mutual
+              respect that has been invaluable."
+            </p>
+
+            <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#12284C] md:text-xs">
+              Parent of boy aged 9
+            </p>
+
+            <div className="mt-5 rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
+              <p className="text-sm font-semibold leading-6 text-[#12284C] md:text-base">
+                Children learn best when they feel respected, understood and
+                genuinely cared for.
+              </p>
+            </div>
+          </div>
         </motion.div>
       </motion.section>
 
@@ -312,93 +369,278 @@ export default function Page() {
         viewport={{ once: true, amount: 0.15 }}
         variants={sectionVariant}
       >
-        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
-          <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
-            <motion.div
-              className="rounded-[1.7rem] bg-[#12284C] p-7 text-white shadow-sm"
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.18 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-            >
-              <div className="mx-auto h-32 w-32 overflow-hidden rounded-full border-4 border-white/10 shadow-lg md:h-36 md:w-36">
-                <img
-                  src="/hero.jpg"
-                  alt="David Dodd"
-                  className="h-full w-full object-cover"
-                />
+        <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-14">
+          <div className="rounded-[1.8rem] border border-[#D8B35B]/40 bg-white p-6 shadow-sm md:p-9">
+            <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+              For home-educating families balancing freedom, learning and family
+              life
+            </p>
+
+            <h2 className="mt-3 max-w-4xl text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+              Freedom, flexibility and calm - without having to do every part of
+              it alone.
+            </h2>
+
+            <div className="mt-6 grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
+              <div>
+                <p className="text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                  Many parents choose home education because they want something
+                  calmer, more personal and more responsive for their child. But
+                  it can also feel like carrying everything alone - balancing
+                  learning, structure, social opportunities and family life at
+                  the same time.
+                </p>
+
+                <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                  Tuesday afternoons in Alderley Edge give your child three
+                  hours of focused, social and thoughtfully taught learning in a
+                  very small group, while you have a dependable window of time
+                  you can plan around.
+                </p>
+
+                <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                  This is not a smaller version of school and it is not
+                  traditional one-to-one tutoring. The group matters. Children
+                  learn to talk, listen, share ideas and build confidence around
+                  others, not just work through tasks individually.
+                </p>
+
+                <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                  Your child gets structured learning, carefully supported peer
+                  interaction and social confidence-building, while you get a
+                  reliable three-hour block each week to work, rest, plan or
+                  focus on other responsibilities.
+                </p>
+
+                <p className="mt-4 text-base font-semibold leading-7 text-[#12284C] md:text-lg md:leading-8">
+                  It is not just about what your child learns. It is about what
+                  your whole family gains.
+                </p>
               </div>
 
-              <h2 className="mt-5 text-center text-2xl font-semibold md:text-3xl">
-                David Dodd
-              </h2>
+              <div className="rounded-[1.5rem] bg-[#12284C] p-6 text-white">
+                <p className="text-lg font-semibold leading-7">
+                  A warm, safe and engaging place where children are taught with
+                  skill, humour and care.
+                </p>
 
-              <p className="mt-2 text-center text-xs uppercase tracking-[0.18em] text-slate-300 md:text-sm">
-                BSc (Hons) Psychology - Primary PGCE - QTS
-              </p>
+                <div className="mt-5 grid gap-2 text-sm text-slate-100">
+                  <p>• A reliable 3-hour weekly learning block</p>
+                  <p>• Led by a qualified primary teacher</p>
+                  <p>• Maximum 4 children per session</p>
+                  <p>• Carefully supported peer interaction</p>
+                  <p>• English, Maths, oracy and wider learning</p>
+                  <p>• Structure without recreating school</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </motion.section>
 
-              <p className="mt-3 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
-                Current, highly experienced teacher
-              </p>
+   <motion.section
+  className="border-y border-slate-200 bg-white"
+  initial="hidden"
+  whileInView="show"
+  viewport={{ once: true, amount: 0.15 }}
+  variants={sectionVariant}
+>
+  <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-14">
+    <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+      <motion.div
+        className="rounded-[1.7rem] bg-[#12284C] p-7 text-white shadow-sm"
+        initial={{ opacity: 0, y: 18 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.18 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        <div className="mx-auto h-32 w-32 overflow-hidden rounded-full border-4 border-white/10 shadow-lg md:h-36 md:w-36">
+          <img
+            src="/hero.jpg"
+            alt="David Dodd"
+            className="h-full w-full object-cover"
+          />
+        </div>
 
-              <p className="mt-2 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
-                Experienced Teaching and Learning Coach within a Primary Federation of schools
-              </p>
+        <h2 className="mt-5 text-center text-2xl font-semibold md:text-3xl">
+          David Dodd
+        </h2>
 
-              <p className="mt-2 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
-                Enhanced DBS Checked - Level 3 Safeguarding Trained - First Aid Trained
-              </p>
+        <p className="mt-2 text-center text-xs uppercase tracking-[0.18em] text-slate-300 md:text-sm">
+          BSc (Hons) Psychology - Primary PGCE - QTS
+        </p>
 
-              <div className="mt-6 text-center">
-                <Link
-                  href="/approach"
-                  className="inline-flex rounded-full border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+        <p className="mt-3 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
+          Current primary school teacher
+        </p>
+
+        <p className="mt-2 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
+          Teaching and Learning Coach within the North Manchester Primary
+          Federation
+        </p>
+
+        <p className="mt-2 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
+          Enhanced DBS Checked - Level 3 Safeguarding Trained - First Aid
+          Trained
+        </p>
+
+        <div className="mt-6 text-center">
+          <Link
+            href="/approach"
+            className="inline-flex rounded-full border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+          >
+            Read more about the approach
+          </Link>
+        </div>
+      </motion.div>
+
+      <motion.div
+        className="rounded-[1.7rem] border border-slate-200 bg-white p-6 shadow-sm md:p-7"
+        initial={{ opacity: 0, y: 18 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.18 }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.06 }}
+      >
+        <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+          Professional trust
+        </p>
+
+        <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+          Trusted to teach children and support other teachers.
+        </h2>
+
+        <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+          Many of the children I work with benefit from a calmer, more personal
+          approach to learning. Some have found school difficult, some have lost
+          confidence, and others simply need time to feel known before they are
+          ready to fully engage.
+        </p>
+
+        <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+          I am a{" "}
+          <span className="font-semibold text-[#12284C]">
+            current primary school teacher and Teaching and Learning Coach
+            within the North Manchester Primary Federation
+          </span>
+          , with a{" "}
+          <span className="font-semibold text-[#12284C]">
+            degree in Psychology
+          </span>
+          ,{" "}
+          <span className="font-semibold text-[#12284C]">
+            fifteen years of experience across KS1 and KS2
+          </span>
+          , and significant work with{" "}
+          <span className="font-semibold text-[#12284C]">
+            SEND and neurodivergent children
+          </span>
+          .
+        </p>
+
+        <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+          I work in education every day, and my wider role includes coaching
+          teachers, staff development, behaviour-focused CPD and supporting
+          relationship-led practice across classrooms. That matters because this
+          is not generic tutoring. It is teaching shaped by real classroom
+          experience, psychology, behaviour understanding and professional
+          judgement.
+        </p>
+
+        <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+          That experience helps me respond thoughtfully when a child needs more
+          confidence, a different starting point, or a gentler way back into
+          learning.
+        </p>
+
+        <div className="mt-6 grid gap-3 sm:grid-cols-2">
+          <div className="rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
+            <p className="text-sm font-semibold text-[#12284C]">
+              Teacher expertise
+            </p>
+            <p className="mt-2 text-sm leading-6 text-slate-700">
+              Current classroom practice, not outdated theory.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
+            <p className="text-sm font-semibold text-[#12284C]">
+              Psychology-informed
+            </p>
+            <p className="mt-2 text-sm leading-6 text-slate-700">
+              Understanding behaviour, motivation and confidence.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
+            <p className="text-sm font-semibold text-[#12284C]">
+              Relationship-led
+            </p>
+            <p className="mt-2 text-sm leading-6 text-slate-700">
+              Trust and connection before real engagement.
+            </p>
+          </div>
+
+          <div className="rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
+            <p className="text-sm font-semibold text-[#12284C]">
+              SEND experience
+            </p>
+            <p className="mt-2 text-sm leading-6 text-slate-700">
+              Thoughtful support for different needs and learning styles.
+            </p>
+          </div>
+        </div>
+
+        <p className="mt-6 text-base font-semibold leading-7 text-[#12284C] md:text-lg md:leading-8">
+          When children feel safe, understood and capable, they are more likely
+          to engage, take risks and begin to make meaningful progress.
+        </p>
+      </motion.div>
+    </div>
+  </div>
+</motion.section>
+
+      <motion.section
+        className="border-y border-slate-200 bg-[#F7F7F4]"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.15 }}
+        variants={sectionVariant}
+      >
+        <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-14">
+          <div className="rounded-[1.8rem] border border-slate-200 bg-white p-6 shadow-sm md:p-9">
+            <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+              What this looks like in practice
+            </p>
+
+            <h2 className="mt-3 max-w-4xl text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+              Understanding the child is not a slogan. It shapes how the
+              learning is planned, taught and adjusted.
+            </h2>
+
+            <div className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              {practicePoints.map((item) => (
+                <div
+                  key={item.title}
+                  className="rounded-[1.4rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-5 shadow-sm"
                 >
-                  Read more about the approach
-                </Link>
-              </div>
-            </motion.div>
+                  <p className="text-base font-semibold text-[#12284C]">
+                    {item.title}
+                  </p>
+                  <p className="mt-3 text-sm leading-6 text-slate-700">
+                    {item.text}
+                  </p>
+                </div>
+              ))}
+            </div>
 
-            <motion.div
-              className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm"
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.18 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.06 }}
-            >
-              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                Why this approach works
+            <div className="mt-7 rounded-[1.4rem] bg-[#12284C] p-6 text-white">
+              <p className="text-base font-semibold leading-7 md:text-lg">
+                For example, a child who appears reluctant may not need more
+                pressure. They may need a different starting point, a stronger
+                relationship, a clearer sense of success, or learning connected
+                to something that genuinely interests them.
               </p>
-
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-                Built on understanding what helps each child feel motivated,
-                confident and ready to learn.
-              </h2>
-
-            <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-  I am a <span className="font-semibold text-[#12284C]">current primary school teacher and Teaching and Learning Coach</span> with a <span className="font-semibold text-[#12284C]">degree in Psychology</span>, <span className="font-semibold text-[#12284C]">fifteen years of KS2 experience</span>, and significant work with SEND and neurodivergent children.
-</p>
-
-<p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-  A central part of my work is building <span className="font-semibold text-[#12284C]">strong, positive working relationships</span> — so children feel known, understood and safe enough to engage. I work in education every day, and I know how much teaching styles, adult approaches and the right strategies can shape a child&apos;s entire experience of learning.
-</p>
-
-<p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-  What makes the difference is when those things come together within a <span className="font-semibold text-[#12284C]">relationship-led, nurturing approach</span>. We highly value taking the time to understand <span className="font-semibold text-[#12284C]">what genuinely motivates each child</span>, what captures their interest, and what kind of support helps them respond with confidence.
-</p>
-
-<p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-  This is a key part of helping <span className="font-semibold text-[#12284C]">engagement grow in a way that feels natural, meaningful and lasting</span>.
-</p>
-
-<p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-  What I always aim to bring into sessions is <span className="font-semibold text-[#12284C]">warmth, calm, humour and care</span>, alongside <span className="font-semibold text-[#12284C]">clear professional judgement</span>. That understanding has been shaped through classroom teaching, coaching colleagues, staff development in behaviour, and work connected to relationship-led practice and Voice21 / Cambridge-linked oracy.
-</p>
-
-<p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-  Children are taught thoughtfully and supported through a <span className="font-semibold text-[#12284C]">role-model and mentor approach</span> — building trust, confidence and stronger habits that last well beyond the session itself.
-</p>
-            </motion.div>
+            </div>
           </div>
         </div>
       </motion.section>
@@ -410,7 +652,7 @@ export default function Page() {
         viewport={{ once: true, amount: 0.15 }}
         variants={sectionVariant}
       >
-        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-12">
+        <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-12">
           <div className="flex items-end justify-between gap-6">
             <div className="max-w-2xl">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
@@ -486,68 +728,44 @@ export default function Page() {
       </motion.section>
 
       <motion.section
-        className="border-y border-slate-200 bg-white"
+        className="border-y border-slate-200 bg-[#F7F7F4]"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.15 }}
         variants={sectionVariant}
       >
-        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
-          <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-8">
-            <motion.div
-              className="rounded-[1.8rem] bg-[#12284C] p-7 text-white shadow-sm md:p-8"
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.18 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-            >
-              <p className="text-xs uppercase tracking-[0.22em] text-slate-300 md:text-sm">
-                What makes this different
-              </p>
+        <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-14">
+          <div className="rounded-[1.8rem] border border-[#D8B35B]/40 bg-white p-6 shadow-sm md:p-9">
+            <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+              Free home visit before joining
+            </p>
 
-              <h2 className="mt-4 max-w-xl text-3xl font-semibold leading-tight md:text-[2.6rem]">
-                This is designed to change how a child experiences learning, not
-                just what they learn.
-              </h2>
-
-              <p className="mt-5 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8">
-                Strong progress begins with how a child feels about learning.
-                When children feel understood, respected, secure and capable,
-                they are far more likely to engage positively and make
-                meaningful progress.
-              </p>
-
-              <p className="mt-4 max-w-xl text-base leading-7 text-slate-100 md:text-lg md:leading-8 font-semibold">
-                Warren Dodd Education is founded on mutual respect and empathy.
-                They sit at the heart of how children are taught, how
-                relationships are built, and what we aim to help children
-                develop in themselves over time.
-              </p>
-            </motion.div>
-
-            <motion.div
-              className="rounded-[1.8rem] border border-slate-200 bg-[#FBFBF9] p-7 shadow-sm md:p-8"
-              variants={staggerParent}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.18 }}
-            >
-              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                At the heart of the Warren Dodd Method
-              </p>
-
-              <div className="mt-5 grid gap-3">
-                {uspPoints.map((item) => (
-                  <motion.div
-                    key={item}
-                    variants={itemVariant}
-                    className="rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm leading-6 text-slate-700 md:text-base"
-                  >
-                    {item}
-                  </motion.div>
-                ))}
+            <div className="mt-3 grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+              <div>
+                <h2 className="text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+                  Before your child joins, we make sure it feels right.
+                </h2>
               </div>
-            </motion.div>
+
+              <div>
+                <p className="text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                  Before you commit to anything, I visit your home - free, no
+                  obligation. We talk about your child, their needs, what they
+                  enjoy, what interests them, what helps them feel confident,
+                  and whether this approach feels right.
+                </p>
+
+                <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                  If it does not feel like the right fit, there is no pressure
+                  and no hard feelings. I would rather be honest than fill a
+                  place that is not right for the child.
+                </p>
+
+                <p className="mt-4 text-base font-semibold leading-7 text-[#12284C] md:text-lg md:leading-8">
+                  The right fit matters more than filling a place.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </motion.section>
@@ -559,70 +777,104 @@ export default function Page() {
         viewport={{ once: true, amount: 0.15 }}
         variants={sectionVariant}
       >
-        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
-          <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-            <motion.div
-              className="rounded-[1.7rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-7 shadow-sm"
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.18 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-            >
-              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                Understanding the child
-              </p>
+        <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-14">
+          <div className="rounded-[1.8rem] border border-slate-200 bg-white p-6 shadow-sm md:p-9">
+            <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+              How it works
+            </p>
 
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-                Skilled at building learning around the individual.
-              </h2>
+            <h2 className="mt-3 max-w-3xl text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+              A clear process before any weekly place is agreed.
+            </h2>
 
-              <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                Every child is understood as an individual - their interests,
-                strengths, learning style, confidence level and the emotional
-                factors that shape how they respond.
-              </p>
-
-              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                This allows learning to be shaped in a way that feels more
-                relevant, more motivating and more achievable, rather than
-                something generic that is simply delivered in the same way to
-                everyone.
-              </p>
-            </motion.div>
-
-            <motion.div
-              className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm"
-              variants={staggerParent}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.18 }}
-            >
-              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                In practice, this means understanding:
-              </p>
-
-              <div className="mt-5 grid gap-3">
-                {understandingPoints.map((item) => (
-                  <motion.div
-                    key={item}
-                    variants={itemVariant}
-                    className="rounded-2xl border border-slate-200 bg-[#FBFBF9] px-4 py-3 text-sm font-medium uppercase tracking-[0.08em] leading-6 text-slate-700 md:text-base"
-                  >
-                    {item}
-                  </motion.div>
-                ))}
-              </div>
-
-              <div className="mt-7">
-                <Link
-                  href="/approach"
-                  className="inline-flex rounded-full border border-[#12284C]/15 bg-[#12284C] px-6 py-3 font-semibold text-white transition hover:-translate-y-0.5"
+            <div className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+              {processSteps.map((step) => (
+                <div
+                  key={step.title}
+                  className="rounded-[1.4rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-5 shadow-sm"
                 >
-                  Explore the Warren Dodd Method
-                </Link>
-              </div>
-            </motion.div>
+                  <p className="text-base font-semibold text-[#12284C]">
+                    {step.title}
+                  </p>
+                  <p className="mt-3 text-sm leading-6 text-slate-700">
+                    {step.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <p className="mt-6 text-base font-semibold text-[#12284C]">
+              Places are limited to four children per session. When full, I
+              operate a waiting list &mdash; I do not expand group size.
+            </p>
+
+            <div className="mt-7">
+              <Link
+                href="/contact"
+                className="inline-flex rounded-full bg-[#12284C] px-7 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
+              >
+                Start an Enquiry
+              </Link>
+            </div>
           </div>
+        </div>
+      </motion.section>
+
+      <motion.section
+        className="border-y border-slate-200 bg-[#F7F7F4]"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.15 }}
+        variants={sectionVariant}
+      >
+        <div className="mx-auto max-w-5xl px-5 py-10 md:px-10 md:py-14">
+          <motion.div
+            className="rounded-[1.8rem] border border-[#D8B35B]/40 bg-white p-6 shadow-sm md:p-9"
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.18 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+              Weekly place
+            </p>
+
+            <h2 className="mt-3 max-w-3xl text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+              A reserved weekly place is £180 for each 3-hour session.
+            </h2>
+
+            <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              This reserves your child’s place in a consistent small group of no
+              more than four children, with careful planning, skilled teaching,
+              supported social learning and a strong focus on confidence,
+              engagement and progress.
+            </p>
+
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              The value is not only in the teaching time. It is in the
+              consistency, the relationship, the careful group dynamic and the
+              confidence children build through learning alongside others.
+            </p>
+
+            <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+              The free home visit comes before any commitment, so we can make
+              sure this is the right fit for your child and your family.
+            </p>
+
+            <p className="mt-4 max-w-3xl text-base font-semibold leading-7 text-[#12284C] md:text-lg md:leading-8">
+              It is a committed weekly place, built around relationship, trust
+              and purposeful learning.
+            </p>
+
+            <div className="mt-7">
+              <Link
+                href="/contact"
+                className="inline-flex rounded-full bg-[#12284C] px-7 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
+              >
+                Make an Enquiry
+              </Link>
+            </div>
+          </motion.div>
         </div>
       </motion.section>
 
@@ -633,7 +885,7 @@ export default function Page() {
         viewport={{ once: true, amount: 0.15 }}
         variants={sectionVariant}
       >
-        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
+        <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-14">
           <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-10">
             <motion.div
               initial={{ opacity: 0, y: 18 }}
@@ -666,15 +918,14 @@ export default function Page() {
               </h2>
 
               <p className="mt-5 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                I am pleased to now be able to offer a stunning, dedicated venue
-                space in Alderley Edge, Cheshire for daytime sessions starting
-                in September 2026.
+                I am pleased to offer a dedicated venue space in Alderley Edge,
+                Cheshire for daytime sessions starting in September 2026.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                This gives families a clear, consistent setting for calm,
-                focused learning each week, while keeping the small-group,
-                relationship-led approach at the heart of the provision.
+                This gives families a clear, consistent place for focused
+                learning each week, while keeping the small-group,
+                relationship-led approach at the heart of everything.
               </p>
 
               <div className="mt-7">
@@ -683,67 +934,6 @@ export default function Page() {
                   className="inline-flex rounded-full bg-[#12284C] px-7 py-3.5 font-semibold text-white shadow-xl transition hover:-translate-y-0.5"
                 >
                   Register your interest
-                </Link>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </motion.section>
-
-      <motion.section
-        className="bg-[#F7F7F4]"
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.15 }}
-        variants={sectionVariant}
-      >
-        <div className="mx-auto max-w-7xl px-6 py-10 md:px-10 md:py-14">
-          <div className="mx-auto max-w-2xl">
-            <motion.div
-              className="rounded-[1.7rem] border border-slate-200 bg-white p-7 shadow-sm md:p-8"
-              initial={{ opacity: 0, y: 18 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.18 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-            >
-              <p className="text-xs uppercase tracking-[0.2em] text-slate-500 md:text-sm">
-                Regular weekly group sessions
-              </p>
-
-              <p className="mt-3 text-2xl font-semibold text-[#12284C] md:text-3xl">
-                A reserved weekly place, designed for consistency.
-              </p>
-
-              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                Sessions run weekly. Each child joins the same small, consistent
-                group every week - a calm, welcoming environment where trust
-                builds, relationships develop, and progress follows.
-              </p>
-
-              <motion.div
-                className="mt-6 flex flex-wrap gap-2.5"
-                variants={staggerParent}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.18 }}
-              >
-                {weeklySessionPoints.map((item) => (
-                  <motion.span
-                    key={item}
-                    variants={itemVariant}
-                    className="rounded-full border border-slate-300 bg-[#FBFBF9] px-3.5 py-2 text-xs text-slate-700 md:text-sm"
-                  >
-                    {item}
-                  </motion.span>
-                ))}
-              </motion.div>
-
-              <div className="mt-7">
-                <Link
-                  href="/contact"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-[#12284C] px-6 py-3.5 text-center font-semibold text-white transition hover:-translate-y-0.5"
-                >
-                  Enquire now
                 </Link>
               </div>
             </motion.div>
