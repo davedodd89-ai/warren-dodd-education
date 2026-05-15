@@ -71,8 +71,8 @@ export default function Page() {
       text: "You get in touch and share a little about your child, your situation and what you are looking for.",
     },
     {
-      title: "2. Free home visit",
-      text: "I visit your home for a no-obligation conversation about your child’s needs, interests, confidence and learning style.",
+      title: "2. Initial consultation",
+      text: "We arrange a free home visit, video call or phone consultation to talk about your child, their needs and whether the group feels like the right fit.",
     },
     {
       title: "3. First session",
@@ -142,87 +142,28 @@ export default function Page() {
             </motion.p>
 
             <motion.h1
-  variants={itemVariant}
-  className={`${playfair.className} mt-3 max-w-4xl text-[2.25rem] font-semibold leading-[1.02] tracking-[0em] text-[#12284C] sm:text-[2.85rem] md:mt-4 md:text-[3.45rem] lg:max-w-[20ch] lg:text-[3.85rem]`}
->
-  Home education does not mean carrying every part of learning alone.
-</motion.h1>
-
-<motion.p
-  variants={itemVariant}
-  className="mt-5 max-w-3xl text-lg font-medium leading-8 text-[#12284C] md:text-xl md:leading-9"
->
-  A calm, teacher-led weekly learning place where children feel known, build
-  confidence, learn alongside others, and parents can step back for a few hours.
-</motion.p>
-
-<motion.p
-  variants={itemVariant}
-  className="mt-3 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
->
-  Psychology-informed daytime learning for home-educated and flexi-schooled
-  children, with no more than four children in each session.
-</motion.p>
-
-            <motion.div
               variants={itemVariant}
-              className="mt-6 grid gap-3 sm:grid-cols-3"
+              className={`${playfair.className} mt-3 max-w-4xl text-[2.25rem] font-semibold leading-[1.02] tracking-[0em] text-[#12284C] sm:text-[2.85rem] md:mt-4 md:text-[3.45rem] lg:max-w-[16ch] lg:text-[3.85rem]`}
             >
-              <div className="rounded-2xl border border-[#D8B35B]/40 bg-white p-4 shadow-sm">
-                <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
-                  Led by
-                </p>
-                <p className="mt-2 text-sm font-semibold leading-6 text-[#12284C]">
-                  Current primary teacher
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-[#D8B35B]/40 bg-white p-4 shadow-sm">
-                <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
-                  Experience
-                </p>
-                <p className="mt-2 text-sm font-semibold leading-6 text-[#12284C]">
-                  15 years across KS1 and KS2
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-[#D8B35B]/40 bg-white p-4 shadow-sm">
-                <p className="text-xs uppercase tracking-[0.18em] text-slate-500">
-                  Professional role
-                </p>
-                <p className="mt-2 text-sm font-semibold leading-6 text-[#12284C]">
-                  Teaching and Learning Coach
-                </p>
-              </div>
-            </motion.div>
+              Some children do not need more pressure. They need someone who
+              actually sees them.
+            </motion.h1>
 
             <motion.p
               variants={itemVariant}
-              className="mt-6 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
+              className="mt-5 max-w-3xl text-lg font-medium leading-8 text-[#12284C] md:text-xl md:leading-9"
             >
-              Warren Dodd Education is for families who want something more
-              personal and more thoughtful than traditional tutoring. It gives
-              children a calm, creative and carefully planned space where
-              confidence, curiosity and self-esteem can grow alongside English,
-              Maths, oracy and wider curriculum learning.
-            </motion.p>
-
-            <motion.p
-              variants={itemVariant}
-              className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8"
-            >
-              Sessions are built around strong relationships, skilled teaching
-              and a clear understanding of how each child thinks, feels, behaves
-              and learns. This is not about simply giving children more work. It
-              is about helping them feel capable, respected and ready to engage.
+              Small-group daytime learning led by a current primary teacher,
+              Teaching and Learning Coach and psychology graduate - someone who
+              understands how children think, learn and what helps them engage.
             </motion.p>
 
             <motion.p
               variants={itemVariant}
               className="mt-4 max-w-3xl text-base font-semibold leading-7 text-[#12284C] md:text-lg md:leading-8"
             >
-              This is structure without recreating school: personal enough to
-              feel different, skilled enough to move learning forward.
+              Structure without recreating school: calm enough to feel
+              different, skilled enough to move learning forward.
             </motion.p>
 
             <motion.div
@@ -317,9 +258,9 @@ export default function Page() {
               </p>
 
               <p className="mt-5 text-base leading-8 text-slate-700">
-                A calm, engaging and personal small-group approach, with a free
-                home visit before joining so we can make sure it feels like the
-                right fit for your child.
+                A calm, structured and personal small-group approach, with a
+                free consultation before joining so we can make sure it feels
+                like the right fit for your child.
               </p>
 
               <div className="mt-6 space-y-2">
@@ -337,29 +278,228 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="rounded-[1.7rem] border border-slate-200 bg-white p-6 shadow-sm">
-            <p className="text-xs uppercase tracking-[0.22em] text-slate-500">
-              What families notice
-            </p>
+          <div className="flex h-full flex-col justify-between rounded-[1.7rem] border border-slate-200 bg-white p-6 shadow-sm md:p-7">
+            <div>
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500">
+                What families notice
+              </p>
 
-            <p className="mt-4 text-base leading-7 text-slate-800 md:text-lg md:leading-8">
-              "From day one, our son felt that Mr Dodd was on his side, that
-              they were a team, and this created a strong sense of mutual
-              respect that has been invaluable."
-            </p>
+              <p className="mt-4 max-w-[32ch] text-lg leading-8 text-slate-800 md:text-[1.45rem] md:leading-[1.8]">
+                "From day one, our son felt that Mr Dodd was on his side, that
+                they were a team, and this created a strong sense of mutual
+                respect that has been invaluable."
+              </p>
 
-            <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#12284C] md:text-xs">
-              Parent of boy aged 9
-            </p>
+              <p className="mt-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#12284C] md:text-xs">
+                Parent of boy aged 9
+              </p>
+            </div>
 
-            <div className="mt-5 rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
-              <p className="text-sm font-semibold leading-6 text-[#12284C] md:text-base">
-                Children learn best when they feel respected, understood and
+            <div className="mt-6 rounded-[1.3rem] bg-[#12284C] px-5 py-4 text-white">
+              <p className="text-sm font-medium leading-6 md:text-base md:leading-7">
+                Children learn best when they feel safe, understood and
                 genuinely cared for.
               </p>
             </div>
           </div>
         </motion.div>
+      </motion.section>
+
+      <motion.section
+        className="border-y border-slate-200 bg-white"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.15 }}
+        variants={sectionVariant}
+      >
+        <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-14">
+          <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
+            <motion.div
+              className="rounded-[1.7rem] bg-[#12284C] p-7 text-white shadow-sm"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.18 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+            >
+              <div className="mx-auto h-32 w-32 overflow-hidden rounded-full border-4 border-white/10 shadow-lg md:h-36 md:w-36">
+                <img
+                  src="/hero.jpg"
+                  alt="David Dodd"
+                  className="h-full w-full object-cover"
+                />
+              </div>
+
+              <h2 className="mt-5 text-center text-2xl font-semibold md:text-3xl">
+                David Dodd
+              </h2>
+
+              <p className="mt-2 text-center text-xs uppercase tracking-[0.18em] text-slate-300 md:text-sm">
+                BSc (Hons) Psychology - Primary PGCE - QTS
+              </p>
+
+              <p className="mt-3 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
+                Current primary school teacher
+              </p>
+
+              <p className="mt-2 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
+                Teaching and Learning Coach within the North Manchester Primary
+                Federation
+              </p>
+
+              <p className="mt-2 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
+                Significant SEND and neurodivergent experience
+              </p>
+
+              <p className="mt-2 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
+                Enhanced DBS Checked - Level 3 Safeguarding Trained - First Aid
+                Trained
+              </p>
+
+              <div className="mt-6 flex flex-col items-center gap-3">
+                <Link
+                  href="/approach"
+                  className="inline-flex rounded-full border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
+                >
+                  Read more about the approach
+                </Link>
+
+                <Link
+                  href="/testimonials"
+                  className="inline-flex rounded-full border border-[#D8B35B]/40 bg-[#D8B35B]/10 px-5 py-3 text-sm font-semibold text-[#F7F7F4] transition hover:bg-[#D8B35B]/20"
+                >
+                  Read family testimonials
+                </Link>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="rounded-[1.7rem] border border-slate-200 bg-white p-6 shadow-sm md:p-7"
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.18 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.06 }}
+            >
+              <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+                Professional trust
+              </p>
+
+              <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+                Trusted to teach children and support other teachers.
+              </h2>
+
+              <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                Many of the children I work with benefit from a calmer, more
+                personal approach to learning. Some have found busy learning
+                environments difficult, some feel anxious or overwhelmed, and
+                others may have needs linked to ADHD, autism, dyslexia,
+                dyspraxia and wider SEND needs. Often, they do not need more
+                pressure. They need trust, structure, warmth and someone who
+                takes time to understand how they learn.
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                My experience includes mainstream teaching, specialist SEND
+                settings, autism youth club work and many years supporting
+                children who need learning to feel safer, calmer and more
+                carefully adapted. That matters because this is not generic
+                tutoring. It is teaching shaped by real classroom experience,
+                psychology, behaviour understanding and professional judgement.
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                I am a{" "}
+                <span className="font-semibold text-[#12284C]">
+                  current primary school teacher and Teaching and Learning Coach
+                  within the North Manchester Primary Federation
+                </span>
+                , with a{" "}
+                <span className="font-semibold text-[#12284C]">
+                  degree in Psychology
+                </span>
+                ,{" "}
+                <span className="font-semibold text-[#12284C]">
+                  fifteen years of experience across KS1 and KS2
+                </span>
+                , and significant work with{" "}
+                <span className="font-semibold text-[#12284C]">
+                  SEND and neurodivergent children
+                </span>
+                .
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                I work in education every day, and my wider role includes
+                coaching teachers, staff development, behaviour-focused CPD and
+                supporting relationship-led practice across classrooms.
+              </p>
+
+              <p className="mt-4 text-base font-semibold leading-7 text-[#12284C] md:text-lg md:leading-8">
+                I teach children every day, while also supporting and coaching
+                other teachers across classrooms.
+              </p>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                That experience helps me respond thoughtfully when a child needs
+                more confidence, a different starting point, sensory awareness,
+                clearer structure, or a gentler way back into learning.
+              </p>
+
+              <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                <div className="rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
+                  <p className="text-sm font-semibold text-[#12284C]">
+                    Teacher expertise
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-slate-700">
+                    Current classroom practice, not outdated theory.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
+                  <p className="text-sm font-semibold text-[#12284C]">
+                    Psychology-informed
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-slate-700">
+                    Understanding behaviour, motivation and confidence.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
+                  <p className="text-sm font-semibold text-[#12284C]">
+                    Relationship-led
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-slate-700">
+                    Trust and connection before real engagement.
+                  </p>
+                </div>
+
+                <div className="rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
+                  <p className="text-sm font-semibold text-[#12284C]">
+                    SEND experience
+                  </p>
+                  <p className="mt-2 text-sm leading-6 text-slate-700">
+                    Thoughtful support for different needs, sensory demands and
+                    learning styles.
+                  </p>
+                </div>
+              </div>
+
+              <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                Children are far more likely to engage, communicate and take
+                risks in learning when they feel respected, understood and
+                genuinely known. Strong relationships, mutual respect and
+                carefully supported success can have a powerful impact on
+                confidence, self-belief and a child’s willingness to keep trying
+                when learning feels difficult.
+              </p>
+
+              <p className="mt-6 text-base font-semibold leading-7 text-[#12284C] md:text-lg md:leading-8">
+                When children feel safe, understood and capable, they are more
+                likely to engage, take risks and begin to make meaningful
+                progress.
+              </p>
+            </motion.div>
+          </div>
+        </div>
       </motion.section>
 
       <motion.section
@@ -392,17 +532,14 @@ export default function Page() {
                 </p>
 
                 <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                  Tuesday afternoons in Alderley Edge give your child three
-                  hours of focused, social and thoughtfully taught learning in a
-                  very small group, while you have a dependable window of time
-                  you can plan around.
-                </p>
-
-                <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                  This is not a smaller version of school and it is not
-                  traditional one-to-one tutoring. The group matters. Children
-                  learn to talk, listen, share ideas and build confidence around
-                  others, not just work through tasks individually.
+                  Many home-educating families already provide rich, meaningful
+                  experiences for their children through everyday life,
+                  conversations, walks, creative projects, trips, reading,
+                  outdoor learning and time together. This is not about
+                  replacing what you already do. It is about complementing it -
+                  adding a calm, carefully taught space where your child can
+                  build confidence alongside others, learn to talk and listen in
+                  a group, and continue moving forward in learning.
                 </p>
 
                 <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
@@ -426,10 +563,13 @@ export default function Page() {
 
                 <div className="mt-5 grid gap-2 text-sm text-slate-100">
                   <p>• A reliable 3-hour weekly learning block</p>
-                  <p>• Led by a qualified primary teacher</p>
                   <p>• Maximum 4 children per session</p>
+                  <p>• Calm, structured and nurturing environment</p>
                   <p>• Carefully supported peer interaction</p>
-                  <p>• English, Maths, oracy and wider learning</p>
+                  <p>
+                    • Reading, writing, Maths, oracy and wider curriculum
+                    learning
+                  </p>
                   <p>• Structure without recreating school</p>
                 </div>
               </div>
@@ -437,167 +577,6 @@ export default function Page() {
           </div>
         </div>
       </motion.section>
-
-   <motion.section
-  className="border-y border-slate-200 bg-white"
-  initial="hidden"
-  whileInView="show"
-  viewport={{ once: true, amount: 0.15 }}
-  variants={sectionVariant}
->
-  <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-14">
-    <div className="grid gap-6 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
-      <motion.div
-        className="rounded-[1.7rem] bg-[#12284C] p-7 text-white shadow-sm"
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.18 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
-        <div className="mx-auto h-32 w-32 overflow-hidden rounded-full border-4 border-white/10 shadow-lg md:h-36 md:w-36">
-          <img
-            src="/hero.jpg"
-            alt="David Dodd"
-            className="h-full w-full object-cover"
-          />
-        </div>
-
-        <h2 className="mt-5 text-center text-2xl font-semibold md:text-3xl">
-          David Dodd
-        </h2>
-
-        <p className="mt-2 text-center text-xs uppercase tracking-[0.18em] text-slate-300 md:text-sm">
-          BSc (Hons) Psychology - Primary PGCE - QTS
-        </p>
-
-        <p className="mt-3 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
-          Current primary school teacher
-        </p>
-
-        <p className="mt-2 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
-          Teaching and Learning Coach within the North Manchester Primary
-          Federation
-        </p>
-
-        <p className="mt-2 text-center text-sm font-medium tracking-[0.08em] text-[#D8B35B] md:text-base">
-          Enhanced DBS Checked - Level 3 Safeguarding Trained - First Aid
-          Trained
-        </p>
-
-        <div className="mt-6 text-center">
-          <Link
-            href="/approach"
-            className="inline-flex rounded-full border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/15"
-          >
-            Read more about the approach
-          </Link>
-        </div>
-      </motion.div>
-
-      <motion.div
-        className="rounded-[1.7rem] border border-slate-200 bg-white p-6 shadow-sm md:p-7"
-        initial={{ opacity: 0, y: 18 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.18 }}
-        transition={{ duration: 0.6, ease: "easeOut", delay: 0.06 }}
-      >
-        <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-          Professional trust
-        </p>
-
-        <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-          Trusted to teach children and support other teachers.
-        </h2>
-
-        <p className="mt-6 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-          Many of the children I work with benefit from a calmer, more personal
-          approach to learning. Some have found school difficult, some have lost
-          confidence, and others simply need time to feel known before they are
-          ready to fully engage.
-        </p>
-
-        <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-          I am a{" "}
-          <span className="font-semibold text-[#12284C]">
-            current primary school teacher and Teaching and Learning Coach
-            within the North Manchester Primary Federation
-          </span>
-          , with a{" "}
-          <span className="font-semibold text-[#12284C]">
-            degree in Psychology
-          </span>
-          ,{" "}
-          <span className="font-semibold text-[#12284C]">
-            fifteen years of experience across KS1 and KS2
-          </span>
-          , and significant work with{" "}
-          <span className="font-semibold text-[#12284C]">
-            SEND and neurodivergent children
-          </span>
-          .
-        </p>
-
-        <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-          I work in education every day, and my wider role includes coaching
-          teachers, staff development, behaviour-focused CPD and supporting
-          relationship-led practice across classrooms. That matters because this
-          is not generic tutoring. It is teaching shaped by real classroom
-          experience, psychology, behaviour understanding and professional
-          judgement.
-        </p>
-
-        <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-          That experience helps me respond thoughtfully when a child needs more
-          confidence, a different starting point, or a gentler way back into
-          learning.
-        </p>
-
-        <div className="mt-6 grid gap-3 sm:grid-cols-2">
-          <div className="rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
-            <p className="text-sm font-semibold text-[#12284C]">
-              Teacher expertise
-            </p>
-            <p className="mt-2 text-sm leading-6 text-slate-700">
-              Current classroom practice, not outdated theory.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
-            <p className="text-sm font-semibold text-[#12284C]">
-              Psychology-informed
-            </p>
-            <p className="mt-2 text-sm leading-6 text-slate-700">
-              Understanding behaviour, motivation and confidence.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
-            <p className="text-sm font-semibold text-[#12284C]">
-              Relationship-led
-            </p>
-            <p className="mt-2 text-sm leading-6 text-slate-700">
-              Trust and connection before real engagement.
-            </p>
-          </div>
-
-          <div className="rounded-2xl border border-[#D8B35B]/40 bg-[#FBFBF9] p-4">
-            <p className="text-sm font-semibold text-[#12284C]">
-              SEND experience
-            </p>
-            <p className="mt-2 text-sm leading-6 text-slate-700">
-              Thoughtful support for different needs and learning styles.
-            </p>
-          </div>
-        </div>
-
-        <p className="mt-6 text-base font-semibold leading-7 text-[#12284C] md:text-lg md:leading-8">
-          When children feel safe, understood and capable, they are more likely
-          to engage, take risks and begin to make meaningful progress.
-        </p>
-      </motion.div>
-    </div>
-  </div>
-</motion.section>
 
       <motion.section
         className="border-y border-slate-200 bg-[#F7F7F4]"
@@ -637,8 +616,8 @@ export default function Page() {
               <p className="text-base font-semibold leading-7 md:text-lg">
                 For example, a child who appears reluctant may not need more
                 pressure. They may need a different starting point, a stronger
-                relationship, a clearer sense of success, or learning connected
-                to something that genuinely interests them.
+                relationship, a clearer sense of success, a calmer environment,
+                or learning connected to something that genuinely interests them.
               </p>
             </div>
           </div>
@@ -653,14 +632,33 @@ export default function Page() {
         variants={sectionVariant}
       >
         <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-12">
-          <div className="flex items-end justify-between gap-6">
+          <motion.div
+            className="rounded-[1.6rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-8"
+            initial={{ opacity: 0, y: 18 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.15 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
+            <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+              Professional endorsement
+            </p>
+
+            <p className="mt-4 text-base leading-7 text-slate-800 md:text-xl md:leading-9">
+              "{featuredTestimonial.quote}"
+            </p>
+
+            <p className="mt-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#12284C] md:text-xs">
+              {featuredTestimonial.source}
+            </p>
+          </motion.div>
+
+          <div className="mt-10 flex items-end justify-between gap-6">
             <div className="max-w-2xl">
               <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-                What people say
+                What families say
               </p>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-3xl">
-                Families and professionals speak about trust, confidence and
-                real change.
+                Families speak about trust, confidence and real change.
               </h2>
             </div>
 
@@ -698,24 +696,6 @@ export default function Page() {
             ))}
           </motion.div>
 
-          <motion.div
-            className="mt-4"
-            initial={{ opacity: 0, y: 18 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.15 }}
-            transition={{ duration: 0.6, ease: "easeOut" }}
-          >
-            <div className="rounded-[1.6rem] border border-[#D8B35B]/40 bg-[#FBFBF9] p-6 shadow-sm md:p-7">
-              <p className="text-base leading-7 text-slate-800 md:text-lg md:leading-8">
-                "{featuredTestimonial.quote}"
-              </p>
-
-              <p className="mt-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[#12284C] md:text-xs">
-                {featuredTestimonial.source}
-              </p>
-            </div>
-          </motion.div>
-
           <div className="mt-5 md:hidden">
             <Link
               href="/testimonials"
@@ -737,7 +717,7 @@ export default function Page() {
         <div className="mx-auto max-w-7xl px-5 py-10 md:px-10 md:py-14">
           <div className="rounded-[1.8rem] border border-[#D8B35B]/40 bg-white p-6 shadow-sm md:p-9">
             <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
-              Free home visit before joining
+              Free consultation before joining
             </p>
 
             <div className="mt-3 grid gap-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
@@ -749,16 +729,23 @@ export default function Page() {
 
               <div>
                 <p className="text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                  Before you commit to anything, I visit your home - free, no
-                  obligation. We talk about your child, their needs, what they
-                  enjoy, what interests them, what helps them feel confident,
-                  and whether this approach feels right.
+                  Before you commit to anything, we begin with either a free
+                  home visit, video call or phone consultation. We talk about
+                  your child, their needs, what they enjoy, what helps them feel
+                  confident, and whether this approach feels like the right fit
+                  for your family.
                 </p>
 
                 <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-                  If it does not feel like the right fit, there is no pressure
-                  and no hard feelings. I would rather be honest than fill a
-                  place that is not right for the child.
+                  This also gives us time to think carefully about the group
+                  dynamic, the learning environment and whether your child would
+                  feel safe, comfortable and ready to engage.
+                </p>
+
+                <p className="mt-4 text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+                  If it does not feel like the right fit, I will say so. I would
+                  rather be honest than place a child somewhere that is not
+                  right for them.
                 </p>
 
                 <p className="mt-4 text-base font-semibold leading-7 text-[#12284C] md:text-lg md:leading-8">
@@ -847,17 +834,21 @@ export default function Page() {
               This reserves your child’s place in a consistent small group of no
               more than four children, with careful planning, skilled teaching,
               supported social learning and a strong focus on confidence,
-              engagement and progress.
+              engagement and progress across reading, writing, Maths, oracy and
+              wider curriculum learning.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
               The value is not only in the teaching time. It is in the
               consistency, the relationship, the careful group dynamic and the
               confidence children build through learning alongside others.
+              Parents receive regular communication about how their child is
+              settling, engaging, building confidence and progressing across
+              learning.
             </p>
 
             <p className="mt-4 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              The free home visit comes before any commitment, so we can make
+              The free consultation comes before any commitment, so we can make
               sure this is the right fit for your child and your family.
             </p>
 
