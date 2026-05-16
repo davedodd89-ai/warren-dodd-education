@@ -103,6 +103,26 @@ export default function Page() {
     },
   ];
 
+  const transformationPoints = [
+    {
+      before: "Avoids learning",
+      after: "Begins to re-engage with more confidence and less resistance.",
+    },
+    {
+      before: "Feels anxious or overwhelmed",
+      after:
+        "Feels calmer because the environment is smaller, safer and more personal.",
+    },
+    {
+      before: "Hides confusion",
+      after: "Starts to ask questions, talk through ideas and take learning risks.",
+    },
+    {
+      before: "Believes they are not good at learning",
+      after: "Builds self-belief through carefully supported success.",
+    },
+  ];
+
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#F7F7F4] text-slate-900">
       <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[460px] bg-[radial-gradient(circle_at_top,rgba(18,40,76,0.06),transparent_42%),radial-gradient(circle_at_right,rgba(18,40,76,0.04),transparent_34%)]" />
@@ -303,6 +323,64 @@ export default function Page() {
             </div>
           </div>
         </motion.div>
+      </motion.section>
+
+      <motion.section
+        className="mx-auto max-w-7xl px-5 pb-10 md:px-10 md:pb-14"
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.15 }}
+        variants={sectionVariant}
+      >
+        <div className="rounded-[1.8rem] border border-[#D8B35B]/40 bg-white p-6 shadow-sm md:p-9">
+          <p className="text-xs uppercase tracking-[0.22em] text-slate-500 md:text-sm">
+            What changes for children
+          </p>
+
+          <h2 className="mt-3 max-w-4xl text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
+            The aim is not just better learning. It is a child who feels more
+            capable, confident and understood.
+          </h2>
+
+          <p className="mt-5 max-w-4xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
+            Many children do not lack ability. They have lost confidence, become
+            anxious around learning, or stopped believing that success is
+            possible. The right relationship, environment and teaching approach
+            can begin to change that.
+          </p>
+
+          <div className="mt-7 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            {transformationPoints.map((item) => (
+              <div
+                key={item.before}
+                className="rounded-[1.4rem] border border-slate-200 bg-[#FBFBF9] p-5 shadow-sm"
+              >
+                <p className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-500">
+                  From
+                </p>
+
+                <p className="mt-2 text-base font-semibold text-[#12284C]">
+                  {item.before}
+                </p>
+
+                <p className="mt-4 text-sm font-semibold uppercase tracking-[0.16em] text-[#D8B35B]">
+                  Towards
+                </p>
+
+                <p className="mt-2 text-sm leading-6 text-slate-700">
+                  {item.after}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-7 rounded-[1.4rem] bg-[#12284C] p-6 text-white">
+            <p className="text-base font-semibold leading-7 md:text-lg">
+              When children feel safe, known and successful, learning often
+              starts to feel different. That is where real progress begins.
+            </p>
+          </div>
+        </div>
       </motion.section>
 
       <motion.section
@@ -658,7 +736,8 @@ export default function Page() {
                 What families say
               </p>
               <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#12284C] md:text-3xl">
-                Families speak about trust, confidence and real change.
+                Families speak about children feeling seen, trusted and more
+                confident.
               </h2>
             </div>
 
@@ -827,12 +906,14 @@ export default function Page() {
             </p>
 
             <h2 className="mt-3 max-w-3xl text-2xl font-semibold tracking-tight text-[#12284C] md:text-4xl">
-              A reserved weekly place is £180 for each 3-hour session.
+              A reserved weekly place for consistent support, confidence and
+              progress.
             </h2>
 
             <p className="mt-5 max-w-3xl text-base leading-7 text-slate-700 md:text-lg md:leading-8">
-              This reserves your child’s place in a consistent small group of no
-              more than four children, with careful planning, skilled teaching,
+              A reserved weekly place is £180 for each 3-hour session. This
+              reserves your child’s place in a consistent small group of no more
+              than four children, with careful planning, skilled teaching,
               supported social learning and a strong focus on confidence,
               engagement and progress across reading, writing, Maths, oracy and
               wider curriculum learning.
